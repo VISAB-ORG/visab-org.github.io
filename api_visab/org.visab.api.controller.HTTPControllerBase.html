@@ -1,0 +1,911 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class HTTPControllerBase
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class HTTPControllerBase
+   ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="org.visab.api.controller.HTTPControllerBase">
+  
+  
+  <h1 id="org_visab_api_controller_HTTPControllerBase" data-uid="org.visab.api.controller.HTTPControllerBase" class="text-break">Class HTTPControllerBase
+  </h1>
+  <div class="markdown level0 summary"><p>The base controller that all new controllers should inherit from.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">java.lang.Object</span></div>
+    <div class="level1"><span class="xref">HTTPControllerBase</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">fi.iki.elonen.router.RouterNanoHTTPD.UriResponder</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">java.lang.Object.clone()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.equals(java.lang.Object)</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.finalize()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.getClass()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.hashCode()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.notify()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.notifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.toString()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.wait()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.wait(long)</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.wait(long,int)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: </h6>
+  <h6><strong>Assembly</strong>: .dll</h6>
+  <h5 id="org_visab_api_controller_HTTPControllerBase_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class HTTPControllerBase implements RouterNanoHTTPD.UriResponder</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="org_visab_api_controller_HTTPControllerBase_HTTPControllerBase_" data-uid="org.visab.api.controller.HTTPControllerBase.HTTPControllerBase*"></a>
+  <h4 id="org_visab_api_controller_HTTPControllerBase_HTTPControllerBase__" data-uid="org.visab.api.controller.HTTPControllerBase.HTTPControllerBase()">HTTPControllerBase()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HTTPControllerBase()</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="org_visab_api_controller_HTTPControllerBase_delete_" data-uid="org.visab.api.controller.HTTPControllerBase.delete*"></a>
+  <h4 id="org_visab_api_controller_HTTPControllerBase_delete_fi_iki_elonen_router_RouterNanoHTTPD_UriResource_java_util_Map_java_lang_String_java_lang_String__fi_iki_elonen_NanoHTTPD_IHTTPSession_" data-uid="org.visab.api.controller.HTTPControllerBase.delete(fi.iki.elonen.router.RouterNanoHTTPD.UriResource,java.util.Map&lt;java.lang.String,java.lang.String&gt;,fi.iki.elonen.NanoHTTPD.IHTTPSession)">delete(RouterNanoHTTPD.UriResource uriResource, Map&lt;String,String&gt; urlParams, NanoHTTPD.IHTTPSession session)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NanoHTTPD.Response delete(RouterNanoHTTPD.UriResource uriResource, Map&lt;String,String&gt; urlParams, NanoHTTPD.IHTTPSession session)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">fi.iki.elonen.router.RouterNanoHTTPD.UriResource</span></td>
+        <td><span class="parametername">uriResource</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">java.util.Map</span>&lt;<span class="xref">java.lang.String</span>,<span class="xref">java.lang.String</span>&gt;</td>
+        <td><span class="parametername">urlParams</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">fi.iki.elonen.NanoHTTPD.IHTTPSession</span></td>
+        <td><span class="parametername">session</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">fi.iki.elonen.NanoHTTPD.Response</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_api_controller_HTTPControllerBase_get_" data-uid="org.visab.api.controller.HTTPControllerBase.get*"></a>
+  <h4 id="org_visab_api_controller_HTTPControllerBase_get_fi_iki_elonen_router_RouterNanoHTTPD_UriResource_java_util_Map_java_lang_String_java_lang_String__fi_iki_elonen_NanoHTTPD_IHTTPSession_" data-uid="org.visab.api.controller.HTTPControllerBase.get(fi.iki.elonen.router.RouterNanoHTTPD.UriResource,java.util.Map&lt;java.lang.String,java.lang.String&gt;,fi.iki.elonen.NanoHTTPD.IHTTPSession)">get(RouterNanoHTTPD.UriResource uriResource, Map&lt;String,String&gt; urlParams, NanoHTTPD.IHTTPSession session)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NanoHTTPD.Response get(RouterNanoHTTPD.UriResource uriResource, Map&lt;String,String&gt; urlParams, NanoHTTPD.IHTTPSession session)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">fi.iki.elonen.router.RouterNanoHTTPD.UriResource</span></td>
+        <td><span class="parametername">uriResource</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">java.util.Map</span>&lt;<span class="xref">java.lang.String</span>,<span class="xref">java.lang.String</span>&gt;</td>
+        <td><span class="parametername">urlParams</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">fi.iki.elonen.NanoHTTPD.IHTTPSession</span></td>
+        <td><span class="parametername">session</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">fi.iki.elonen.NanoHTTPD.Response</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_api_controller_HTTPControllerBase_getBadRequestResponse_" data-uid="org.visab.api.controller.HTTPControllerBase.getBadRequestResponse*"></a>
+  <h4 id="org_visab_api_controller_HTTPControllerBase_getBadRequestResponse_java_lang_String_" data-uid="org.visab.api.controller.HTTPControllerBase.getBadRequestResponse(java.lang.String)">getBadRequestResponse(String error)</h4>
+  <div class="markdown level1 summary"><p>Gets a generic BadRequest (Code 400) Respose.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static final NanoHTTPD.Response getBadRequestResponse(String error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">error</span></td>
+        <td><p>The error to put in the body</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">fi.iki.elonen.NanoHTTPD.Response</span></td>
+        <td><p>The Http response</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_api_controller_HTTPControllerBase_getForbiddenResponse_" data-uid="org.visab.api.controller.HTTPControllerBase.getForbiddenResponse*"></a>
+  <h4 id="org_visab_api_controller_HTTPControllerBase_getForbiddenResponse_java_lang_String_" data-uid="org.visab.api.controller.HTTPControllerBase.getForbiddenResponse(java.lang.String)">getForbiddenResponse(String error)</h4>
+  <div class="markdown level1 summary"><p>Gets a generic Forbidden (Code 403) Respose.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static final NanoHTTPD.Response getForbiddenResponse(String error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">error</span></td>
+        <td><p>The error to put in the body</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">fi.iki.elonen.NanoHTTPD.Response</span></td>
+        <td><p>The Http response</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_api_controller_HTTPControllerBase_getJsonResponse_" data-uid="org.visab.api.controller.HTTPControllerBase.getJsonResponse*"></a>
+  <h4 id="org_visab_api_controller_HTTPControllerBase_getJsonResponse_java_lang_Object_" data-uid="org.visab.api.controller.HTTPControllerBase.getJsonResponse(java.lang.Object)">getJsonResponse(Object o)</h4>
+  <div class="markdown level1 summary"><p>Gets a generic JSON Response.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static final NanoHTTPD.Response getJsonResponse(Object o)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.Object</span></td>
+        <td><span class="parametername">o</span></td>
+        <td><p>The object to sent as json</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">fi.iki.elonen.NanoHTTPD.Response</span></td>
+        <td><p>The Http response</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_api_controller_HTTPControllerBase_getJsonResponse_" data-uid="org.visab.api.controller.HTTPControllerBase.getJsonResponse*"></a>
+  <h4 id="org_visab_api_controller_HTTPControllerBase_getJsonResponse_java_lang_String_" data-uid="org.visab.api.controller.HTTPControllerBase.getJsonResponse(java.lang.String)">getJsonResponse(String json)</h4>
+  <div class="markdown level1 summary"><p>Gets a generic JSON Response.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static final NanoHTTPD.Response getJsonResponse(String json)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">json</span></td>
+        <td><p>The json to sent</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">fi.iki.elonen.NanoHTTPD.Response</span></td>
+        <td><p>The Http response</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_api_controller_HTTPControllerBase_getNotFoundResponse_" data-uid="org.visab.api.controller.HTTPControllerBase.getNotFoundResponse*"></a>
+  <h4 id="org_visab_api_controller_HTTPControllerBase_getNotFoundResponse_fi_iki_elonen_router_RouterNanoHTTPD_UriResource_" data-uid="org.visab.api.controller.HTTPControllerBase.getNotFoundResponse(fi.iki.elonen.router.RouterNanoHTTPD.UriResource)">getNotFoundResponse(RouterNanoHTTPD.UriResource uriResource)</h4>
+  <div class="markdown level1 summary"><p>TODO: This should be using settings instead. As of now it is also wrong. Gets a generic NotFound (Code 404) Respose.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static final NanoHTTPD.Response getNotFoundResponse(RouterNanoHTTPD.UriResource uriResource)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">fi.iki.elonen.router.RouterNanoHTTPD.UriResource</span></td>
+        <td><span class="parametername">uriResource</span></td>
+        <td><p>The uriResource that wasnt found</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">fi.iki.elonen.NanoHTTPD.Response</span></td>
+        <td><p>The Http response</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_api_controller_HTTPControllerBase_getNotFoundResponse_" data-uid="org.visab.api.controller.HTTPControllerBase.getNotFoundResponse*"></a>
+  <h4 id="org_visab_api_controller_HTTPControllerBase_getNotFoundResponse_fi_iki_elonen_router_RouterNanoHTTPD_UriResource_java_lang_String_" data-uid="org.visab.api.controller.HTTPControllerBase.getNotFoundResponse(fi.iki.elonen.router.RouterNanoHTTPD.UriResource,java.lang.String)">getNotFoundResponse(RouterNanoHTTPD.UriResource uriResource, String additionalMessage)</h4>
+  <div class="markdown level1 summary"><p>TODO: This should be using settings instead. As of now it is also wrong. Gets a generic NotFound (Code 404) Respose.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static final NanoHTTPD.Response getNotFoundResponse(RouterNanoHTTPD.UriResource uriResource, String additionalMessage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">fi.iki.elonen.router.RouterNanoHTTPD.UriResource</span></td>
+        <td><span class="parametername">uriResource</span></td>
+        <td><p>The uriResource that wasnt found</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">additionalMessage</span></td>
+        <td><p>An additional message</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">fi.iki.elonen.NanoHTTPD.Response</span></td>
+        <td><p>The Http response</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_api_controller_HTTPControllerBase_getOkResponse_" data-uid="org.visab.api.controller.HTTPControllerBase.getOkResponse*"></a>
+  <h4 id="org_visab_api_controller_HTTPControllerBase_getOkResponse_java_lang_String_" data-uid="org.visab.api.controller.HTTPControllerBase.getOkResponse(java.lang.String)">getOkResponse(String message)</h4>
+  <div class="markdown level1 summary"><p>Gets a generic Ok (Code 200) Respose.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static final NanoHTTPD.Response getOkResponse(String message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message to put in the body</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">fi.iki.elonen.NanoHTTPD.Response</span></td>
+        <td><p>The Http response</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_api_controller_HTTPControllerBase_handleGet_" data-uid="org.visab.api.controller.HTTPControllerBase.handleGet*"></a>
+  <h4 id="org_visab_api_controller_HTTPControllerBase_handleGet_fi_iki_elonen_router_RouterNanoHTTPD_UriResource_java_util_Map_java_lang_String_java_lang_String__fi_iki_elonen_NanoHTTPD_IHTTPSession_" data-uid="org.visab.api.controller.HTTPControllerBase.handleGet(fi.iki.elonen.router.RouterNanoHTTPD.UriResource,java.util.Map&lt;java.lang.String,java.lang.String&gt;,fi.iki.elonen.NanoHTTPD.IHTTPSession)">handleGet(RouterNanoHTTPD.UriResource uriResource, Map&lt;String,String&gt; urlParams, NanoHTTPD.IHTTPSession session)</h4>
+  <div class="markdown level1 summary"><p>Handler for Http GET requests.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract NanoHTTPD.Response handleGet(RouterNanoHTTPD.UriResource uriResource, Map&lt;String,String&gt; urlParams, NanoHTTPD.IHTTPSession session)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">fi.iki.elonen.router.RouterNanoHTTPD.UriResource</span></td>
+        <td><span class="parametername">uriResource</span></td>
+        <td><p>The UriResource</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">java.util.Map</span>&lt;<span class="xref">java.lang.String</span>,<span class="xref">java.lang.String</span>&gt;</td>
+        <td><span class="parametername">urlParams</span></td>
+        <td><p>The url parameters</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">fi.iki.elonen.NanoHTTPD.IHTTPSession</span></td>
+        <td><span class="parametername">session</span></td>
+        <td><p>The Http session</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">fi.iki.elonen.NanoHTTPD.Response</span></td>
+        <td><p>A Http response</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_api_controller_HTTPControllerBase_handlePost_" data-uid="org.visab.api.controller.HTTPControllerBase.handlePost*"></a>
+  <h4 id="org_visab_api_controller_HTTPControllerBase_handlePost_fi_iki_elonen_router_RouterNanoHTTPD_UriResource_java_util_Map_java_lang_String_java_lang_String__fi_iki_elonen_NanoHTTPD_IHTTPSession_" data-uid="org.visab.api.controller.HTTPControllerBase.handlePost(fi.iki.elonen.router.RouterNanoHTTPD.UriResource,java.util.Map&lt;java.lang.String,java.lang.String&gt;,fi.iki.elonen.NanoHTTPD.IHTTPSession)">handlePost(RouterNanoHTTPD.UriResource uriResource, Map&lt;String,String&gt; urlParams, NanoHTTPD.IHTTPSession session)</h4>
+  <div class="markdown level1 summary"><p>Handler for Http POST requests.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract NanoHTTPD.Response handlePost(RouterNanoHTTPD.UriResource uriResource, Map&lt;String,String&gt; urlParams, NanoHTTPD.IHTTPSession session)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">fi.iki.elonen.router.RouterNanoHTTPD.UriResource</span></td>
+        <td><span class="parametername">uriResource</span></td>
+        <td><p>The UriResource</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">java.util.Map</span>&lt;<span class="xref">java.lang.String</span>,<span class="xref">java.lang.String</span>&gt;</td>
+        <td><span class="parametername">urlParams</span></td>
+        <td><p>The url parameters</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">fi.iki.elonen.NanoHTTPD.IHTTPSession</span></td>
+        <td><span class="parametername">session</span></td>
+        <td><p>The Http session</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">fi.iki.elonen.NanoHTTPD.Response</span></td>
+        <td><p>A Http response</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_api_controller_HTTPControllerBase_other_" data-uid="org.visab.api.controller.HTTPControllerBase.other*"></a>
+  <h4 id="org_visab_api_controller_HTTPControllerBase_other_java_lang_String_fi_iki_elonen_router_RouterNanoHTTPD_UriResource_java_util_Map_java_lang_String_java_lang_String__fi_iki_elonen_NanoHTTPD_IHTTPSession_" data-uid="org.visab.api.controller.HTTPControllerBase.other(java.lang.String,fi.iki.elonen.router.RouterNanoHTTPD.UriResource,java.util.Map&lt;java.lang.String,java.lang.String&gt;,fi.iki.elonen.NanoHTTPD.IHTTPSession)">other(String method, RouterNanoHTTPD.UriResource uriResource, Map&lt;String,String&gt; urlParams, NanoHTTPD.IHTTPSession session)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NanoHTTPD.Response other(String method, RouterNanoHTTPD.UriResource uriResource, Map&lt;String,String&gt; urlParams, NanoHTTPD.IHTTPSession session)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">method</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">fi.iki.elonen.router.RouterNanoHTTPD.UriResource</span></td>
+        <td><span class="parametername">uriResource</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">java.util.Map</span>&lt;<span class="xref">java.lang.String</span>,<span class="xref">java.lang.String</span>&gt;</td>
+        <td><span class="parametername">urlParams</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">fi.iki.elonen.NanoHTTPD.IHTTPSession</span></td>
+        <td><span class="parametername">session</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">fi.iki.elonen.NanoHTTPD.Response</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_api_controller_HTTPControllerBase_post_" data-uid="org.visab.api.controller.HTTPControllerBase.post*"></a>
+  <h4 id="org_visab_api_controller_HTTPControllerBase_post_fi_iki_elonen_router_RouterNanoHTTPD_UriResource_java_util_Map_java_lang_String_java_lang_String__fi_iki_elonen_NanoHTTPD_IHTTPSession_" data-uid="org.visab.api.controller.HTTPControllerBase.post(fi.iki.elonen.router.RouterNanoHTTPD.UriResource,java.util.Map&lt;java.lang.String,java.lang.String&gt;,fi.iki.elonen.NanoHTTPD.IHTTPSession)">post(RouterNanoHTTPD.UriResource uriResource, Map&lt;String,String&gt; urlParams, NanoHTTPD.IHTTPSession session)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NanoHTTPD.Response post(RouterNanoHTTPD.UriResource uriResource, Map&lt;String,String&gt; urlParams, NanoHTTPD.IHTTPSession session)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">fi.iki.elonen.router.RouterNanoHTTPD.UriResource</span></td>
+        <td><span class="parametername">uriResource</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">java.util.Map</span>&lt;<span class="xref">java.lang.String</span>,<span class="xref">java.lang.String</span>&gt;</td>
+        <td><span class="parametername">urlParams</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">fi.iki.elonen.NanoHTTPD.IHTTPSession</span></td>
+        <td><span class="parametername">session</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">fi.iki.elonen.NanoHTTPD.Response</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_api_controller_HTTPControllerBase_put_" data-uid="org.visab.api.controller.HTTPControllerBase.put*"></a>
+  <h4 id="org_visab_api_controller_HTTPControllerBase_put_fi_iki_elonen_router_RouterNanoHTTPD_UriResource_java_util_Map_java_lang_String_java_lang_String__fi_iki_elonen_NanoHTTPD_IHTTPSession_" data-uid="org.visab.api.controller.HTTPControllerBase.put(fi.iki.elonen.router.RouterNanoHTTPD.UriResource,java.util.Map&lt;java.lang.String,java.lang.String&gt;,fi.iki.elonen.NanoHTTPD.IHTTPSession)">put(RouterNanoHTTPD.UriResource uriResource, Map&lt;String,String&gt; urlParams, NanoHTTPD.IHTTPSession session)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NanoHTTPD.Response put(RouterNanoHTTPD.UriResource uriResource, Map&lt;String,String&gt; urlParams, NanoHTTPD.IHTTPSession session)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">fi.iki.elonen.router.RouterNanoHTTPD.UriResource</span></td>
+        <td><span class="parametername">uriResource</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">java.util.Map</span>&lt;<span class="xref">java.lang.String</span>,<span class="xref">java.lang.String</span>&gt;</td>
+        <td><span class="parametername">urlParams</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">fi.iki.elonen.NanoHTTPD.IHTTPSession</span></td>
+        <td><span class="parametername">session</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">fi.iki.elonen.NanoHTTPD.Response</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">fi.iki.elonen.router.RouterNanoHTTPD.UriResponder</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+              </div>
+          
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <h5>In This Article</h5>
+              <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div class="pull-left">
+              
+              <span>Generated by <strong>DocFX</strong></span>
+            </div>
+            <div class="toggle-mode pull-right visible-sm visible-xs">
+              <div class="icon">
+                <i aria-hidden="true">☀</i>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="switch-style-m">
+                <span class="slider round"></span>
+              </label>
+              <div class="icon">
+                <i aria-hidden="true">☾</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="../styles/toggle-theme.js"></script>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

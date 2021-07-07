@@ -1,0 +1,287 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface ILiveViewable&lt;TStatistics&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface ILiveViewable&lt;TStatistics&gt;
+   ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="org.visab.processing.ILiveViewable">
+  
+  
+  <h1 id="org_visab_processing_ILiveViewable" data-uid="org.visab.processing.ILiveViewable" class="text-break">Interface ILiveViewable&lt;TStatistics&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>The ILiveViewable interface, that all live viewable SessionListeners have to implement. ILiveViewables can have a multitude of ILiveViewModel as observers.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: </h6>
+  <h6><strong>Assembly</strong>: .dll</h6>
+  <h5 id="org_visab_processing_ILiveViewable_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface ILiveViewable&lt;TStatistics&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TStatistics</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="org_visab_processing_ILiveViewable_addViewModel_" data-uid="org.visab.processing.ILiveViewable.addViewModel*"></a>
+  <h4 id="org_visab_processing_ILiveViewable_addViewModel_org_visab_newgui_visualize_ILiveStatisticsViewModel_TStatistics__" data-uid="org.visab.processing.ILiveViewable.addViewModel(org.visab.newgui.visualize.ILiveStatisticsViewModel&lt;TStatistics&gt;)">addViewModel(ILiveStatisticsViewModel&lt;TStatistics&gt; viewModel)</h4>
+  <div class="markdown level1 summary"><p>Adds a ViewModel to the list of ViewModels that will be informed of added statistics.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void addViewModel(ILiveStatisticsViewModel&lt;TStatistics&gt; viewModel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="org.visab.newgui.visualize.ILiveStatisticsViewModel.html">ILiveStatisticsViewModel</a>&lt;<span class="xref">TStatistics</span>&gt;</td>
+        <td><span class="parametername">viewModel</span></td>
+        <td><p>The ViewModel to add</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_processing_ILiveViewable_getCurrentFile_" data-uid="org.visab.processing.ILiveViewable.getCurrentFile*"></a>
+  <h4 id="org_visab_processing_ILiveViewable_getCurrentFile__" data-uid="org.visab.processing.ILiveViewable.getCurrentFile()">getCurrentFile()</h4>
+  <div class="markdown level1 summary"><p>Returns the current (unfinished) IVISABFile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract IVISABFile getCurrentFile()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="org.visab.globalmodel.IVISABFile.html">IVISABFile</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_processing_ILiveViewable_getReceivedStatistics_" data-uid="org.visab.processing.ILiveViewable.getReceivedStatistics*"></a>
+  <h4 id="org_visab_processing_ILiveViewable_getReceivedStatistics__" data-uid="org.visab.processing.ILiveViewable.getReceivedStatistics()">getReceivedStatistics()</h4>
+  <div class="markdown level1 summary"><p>Returns a copy of all statistics that were added till now.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract List&lt;TStatistics&gt; getReceivedStatistics()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.util.List</span>&lt;<span class="xref">TStatistics</span>&gt;</td>
+        <td><p>The list of received statistics</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_processing_ILiveViewable_notifySessionClosed_" data-uid="org.visab.processing.ILiveViewable.notifySessionClosed*"></a>
+  <h4 id="org_visab_processing_ILiveViewable_notifySessionClosed__" data-uid="org.visab.processing.ILiveViewable.notifySessionClosed()">notifySessionClosed()</h4>
+  <div class="markdown level1 summary"><p>Notifies the observing ViewModels that the session was closed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void notifySessionClosed()</code></pre>
+  </div>
+  
+  
+  <a id="org_visab_processing_ILiveViewable_notifyStatisticsAdded_" data-uid="org.visab.processing.ILiveViewable.notifyStatisticsAdded*"></a>
+  <h4 id="org_visab_processing_ILiveViewable_notifyStatisticsAdded_TStatistics_" data-uid="org.visab.processing.ILiveViewable.notifyStatisticsAdded(TStatistics)">notifyStatisticsAdded(TStatistics addedStatistics)</h4>
+  <div class="markdown level1 summary"><p>Notifies the observing ViewModels that statistics were added.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void notifyStatisticsAdded(TStatistics addedStatistics)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TStatistics</span></td>
+        <td><span class="parametername">addedStatistics</span></td>
+        <td><p>The added statistics</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+              </div>
+          
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <h5>In This Article</h5>
+              <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div class="pull-left">
+              
+              <span>Generated by <strong>DocFX</strong></span>
+            </div>
+            <div class="toggle-mode pull-right visible-sm visible-xs">
+              <div class="icon">
+                <i aria-hidden="true">☀</i>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="switch-style-m">
+                <span class="slider round"></span>
+              </label>
+              <div class="icon">
+                <i aria-hidden="true">☾</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="../styles/toggle-theme.js"></script>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

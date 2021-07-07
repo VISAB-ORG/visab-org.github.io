@@ -1,0 +1,3018 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/moritz/Desktop/Documentation/docfx_project",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api_visab/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/index.html",
+          "hash": "3jiL5cdPg+VU6zTiQDj1UCtartJqi348KaUh+3G87HQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/mvvmexample.AppMain.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/mvvmexample.AppMain.html",
+          "hash": "0gRo1+5K6g/l/Z/rScYuxq/TRmzt4o2dYIcTKmYgYPA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/mvvmexample.Main.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/mvvmexample.Main.html",
+          "hash": "Yk2Q1g0gKMe6E8p6as9TJ+PwOwA3IVwRggfrZyBrzIo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/mvvmexample.ShoppingListView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/mvvmexample.ShoppingListView.html",
+          "hash": "teLgzByHKfIwtVtCJWUddQyOsWYAy+IMRv2IsZFNfaM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/mvvmexample.ShoppingListViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/mvvmexample.ShoppingListViewModel.html",
+          "hash": "OsTyFKM+kNipWwKhUFmomSwAWOPbim711HtpbRcAuN8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/mvvmexample.model.ListItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/mvvmexample.model.ListItem.html",
+          "hash": "IjPju8/nWVji1vmBlcNzlrIXzeR6tP0dqRzx3ZtH+Og="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/mvvmexample.model.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/mvvmexample.model.html",
+          "hash": "QvNOWQ4EfW1jMo6aD8vDtY/tJ3IPtFFMZtuaj9OxaBc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/mvvmexample.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/mvvmexample.html",
+          "hash": "UKofeeO8FPkDQ1BFZMRo8h7UUCRkBrSm8BBWJhnTEo4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.api.SessionAdministration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.api.SessionAdministration.html",
+          "hash": "iRDdbrrUt2vKLb8qtjIlB/0viHhxVX0uk6JkygUYDw0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.api.WebApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.api.WebApi.html",
+          "hash": "w6XEoNzWy7r4ZRr3EqNToNF+6nsTcirkY3yzILVvd/Y="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.api.WebApiHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.api.WebApiHelper.html",
+          "hash": "lyW3GFfQvx3+EY92OGZ878DTwEdRNx9MerWzZZk3NZ0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.api.controller.FileController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.api.controller.FileController.html",
+          "hash": "OolOG8+grDYOn64EKoHLB9UXjqGWCACw5Idh2l98EkM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.api.controller.GameSupportController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.api.controller.GameSupportController.html",
+          "hash": "mJ2yw92lTyfGtuJgsRoVblHiCQj70B3l9vA0qSm4TDM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.api.controller.HTTPControllerBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.api.controller.HTTPControllerBase.html",
+          "hash": "fMCbUwQ4JQEY9l7uKjhIf8Vrmtozcot80xMwO1dwOb0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.api.controller.ImageController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.api.controller.ImageController.html",
+          "hash": "FQCSBA+6I3/fxKQsV+NFuxLWqdzIGTKUh6Q9IIagWG0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.api.controller.SessionController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.api.controller.SessionController.html",
+          "hash": "heowPkheZ5+YdnSyThyfm26phIVgW2byAgkbwCCtTHw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.api.controller.StatisticsController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.api.controller.StatisticsController.html",
+          "hash": "g/StbiQekRCQsWXjQRR/+CVCaqFkn5726QByUZrNzac="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.api.controller.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.api.controller.html",
+          "hash": "E/D8Av2acH9XvVwuMSNLinzT/BqA5AZMwMy2iMS6oJY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.api.model.SessionWatchdog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.api.model.SessionWatchdog.html",
+          "hash": "F78CR8WuonSbK1/CGSBSpR5vrIcqBTZL5jKkFgutPys="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.api.model.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.api.model.html",
+          "hash": "qgKEG19s5UIDk6hTMzcT0Vt9XEr3a4nHcXY3DY4LFuI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.api.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.api.html",
+          "hash": "to9tWDBpirwOTpyFhIcGR8qq7ZjR18CLLY9ZdgmwZSk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.deprecated.AbstractParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.deprecated.AbstractParser.html",
+          "hash": "x0jRgRmOvqVoPIKX1jlQnZB0MfVBjhOCvFx8wZUqFHc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.deprecated.ShooterDataRepresentation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.deprecated.ShooterDataRepresentation.html",
+          "hash": "sjKMm0hF0qi7qiQFf+OEzn5vPN+1jqiper43nEEeNog="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.deprecated.ShooterParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.deprecated.ShooterParser.html",
+          "hash": "hmk9Sd/u4WCP2GctWSak9KCq/xCzgydMtOi3NN9TREY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.deprecated.UnityDataServer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.deprecated.UnityDataServer.html",
+          "hash": "mqSKr9LC/Nk9h71JKM+jCAJgpNYkgEPcnX7U/IlS4/c="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.deprecated.gui.DatabaseView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.deprecated.gui.DatabaseView.html",
+          "hash": "tfRiNLy8EsgWRte3oiEgdU760QhzBEPk/O6oKzymyN4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.deprecated.gui.DatabaseViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.deprecated.gui.DatabaseViewModel.html",
+          "hash": "t7tG5TaprfP2yxYlt64FFXgBgXZgTAHApkFv40VWCBQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.deprecated.gui.ExplorerViewModelBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.deprecated.gui.ExplorerViewModelBase.html",
+          "hash": "gTcTNKKCjV//Br3ZOdIChttS+Uk1cRqv99IiKJcuX14="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.deprecated.gui.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.deprecated.gui.html",
+          "hash": "Oqm/c1wsw8NT0YknAM6EjdM6eCuFFphX6UA3+MZaPSk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.deprecated.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.deprecated.html",
+          "hash": "RcFYH7PKOxEHX7ADXLYyMzd6gawraH/jPuR/OnQdHN8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.dynamic.DynamicHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.dynamic.DynamicHelper.html",
+          "hash": "UaYGss3ndYErzFXjHdAFzaFLOoGSoRZzQPxZu/E5OsQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.dynamic.DynamicInstatiator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.dynamic.DynamicInstatiator.html",
+          "hash": "EeW2WgE3w56h9F6LDVNDFzrAWGob4Xa5NDbgoKa0on4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.dynamic.DynamicSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.dynamic.DynamicSerializer.html",
+          "hash": "1BtdHcvtVDI2vR+DBxaynnYioPnmVhgoxlEDEYnkGKs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.dynamic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.dynamic.html",
+          "hash": "6R8ZP2lDSOJb4832aNUhUyNBxspQ4BC99GVB7Qbw6sI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.eventbus.ApiEventBus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.eventbus.ApiEventBus.html",
+          "hash": "Ly7h/pZWs3g29qkIo+hn5HocOgg+3JZw3kKIbPcb9JU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.eventbus.EventBusBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.eventbus.EventBusBase.html",
+          "hash": "EZUCLf5JUZy6brNrQnQUaHvHnRcFDR+lbxnSOXShZ9Y="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.eventbus.GeneralEventBus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.eventbus.GeneralEventBus.html",
+          "hash": "SgU94Kgr6rX9unO1FYmts9j5ltc98ZOZWUcap0783PE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.eventbus.IApiEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.eventbus.IApiEvent.html",
+          "hash": "/78vbzR5ZPDXom7feHcpg7fWeUesTzQJxv3xmQZm/Rs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.eventbus.IEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.eventbus.IEvent.html",
+          "hash": "IM6XxWt5eoIEfJBOqMdPLtY4M1cFiRysoZmav9Msc5w="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.eventbus.IPublisher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.eventbus.IPublisher.html",
+          "hash": "0xcidLSQ1RbtPwfhSWCqq5j3y/B5Czda+7A4g5yWQhw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.eventbus.ISubscriber.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.eventbus.ISubscriber.html",
+          "hash": "/KsXAGeVXuMhHTUu+7GYtPzHGDAbkQORZL4LRZfClXk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.eventbus.event.ApiEventBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.eventbus.event.ApiEventBase.html",
+          "hash": "xF0iuhlv8owz+kTGIO7Ytw5bOta2A1ujyF7nBxi4SkE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.eventbus.event.ImageReceivedEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.eventbus.event.ImageReceivedEvent.html",
+          "hash": "wXOmFQKyqMhrXZOmWhM1JT4Zlxldqqq5gjy+NZuNZi4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.eventbus.event.SessionClosedEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.eventbus.event.SessionClosedEvent.html",
+          "hash": "F7UAqJ0RS9NMBCJcklcB/MUcE0ELvELLexBaa70qvlY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.eventbus.event.SessionOpenedEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.eventbus.event.SessionOpenedEvent.html",
+          "hash": "hvfu1fE52msfngEJnz807pBFxssLRSDb0aLYpNIOJNI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.eventbus.event.StatisticsReceivedEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.eventbus.event.StatisticsReceivedEvent.html",
+          "hash": "LlkoLqsex57HSsCswtwNR+s6ev5sDHz0P8FY0+nm2jQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.eventbus.event.VISABFileSavedEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.eventbus.event.VISABFileSavedEvent.html",
+          "hash": "/ugcBbNXLTTKftBEpt5ws1dDHMrLvByKom9Ah6M7TIU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.eventbus.event.VISABFileViewedEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.eventbus.event.VISABFileViewedEvent.html",
+          "hash": "fdNNWNfLHqhMnoO45gC3rB+dwJ/evT7+ykmXqbnskHk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.eventbus.event.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.eventbus.event.html",
+          "hash": "6ZmNCsmjBI/QnvBzmPG4T355/Fg4gHpxse1dCbmHYQU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.eventbus.publisher.ApiPublisherBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.eventbus.publisher.ApiPublisherBase.html",
+          "hash": "hlFhodAtEqFxhnCMSHM4hpAtNgU/gqtnhq4m1IE1+XQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.eventbus.publisher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.eventbus.publisher.html",
+          "hash": "2sjrxN8Xw5BM7MwAd8G2NgR4O8tbGWo9JNE9HHZLbsc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.eventbus.subscriber.ApiSubscriberBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.eventbus.subscriber.ApiSubscriberBase.html",
+          "hash": "xDtfRpD7nlr3Pk7lErQNzk6RmdUd/F2l3/JtavWXfw0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.eventbus.subscriber.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.eventbus.subscriber.html",
+          "hash": "cvc5lXAbn3KE08aRUhzyOnxjiDya9PZbb2IC0zJRlMc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.eventbus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.eventbus.html",
+          "hash": "9gg9yRL4wrYG/Q9tHpJGLgc0uNyIs1A/3AkAnVjmIbo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.exception.GameNotSupportedException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.exception.GameNotSupportedException.html",
+          "hash": "T8Nip3HPIobN9SryqBsmDkVTVXXNqA+6TZYSt3jCuvY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.exception.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.exception.html",
+          "hash": "LTixoa8teQTtLau80yLG0ywN+zMuHqQ3++mkL2MPXt0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.globalmodel.BasicVISABFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.globalmodel.BasicVISABFile.html",
+          "hash": "DvwWhoKUVFsSbRPeKOcQGMcBebY2VJgc/DxtHHTRUXw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.globalmodel.ControlledBy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.globalmodel.ControlledBy.html",
+          "hash": "+VvzitoZk/m45PTfNCCDC9Gy69gOy5916gjRTH9r0Y4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.globalmodel.IImage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.globalmodel.IImage.html",
+          "hash": "jYb9pW4qtYReXtZw6UHl9O2BF+HePqpIKffBBy2KZ5c="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.globalmodel.IMetaInformation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.globalmodel.IMetaInformation.html",
+          "hash": "vwTUi2q/kWIDwXfUlnXKBqW9EIeEyK27c/siwk1hKgg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.globalmodel.IStatistics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.globalmodel.IStatistics.html",
+          "hash": "QrKuXK7VIpxyjFe+yDFFGOiB2PWGJ/tJOk5/zo+r9Oo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.globalmodel.IVISABFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.globalmodel.IVISABFile.html",
+          "hash": "fAVnogEWkNRTN/cz5h3hQwwQ2667pNMVQw715QEm6XE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.globalmodel.Rectangle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.globalmodel.Rectangle.html",
+          "hash": "0Foib3Yx9eHJRKS+DcW9bgz3mus1G85pannyujVn4co="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.globalmodel.SessionStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.globalmodel.SessionStatus.html",
+          "hash": "ySy92kd6AEMBdibwdsQyRbMvtmZBuoS4nMS2dfDUSOs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.globalmodel.Vector2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.globalmodel.Vector2.html",
+          "hash": "reJ4YFiCNsiiUG7d6tHrJh5EhkHOf7YhQ6/wIDM8Ryc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.globalmodel.cbrshooter.CBRShooterFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.globalmodel.cbrshooter.CBRShooterFile.html",
+          "hash": "wOOyPH4FBbPWhsISle2Y3T1b34oP3H6hcCnUvor2BkE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.globalmodel.cbrshooter.CBRShooterMapImage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.globalmodel.cbrshooter.CBRShooterMapImage.html",
+          "hash": "q8B6MREaJ8BLRTmaunJzgD/XTKJZHX3HO5L3v10VZXY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.globalmodel.cbrshooter.CBRShooterMetaInformation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.globalmodel.cbrshooter.CBRShooterMetaInformation.html",
+          "hash": "A2yoQ0qBa7Wr9pEYfioZ6qxTc3z+fJCXWcVAJoVnTQI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.globalmodel.cbrshooter.CBRShooterStatistics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.globalmodel.cbrshooter.CBRShooterStatistics.html",
+          "hash": "5TLHCapc8iKPH9Qj75+bq0Rr/4FEEvge+s97GYMbTqg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.globalmodel.cbrshooter.PlayerInformation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.globalmodel.cbrshooter.PlayerInformation.html",
+          "hash": "dtLYK90OXRflMdACnFX2GZJdsmlHHt0FYHToxPUyYZk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.globalmodel.cbrshooter.PlayerStatistics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.globalmodel.cbrshooter.PlayerStatistics.html",
+          "hash": "Q3oJhFOzfqUL+PczFkzbd90/HuW/pz0QEmaXpEKmiNk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.globalmodel.cbrshooter.WeaponInformation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.globalmodel.cbrshooter.WeaponInformation.html",
+          "hash": "2/uwy094jnts4x5YjSyNr40zzD5eaIb/mu8PwHnerbg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.globalmodel.cbrshooter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.globalmodel.cbrshooter.html",
+          "hash": "sor7DQxUlvbRuPmvSJFgw1HLTdY6vxDDmGGpqigoBuE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.globalmodel.settlers.PlayerInformation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.globalmodel.settlers.PlayerInformation.html",
+          "hash": "12salkxxzXb/YEbVKyldz1aD86LrqFOhAADyhgjGA/w="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.globalmodel.settlers.PlayerResources.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.globalmodel.settlers.PlayerResources.html",
+          "hash": "kq/Aosqai5b12hxgyXZrKqxyVErfKV2dPPRvvYsT6CE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.globalmodel.settlers.SettlersFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.globalmodel.settlers.SettlersFile.html",
+          "hash": "wWI7GmBMr/joXlOaNV+w/XDqvcuXpE7yFaNVOF219DI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.globalmodel.settlers.SettlersMapImage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.globalmodel.settlers.SettlersMapImage.html",
+          "hash": "GTXsxMvfrDEYxK4hVdYfyjYKGfIGajHzKE6RHL6NQX8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.globalmodel.settlers.SettlersMetaInformation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.globalmodel.settlers.SettlersMetaInformation.html",
+          "hash": "iJJjgUYTcF0HtDrw9zT1yVgr4lDNrce1tqtKZ7MAo3Q="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.globalmodel.settlers.SettlersStatistics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.globalmodel.settlers.SettlersStatistics.html",
+          "hash": "vorIx+RsX+hqLIZaghSfqLeqdAHwYMcKlLwHGaUg320="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.globalmodel.settlers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.globalmodel.settlers.html",
+          "hash": "EzoFcJnVwsr9kKBYSWz21BJD1HHHVcIgvYH31bcMj4k="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.globalmodel.starter.DefaultFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.globalmodel.starter.DefaultFile.html",
+          "hash": "CrKYKhDpjaaOR/tYZlQ04sQzFt4D0yzhWAEaBilmqiM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.globalmodel.starter.DefaultImage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.globalmodel.starter.DefaultImage.html",
+          "hash": "kBiJLGXl0/dGNjbnQNlXbWxl+kRW+yGm5ZBQ1Cq4PLg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.globalmodel.starter.DefaultMetaInformation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.globalmodel.starter.DefaultMetaInformation.html",
+          "hash": "ljIpPSlzm3FWLtgYwxaEM72WR6O6cEe5TIT+qllK+Wg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.globalmodel.starter.DefaultStatistics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.globalmodel.starter.DefaultStatistics.html",
+          "hash": "o13C4QzmKT6OjART+8LeoOmFj2y312n61WqFdh5b/h0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.globalmodel.starter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.globalmodel.starter.html",
+          "hash": "Kv9TAX3jkpzcbTHvWV+g9IskFs8Gtt0XjH+AfHczsEw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.globalmodel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.globalmodel.html",
+          "hash": "7tSQocEAFRhjQXl3VlqoU+M1T+lpBjjU0ghUSn3KlnE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.gui.model.TableEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.gui.model.TableEntry.html",
+          "hash": "YnYHtoD9SXayJFORPNhim4BNKIYMRtBPlzhBpntEfNY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.gui.model.TableEntryCBRBot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.gui.model.TableEntryCBRBot.html",
+          "hash": "wtsnrlWvCW1FSHDqaP2HchzB53X2XpFr9AJRrCtouAw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.gui.model.TableEntryScriptBot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.gui.model.TableEntryScriptBot.html",
+          "hash": "Gp5yevXjdJUGB1AMXmBjXdsr3zbIEYmSbTf64KEch9s="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.gui.model.TableEntryStatisticsVisab.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.gui.model.TableEntryStatisticsVisab.html",
+          "hash": "T3BLln0wfrnZL/nSZ1ucCn7RolIdlAiR8Iy1xwSWxzg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.gui.model.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.gui.model.html",
+          "hash": "1kofvM6860HCk+7zgW1B+LLg4CA6YsmmpQIY70atkaM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.main.Main.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.main.Main.html",
+          "hash": "aPk3gb5cqoLq56nPCybJY67WP3uKPTv+UhKS2Oj4zBA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.main.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.main.html",
+          "hash": "h8+aUV5lMwkGmU9P4LTj+5xqxhXhK0nFSgDLzuUCdGI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.AppMain.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.AppMain.html",
+          "hash": "AM6YI21XWdtNVH9uFBkU3IIjgq9h+CZMLlYfSWIgd28="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.DialogHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.DialogHelper.html",
+          "hash": "0Din1ekclEzjlgLa4qmGu+WOPeVVq1QRzK3EDxl3nc8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.DynamicViewLoader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.DynamicViewLoader.html",
+          "hash": "jhpPpIByxQ0VOtIdlPXW8rcjfDOSVwFBDkJXetii8iM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.UiHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.UiHelper.html",
+          "hash": "G2B3kNDyYuLP9ND2XnlS5TkUt3nEOkaaaQXTwHRUabs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.ViewModelBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.ViewModelBase.html",
+          "hash": "JijiVIiok31zOQMrJA/9keQ/Ekhsqc89Nr29ZVYZFPo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.control.CustomLabelPieChart.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.control.CustomLabelPieChart.html",
+          "hash": "U4RLJyPBRHBYWtZYI+4XBf8FZD9DvwLG33rXnNR6liE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.control.ExplorerFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.control.ExplorerFile.html",
+          "hash": "iTNoGdd6fC4n4Jdz7BSa2/Un5UQV+WR/9B7fEItSFw8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.control.FileExplorer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.control.FileExplorer.html",
+          "hash": "TB0sSngSKVQUTt5VATWfStakXAFUsU3h2FgDdoYXFQ0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.control.RecursiveTreeItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.control.RecursiveTreeItem.html",
+          "hash": "lOupl82ZhIgngiwQN9fHvLisPCqKSujNIkY4JU3qivU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.control.ReplayVelocitySlider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.control.ReplayVelocitySlider.html",
+          "hash": "sOoFXsWYGcXJLjLbzbihRbDLsmPjZ0lBoG3eVGqN6cs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.control.ReplayView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.control.ReplayView.html",
+          "hash": "YAEfrtSH6tSSNrOeCZ0JLh5+osoyo5wtoiOj6LLrnXs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.control.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.control.html",
+          "hash": "3BpB1uyubukvutMmYWeiOunjUGLbKNG8Leem+55B2ig="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.main.MainScope.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.main.MainScope.html",
+          "hash": "9O193KV4j4oOzM7rb6DreWO8UZIMNi+4McMfentTVJk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.main.view.HomeView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.main.view.HomeView.html",
+          "hash": "tTuib7Mvvx/+vi1ZWp6Mu5ReB6+ehwFF0a+Kid+socc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.main.view.MainView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.main.view.MainView.html",
+          "hash": "Vjum0y7nds1LVZAgefzLKBwOpC+GMy710bGUoMcknio="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.main.view.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.main.view.html",
+          "hash": "e5rC9j4qIhtvAcLjFSPbmY1syarbrVBRjsAPrQSFrgg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.main.viewmodel.HomeViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.main.viewmodel.HomeViewModel.html",
+          "hash": "kKt8Qktn2axaRfnE3nChMNrmya24C4DtQsVCM4S+0pU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.main.viewmodel.MainViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.main.viewmodel.MainViewModel.html",
+          "hash": "b8jgwRmBBwBKgltTprc2lNbyLfF4ASJYM9k+WyCXgGo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.main.viewmodel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.main.viewmodel.html",
+          "hash": "Ji884t9at7GW5itoAE5L+ZkmzXj5dQnroiPMLhdpgkw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.main.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.main.html",
+          "hash": "Wp+bcAWSB4msoXJkhZrJw1OIQS7ahA9s4aEWy0Hj88U="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.sessionoverview.view.SessionOverviewView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.sessionoverview.view.SessionOverviewView.html",
+          "hash": "jVwZY26vK8AOtxCg6O5QZxwKElS8H/vg/fnJWi14dIw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.sessionoverview.view.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.sessionoverview.view.html",
+          "hash": "RzYxz9qLQh8kakHjyOwOW+D5rSVoRJhKIS7LRh43aFY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.sessionoverview.viewmodel.SessionOverviewViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.sessionoverview.viewmodel.SessionOverviewViewModel.html",
+          "hash": "/0RxmakjjMR7qx1ip0ZkNRudjT273Rc7f5WNZH4/7P8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.sessionoverview.viewmodel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.sessionoverview.viewmodel.html",
+          "hash": "LOyCrrgJ9KEoIXnEs1QgjNBnN2hmVvCGyfCAaEvNRo0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.settings.SessionTimeoutItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.settings.SessionTimeoutItem.html",
+          "hash": "h6ssr/cHGv4M0VZyxqs7Yq7y2K2rgxF4QE2WTV6UWUw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.settings.view.AllowedGamesEditView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.settings.view.AllowedGamesEditView.html",
+          "hash": "wrnyBH+tmjsXQIWDd2ylvf6FvLrdQAdTu3T+C98s6XQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.settings.view.SessionTimeoutEditView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.settings.view.SessionTimeoutEditView.html",
+          "hash": "B2K3zNAd5Lk2bxiO/L9EDWcSIMxs23XHbnWJJ4ef2M4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.settings.view.SettingsView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.settings.view.SettingsView.html",
+          "hash": "06Is3B0YZInuFjgInxTcE6zVLC7YLLEnQTUR3qOcNlg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.settings.view.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.settings.view.html",
+          "hash": "BaFZhcOgAQBhi/pQ9wE+sNk31u0moswFAYTJTElsTkQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.settings.viewmodel.SettingsViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.settings.viewmodel.SettingsViewModel.html",
+          "hash": "YHPiTQ9zvJEX+CmqL6m9ER0t25gEgjEfDpUo0sfuFGE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.settings.viewmodel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.settings.viewmodel.html",
+          "hash": "bQWliS0u9n51sbirWkrbR4cLV3qbCo3TUCBFjB/i1tQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.settings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.settings.html",
+          "hash": "NbFg7qdm6+gjupQfnAR8uHxfmxS7lyCQtbvv2DCAzas="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.ComparisonRowBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.ComparisonRowBase.html",
+          "hash": "KJQ1ofxDy0JP1sOvn/jc1e8L6cupHrQlvjMRWKijUso="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.ILiveReplayViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.ILiveReplayViewModel.html",
+          "hash": "aNS2kWCHDgfo6nPmBPenyHTTTV3heYxcbdCLBcClGHs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.ILiveStatisticsViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.ILiveStatisticsViewModel.html",
+          "hash": "Rcf+XYDmZBGWJvj7cnsm3TzOxo6J6Esc/KJXnDCP/Qc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.IReplayViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.IReplayViewModel.html",
+          "hash": "cS5kaFZW+jbVsepb9cQmCdVLHq72KKAut1HDUUJ4EB4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.IStatisticsViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.IStatisticsViewModel.html",
+          "hash": "+3nslJ2yY95AgYEoBzbNDpwHUm4YIpYZQoSc/bzv9/Q="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.LiveStatisticsViewModelBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.LiveStatisticsViewModelBase.html",
+          "hash": "Ot0E4burl8bRFTn1kwfnRHo6pXsadZpmLxG1vWe71Q8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.StatisticsViewModelBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.StatisticsViewModelBase.html",
+          "hash": "5LmVHDZzf8YQz7Xa+IvqUzUf2cUbp/4xJ9AYOrvcCbo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.VisualizeScope.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.VisualizeScope.html",
+          "hash": "fYll0LlUiOPhhs+o4mfIQF/Kz+7WivHfRgc6bOzeovk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.model.CBRShooterComparisonRowBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.model.CBRShooterComparisonRowBase.html",
+          "hash": "6SnLjIbzHkFbW6xgMAMFS9VIOzMpE8EGwuyxP6zzjGU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.model.CBRShooterImplicator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.model.CBRShooterImplicator.html",
+          "hash": "Y9frvUeA2NJ6UOIlUBsm9nZ/BZJHxvhrNWAh3b/MAGg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.model.Collectable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.model.Collectable.html",
+          "hash": "cKLF2qrdNRG+2GjDLjpW2AyyOc2or+/m9psk/1wCmLw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.model.PlayerPlanTime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.model.PlayerPlanTime.html",
+          "hash": "fAkThbD5PMUBPaudb7GO8hItUdbMEjGZ2QT4ddYHwlY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.model.comparison.AimRatioComparisonRow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.model.comparison.AimRatioComparisonRow.html",
+          "hash": "ma2xeFYlAmfOT1tCS6clXqg99S/2qFLMYG+520P9SFA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.model.comparison.CollectedComparisonRow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.model.comparison.CollectedComparisonRow.html",
+          "hash": "dVQtjbSK9T8xghF+SyX5c8qIDj6LQUTlIcJZ4j/d76I="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.model.comparison.DeathsComparisonRow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.model.comparison.DeathsComparisonRow.html",
+          "hash": "qiNT3/LvGOI9BfRqp34tLoxoX5wmOsBlHDeaAR82G7w="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.model.comparison.HitsComparisonRow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.model.comparison.HitsComparisonRow.html",
+          "hash": "BXTX2Nv6hbkeX1i1/hgbbgdUTCVzhNlVOD9ukq+wNdY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.model.comparison.KillsComparisonRow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.model.comparison.KillsComparisonRow.html",
+          "hash": "X1gGCfIgI4ylty9pPxqFzG9LKVKkdZf/mro09Mkx/rY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.model.comparison.MovementComparisonRow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.model.comparison.MovementComparisonRow.html",
+          "hash": "xVEMBdwu/uNNJ13f2vReCOLYjlRu8hcxDjbtk3yxj7I="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.model.comparison.PlayerTypeComparisonRow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.model.comparison.PlayerTypeComparisonRow.html",
+          "hash": "1Xw2GJoVJj63ZG3Jdb7tErPVfbpB8Q20NmjMH4wVrAE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.model.comparison.ShotsComparisonRow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.model.comparison.ShotsComparisonRow.html",
+          "hash": "cu6P5F5/YcWbTFmnL+gXhqGU+0aWAidOx9fFUDtWH4U="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.model.comparison.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.model.comparison.html",
+          "hash": "e4TDjY4/yocS89PTV4RG/OIjWhPewXDhBk3fptcRK6g="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.model.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.model.html",
+          "hash": "ACrJfGnj68FAcyuR1NNjRU2FAlq/m7yOk0xloUYGTy0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.view.CBRShooterMainView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.view.CBRShooterMainView.html",
+          "hash": "qRlvHnadWpow5OLxRJ/qTjPipB6BEJ4FQe8Pl3cM7G8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.view.CBRShooterReplayView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.view.CBRShooterReplayView.html",
+          "hash": "nPMgpycIRjbWfhjoKVMn+u8VsXPISVIQ12nndJ840sg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.view.CBRShooterStatisticsView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.view.CBRShooterStatisticsView.html",
+          "hash": "C4rjUEodZqnBdJDbGgkP69ZNm5r2+LXGsuzvkdOBxRY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.view.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.view.html",
+          "hash": "dCL7mIzJNapTT9OObBIEG6DLQatXwkZVGuW32mvo0Bc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterMainViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterMainViewModel.html",
+          "hash": "FDzzSK+amqNIVktaa9KvoS8QFOu509L3XzAPnWBr+us="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.html",
+          "hash": "VleGVuse+uJ/gdj6TtT6er/tIJYlQaV5WYkhSov1IIk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterStatisticsViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterStatisticsViewModel.html",
+          "hash": "JkpizGP6yOvx+w0jycGVxrQiY7IUHTggCYktdjkq19s="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.viewmodel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.viewmodel.html",
+          "hash": "ct4YNLFJOMJGNcf3yjZBrHawwwXAwN2djbR4YHbVeT0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.settlers.model.PlayerPlanOccurance.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.settlers.model.PlayerPlanOccurance.html",
+          "hash": "r7LdoYu3AG95VGU23XlBUeEP1jcNB/bF9989d+qrHMg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.settlers.model.SettlersComparisonRowBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.settlers.model.SettlersComparisonRowBase.html",
+          "hash": "SYr9euIqNr+unuTJU26w5H19dki92+xfZBseAogkIVs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.settlers.model.SettlersImplicator.BuildingType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.settlers.model.SettlersImplicator.BuildingType.html",
+          "hash": "gQCCjFYq0uU1KEJkI4fjyU4G7CtfAppXlX7Vdm8sPtg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.settlers.model.SettlersImplicator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.settlers.model.SettlersImplicator.html",
+          "hash": "IDBaITfeNN26FrcKjAkZBQA58eecKk4uO01+/++r+u0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.settlers.model.comparison.BuildingsBuiltComparisonRow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.settlers.model.comparison.BuildingsBuiltComparisonRow.html",
+          "hash": "rHpYyIa5s+/RaXcDLyRCfaSan/VCIKHFMrz2fzeV6V4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.settlers.model.comparison.ResourcesGainedByDiceComparisonRow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.settlers.model.comparison.ResourcesGainedByDiceComparisonRow.html",
+          "hash": "fipMMkP0TKdQYPi14G+ihphZRrMSMahVv8L5lOqpJAQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.settlers.model.comparison.ResourcesSpentComparisonRow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.settlers.model.comparison.ResourcesSpentComparisonRow.html",
+          "hash": "SW9UZjOVaNM5EJuxLiXqRZh99NAApJcYM/0HaSDtM5k="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.settlers.model.comparison.VictoryPointsComparisonRow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.settlers.model.comparison.VictoryPointsComparisonRow.html",
+          "hash": "9v9w8ZgfIk2ltU9FIcBg7vcEghWYsReXMXn6tgbyBmk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.settlers.model.comparison.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.settlers.model.comparison.html",
+          "hash": "oM2AJCSKARpBIb236ICjIF50AG+Q41Mb/hWYALvM6UA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.settlers.model.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.settlers.model.html",
+          "hash": "8y/WKaX+td5UK/bp6rlm7NE5J0LWfeZ3twuRz8tlLXU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.settlers.view.SettlersMainView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.settlers.view.SettlersMainView.html",
+          "hash": "VzWy3KN40VKKKm+ZwEPW8p+DurdK43/acSk7/9pYMt0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.settlers.view.SettlersReplayView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.settlers.view.SettlersReplayView.html",
+          "hash": "oOxhZ6zRjBh6MTtA6+3WCluMY+My6sVC8XCUjTiMBik="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.settlers.view.SettlersStatisticsView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.settlers.view.SettlersStatisticsView.html",
+          "hash": "nV/fkCw7sv2e+fKN/H78NzHZxrJdecvxAHkoCxlGJOw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.settlers.view.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.settlers.view.html",
+          "hash": "ggXVIruw1X77QijsaXk2ww9zwHn8tOkZ/HdnrJioCBo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.settlers.viewmodel.SettlersMainViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.settlers.viewmodel.SettlersMainViewModel.html",
+          "hash": "e91WvjDBXUGmmoqH0TrjpmRfYIcrUCUNEJOxVoTwH70="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.settlers.viewmodel.SettlersReplayViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.settlers.viewmodel.SettlersReplayViewModel.html",
+          "hash": "l0gXMcGNKhMPbxWsxzjyCSOlg+5FTdOE2NlXnyqOJRM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.settlers.viewmodel.SettlersStatisticsViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.settlers.viewmodel.SettlersStatisticsViewModel.html",
+          "hash": "/2J9f8v+7ECUhN4ifmUO086jJhzH6s0E9ICbwFcCWlk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.settlers.viewmodel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.settlers.viewmodel.html",
+          "hash": "XWao5uXX+3xON0YH65hdmwepwSgHVZNN0NimfMrHUFU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.starter.view.DefaultStatisticsView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.starter.view.DefaultStatisticsView.html",
+          "hash": "kyfZs4qbIEpDezxNU9r5XabA3ahNu1VHWvP6jkWbQbQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.starter.view.DefaultStatisticsViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.starter.view.DefaultStatisticsViewModel.html",
+          "hash": "GoQVFPDlJzFlGCBTMgeWhqiIFRalJrowtn/2YzwvfYI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.starter.view.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.starter.view.html",
+          "hash": "BgxQZ6ckQWEsm6AxRq5zWukFJMDon1gx6chqHKFKv+A="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.html",
+          "hash": "nEainw3+ET7tBRs4SYATdNm/APGBU0NNXrLNITdKzb0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.html",
+          "hash": "H4W9lfnAVwLbtsVXLrUmRshiGzHkWk4ulXu/cDTo9f8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.oldgui.AboutWindowController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.oldgui.AboutWindowController.html",
+          "hash": "Q4kcO/oSz7heAKC0Pd+BollZMkZSBKeZyi891nUzJE4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.oldgui.GUIMain.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.oldgui.GUIMain.html",
+          "hash": "14jaDDvhzEDB7ZXAMEIDWBlSzrjfUzu83zt416DkURk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.oldgui.HelpWindowController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.oldgui.HelpWindowController.html",
+          "hash": "w8aNZIZPAcPDJ47HjjBSZmZhjWoM1fGVHScKHnumD1g="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.oldgui.MainWindowController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.oldgui.MainWindowController.html",
+          "hash": "tA0KOJGeDW8CygAABZySaLfkwpCp1H1mwZ+MEOjyyHk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.oldgui.PathViewerWindowController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.oldgui.PathViewerWindowController.html",
+          "hash": "IQUYXhzX+VmE6FvDGwWJVDl1Vaa796Lew6DI0jjXEf8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.oldgui.StatisticsWindowController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.oldgui.StatisticsWindowController.html",
+          "hash": "sJpF2Bp3jccIOFuSiJy7KYrx3wMFQyNPujPpSphiqj4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.oldgui.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.oldgui.html",
+          "hash": "YmPAYGkQk7WElEOvXH0Eb6HnKl7IS20PviymkVJd9Ys="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.processing.ILiveViewable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.processing.ILiveViewable.html",
+          "hash": "KsAUZ607UjJPqQeuRXhdDMqOW56IFPBGlQs63JsihKs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.processing.IReplayLiveViewable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.processing.IReplayLiveViewable.html",
+          "hash": "IvapqStmjVWQ6Q4DLOPsItSYoqLUP+LtmlSzt/CZA/U="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.processing.IReplaySessionListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.processing.IReplaySessionListener.html",
+          "hash": "zQ8EZhuPAOyI9GYum7LP3EUWUWsiF1ZewpB8h7yzKp0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.processing.ISessionListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.processing.ISessionListener.html",
+          "hash": "Lv7hhbNIZHyoKIkEX5Jqa8dwp8o4duDW99UYW3dwxqw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.processing.ReplaySessionListenerBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.processing.ReplaySessionListenerBase.html",
+          "hash": "lRENcma4yI514jCl77ejagCrD4AcPSZHPxHTBUYjqxQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.processing.SessionListenerAdministration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.processing.SessionListenerAdministration.html",
+          "hash": "T2IvJylVxGnSR3LUWqGrn0Geabj2SkONmQok/HxncXo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.processing.SessionListenerBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.processing.SessionListenerBase.html",
+          "hash": "M1OyRdd3wlIVpl0lU8wioJMVIVX91bYmjIqa3Aswwk0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.processing.SessionListenerFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.processing.SessionListenerFactory.html",
+          "hash": "+MjRm/8w3dkX3gWYpO2mCVrWhc+poETegw+3KVxKD2w="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.processing.cbrshooter.CBRShooterListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.processing.cbrshooter.CBRShooterListener.html",
+          "hash": "QSA90wdgHh9aYS1uLfnMkt/+YG606Sp7f4dunoHVNyM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.processing.cbrshooter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.processing.cbrshooter.html",
+          "hash": "Tl5Cx8EI79SJAW94GcoGEXtc2gu9E47JUEoUXyoV3wA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.processing.settlers.SettlersListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.processing.settlers.SettlersListener.html",
+          "hash": "WB304BcgtToXmGNuZ9kfHkBPAuvyX4ZCNu7IhI4bQxQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.processing.settlers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.processing.settlers.html",
+          "hash": "JcMKpLz2hVD+K2UAnta+FqTOhxnPXUQX8exL/IrR2xY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.processing.starter.DefaultSessionListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.processing.starter.DefaultSessionListener.html",
+          "hash": "UxSSHuCLoNGqlpFH8UmTkQ5QKYJPJStXvGJcZb+BwbQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.processing.starter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.processing.starter.html",
+          "hash": "AP2kwgvYeaXlHm83nL5GJ7xE3GVzXTkx3GNTpPCcTEc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.processing.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.processing.html",
+          "hash": "1tP2HAtlSfhVt6YVazN/NGZqKjRb19dSGfKCVw3S+D0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.util.FileSizeHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.util.FileSizeHelper.html",
+          "hash": "xV+sxhyKgT8lcbqMseo6emapwNcO3Oe3WEMtnB37DlI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.util.JsonConvert.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.util.JsonConvert.html",
+          "hash": "zmWBCiY8+a+eqVjLiHzYj8HabeZJX/0yZbRMXx4gr5s="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.util.StreamUtil.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.util.StreamUtil.html",
+          "hash": "g12kr4tCJ5cNhPYME420712lZ6UNq0VyGT7WOPQ8Oww="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.util.StringFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.util.StringFormat.html",
+          "hash": "+Fv8ZkLpXhxyl9UfVhk20y15Myqctx/fTBKFBdVSzRk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.util.UserSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.util.UserSettings.html",
+          "hash": "YN9Zf3mGYxG1zFEvtI8DloKq5cMv9OTRfY4HLoIlTaQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.util.VISABUtil.OS.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.util.VISABUtil.OS.html",
+          "hash": "rpqIAqAWWmbUV31rgdfz/YG4aEtLoZZ2LmbWBjeV594="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.util.VISABUtil.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.util.VISABUtil.html",
+          "hash": "rDC5OlOV7Sq8wF4AuwsKSSrRsgHhGV6WZO+s7mZ00bg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.util.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.util.html",
+          "hash": "rxYfGcqLuOW7U6RTx6YGljQDAcyGhsRCeMb9GqTben8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.workspace.BasicRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.workspace.BasicRepository.html",
+          "hash": "c0Z8YW9c9+79nlaQCRkmZHxugMHuyjT3VT6s+OYgDmk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.workspace.ConfigRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.workspace.ConfigRepository.html",
+          "hash": "cV5hyFWw76805u7h0binjMydSLXa4r5alrzeKTrJFdI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.workspace.DatabaseManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.workspace.DatabaseManager.html",
+          "hash": "uL9KLstwMpm0ynqI/CZ0ae++Lvd/vfDtK0wkeaPwlBU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.workspace.DatabaseRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.workspace.DatabaseRepository.html",
+          "hash": "D71zUVhI1EnH0HfyyGlHUi07j1Pv6a/6CaJkb3lHdjs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.workspace.IRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.workspace.IRepository.html",
+          "hash": "LBNhRc3aeTWyX3yL+GghlGSz7to8OcfXmUODNYCEDKM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.workspace.LogManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.workspace.LogManager.html",
+          "hash": "ymreLWJlyRgYgX4ErXjBkg0eu54vie8fDJaYywGrlSg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.workspace.LogRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.workspace.LogRepository.html",
+          "hash": "5SN3nFIQHoyAaJT0fo+0W0mWF/djJngjd9Bt6FJJmF8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.workspace.RepositoryBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.workspace.RepositoryBase.html",
+          "hash": "f/VoouuqVxgmxvFs6kTwJu68UUkGGuyerxHxlKcIKlI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.workspace.SavedFileInformation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.workspace.SavedFileInformation.html",
+          "hash": "ZFbu7sULJBob7H41ad4B2mQuRREzU6wQh/vcbIYD9l0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.workspace.Workspace.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.workspace.Workspace.html",
+          "hash": "LyD35VDj23YoRzzF+scWhPHyngg1gcheLbDRUtgFvqw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.workspace.config.ConfigManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.workspace.config.ConfigManager.html",
+          "hash": "eDnPmggjJiSwW5S2iZpc9Ahha0AFyKn5lX1ca+ah0Jk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.workspace.config.model.Mapping.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.workspace.config.model.Mapping.html",
+          "hash": "EmAyJT1XEJHZY04JL2EbKDcuUBeERHMIevGqSiJ20Fk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.workspace.config.model.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.workspace.config.model.html",
+          "hash": "2yyaFGgsqRKRbRqYQNzVbcnCY9VkaBoOnDsnvmFGLGY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.workspace.config.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.workspace.config.html",
+          "hash": "UpLojbUJvZ2npJ2wSLynqoglM+xOOKIG9V/ZUopqZxo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.workspace.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.workspace.html",
+          "hash": "4LAdD+vm7ZM2u4Bbc5xNPB8Cw444J60R0KPgp14Sr8I="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api_visab/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/toc.html",
+          "hash": "k468ydS77nhs6BaM9PX1jrf0w9ZiDmbJMvOxRxJRr1E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visabconnector/VISABConnector.ApiResponse-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visabconnector/VISABConnector.ApiResponse-1.html",
+          "hash": "UvRTvId5o1YRvVBzsqTnsO61Gwvz8YH0TRlGUw1GY9Y="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visabconnector/VISABConnector.ClosingEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visabconnector/VISABConnector.ClosingEventArgs.html",
+          "hash": "XjpP6KYmabGwLthwfKxhThCmgHQbjpv38B47ay6+9Fo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visabconnector/VISABConnector.Default.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visabconnector/VISABConnector.Default.html",
+          "hash": "nKYYJd0If9Q4oeL/qziEepYiNPvNlfu/c2a/urIHZis="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visabconnector/VISABConnector.DontSerialize.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visabconnector/VISABConnector.DontSerialize.html",
+          "hash": "jUWkEQPl/5ExP6/OdhNVqijH7uB/8odtfpsT/AaKCKY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visabconnector/VISABConnector.FileConsumer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visabconnector/VISABConnector.FileConsumer.html",
+          "hash": "epfbTQoHfk89Ny6ST9MfEaTWB5CJ8zaRC5I9d6LsobA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visabconnector/VISABConnector.IImage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visabconnector/VISABConnector.IImage.html",
+          "hash": "zIqVF4aeiwzoDFVuQipmJjKtsuxGBKJbco0UX4rn488="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visabconnector/VISABConnector.IMetaInformation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visabconnector/VISABConnector.IMetaInformation.html",
+          "hash": "dfsDLY2GxEWuVw/J95SKwnf9AOtjjxaVdpkFzvi7mNo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visabconnector/VISABConnector.IVISABRequestHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visabconnector/VISABConnector.IVISABRequestHandler.html",
+          "hash": "1qZrKNCKx+Q/lx4e9J3C3QBtLKuUez0rkLmxaVjjlSk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visabconnector/VISABConnector.IVISABSession.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visabconnector/VISABConnector.IVISABSession.html",
+          "hash": "8u3N7j6Hge5S6R25wruOou+AzkcKc8/3OCuN9jQk87o="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visabconnector/VISABConnector.IVISABStatistics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visabconnector/VISABConnector.IVISABStatistics.html",
+          "hash": "5dWF0qFJaQpIaC0N8F+E+mSotu7Wi+Wb1wj5m/bRFng="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visabconnector/VISABConnector.LoopBasedSession.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visabconnector/VISABConnector.LoopBasedSession.html",
+          "hash": "FHVxHS8LUJ+5GHU1IvYI6KEW5Th2ma6uKe5kE9vgkYU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visabconnector/VISABConnector.MessageConsumer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visabconnector/VISABConnector.MessageConsumer.html",
+          "hash": "JzCIdEuNYWYXxgRXdMBEYByAHmES4X7dVmyhjSHrgMk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visabconnector/VISABConnector.RoundBasedSession.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visabconnector/VISABConnector.RoundBasedSession.html",
+          "hash": "xLWHo+u/48HBDDZTqfARUFZ+jhCexeZ5EQO8V+Pc9Aw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visabconnector/VISABConnector.Unity.ImageExtractor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visabconnector/VISABConnector.Unity.ImageExtractor.html",
+          "hash": "AE8RAZGgk7fGCUSEIB72A5R0Hv74beCiN+afiy/aWAQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visabconnector/VISABConnector.Unity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visabconnector/VISABConnector.Unity.html",
+          "hash": "ioci1yKZfFdr26gumddkw8t36y12lbWMIaIOKzbvO6k="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visabconnector/VISABConnector.VISABApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visabconnector/VISABConnector.VISABApi.html",
+          "hash": "FcVX/dnUBla7BH1qJrbUZPsfqwXR6H3BBvz3T/iKNqQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visabconnector/VISABConnector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visabconnector/VISABConnector.html",
+          "hash": "jyMR/fDzDO+l/h45Z/FvqkwP8vhcM2rTjH2x0ByFkqY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api_visabconnector/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api_visabconnector/index.html",
+          "hash": "0sG17vWfgUsrR/aNRUHPpc1rExs6SVJrdcBXum8b8QI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api_visabconnector/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visabconnector/toc.html",
+          "hash": "rp93wyNlqjiAjqdLI3Yap2xOIJn/x3ZkEgTDROV74LI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "n8QjplOyuoF+0QwK5gPvsT34FqCIdXzMqLS8Kk87WWY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "BlPxk5mtl2kgfcZUgkEguqiSAR/EUyUTT4EdebwkQvs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "cU0/+GHgub4wywx54geLVhr0p/XoiCg+Bsd2VCwdiPk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "E4ZWxoaAV7n81f3VYekEG3dJElj1r/TDbz3xHnTOuqY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 4,
+          "skipped_file_count": 4
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 239,
+          "skipped_file_count": 239
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

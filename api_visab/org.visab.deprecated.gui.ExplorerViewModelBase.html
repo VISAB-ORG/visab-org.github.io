@@ -1,0 +1,731 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ExplorerViewModelBase
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ExplorerViewModelBase
+   ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="org.visab.deprecated.gui.ExplorerViewModelBase">
+  
+  
+  <h1 id="org_visab_deprecated_gui_ExplorerViewModelBase" data-uid="org.visab.deprecated.gui.ExplorerViewModelBase" class="text-break">Class ExplorerViewModelBase
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">java.lang.Object</span></div>
+    <div class="level1"><a class="xref" href="org.visab.newgui.ViewModelBase.html">ViewModelBase</a></div>
+    <div class="level2"><span class="xref">ExplorerViewModelBase</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">java.lang.Object.clone()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.equals(java.lang.Object)</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.finalize()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.getClass()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.hashCode()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.notify()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.notifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.toString()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.wait()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.wait(long)</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.wait(long,int)</span>
+    </div>
+    <div>
+      <a class="xref" href="org.visab.newgui.ViewModelBase.html#org_visab_newgui_ViewModelBase_getDialogHelper__">ViewModelBase.getDialogHelper()</a>
+    </div>
+    <div>
+      <a class="xref" href="org.visab.newgui.ViewModelBase.html#org_visab_newgui_ViewModelBase_main_java_lang_String___">ViewModelBase.main(String[])</a>
+    </div>
+    <div>
+      <a class="xref" href="org.visab.newgui.ViewModelBase.html#org_visab_newgui_ViewModelBase_runnableCommand_java_lang_Runnable_">ViewModelBase.runnableCommand(Runnable)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: </h6>
+  <h6><strong>Assembly</strong>: .dll</h6>
+  <h5 id="org_visab_deprecated_gui_ExplorerViewModelBase_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class ExplorerViewModelBase extends ViewModelBase</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="org_visab_deprecated_gui_ExplorerViewModelBase_ExplorerViewModelBase_" data-uid="org.visab.deprecated.gui.ExplorerViewModelBase.ExplorerViewModelBase*"></a>
+  <h4 id="org_visab_deprecated_gui_ExplorerViewModelBase_ExplorerViewModelBase_java_lang_String_" data-uid="org.visab.deprecated.gui.ExplorerViewModelBase.ExplorerViewModelBase(java.lang.String)">ExplorerViewModelBase(String baseDirPath)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExplorerViewModelBase(String baseDirPath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">baseDirPath</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="org_visab_deprecated_gui_ExplorerViewModelBase_baseDirPath" data-uid="org.visab.deprecated.gui.ExplorerViewModelBase.baseDirPath">baseDirPath</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected String baseDirPath</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="org_visab_deprecated_gui_ExplorerViewModelBase_baseFile" data-uid="org.visab.deprecated.gui.ExplorerViewModelBase.baseFile">baseFile</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ExplorerFile baseFile</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="org.visab.newgui.control.ExplorerFile.html">ExplorerFile</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="org_visab_deprecated_gui_ExplorerViewModelBase_addChildFiles_" data-uid="org.visab.deprecated.gui.ExplorerViewModelBase.addChildFiles*"></a>
+  <h4 id="org_visab_deprecated_gui_ExplorerViewModelBase_addChildFiles_org_visab_newgui_control_ExplorerFile_" data-uid="org.visab.deprecated.gui.ExplorerViewModelBase.addChildFiles(org.visab.newgui.control.ExplorerFile)">addChildFiles(ExplorerFile explorerFile)</h4>
+  <div class="markdown level1 summary"><p>Recursively adds files to a given ExplorerFile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void addChildFiles(ExplorerFile explorerFile)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="org.visab.newgui.control.ExplorerFile.html">ExplorerFile</a></td>
+        <td><span class="parametername">explorerFile</span></td>
+        <td><p>The ExplorerFile to add files to</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_deprecated_gui_ExplorerViewModelBase_addFile_" data-uid="org.visab.deprecated.gui.ExplorerViewModelBase.addFile*"></a>
+  <h4 id="org_visab_deprecated_gui_ExplorerViewModelBase_addFile_java_io_File_" data-uid="org.visab.deprecated.gui.ExplorerViewModelBase.addFile(java.io.File)">addFile(File file)</h4>
+  <div class="markdown level1 summary"><p>Adds a file to the files.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract boolean addFile(File file)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.io.File</span></td>
+        <td><span class="parametername">file</span></td>
+        <td><p>The file to add</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td><p>True if file added</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_deprecated_gui_ExplorerViewModelBase_addFileCommand_" data-uid="org.visab.deprecated.gui.ExplorerViewModelBase.addFileCommand*"></a>
+  <h4 id="org_visab_deprecated_gui_ExplorerViewModelBase_addFileCommand__" data-uid="org.visab.deprecated.gui.ExplorerViewModelBase.addFileCommand()">addFileCommand()</h4>
+  <div class="markdown level1 summary"><p>Command for adding new files via dialog.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Command addFileCommand()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">de.saxsys.mvvmfx.utils.commands.Command</span></td>
+        <td><p>The command</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_deprecated_gui_ExplorerViewModelBase_deleteFile_" data-uid="org.visab.deprecated.gui.ExplorerViewModelBase.deleteFile*"></a>
+  <h4 id="org_visab_deprecated_gui_ExplorerViewModelBase_deleteFile_org_visab_newgui_control_ExplorerFile_" data-uid="org.visab.deprecated.gui.ExplorerViewModelBase.deleteFile(org.visab.newgui.control.ExplorerFile)">deleteFile(ExplorerFile file)</h4>
+  <div class="markdown level1 summary"><p>Deletes a given explorer file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public boolean deleteFile(ExplorerFile file)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="org.visab.newgui.control.ExplorerFile.html">ExplorerFile</a></td>
+        <td><span class="parametername">file</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_deprecated_gui_ExplorerViewModelBase_deleteSelectedFileCommand_" data-uid="org.visab.deprecated.gui.ExplorerViewModelBase.deleteSelectedFileCommand*"></a>
+  <h4 id="org_visab_deprecated_gui_ExplorerViewModelBase_deleteSelectedFileCommand__" data-uid="org.visab.deprecated.gui.ExplorerViewModelBase.deleteSelectedFileCommand()">deleteSelectedFileCommand()</h4>
+  <div class="markdown level1 summary"><p>A command to delete the currenlty selected ExplorerFile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Command deleteSelectedFileCommand()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">de.saxsys.mvvmfx.utils.commands.Command</span></td>
+        <td><p>The command</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_deprecated_gui_ExplorerViewModelBase_getBaseDirPath_" data-uid="org.visab.deprecated.gui.ExplorerViewModelBase.getBaseDirPath*"></a>
+  <h4 id="org_visab_deprecated_gui_ExplorerViewModelBase_getBaseDirPath__" data-uid="org.visab.deprecated.gui.ExplorerViewModelBase.getBaseDirPath()">getBaseDirPath()</h4>
+  <div class="markdown level1 summary"><p>Gets the path of the base directory of the ExplorerViewModel</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String getBaseDirPath()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><p>The path to the base directory</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_deprecated_gui_ExplorerViewModelBase_getExplorerFile_" data-uid="org.visab.deprecated.gui.ExplorerViewModelBase.getExplorerFile*"></a>
+  <h4 id="org_visab_deprecated_gui_ExplorerViewModelBase_getExplorerFile_java_io_File_org_visab_newgui_control_ExplorerFile_" data-uid="org.visab.deprecated.gui.ExplorerViewModelBase.getExplorerFile(java.io.File,org.visab.newgui.control.ExplorerFile)">getExplorerFile(File file, ExplorerFile parentDir)</h4>
+  <div class="markdown level1 summary"><p>Initializes a ExplorerFile object from a given file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ExplorerFile getExplorerFile(File file, ExplorerFile parentDir)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.io.File</span></td>
+        <td><span class="parametername">file</span></td>
+        <td><p>The file to create a ExplorerFile of</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="org.visab.newgui.control.ExplorerFile.html">ExplorerFile</a></td>
+        <td><span class="parametername">parentDir</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="org.visab.newgui.control.ExplorerFile.html">ExplorerFile</a></td>
+        <td><p>The created ExplorerFile</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_deprecated_gui_ExplorerViewModelBase_getFreshBaseFile_" data-uid="org.visab.deprecated.gui.ExplorerViewModelBase.getFreshBaseFile*"></a>
+  <h4 id="org_visab_deprecated_gui_ExplorerViewModelBase_getFreshBaseFile__" data-uid="org.visab.deprecated.gui.ExplorerViewModelBase.getFreshBaseFile()">getFreshBaseFile()</h4>
+  <div class="markdown level1 summary"><p>Initializes the baseFile and returns it</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExplorerFile getFreshBaseFile()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="org.visab.newgui.control.ExplorerFile.html">ExplorerFile</a></td>
+        <td><p>The initialized baseFile</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_deprecated_gui_ExplorerViewModelBase_getSelectedFile_" data-uid="org.visab.deprecated.gui.ExplorerViewModelBase.getSelectedFile*"></a>
+  <h4 id="org_visab_deprecated_gui_ExplorerViewModelBase_getSelectedFile__" data-uid="org.visab.deprecated.gui.ExplorerViewModelBase.getSelectedFile()">getSelectedFile()</h4>
+  <div class="markdown level1 summary"><p>Gets the currently selected ExplorerFile</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ExplorerFile getSelectedFile()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="org.visab.newgui.control.ExplorerFile.html">ExplorerFile</a></td>
+        <td><p>The currently selected ExplorerFile if one is selected, null else</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_deprecated_gui_ExplorerViewModelBase_removeExplorerFile_" data-uid="org.visab.deprecated.gui.ExplorerViewModelBase.removeExplorerFile*"></a>
+  <h4 id="org_visab_deprecated_gui_ExplorerViewModelBase_removeExplorerFile_org_visab_newgui_control_ExplorerFile_org_visab_newgui_control_ExplorerFile_" data-uid="org.visab.deprecated.gui.ExplorerViewModelBase.removeExplorerFile(org.visab.newgui.control.ExplorerFile,org.visab.newgui.control.ExplorerFile)">removeExplorerFile(ExplorerFile fileToRemove, ExplorerFile parentFile)</h4>
+  <div class="markdown level1 summary"><p>Recursively removes a given ExplorerFile from the file tree. To remove a file, pass the file object and the baseFile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void removeExplorerFile(ExplorerFile fileToRemove, ExplorerFile parentFile)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="org.visab.newgui.control.ExplorerFile.html">ExplorerFile</a></td>
+        <td><span class="parametername">fileToRemove</span></td>
+        <td><p>The file to remove</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="org.visab.newgui.control.ExplorerFile.html">ExplorerFile</a></td>
+        <td><span class="parametername">parentFile</span></td>
+        <td><p>The parent file</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_deprecated_gui_ExplorerViewModelBase_renameFileCommand_" data-uid="org.visab.deprecated.gui.ExplorerViewModelBase.renameFileCommand*"></a>
+  <h4 id="org_visab_deprecated_gui_ExplorerViewModelBase_renameFileCommand__" data-uid="org.visab.deprecated.gui.ExplorerViewModelBase.renameFileCommand()">renameFileCommand()</h4>
+  <div class="markdown level1 summary"><p>Gets a command for renaming the currenlty selected file to the given new name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Command renameFileCommand()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">de.saxsys.mvvmfx.utils.commands.Command</span></td>
+        <td><p>The command</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_deprecated_gui_ExplorerViewModelBase_selectedExplorerFileProperty_" data-uid="org.visab.deprecated.gui.ExplorerViewModelBase.selectedExplorerFileProperty*"></a>
+  <h4 id="org_visab_deprecated_gui_ExplorerViewModelBase_selectedExplorerFileProperty__" data-uid="org.visab.deprecated.gui.ExplorerViewModelBase.selectedExplorerFileProperty()">selectedExplorerFileProperty()</h4>
+  <div class="markdown level1 summary"><p>This violates MVVM, but its the only way we can consistently have the currently seletecd item in the ViewModel</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectProperty&lt;TreeItem&lt;ExplorerFile&gt;&gt; selectedExplorerFileProperty()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">javafx.beans.property.ObjectProperty</span>&lt;<span class="xref">javafx.scene.control.TreeItem</span>&lt;<a class="xref" href="org.visab.newgui.control.ExplorerFile.html">ExplorerFile</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_deprecated_gui_ExplorerViewModelBase_showInExplorerCommand_" data-uid="org.visab.deprecated.gui.ExplorerViewModelBase.showInExplorerCommand*"></a>
+  <h4 id="org_visab_deprecated_gui_ExplorerViewModelBase_showInExplorerCommand__" data-uid="org.visab.deprecated.gui.ExplorerViewModelBase.showInExplorerCommand()">showInExplorerCommand()</h4>
+  <div class="markdown level1 summary"><p>A command to show the selected file in the os explorer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Command showInExplorerCommand()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">de.saxsys.mvvmfx.utils.commands.Command</span></td>
+        <td><p>The command</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_deprecated_gui_ExplorerViewModelBase_updateFileSize_" data-uid="org.visab.deprecated.gui.ExplorerViewModelBase.updateFileSize*"></a>
+  <h4 id="org_visab_deprecated_gui_ExplorerViewModelBase_updateFileSize_org_visab_newgui_control_ExplorerFile_long_" data-uid="org.visab.deprecated.gui.ExplorerViewModelBase.updateFileSize(org.visab.newgui.control.ExplorerFile,long)">updateFileSize(ExplorerFile file, long add)</h4>
+  <div class="markdown level1 summary"><p>Recursively updates the size of a given ExplorerFile by adding the given long to the file and its parent files.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void updateFileSize(ExplorerFile file, long add)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="org.visab.newgui.control.ExplorerFile.html">ExplorerFile</a></td>
+        <td><span class="parametername">file</span></td>
+        <td><p>The file to updates the size for</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">long</span></td>
+        <td><span class="parametername">add</span></td>
+        <td><p>The size to add to the current size</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+              </div>
+          
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <h5>In This Article</h5>
+              <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div class="pull-left">
+              
+              <span>Generated by <strong>DocFX</strong></span>
+            </div>
+            <div class="toggle-mode pull-right visible-sm visible-xs">
+              <div class="icon">
+                <i aria-hidden="true">☀</i>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="switch-style-m">
+                <span class="slider round"></span>
+              </label>
+              <div class="icon">
+                <i aria-hidden="true">☾</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="../styles/toggle-theme.js"></script>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

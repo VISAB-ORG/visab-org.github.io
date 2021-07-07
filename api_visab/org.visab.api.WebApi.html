@@ -1,0 +1,425 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class WebApi
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class WebApi
+   ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="org.visab.api.WebApi">
+  
+  
+  <h1 id="org_visab_api_WebApi" data-uid="org.visab.api.WebApi" class="text-break">Class WebApi
+  </h1>
+  <div class="markdown level0 summary"><p>The main WebApi that hosts a small HTTP server. This is the entry point for all HTTP communication.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">java.lang.Object</span></div>
+    <div class="level1"><span class="xref">fi.iki.elonen.NanoHTTPD</span></div>
+    <div class="level2"><span class="xref">fi.iki.elonen.router.RouterNanoHTTPD</span></div>
+    <div class="level3"><span class="xref">WebApi</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">fi.iki.elonen.NanoHTTPD.closeAllConnections()</span>
+    </div>
+    <div>
+      <span class="xref">fi.iki.elonen.NanoHTTPD.createClientHandler(java.net.Socket,java.io.InputStream)</span>
+    </div>
+    <div>
+      <span class="xref">fi.iki.elonen.NanoHTTPD.createServerRunnable(int)</span>
+    </div>
+    <div>
+      <span class="xref">fi.iki.elonen.NanoHTTPD.decodeParameters(java.lang.String)</span>
+    </div>
+    <div>
+      <span class="xref">fi.iki.elonen.NanoHTTPD.decodeParameters(java.util.Map&lt;java.lang.String,java.lang.String&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">fi.iki.elonen.NanoHTTPD.decodePercent(java.lang.String)</span>
+    </div>
+    <div>
+      <span class="xref">fi.iki.elonen.NanoHTTPD.getHostname()</span>
+    </div>
+    <div>
+      <span class="xref">fi.iki.elonen.NanoHTTPD.getListeningPort()</span>
+    </div>
+    <div>
+      <span class="xref">fi.iki.elonen.NanoHTTPD.getMimeTypeForFile(java.lang.String)</span>
+    </div>
+    <div>
+      <span class="xref">fi.iki.elonen.NanoHTTPD.getServerSocketFactory()</span>
+    </div>
+    <div>
+      <span class="xref">fi.iki.elonen.NanoHTTPD.getTempFileManagerFactory()</span>
+    </div>
+    <div>
+      <span class="xref">fi.iki.elonen.NanoHTTPD.isAlive()</span>
+    </div>
+    <div>
+      <span class="xref">fi.iki.elonen.NanoHTTPD.makeSSLSocketFactory(java.lang.String,char[])</span>
+    </div>
+    <div>
+      <span class="xref">fi.iki.elonen.NanoHTTPD.makeSSLSocketFactory(java.security.KeyStore,javax.net.ssl.KeyManagerFactory)</span>
+    </div>
+    <div>
+      <span class="xref">fi.iki.elonen.NanoHTTPD.makeSSLSocketFactory(java.security.KeyStore,javax.net.ssl.KeyManager[])</span>
+    </div>
+    <div>
+      <span class="xref">fi.iki.elonen.NanoHTTPD.makeSecure(javax.net.ssl.SSLServerSocketFactory,java.lang.String[])</span>
+    </div>
+    <div>
+      <span class="xref">fi.iki.elonen.NanoHTTPD.mimeTypes()</span>
+    </div>
+    <div>
+      <span class="xref">fi.iki.elonen.NanoHTTPD.newChunkedResponse(fi.iki.elonen.NanoHTTPD.Response.IStatus,java.lang.String,java.io.InputStream)</span>
+    </div>
+    <div>
+      <span class="xref">fi.iki.elonen.NanoHTTPD.newFixedLengthResponse(fi.iki.elonen.NanoHTTPD.Response.IStatus,java.lang.String,java.io.InputStream,long)</span>
+    </div>
+    <div>
+      <span class="xref">fi.iki.elonen.NanoHTTPD.newFixedLengthResponse(fi.iki.elonen.NanoHTTPD.Response.IStatus,java.lang.String,java.lang.String)</span>
+    </div>
+    <div>
+      <span class="xref">fi.iki.elonen.NanoHTTPD.newFixedLengthResponse(java.lang.String)</span>
+    </div>
+    <div>
+      <span class="xref">fi.iki.elonen.NanoHTTPD.serve(java.lang.String,fi.iki.elonen.NanoHTTPD.Method,java.util.Map&lt;java.lang.String,java.lang.String&gt;,java.util.Map&lt;java.lang.String,java.lang.String&gt;,java.util.Map&lt;java.lang.String,java.lang.String&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">fi.iki.elonen.NanoHTTPD.setAsyncRunner(fi.iki.elonen.NanoHTTPD.AsyncRunner)</span>
+    </div>
+    <div>
+      <span class="xref">fi.iki.elonen.NanoHTTPD.setServerSocketFactory(fi.iki.elonen.NanoHTTPD.ServerSocketFactory)</span>
+    </div>
+    <div>
+      <span class="xref">fi.iki.elonen.NanoHTTPD.setTempFileManagerFactory(fi.iki.elonen.NanoHTTPD.TempFileManagerFactory)</span>
+    </div>
+    <div>
+      <span class="xref">fi.iki.elonen.NanoHTTPD.start()</span>
+    </div>
+    <div>
+      <span class="xref">fi.iki.elonen.NanoHTTPD.start(int)</span>
+    </div>
+    <div>
+      <span class="xref">fi.iki.elonen.NanoHTTPD.start(int,boolean)</span>
+    </div>
+    <div>
+      <span class="xref">fi.iki.elonen.NanoHTTPD.stop()</span>
+    </div>
+    <div>
+      <span class="xref">fi.iki.elonen.NanoHTTPD.useGzipWhenAccepted(fi.iki.elonen.NanoHTTPD.Response)</span>
+    </div>
+    <div>
+      <span class="xref">fi.iki.elonen.NanoHTTPD.wasStarted()</span>
+    </div>
+    <div>
+      <span class="xref">fi.iki.elonen.router.RouterNanoHTTPD.&lt;T&gt;setNotFoundHandler(java.lang.Class&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">fi.iki.elonen.router.RouterNanoHTTPD.&lt;T&gt;setNotImplementedHandler(java.lang.Class&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">fi.iki.elonen.router.RouterNanoHTTPD.addMappings()</span>
+    </div>
+    <div>
+      <span class="xref">fi.iki.elonen.router.RouterNanoHTTPD.addRoute(java.lang.String,java.lang.Class&lt;?&gt;,java.lang.Object...)</span>
+    </div>
+    <div>
+      <span class="xref">fi.iki.elonen.router.RouterNanoHTTPD.normalizeUri(java.lang.String)</span>
+    </div>
+    <div>
+      <span class="xref">fi.iki.elonen.router.RouterNanoHTTPD.removeRoute(java.lang.String)</span>
+    </div>
+    <div>
+      <span class="xref">fi.iki.elonen.router.RouterNanoHTTPD.serve(fi.iki.elonen.NanoHTTPD.IHTTPSession)</span>
+    </div>
+    <div>
+      <span class="xref">fi.iki.elonen.router.RouterNanoHTTPD.setRoutePrioritizer(fi.iki.elonen.router.RouterNanoHTTPD.IRoutePrioritizer)</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.clone()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.equals(java.lang.Object)</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.finalize()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.getClass()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.hashCode()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.notify()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.notifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.toString()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.wait()</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.wait(long)</span>
+    </div>
+    <div>
+      <span class="xref">java.lang.Object.wait(long,int)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: </h6>
+  <h6><strong>Assembly</strong>: .dll</h6>
+  <h5 id="org_visab_api_WebApi_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class WebApi extends RouterNanoHTTPD</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="org_visab_api_WebApi_addMappings_" data-uid="org.visab.api.WebApi.addMappings*"></a>
+  <h4 id="org_visab_api_WebApi_addMappings__" data-uid="org.visab.api.WebApi.addMappings()">addMappings()</h4>
+  <div class="markdown level1 summary"><p>Add the controllers to the endpoints</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void addMappings()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">fi.iki.elonen.router.RouterNanoHTTPD.addMappings()</span></div>
+  
+  
+  <a id="org_visab_api_WebApi_getInstance_" data-uid="org.visab.api.WebApi.getInstance*"></a>
+  <h4 id="org_visab_api_WebApi_getInstance__" data-uid="org.visab.api.WebApi.getInstance()">getInstance()</h4>
+  <div class="markdown level1 summary"><p>Gets the singelton instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static WebApi getInstance()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td></td>
+        <td><p>The instance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_api_WebApi_getSessionAdministration_" data-uid="org.visab.api.WebApi.getSessionAdministration*"></a>
+  <h4 id="org_visab_api_WebApi_getSessionAdministration__" data-uid="org.visab.api.WebApi.getSessionAdministration()">getSessionAdministration()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SessionAdministration getSessionAdministration()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="org.visab.api.SessionAdministration.html">SessionAdministration</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_api_WebApi_restart_" data-uid="org.visab.api.WebApi.restart*"></a>
+  <h4 id="org_visab_api_WebApi_restart__" data-uid="org.visab.api.WebApi.restart()">restart()</h4>
+  <div class="markdown level1 summary"><p>Restarts the WebApi, SessionListenerFactory and SessionWatchdog</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void restart()</code></pre>
+  </div>
+  
+  
+  <a id="org_visab_api_WebApi_shutdown_" data-uid="org.visab.api.WebApi.shutdown*"></a>
+  <h4 id="org_visab_api_WebApi_shutdown__" data-uid="org.visab.api.WebApi.shutdown()">shutdown()</h4>
+  <div class="markdown level1 summary"><p>Shutsdown the WebApi, SessionListenerFactory and SessionWatchdog</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void shutdown()</code></pre>
+  </div>
+  
+  
+  <a id="org_visab_api_WebApi_start_" data-uid="org.visab.api.WebApi.start*"></a>
+  <h4 id="org_visab_api_WebApi_start__" data-uid="org.visab.api.WebApi.start()">start()</h4>
+  <div class="markdown level1 summary"><p>Starts the WebApi, SessionListenerFactory, SessionWatchdog</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void start()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">fi.iki.elonen.NanoHTTPD.start()</span></div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.io.IOException</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+              </div>
+          
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <h5>In This Article</h5>
+              <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div class="pull-left">
+              
+              <span>Generated by <strong>DocFX</strong></span>
+            </div>
+            <div class="toggle-mode pull-right visible-sm visible-xs">
+              <div class="icon">
+                <i aria-hidden="true">☀</i>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="switch-style-m">
+                <span class="slider round"></span>
+              </label>
+              <div class="icon">
+                <i aria-hidden="true">☾</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="../styles/toggle-theme.js"></script>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

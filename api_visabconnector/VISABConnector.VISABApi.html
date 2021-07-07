@@ -1,0 +1,669 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class VISABApi
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class VISABApi
+   ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="VISABConnector.VISABApi">
+  
+  
+  <h1 id="VISABConnector_VISABApi" data-uid="VISABConnector.VISABApi" class="text-break">Class VISABApi
+  </h1>
+  <div class="markdown level0 summary"><p>Class for initializing transmission sessions and making requests independant of sessions to
+the VISAB WebApi.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">VISABApi</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="VISABConnector.html">VISABConnector</a></h6>
+  <h6><strong>Assembly</strong>: VISABConnector.dll</h6>
+  <h5 id="VISABConnector_VISABApi_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class VISABApi</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/VocalTrance/VISABConnector/new/dev/apiSpec/new?filename=VISABConnector_VISABApi__ctor_System_String_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20VISABConnector.VISABApi.%23ctor(System.String%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/VocalTrance/VISABConnector/blob/dev/src/VISABConnector/VISABApi.cs/#L50">View Source</a>
+  </span>
+  <a id="VISABConnector_VISABApi__ctor_" data-uid="VISABConnector.VISABApi.#ctor*"></a>
+  <h4 id="VISABConnector_VISABApi__ctor_System_String_System_Int32_System_Int32_" data-uid="VISABConnector.VISABApi.#ctor(System.String,System.Int32,System.Int32)">VISABApi(String, Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VISABApi(string hostAdress = &quot;http://localhost&quot;, int port = 2673, int requestTimeout = 5)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">hostAdress</span></td>
+        <td><p>The hostadress of the VISAB WebAPi</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">port</span></td>
+        <td><p>The port of the VISAB WebApi</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">requestTimeout</span></td>
+        <td><p>The time in seconds before a request is timeouted</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/VocalTrance/VISABConnector/new/dev/apiSpec/new?filename=VISABConnector_VISABApi_BaseAdress.md&amp;value=---%0Auid%3A%20VISABConnector.VISABApi.BaseAdress%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/VocalTrance/VISABConnector/blob/dev/src/VISABConnector/VISABApi.cs/#L77">View Source</a>
+  </span>
+  <a id="VISABConnector_VISABApi_BaseAdress_" data-uid="VISABConnector.VISABApi.BaseAdress*"></a>
+  <h4 id="VISABConnector_VISABApi_BaseAdress" data-uid="VISABConnector.VISABApi.BaseAdress">BaseAdress</h4>
+  <div class="markdown level1 summary"><p>The full base adress of the VISAB WebApi.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string BaseAdress { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/VocalTrance/VISABConnector/new/dev/apiSpec/new?filename=VISABConnector_VISABApi_ConnectorVersion.md&amp;value=---%0Auid%3A%20VISABConnector.VISABApi.ConnectorVersion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/VocalTrance/VISABConnector/blob/dev/src/VISABConnector/VISABApi.cs/#L72">View Source</a>
+  </span>
+  <a id="VISABConnector_VISABApi_ConnectorVersion_" data-uid="VISABConnector.VISABApi.ConnectorVersion*"></a>
+  <h4 id="VISABConnector_VISABApi_ConnectorVersion" data-uid="VISABConnector.VISABApi.ConnectorVersion">ConnectorVersion</h4>
+  <div class="markdown level1 summary"><p>The current Version of the VISABConnector dll.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Version ConnectorVersion { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Version</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/VocalTrance/VISABConnector/new/dev/apiSpec/new?filename=VISABConnector_VISABApi_HostAdress.md&amp;value=---%0Auid%3A%20VISABConnector.VISABApi.HostAdress%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/VocalTrance/VISABConnector/blob/dev/src/VISABConnector/VISABApi.cs/#L82">View Source</a>
+  </span>
+  <a id="VISABConnector_VISABApi_HostAdress_" data-uid="VISABConnector.VISABApi.HostAdress*"></a>
+  <h4 id="VISABConnector_VISABApi_HostAdress" data-uid="VISABConnector.VISABApi.HostAdress">HostAdress</h4>
+  <div class="markdown level1 summary"><p>The host adress on which the VISAB WebApi is running.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string HostAdress { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/VocalTrance/VISABConnector/new/dev/apiSpec/new?filename=VISABConnector_VISABApi_Port.md&amp;value=---%0Auid%3A%20VISABConnector.VISABApi.Port%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/VocalTrance/VISABConnector/blob/dev/src/VISABConnector/VISABApi.cs/#L87">View Source</a>
+  </span>
+  <a id="VISABConnector_VISABApi_Port_" data-uid="VISABConnector.VISABApi.Port*"></a>
+  <h4 id="VISABConnector_VISABApi_Port" data-uid="VISABConnector.VISABApi.Port">Port</h4>
+  <div class="markdown level1 summary"><p>The port on which the VISAB WebApi is running.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Port { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/VocalTrance/VISABConnector/new/dev/apiSpec/new?filename=VISABConnector_VISABApi_RequestTimeout.md&amp;value=---%0Auid%3A%20VISABConnector.VISABApi.RequestTimeout%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/VocalTrance/VISABConnector/blob/dev/src/VISABConnector/VISABApi.cs/#L92">View Source</a>
+  </span>
+  <a id="VISABConnector_VISABApi_RequestTimeout_" data-uid="VISABConnector.VISABApi.RequestTimeout*"></a>
+  <h4 id="VISABConnector_VISABApi_RequestTimeout" data-uid="VISABConnector.VISABApi.RequestTimeout">RequestTimeout</h4>
+  <div class="markdown level1 summary"><p>The time in seconds until a request is timeouted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int RequestTimeout { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/VocalTrance/VISABConnector/new/dev/apiSpec/new?filename=VISABConnector_VISABApi_SessionIndependantRequestHandler.md&amp;value=---%0Auid%3A%20VISABConnector.VISABApi.SessionIndependantRequestHandler%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/VocalTrance/VISABConnector/blob/dev/src/VISABConnector/VISABApi.cs/#L97">View Source</a>
+  </span>
+  <a id="VISABConnector_VISABApi_SessionIndependantRequestHandler_" data-uid="VISABConnector.VISABApi.SessionIndependantRequestHandler*"></a>
+  <h4 id="VISABConnector_VISABApi_SessionIndependantRequestHandler" data-uid="VISABConnector.VISABApi.SessionIndependantRequestHandler">SessionIndependantRequestHandler</h4>
+  <div class="markdown level1 summary"><p>Request handler used for making Http requests that are independant of sessions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IVISABRequestHandler SessionIndependantRequestHandler { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="VISABConnector.IVISABRequestHandler.html">IVISABRequestHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/VocalTrance/VISABConnector/new/dev/apiSpec/new?filename=VISABConnector_VISABApi_GameIsSupported_System_String_.md&amp;value=---%0Auid%3A%20VISABConnector.VISABApi.GameIsSupported(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/VocalTrance/VISABConnector/blob/dev/src/VISABConnector/VISABApi.cs/#L114">View Source</a>
+  </span>
+  <a id="VISABConnector_VISABApi_GameIsSupported_" data-uid="VISABConnector.VISABApi.GameIsSupported*"></a>
+  <h4 id="VISABConnector_VISABApi_GameIsSupported_System_String_" data-uid="VISABConnector.VISABApi.GameIsSupported(System.String)">GameIsSupported(String)</h4>
+  <div class="markdown level1 summary"><p>Indicates if the VISAB WebApi can receive data for the given game.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;ApiResponse&lt;bool&gt;&gt; GameIsSupported(string game)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">game</span></td>
+        <td><p>The game to check</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="VISABConnector.ApiResponse-1.html">ApiResponse</a>&lt;<span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td><p>Content is true if game is supported, false else</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/VocalTrance/VISABConnector/new/dev/apiSpec/new?filename=VISABConnector_VISABApi_GetActiveSessions.md&amp;value=---%0Auid%3A%20VISABConnector.VISABApi.GetActiveSessions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/VocalTrance/VISABConnector/blob/dev/src/VISABConnector/VISABApi.cs/#L141">View Source</a>
+  </span>
+  <a id="VISABConnector_VISABApi_GetActiveSessions_" data-uid="VISABConnector.VISABApi.GetActiveSessions*"></a>
+  <h4 id="VISABConnector_VISABApi_GetActiveSessions" data-uid="VISABConnector.VISABApi.GetActiveSessions">GetActiveSessions()</h4>
+  <div class="markdown level1 summary"><p>Returns a list of the sessionIds for all active sessions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;ApiResponse&lt;IList&lt;Guid&gt;&gt;&gt; GetActiveSessions()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="VISABConnector.ApiResponse-1.html">ApiResponse</a>&lt;<span class="xref">System.Collections.Generic.IList</span>&lt;<span class="xref">System.Guid</span>&gt;&gt;&gt;</td>
+        <td><p>A list of the sessionIds for all active sessions</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/VocalTrance/VISABConnector/new/dev/apiSpec/new?filename=VISABConnector_VISABApi_GetSessionStatus_System_Guid_.md&amp;value=---%0Auid%3A%20VISABConnector.VISABApi.GetSessionStatus(System.Guid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/VocalTrance/VISABConnector/blob/dev/src/VISABConnector/VISABApi.cs/#L152">View Source</a>
+  </span>
+  <a id="VISABConnector_VISABApi_GetSessionStatus_" data-uid="VISABConnector.VISABApi.GetSessionStatus*"></a>
+  <h4 id="VISABConnector_VISABApi_GetSessionStatus_System_Guid_" data-uid="VISABConnector.VISABApi.GetSessionStatus(System.Guid)">GetSessionStatus(Guid)</h4>
+  <div class="markdown level1 summary"><p>Gets the session status of for a given sessionId.
+TODO: Should have pojo that visab has here also.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;ApiResponse&lt;string&gt;&gt; GetSessionStatus(Guid sessionId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">sessionId</span></td>
+        <td><p>The sessionId to check</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="VISABConnector.ApiResponse-1.html">ApiResponse</a>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/VocalTrance/VISABConnector/new/dev/apiSpec/new?filename=VISABConnector_VISABApi_InitiateSession_VISABConnector_IMetaInformation_.md&amp;value=---%0Auid%3A%20VISABConnector.VISABApi.InitiateSession(VISABConnector.IMetaInformation)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/VocalTrance/VISABConnector/blob/dev/src/VISABConnector/VISABApi.cs/#L167">View Source</a>
+  </span>
+  <a id="VISABConnector_VISABApi_InitiateSession_" data-uid="VISABConnector.VISABApi.InitiateSession*"></a>
+  <h4 id="VISABConnector_VISABApi_InitiateSession_VISABConnector_IMetaInformation_" data-uid="VISABConnector.VISABApi.InitiateSession(VISABConnector.IMetaInformation)">InitiateSession(IMetaInformation)</h4>
+  <div class="markdown level1 summary"><p>Creates a IVISABSession object and opens a transmission session at the VISAB WebApi.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;ApiResponse&lt;IVISABSession&gt;&gt; InitiateSession(IMetaInformation metaInformation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="VISABConnector.IMetaInformation.html">IMetaInformation</a></td>
+        <td><span class="parametername">metaInformation</span></td>
+        <td><p>The meta information for the session to open</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="VISABConnector.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="VISABConnector.IVISABSession.html">IVISABSession</a>&gt;&gt;</td>
+        <td><p>An APIResponse object containing a IVISABSession if session was created</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/VocalTrance/VISABConnector/new/dev/apiSpec/new?filename=VISABConnector_VISABApi_IsApiReachable.md&amp;value=---%0Auid%3A%20VISABConnector.VISABApi.IsApiReachable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/VocalTrance/VISABConnector/blob/dev/src/VISABConnector/VISABApi.cs/#L231">View Source</a>
+  </span>
+  <a id="VISABConnector_VISABApi_IsApiReachable_" data-uid="VISABConnector.VISABApi.IsApiReachable*"></a>
+  <h4 id="VISABConnector_VISABApi_IsApiReachable" data-uid="VISABConnector.VISABApi.IsApiReachable">IsApiReachable()</h4>
+  <div class="markdown level1 summary"><p>Indicates if the VISAB WebApi is running. If the request was successful, it is running.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;ApiResponse&lt;string&gt;&gt; IsApiReachable()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="VISABConnector.ApiResponse-1.html">ApiResponse</a>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><p>An ApiResponse object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/VocalTrance/VISABConnector/new/dev/apiSpec/new?filename=VISABConnector_VISABApi_StartVISAB_System_String_.md&amp;value=---%0Auid%3A%20VISABConnector.VISABApi.StartVISAB(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/VocalTrance/VISABConnector/blob/dev/src/VISABConnector/VISABApi.cs/#L103">View Source</a>
+  </span>
+  <a id="VISABConnector_VISABApi_StartVISAB_" data-uid="VISABConnector.VISABApi.StartVISAB*"></a>
+  <h4 id="VISABConnector_VISABApi_StartVISAB_System_String_" data-uid="VISABConnector.VISABApi.StartVISAB(System.String)">StartVISAB(String)</h4>
+  <div class="markdown level1 summary"><p>Starts the VISAB jar</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void StartVISAB(string pathToVisab)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">pathToVisab</span></td>
+        <td><p>The path to the jar file</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/VocalTrance/VISABConnector/new/dev/apiSpec/new?filename=VISABConnector_VISABApi.md&amp;value=---%0Auid%3A%20VISABConnector.VISABApi%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/VocalTrance/VISABConnector/blob/dev/src/VISABConnector/VISABApi.cs/#L14" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+              </div>
+          
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <h5>In This Article</h5>
+              <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div class="pull-left">
+              
+              <span>Generated by <strong>DocFX</strong></span>
+            </div>
+            <div class="toggle-mode pull-right visible-sm visible-xs">
+              <div class="icon">
+                <i aria-hidden="true">☀</i>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="switch-style-m">
+                <span class="slider round"></span>
+              </label>
+              <div class="icon">
+                <i aria-hidden="true">☾</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="../styles/toggle-theme.js"></script>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
