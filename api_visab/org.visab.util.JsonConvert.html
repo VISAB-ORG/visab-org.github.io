@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class JsonConvert
+    <title>Class JSONConvert
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class JsonConvert
+    <meta name="title" content="Class JSONConvert
    ">
     <meta name="generator" content="docfx 2.58.0.0">
     
@@ -67,18 +67,18 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="org.visab.util.JsonConvert">
+            <article class="content wrap" id="_content" data-uid="org.visab.util.JSONConvert">
   
   
-  <h1 id="org_visab_util_JsonConvert" data-uid="org.visab.util.JsonConvert" class="text-break">Class JsonConvert
+  <h1 id="org_visab_util_JSONConvert" data-uid="org.visab.util.JSONConvert" class="text-break">Class JSONConvert
   </h1>
-  <div class="markdown level0 summary"><p>Class for serializing objects and deserializing json files.</p>
+  <div class="markdown level0 summary"><p>Helper class for serializing objects and deserializing json files. Essentially wraps around the ObjectMapper of the jackson library.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">java.lang.Object</span></div>
-    <div class="level1"><span class="xref">JsonConvert</span></div>
+    <div class="level1"><span class="xref">JSONConvert</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -118,28 +118,29 @@
   </div>
   <h6><strong>Namespace</strong>: </h6>
   <h6><strong>Assembly</strong>: .dll</h6>
-  <h5 id="org_visab_util_JsonConvert_syntax">Syntax</h5>
+  <h5 id="org_visab_util_JSONConvert_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public final class JsonConvert</code></pre>
+    <pre><code class="lang-csharp hljs">public final class JSONConvert</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   
   
-  <a id="org_visab_util_JsonConvert_JsonConvert_" data-uid="org.visab.util.JsonConvert.JsonConvert*"></a>
-  <h4 id="org_visab_util_JsonConvert_JsonConvert__" data-uid="org.visab.util.JsonConvert.JsonConvert()">JsonConvert()</h4>
+  <a id="org_visab_util_JSONConvert_JSONConvert_" data-uid="org.visab.util.JSONConvert.JSONConvert*"></a>
+  <h4 id="org_visab_util_JSONConvert_JSONConvert__" data-uid="org.visab.util.JSONConvert.JSONConvert()">JSONConvert()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public JsonConvert()</code></pre>
+    <pre><code class="lang-csharp hljs">public JSONConvert()</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
   
   
-  <h4 id="org_visab_util_JsonConvert_ForgivingMapper" data-uid="org.visab.util.JsonConvert.ForgivingMapper">ForgivingMapper</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="org_visab_util_JSONConvert_ForgivingMapper" data-uid="org.visab.util.JSONConvert.ForgivingMapper">ForgivingMapper</h4>
+  <div class="markdown level1 summary"><p>As opposed to UnforgivingMapper, does NOT fail on 1. JSON contains more properties than there are setters in the POJO. 2. POJO contains more setters, than there are properties in the JSON.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -162,8 +163,9 @@
   </table>
   
   
-  <h4 id="org_visab_util_JsonConvert_UnforgivingMapper" data-uid="org.visab.util.JsonConvert.UnforgivingMapper">UnforgivingMapper</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="org_visab_util_JSONConvert_UnforgivingMapper" data-uid="org.visab.util.JSONConvert.UnforgivingMapper">UnforgivingMapper</h4>
+  <div class="markdown level1 summary"><p>Fails deserialization on 1. JSON contains more properties than there are setters in the POJO. 2. POJO contains more setters, than there are properties in the JSON.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -188,8 +190,8 @@
   </h3>
   
   
-  <a id="org_visab_util_JsonConvert_deserializeJson_" data-uid="org.visab.util.JsonConvert.deserializeJson*"></a>
-  <h4 id="org_visab_util_JsonConvert__T_deserializeJson_java_lang_String_com_fasterxml_jackson_core_type_TypeReference_T__com_fasterxml_jackson_databind_ObjectMapper_" data-uid="org.visab.util.JsonConvert.&lt;T&gt;deserializeJson(java.lang.String,com.fasterxml.jackson.core.type.TypeReference&lt;T&gt;,com.fasterxml.jackson.databind.ObjectMapper)">&lt;T&gt;deserializeJson(String json, TypeReference&lt;T&gt; type, ObjectMapper mapper)</h4>
+  <a id="org_visab_util_JSONConvert_deserializeJson_" data-uid="org.visab.util.JSONConvert.deserializeJson*"></a>
+  <h4 id="org_visab_util_JSONConvert__T_deserializeJson_java_lang_String_com_fasterxml_jackson_core_type_TypeReference_T__com_fasterxml_jackson_databind_ObjectMapper_" data-uid="org.visab.util.JSONConvert.&lt;T&gt;deserializeJson(java.lang.String,com.fasterxml.jackson.core.type.TypeReference&lt;T&gt;,com.fasterxml.jackson.databind.ObjectMapper)">&lt;T&gt;deserializeJson(String json, TypeReference&lt;T&gt; type, ObjectMapper mapper)</h4>
   <div class="markdown level1 summary"><p>Deserializes a Json string into an object of the given type. This method can be used if you want to deserialize into a generic type. E.g. List.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -244,9 +246,9 @@
   </table>
   
   
-  <a id="org_visab_util_JsonConvert_deserializeJson_" data-uid="org.visab.util.JsonConvert.deserializeJson*"></a>
-  <h4 id="org_visab_util_JsonConvert__T_deserializeJson_java_lang_String_java_lang_Class_T__com_fasterxml_jackson_databind_ObjectMapper_" data-uid="org.visab.util.JsonConvert.&lt;T&gt;deserializeJson(java.lang.String,java.lang.Class&lt;T&gt;,com.fasterxml.jackson.databind.ObjectMapper)">&lt;T&gt;deserializeJson(String json, Class&lt;T&gt; outClass, ObjectMapper mapper)</h4>
-  <div class="markdown level1 summary"><p>Deserializes a Json string into an object of given class.</p>
+  <a id="org_visab_util_JSONConvert_deserializeJson_" data-uid="org.visab.util.JSONConvert.deserializeJson*"></a>
+  <h4 id="org_visab_util_JSONConvert__T_deserializeJson_java_lang_String_java_lang_Class_T__com_fasterxml_jackson_databind_ObjectMapper_" data-uid="org.visab.util.JSONConvert.&lt;T&gt;deserializeJson(java.lang.String,java.lang.Class&lt;T&gt;,com.fasterxml.jackson.databind.ObjectMapper)">&lt;T&gt;deserializeJson(String json, Class&lt;T&gt; outClass, ObjectMapper mapper)</h4>
+  <div class="markdown level1 summary"><p>Deserializes a json string into an object of given class type.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -300,9 +302,10 @@
   </table>
   
   
-  <a id="org_visab_util_JsonConvert_deserializeJsonUnknown_" data-uid="org.visab.util.JsonConvert.deserializeJsonUnknown*"></a>
-  <h4 id="org_visab_util_JsonConvert_deserializeJsonUnknown_java_lang_String_" data-uid="org.visab.util.JsonConvert.deserializeJsonUnknown(java.lang.String)">deserializeJsonUnknown(String json)</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="org_visab_util_JSONConvert_deserializeJsonUnknown_" data-uid="org.visab.util.JSONConvert.deserializeJsonUnknown*"></a>
+  <h4 id="org_visab_util_JSONConvert_deserializeJsonUnknown_java_lang_String_" data-uid="org.visab.util.JSONConvert.deserializeJsonUnknown(java.lang.String)">deserializeJsonUnknown(String json)</h4>
+  <div class="markdown level1 summary"><p>Deserializes a json string of unknown format.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -321,7 +324,8 @@
       <tr>
         <td><span class="xref">java.lang.String</span></td>
         <td><span class="parametername">json</span></td>
-        <td></td>
+        <td><p>The json string</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -336,15 +340,16 @@
     <tbody>
       <tr>
         <td><span class="xref">com.fasterxml.jackson.databind.JsonNode</span></td>
-        <td></td>
+        <td><p>The JsonNode created from the json</p>
+</td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="org_visab_util_JsonConvert_serializeObject_" data-uid="org.visab.util.JsonConvert.serializeObject*"></a>
-  <h4 id="org_visab_util_JsonConvert_serializeObject_java_lang_Object_" data-uid="org.visab.util.JsonConvert.serializeObject(java.lang.Object)">serializeObject(Object o)</h4>
-  <div class="markdown level1 summary"><p>Serializes a given object into a Json string.</p>
+  <a id="org_visab_util_JSONConvert_serializeObject_" data-uid="org.visab.util.JSONConvert.serializeObject*"></a>
+  <h4 id="org_visab_util_JSONConvert_serializeObject_java_lang_Object_" data-uid="org.visab.util.JSONConvert.serializeObject(java.lang.Object)">serializeObject(Object o)</h4>
+  <div class="markdown level1 summary"><p>Serializes a given object into a JSON string.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>

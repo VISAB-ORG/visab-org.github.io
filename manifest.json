@@ -12,91 +12,7 @@
           "hash": "3jiL5cdPg+VU6zTiQDj1UCtartJqi348KaUh+3G87HQ="
         }
       },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visab/mvvmexample.AppMain.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visab/mvvmexample.AppMain.html",
-          "hash": "0gRo1+5K6g/l/Z/rScYuxq/TRmzt4o2dYIcTKmYgYPA="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visab/mvvmexample.Main.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visab/mvvmexample.Main.html",
-          "hash": "Yk2Q1g0gKMe6E8p6as9TJ+PwOwA3IVwRggfrZyBrzIo="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visab/mvvmexample.ShoppingListView.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visab/mvvmexample.ShoppingListView.html",
-          "hash": "teLgzByHKfIwtVtCJWUddQyOsWYAy+IMRv2IsZFNfaM="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visab/mvvmexample.ShoppingListViewModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visab/mvvmexample.ShoppingListViewModel.html",
-          "hash": "OsTyFKM+kNipWwKhUFmomSwAWOPbim711HtpbRcAuN8="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visab/mvvmexample.model.ListItem.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visab/mvvmexample.model.ListItem.html",
-          "hash": "IjPju8/nWVji1vmBlcNzlrIXzeR6tP0dqRzx3ZtH+Og="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visab/mvvmexample.model.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visab/mvvmexample.model.html",
-          "hash": "QvNOWQ4EfW1jMo6aD8vDtY/tJ3IPtFFMZtuaj9OxaBc="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visab/mvvmexample.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visab/mvvmexample.html",
-          "hash": "UKofeeO8FPkDQ1BFZMRo8h7UUCRkBrSm8BBWJhnTEo4="
-        }
-      },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -105,34 +21,46 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.api.SessionAdministration.html",
-          "hash": "iRDdbrrUt2vKLb8qtjIlB/0viHhxVX0uk6JkygUYDw0="
+          "hash": "lOOLGxcZe6kbXgRVkXaaHsYr6h/CXzEq2CuFqCt1Wo0="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.api.WebApi.yml",
+      "source_relative_path": "api_visab/org.visab.api.SessionWatchdog.yml",
       "output": {
         ".html": {
-          "relative_path": "api_visab/org.visab.api.WebApi.html",
-          "hash": "w6XEoNzWy7r4ZRr3EqNToNF+6nsTcirkY3yzILVvd/Y="
+          "relative_path": "api_visab/org.visab.api.SessionWatchdog.html",
+          "hash": "AG1KF+4CTfoYGGNS7C/BfgqTJK+c4tE6COpu0Nhoqow="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.api.WebApiHelper.yml",
+      "source_relative_path": "api_visab/org.visab.api.WebAPI.yml",
       "output": {
         ".html": {
-          "relative_path": "api_visab/org.visab.api.WebApiHelper.html",
-          "hash": "lyW3GFfQvx3+EY92OGZ878DTwEdRNx9MerWzZZk3NZ0="
+          "relative_path": "api_visab/org.visab.api.WebAPI.html",
+          "hash": "1HzpBBNYXf5QdZQaDB1lGWIZK+1OFgNFU0ZFbYatZ8M="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.api.WebAPIHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.api.WebAPIHelper.html",
+          "hash": "VGrE3tIBBWhmdz71a9qnM/lD/T6ttp2vtl0GZ2w5N8Y="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -141,10 +69,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.api.controller.FileController.html",
-          "hash": "OolOG8+grDYOn64EKoHLB9UXjqGWCACw5Idh2l98EkM="
+          "hash": "OctvskKo218oZ3kLeXLwf50YrOkblXOgEKsQ6gdgkzA="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -153,10 +81,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.api.controller.GameSupportController.html",
-          "hash": "mJ2yw92lTyfGtuJgsRoVblHiCQj70B3l9vA0qSm4TDM="
+          "hash": "Nf7yWs3BDaI72abtSoglLXG8VKBLuIMx3r/pDfQZ7Pk="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -165,10 +93,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.api.controller.HTTPControllerBase.html",
-          "hash": "fMCbUwQ4JQEY9l7uKjhIf8Vrmtozcot80xMwO1dwOb0="
+          "hash": "olTvMAJmNXmyy1PX6dkzyGtR+PjwZ9tFD7fJvD4L/R8="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -177,10 +105,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.api.controller.ImageController.html",
-          "hash": "FQCSBA+6I3/fxKQsV+NFuxLWqdzIGTKUh6Q9IIagWG0="
+          "hash": "k4KNDArGCtsJHp/kDl1M1EF4gK8f0xllzHyPmZQq768="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -189,10 +117,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.api.controller.SessionController.html",
-          "hash": "heowPkheZ5+YdnSyThyfm26phIVgW2byAgkbwCCtTHw="
+          "hash": "bmAP8/nxvLmvVQzAs7oy3Bk8jJJnhILllFdN+Qqw4Nc="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -201,10 +129,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.api.controller.StatisticsController.html",
-          "hash": "g/StbiQekRCQsWXjQRR/+CVCaqFkn5726QByUZrNzac="
+          "hash": "MKmFGzueZ0h7icPyE5fm54jQcLKZbOGoxIEl5sxJvYo="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -213,34 +141,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.api.controller.html",
-          "hash": "E/D8Av2acH9XvVwuMSNLinzT/BqA5AZMwMy2iMS6oJY="
+          "hash": "xX6ju0ThoEsn2Q8tZAMHn1zrGTfsIZ3KzCM4dCop3io="
         }
       },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.api.model.SessionWatchdog.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visab/org.visab.api.model.SessionWatchdog.html",
-          "hash": "F78CR8WuonSbK1/CGSBSpR5vrIcqBTZL5jKkFgutPys="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.api.model.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visab/org.visab.api.model.html",
-          "hash": "qgKEG19s5UIDk6hTMzcT0Vt9XEr3a4nHcXY3DY4LFuI="
-        }
-      },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -249,118 +153,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.api.html",
-          "hash": "to9tWDBpirwOTpyFhIcGR8qq7ZjR18CLLY9ZdgmwZSk="
+          "hash": "AqXHg+3n62vYLlo2JKzFFa9cfJA43oJcA+ENFlnIOCM="
         }
       },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.deprecated.AbstractParser.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visab/org.visab.deprecated.AbstractParser.html",
-          "hash": "x0jRgRmOvqVoPIKX1jlQnZB0MfVBjhOCvFx8wZUqFHc="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.deprecated.ShooterDataRepresentation.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visab/org.visab.deprecated.ShooterDataRepresentation.html",
-          "hash": "sjKMm0hF0qi7qiQFf+OEzn5vPN+1jqiper43nEEeNog="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.deprecated.ShooterParser.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visab/org.visab.deprecated.ShooterParser.html",
-          "hash": "hmk9Sd/u4WCP2GctWSak9KCq/xCzgydMtOi3NN9TREY="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.deprecated.UnityDataServer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visab/org.visab.deprecated.UnityDataServer.html",
-          "hash": "mqSKr9LC/Nk9h71JKM+jCAJgpNYkgEPcnX7U/IlS4/c="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.deprecated.gui.DatabaseView.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visab/org.visab.deprecated.gui.DatabaseView.html",
-          "hash": "tfRiNLy8EsgWRte3oiEgdU760QhzBEPk/O6oKzymyN4="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.deprecated.gui.DatabaseViewModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visab/org.visab.deprecated.gui.DatabaseViewModel.html",
-          "hash": "t7tG5TaprfP2yxYlt64FFXgBgXZgTAHApkFv40VWCBQ="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.deprecated.gui.ExplorerViewModelBase.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visab/org.visab.deprecated.gui.ExplorerViewModelBase.html",
-          "hash": "gTcTNKKCjV//Br3ZOdIChttS+Uk1cRqv99IiKJcuX14="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.deprecated.gui.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visab/org.visab.deprecated.gui.html",
-          "hash": "Oqm/c1wsw8NT0YknAM6EjdM6eCuFFphX6UA3+MZaPSk="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.deprecated.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visab/org.visab.deprecated.html",
-          "hash": "RcFYH7PKOxEHX7ADXLYyMzd6gawraH/jPuR/OnQdHN8="
-        }
-      },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -369,10 +165,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.dynamic.DynamicHelper.html",
-          "hash": "UaYGss3ndYErzFXjHdAFzaFLOoGSoRZzQPxZu/E5OsQ="
+          "hash": "3yC6Pm8hZDBLQ+YwOlko9l6zmPxj0BIz3vwmqPnSwtM="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -381,10 +177,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.dynamic.DynamicInstatiator.html",
-          "hash": "EeW2WgE3w56h9F6LDVNDFzrAWGob4Xa5NDbgoKa0on4="
+          "hash": "Tbaq68RYBS5279GNvnps69J9VpMlOng3JOc2KMrw+6A="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -393,10 +189,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.dynamic.DynamicSerializer.html",
-          "hash": "1BtdHcvtVDI2vR+DBxaynnYioPnmVhgoxlEDEYnkGKs="
+          "hash": "gB6FZ9DFQz4QEnOeBQMFtsPLBEHmFQg6GakOPY5KjVw="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -405,22 +201,58 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.dynamic.html",
-          "hash": "6R8ZP2lDSOJb4832aNUhUyNBxspQ4BC99GVB7Qbw6sI="
+          "hash": "+CIPFHQItyn/6xcApwEurebon9rhAdQu4bx8c1eMThk="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.eventbus.ApiEventBus.yml",
+      "source_relative_path": "api_visab/org.visab.eventbus.APIEventBase.yml",
       "output": {
         ".html": {
-          "relative_path": "api_visab/org.visab.eventbus.ApiEventBus.html",
-          "hash": "Ly7h/pZWs3g29qkIo+hn5HocOgg+3JZw3kKIbPcb9JU="
+          "relative_path": "api_visab/org.visab.eventbus.APIEventBase.html",
+          "hash": "CBSqE/3cqjqPjUBeG04irg2Z1vaynLe5XjpTfEjNUx0="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.eventbus.APIEventBus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.eventbus.APIEventBus.html",
+          "hash": "akKBqDbFJAkIl8U05JWFaFVDKwySCx6FYMehibfrUE4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.eventbus.APIPublisherBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.eventbus.APIPublisherBase.html",
+          "hash": "qZId7SpTXUR0PFspiY/HBeDPzjjVgwMAVFBM88z7x6s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.eventbus.APISubscriberBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.eventbus.APISubscriberBase.html",
+          "hash": "HGt2Ldr7PbMjTmkbWtbXCeSZKGluer6iWMeTJlxU/Jo="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -429,10 +261,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.eventbus.EventBusBase.html",
-          "hash": "EZUCLf5JUZy6brNrQnQUaHvHnRcFDR+lbxnSOXShZ9Y="
+          "hash": "aGT39VC6MO1DmITvDLABb+LaMTgK7L7rxl7eGuRXVio="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -441,22 +273,22 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.eventbus.GeneralEventBus.html",
-          "hash": "SgU94Kgr6rX9unO1FYmts9j5ltc98ZOZWUcap0783PE="
+          "hash": "eY8zFbsmAjLsX+cK//F35+hWqhbdl27rHB7l7TaEfY0="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.eventbus.IApiEvent.yml",
+      "source_relative_path": "api_visab/org.visab.eventbus.IAPIEvent.yml",
       "output": {
         ".html": {
-          "relative_path": "api_visab/org.visab.eventbus.IApiEvent.html",
-          "hash": "/78vbzR5ZPDXom7feHcpg7fWeUesTzQJxv3xmQZm/Rs="
+          "relative_path": "api_visab/org.visab.eventbus.IAPIEvent.html",
+          "hash": "5feaqhrYMIn97b31u8xwT5WGuZf6k7mSl+SFSazer3E="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -468,7 +300,7 @@
           "hash": "IM6XxWt5eoIEfJBOqMdPLtY4M1cFiRysoZmav9Msc5w="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -480,7 +312,7 @@
           "hash": "0xcidLSQ1RbtPwfhSWCqq5j3y/B5Czda+7A4g5yWQhw="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -489,22 +321,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.eventbus.ISubscriber.html",
-          "hash": "/KsXAGeVXuMhHTUu+7GYtPzHGDAbkQORZL4LRZfClXk="
+          "hash": "9Wjp/tv1r6I5WXuEF1zbIhNzVXjH4CfbLPuKGzJNoO0="
         }
       },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.eventbus.event.ApiEventBase.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visab/org.visab.eventbus.event.ApiEventBase.html",
-          "hash": "xF0iuhlv8owz+kTGIO7Ytw5bOta2A1ujyF7nBxi4SkE="
-        }
-      },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -513,10 +333,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.eventbus.event.ImageReceivedEvent.html",
-          "hash": "wXOmFQKyqMhrXZOmWhM1JT4Zlxldqqq5gjy+NZuNZi4="
+          "hash": "lIEfpHZDVTCx1uTRkc8nBjr6rNEjPG7hoUPx1HTBMOI="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -525,10 +345,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.eventbus.event.SessionClosedEvent.html",
-          "hash": "F7UAqJ0RS9NMBCJcklcB/MUcE0ELvELLexBaa70qvlY="
+          "hash": "AutyeonUaUlXAEnZhi+D6DZtPnBgb1EW4s4UyWhN2XQ="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -537,10 +357,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.eventbus.event.SessionOpenedEvent.html",
-          "hash": "hvfu1fE52msfngEJnz807pBFxssLRSDb0aLYpNIOJNI="
+          "hash": "Jk5Iuns45tUzNFWTjF5OQb2O6IXQKdLStBl60CpUC2c="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -549,10 +369,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.eventbus.event.StatisticsReceivedEvent.html",
-          "hash": "LlkoLqsex57HSsCswtwNR+s6ev5sDHz0P8FY0+nm2jQ="
+          "hash": "SK6IsBt2uXElg4ulIYKdBbtI6r6cV3zh9E6PTdxnp6c="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -561,22 +381,22 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.eventbus.event.VISABFileSavedEvent.html",
-          "hash": "/ugcBbNXLTTKftBEpt5ws1dDHMrLvByKom9Ah6M7TIU="
+          "hash": "/LIOFwHtE5+c5jtqJDiiR7THJsu96CoLXqVlZyMkPnM="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.eventbus.event.VISABFileViewedEvent.yml",
+      "source_relative_path": "api_visab/org.visab.eventbus.event.VISABFileVisualizedEvent.yml",
       "output": {
         ".html": {
-          "relative_path": "api_visab/org.visab.eventbus.event.VISABFileViewedEvent.html",
-          "hash": "fdNNWNfLHqhMnoO45gC3rB+dwJ/evT7+ykmXqbnskHk="
+          "relative_path": "api_visab/org.visab.eventbus.event.VISABFileVisualizedEvent.html",
+          "hash": "tXa+QjiztPmWKG450EBEEX2Rdb20TjnOpUyB7acgWQE="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -585,58 +405,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.eventbus.event.html",
-          "hash": "6ZmNCsmjBI/QnvBzmPG4T355/Fg4gHpxse1dCbmHYQU="
+          "hash": "y2r5E34jcAF2/fHmmacKgbhA4eytghHoBdLa2hvOAH8="
         }
       },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.eventbus.publisher.ApiPublisherBase.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visab/org.visab.eventbus.publisher.ApiPublisherBase.html",
-          "hash": "hlFhodAtEqFxhnCMSHM4hpAtNgU/gqtnhq4m1IE1+XQ="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.eventbus.publisher.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visab/org.visab.eventbus.publisher.html",
-          "hash": "2sjrxN8Xw5BM7MwAd8G2NgR4O8tbGWo9JNE9HHZLbsc="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.eventbus.subscriber.ApiSubscriberBase.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visab/org.visab.eventbus.subscriber.ApiSubscriberBase.html",
-          "hash": "xDtfRpD7nlr3Pk7lErQNzk6RmdUd/F2l3/JtavWXfw0="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.eventbus.subscriber.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visab/org.visab.eventbus.subscriber.html",
-          "hash": "cvc5lXAbn3KE08aRUhzyOnxjiDya9PZbb2IC0zJRlMc="
-        }
-      },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -645,34 +417,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.eventbus.html",
-          "hash": "9gg9yRL4wrYG/Q9tHpJGLgc0uNyIs1A/3AkAnVjmIbo="
+          "hash": "01dDC6T8ewFJ33tCnJNBbVF0fINCyOmlOC+fyZcCu1w="
         }
       },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.exception.GameNotSupportedException.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visab/org.visab.exception.GameNotSupportedException.html",
-          "hash": "T8Nip3HPIobN9SryqBsmDkVTVXXNqA+6TZYSt3jCuvY="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.exception.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visab/org.visab.exception.html",
-          "hash": "LTixoa8teQTtLau80yLG0ywN+zMuHqQ3++mkL2MPXt0="
-        }
-      },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -681,10 +429,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.globalmodel.BasicVISABFile.html",
-          "hash": "DvwWhoKUVFsSbRPeKOcQGMcBebY2VJgc/DxtHHTRUXw="
+          "hash": "JmgLcmmX2GsYcekNJXSnif7L1WYSrkKqkBAfEX0cvWM="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -693,22 +441,34 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.globalmodel.ControlledBy.html",
-          "hash": "+VvzitoZk/m45PTfNCCDC9Gy69gOy5916gjRTH9r0Y4="
+          "hash": "lbcA+8Eg7mRlVVi4kr2yQLCXgVlZc7eUS0kRJCbH04c="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.globalmodel.IImage.yml",
+      "source_relative_path": "api_visab/org.visab.globalmodel.GameName.yml",
       "output": {
         ".html": {
-          "relative_path": "api_visab/org.visab.globalmodel.IImage.html",
-          "hash": "jYb9pW4qtYReXtZw6UHl9O2BF+HePqpIKffBBy2KZ5c="
+          "relative_path": "api_visab/org.visab.globalmodel.GameName.html",
+          "hash": "3LtVLCI3LcrRT4Vu/pttg1kDAyYLbTnLN8rQYQ2r4VI="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.globalmodel.IImageContainer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.globalmodel.IImageContainer.html",
+          "hash": "SNjUUyy9i9ciAd79gRx/Hdld+GvVZryrBh4htWeVpv8="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -717,10 +477,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.globalmodel.IMetaInformation.html",
-          "hash": "vwTUi2q/kWIDwXfUlnXKBqW9EIeEyK27c/siwk1hKgg="
+          "hash": "+C3tzORFw1s60QOG2mka/cJUX9Cri/uffMmb/ssuzZw="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -732,7 +492,7 @@
           "hash": "QrKuXK7VIpxyjFe+yDFFGOiB2PWGJ/tJOk5/zo+r9Oo="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -741,10 +501,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.globalmodel.IVISABFile.html",
-          "hash": "fAVnogEWkNRTN/cz5h3hQwwQ2667pNMVQw715QEm6XE="
+          "hash": "N4Qoj8G4hTpnoJ0S7Te2Z3K+xKs1CbeNJsB/dMCysOc="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -753,10 +513,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.globalmodel.Rectangle.html",
-          "hash": "0Foib3Yx9eHJRKS+DcW9bgz3mus1G85pannyujVn4co="
+          "hash": "qz6MH9uihbIH1S8ukftoCl4GYWHt93tKUy6ZnC5exH8="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -765,10 +525,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.globalmodel.SessionStatus.html",
-          "hash": "ySy92kd6AEMBdibwdsQyRbMvtmZBuoS4nMS2dfDUSOs="
+          "hash": "4Ax7qsJvUPPbDDKBoC2NpFI7VZt2B7vQQiDRCbc4kig="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -777,10 +537,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.globalmodel.Vector2.html",
-          "hash": "reJ4YFiCNsiiUG7d6tHrJh5EhkHOf7YhQ6/wIDM8Ryc="
+          "hash": "trw8hKzjn3tm1VGtl8Xf91Oz6BRq9HaHG2xk5lHyUTM="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -789,22 +549,22 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.globalmodel.cbrshooter.CBRShooterFile.html",
-          "hash": "wOOyPH4FBbPWhsISle2Y3T1b34oP3H6hcCnUvor2BkE="
+          "hash": "N8VNsu6tlRk0H3d8ZlyCC6HKSHY13fvStj8Yns4dgTM="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.globalmodel.cbrshooter.CBRShooterMapImage.yml",
+      "source_relative_path": "api_visab/org.visab.globalmodel.cbrshooter.CBRShooterImages.yml",
       "output": {
         ".html": {
-          "relative_path": "api_visab/org.visab.globalmodel.cbrshooter.CBRShooterMapImage.html",
-          "hash": "q8B6MREaJ8BLRTmaunJzgD/XTKJZHX3HO5L3v10VZXY="
+          "relative_path": "api_visab/org.visab.globalmodel.cbrshooter.CBRShooterImages.html",
+          "hash": "KrrTnjpwjc+3b11wLUUpTVR/sAgWQmeGs4Zp07OnpCY="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -813,10 +573,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.globalmodel.cbrshooter.CBRShooterMetaInformation.html",
-          "hash": "A2yoQ0qBa7Wr9pEYfioZ6qxTc3z+fJCXWcVAJoVnTQI="
+          "hash": "GrI15YJ1IYqfzdeOhDlvEz+55PlWylWhV5Ou6g6sOSk="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -825,22 +585,22 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.globalmodel.cbrshooter.CBRShooterStatistics.html",
-          "hash": "5TLHCapc8iKPH9Qj75+bq0Rr/4FEEvge+s97GYMbTqg="
+          "hash": "So8+VU+s5S5E6xUszxQ+qHQtL4TBzca6QCHJ5tr6BGk="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.globalmodel.cbrshooter.PlayerInformation.yml",
+      "source_relative_path": "api_visab/org.visab.globalmodel.cbrshooter.Player.yml",
       "output": {
         ".html": {
-          "relative_path": "api_visab/org.visab.globalmodel.cbrshooter.PlayerInformation.html",
-          "hash": "dtLYK90OXRflMdACnFX2GZJdsmlHHt0FYHToxPUyYZk="
+          "relative_path": "api_visab/org.visab.globalmodel.cbrshooter.Player.html",
+          "hash": "39+bUj+9RVZPG/ZHAine1j9rf/5/EutfgXZBE0mT7hU="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -852,7 +612,7 @@
           "hash": "Q3oJhFOzfqUL+PczFkzbd90/HuW/pz0QEmaXpEKmiNk="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -861,10 +621,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.globalmodel.cbrshooter.WeaponInformation.html",
-          "hash": "2/uwy094jnts4x5YjSyNr40zzD5eaIb/mu8PwHnerbg="
+          "hash": "V4a2b/6/XDCwdSCyOpBI4/bAS+CUiMEh6r6lpPfskQ0="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -873,22 +633,22 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.globalmodel.cbrshooter.html",
-          "hash": "sor7DQxUlvbRuPmvSJFgw1HLTdY6vxDDmGGpqigoBuE="
+          "hash": "+GwKZmK2EVBfWH4GKqL0hYwFHt7dQ7c3x7zErOAlpD4="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.globalmodel.settlers.PlayerInformation.yml",
+      "source_relative_path": "api_visab/org.visab.globalmodel.settlers.Player.yml",
       "output": {
         ".html": {
-          "relative_path": "api_visab/org.visab.globalmodel.settlers.PlayerInformation.html",
-          "hash": "12salkxxzXb/YEbVKyldz1aD86LrqFOhAADyhgjGA/w="
+          "relative_path": "api_visab/org.visab.globalmodel.settlers.Player.html",
+          "hash": "fv7BsgARKlyVcZPQ1yCnBogUlnHHZltIEixt7Vw9uVk="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -897,10 +657,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.globalmodel.settlers.PlayerResources.html",
-          "hash": "kq/Aosqai5b12hxgyXZrKqxyVErfKV2dPPRvvYsT6CE="
+          "hash": "05Wuk15J2u6HTqgVMAYBxfoTMx6/MQRkpxKkq+V1z5Y="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -909,22 +669,22 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.globalmodel.settlers.SettlersFile.html",
-          "hash": "wWI7GmBMr/joXlOaNV+w/XDqvcuXpE7yFaNVOF219DI="
+          "hash": "PXhqtSPTIo5EHvddr8USV6sSJN0PQLYVNOYwP3k6dU4="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.globalmodel.settlers.SettlersMapImage.yml",
+      "source_relative_path": "api_visab/org.visab.globalmodel.settlers.SettlersImages.yml",
       "output": {
         ".html": {
-          "relative_path": "api_visab/org.visab.globalmodel.settlers.SettlersMapImage.html",
-          "hash": "GTXsxMvfrDEYxK4hVdYfyjYKGfIGajHzKE6RHL6NQX8="
+          "relative_path": "api_visab/org.visab.globalmodel.settlers.SettlersImages.html",
+          "hash": "n37v3H8t92TVEnVneYKbhDWvfvD2dekE/J/TMrEzgmM="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -933,10 +693,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.globalmodel.settlers.SettlersMetaInformation.html",
-          "hash": "iJJjgUYTcF0HtDrw9zT1yVgr4lDNrce1tqtKZ7MAo3Q="
+          "hash": "Yy+g8h+WQXKeKA8WbbSicky8tJ+aZDw8j5R1sY3dmbI="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -945,10 +705,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.globalmodel.settlers.SettlersStatistics.html",
-          "hash": "vorIx+RsX+hqLIZaghSfqLeqdAHwYMcKlLwHGaUg320="
+          "hash": "UJBOYeVx0ovrqsKpNnYaRf4xxWJcf1rqgnnJkgLFpDg="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -957,10 +717,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.globalmodel.settlers.html",
-          "hash": "EzoFcJnVwsr9kKBYSWz21BJD1HHHVcIgvYH31bcMj4k="
+          "hash": "v3YDrzHwXGNx+0XOO8ll8Gca6E7huTkeGB12q/EsV+0="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -972,7 +732,7 @@
           "hash": "CrKYKhDpjaaOR/tYZlQ04sQzFt4D0yzhWAEaBilmqiM="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -981,10 +741,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.globalmodel.starter.DefaultImage.html",
-          "hash": "kBiJLGXl0/dGNjbnQNlXbWxl+kRW+yGm5ZBQ1Cq4PLg="
+          "hash": "+gquZLcIsC3tZKfSr8EojUldNrGPlKrWNfUryQg8m5A="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -996,7 +756,7 @@
           "hash": "ljIpPSlzm3FWLtgYwxaEM72WR6O6cEe5TIT+qllK+Wg="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1008,7 +768,7 @@
           "hash": "o13C4QzmKT6OjART+8LeoOmFj2y312n61WqFdh5b/h0="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1017,10 +777,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.globalmodel.starter.html",
-          "hash": "Kv9TAX3jkpzcbTHvWV+g9IskFs8Gtt0XjH+AfHczsEw="
+          "hash": "zuQW+kP50D3x/nl7ypwl6GR53Uq0H89Pfl/PSZo/d5w="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1029,70 +789,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.globalmodel.html",
-          "hash": "7tSQocEAFRhjQXl3VlqoU+M1T+lpBjjU0ghUSn3KlnE="
+          "hash": "Yan1cBMdHniK7SjL/lEUNYT0aw1RrhxfUaFT+JfwpBc="
         }
       },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.gui.model.TableEntry.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visab/org.visab.gui.model.TableEntry.html",
-          "hash": "YnYHtoD9SXayJFORPNhim4BNKIYMRtBPlzhBpntEfNY="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.gui.model.TableEntryCBRBot.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visab/org.visab.gui.model.TableEntryCBRBot.html",
-          "hash": "wtsnrlWvCW1FSHDqaP2HchzB53X2XpFr9AJRrCtouAw="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.gui.model.TableEntryScriptBot.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visab/org.visab.gui.model.TableEntryScriptBot.html",
-          "hash": "Gp5yevXjdJUGB1AMXmBjXdsr3zbIEYmSbTf64KEch9s="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.gui.model.TableEntryStatisticsVisab.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visab/org.visab.gui.model.TableEntryStatisticsVisab.html",
-          "hash": "T3BLln0wfrnZL/nSZ1ucCn7RolIdlAiR8Iy1xwSWxzg="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.gui.model.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visab/org.visab.gui.model.html",
-          "hash": "1kofvM6860HCk+7zgW1B+LLg4CA6YsmmpQIY70atkaM="
-        }
-      },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1101,10 +801,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.main.Main.html",
-          "hash": "aPk3gb5cqoLq56nPCybJY67WP3uKPTv+UhKS2Oj4zBA="
+          "hash": "SGp33uadXn3fSzHMbM9c80T67CVe3eAvELWsbaa/v2A="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1113,10 +813,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.main.html",
-          "hash": "h8+aUV5lMwkGmU9P4LTj+5xqxhXhK0nFSgDLzuUCdGI="
+          "hash": "86PPimVFhYrNNHsWmm0rHSjtArS1EqMQQQXqG7CNuDE="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1128,7 +828,7 @@
           "hash": "AM6YI21XWdtNVH9uFBkU3IIjgq9h+CZMLlYfSWIgd28="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1137,10 +837,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.newgui.DialogHelper.html",
-          "hash": "0Din1ekclEzjlgLa4qmGu+WOPeVVq1QRzK3EDxl3nc8="
+          "hash": "idixv2QoD1C5Tb2FP3lotQu44iXf561muD8M2Q46xvY="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1149,10 +849,46 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.newgui.DynamicViewLoader.html",
-          "hash": "jhpPpIByxQ0VOtIdlPXW8rcjfDOSVwFBDkJXetii8iM="
+          "hash": "z0Oblk5WE/VBTLdWl2UxWJOYMlrxxPjqPAFJ6IDPJjs="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.GenericScope.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.GenericScope.html",
+          "hash": "2mYZN2apd/ZZ9AqSBSU+wmkfV9x6sK6Qbo35CUXljZI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.ResourceHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.ResourceHelper.html",
+          "hash": "YF55RF/r0e07Hj54oZ71Vl9f/v2fovw2WAfhgPQDN9A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.ShowViewConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.ShowViewConfiguration.html",
+          "hash": "Vi0UB6cqHkgNBrHZF1Ey3/H+pcIl4uQ9jv0WLt5aWnc="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1161,10 +897,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.newgui.UiHelper.html",
-          "hash": "G2B3kNDyYuLP9ND2XnlS5TkUt3nEOkaaaQXTwHRUabs="
+          "hash": "0NUlK19Vb4cEQJHBWhkMpz41FoczK1OkGRp5Sb2Obek="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1176,7 +912,7 @@
           "hash": "JijiVIiok31zOQMrJA/9keQ/Ekhsqc89Nr29ZVYZFPo="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1188,7 +924,19 @@
           "hash": "U4RLJyPBRHBYWtZYI+4XBf8FZD9DvwLG33rXnNR6liE="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.control.CustomSessionObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.control.CustomSessionObject.html",
+          "hash": "FGxZEP1LTmpnIutzfl80/xjhJ18CCDOb//ONLffhKyw="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1200,7 +948,7 @@
           "hash": "iTNoGdd6fC4n4Jdz7BSa2/Un5UQV+WR/9B7fEItSFw8="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1212,7 +960,7 @@
           "hash": "TB0sSngSKVQUTt5VATWfStakXAFUsU3h2FgDdoYXFQ0="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1224,7 +972,7 @@
           "hash": "lOupl82ZhIgngiwQN9fHvLisPCqKSujNIkY4JU3qivU="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1236,7 +984,7 @@
           "hash": "sOoFXsWYGcXJLjLbzbihRbDLsmPjZ0lBoG3eVGqN6cs="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1248,7 +996,7 @@
           "hash": "YAEfrtSH6tSSNrOeCZ0JLh5+osoyo5wtoiOj6LLrnXs="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1257,22 +1005,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.newgui.control.html",
-          "hash": "3BpB1uyubukvutMmYWeiOunjUGLbKNG8Leem+55B2ig="
+          "hash": "THe+gthvSi0XsBtmYze06YOEQXU1YaSpv96jtzUP+Ws="
         }
       },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.newgui.main.MainScope.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visab/org.visab.newgui.main.MainScope.html",
-          "hash": "9O193KV4j4oOzM7rb6DreWO8UZIMNi+4McMfentTVJk="
-        }
-      },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1284,19 +1020,7 @@
           "hash": "tTuib7Mvvx/+vi1ZWp6Mu5ReB6+ehwFF0a+Kid+socc="
         }
       },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.newgui.main.view.MainView.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visab/org.visab.newgui.main.view.MainView.html",
-          "hash": "Vjum0y7nds1LVZAgefzLKBwOpC+GMy710bGUoMcknio="
-        }
-      },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1305,10 +1029,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.newgui.main.view.html",
-          "hash": "e5rC9j4qIhtvAcLjFSPbmY1syarbrVBRjsAPrQSFrgg="
+          "hash": "uWRakUxdyiIxoiXNOeZ9iCAs4ikiO+XsmuX6ERTwvzQ="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1317,22 +1041,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.newgui.main.viewmodel.HomeViewModel.html",
-          "hash": "kKt8Qktn2axaRfnE3nChMNrmya24C4DtQsVCM4S+0pU="
+          "hash": "OmH8TMzW9sSgle1uswWIyoR7RypcTzgTJYfLx77h5wQ="
         }
       },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.newgui.main.viewmodel.MainViewModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visab/org.visab.newgui.main.viewmodel.MainViewModel.html",
-          "hash": "b8jgwRmBBwBKgltTprc2lNbyLfF4ASJYM9k+WyCXgGo="
-        }
-      },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1341,22 +1053,22 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.newgui.main.viewmodel.html",
-          "hash": "Ji884t9at7GW5itoAE5L+ZkmzXj5dQnroiPMLhdpgkw="
+          "hash": "tCxDIEdHRjMPLp+dxo2ohnJl+w+WWX1PNyC53E2GLGY="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.newgui.main.yml",
+      "source_relative_path": "api_visab/org.visab.newgui.sessionoverview.view.NewSessionOverviewView.yml",
       "output": {
         ".html": {
-          "relative_path": "api_visab/org.visab.newgui.main.html",
-          "hash": "Wp+bcAWSB4msoXJkhZrJw1OIQS7ahA9s4aEWy0Hj88U="
+          "relative_path": "api_visab/org.visab.newgui.sessionoverview.view.NewSessionOverviewView.html",
+          "hash": "ZM/3yIkGD6TcKVaMZpAfLGZ4vpW/pxSB1Uqp4JEkVIU="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1368,7 +1080,7 @@
           "hash": "jVwZY26vK8AOtxCg6O5QZxwKElS8H/vg/fnJWi14dIw="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1377,10 +1089,22 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.newgui.sessionoverview.view.html",
-          "hash": "RzYxz9qLQh8kakHjyOwOW+D5rSVoRJhKIS7LRh43aFY="
+          "hash": "/Qu1A7KQTDySM7jdYerGKXVeMYQ5uniYxRSQjbhjwsQ="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.sessionoverview.viewmodel.NewSessionOverviewViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.sessionoverview.viewmodel.NewSessionOverviewViewModel.html",
+          "hash": "vvVAQC8iE6BJM5Jqy1zuwld9Z1Pfw+xOwtb86zQ9RMs="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1389,10 +1113,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.newgui.sessionoverview.viewmodel.SessionOverviewViewModel.html",
-          "hash": "/0RxmakjjMR7qx1ip0ZkNRudjT273Rc7f5WNZH4/7P8="
+          "hash": "wn43t6GVpcKes513u3EfJQIRgMqZzkU9/G3gRKb0azU="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1401,10 +1125,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.newgui.sessionoverview.viewmodel.html",
-          "hash": "LOyCrrgJ9KEoIXnEs1QgjNBnN2hmVvCGyfCAaEvNRo0="
+          "hash": "6IMuHqjj08iEYHP60PXUAfkfAGMUyolT/F3g23mF4Ug="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1416,7 +1140,7 @@
           "hash": "h6ssr/cHGv4M0VZyxqs7Yq7y2K2rgxF4QE2WTV6UWUw="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1428,7 +1152,7 @@
           "hash": "wrnyBH+tmjsXQIWDd2ylvf6FvLrdQAdTu3T+C98s6XQ="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1440,7 +1164,7 @@
           "hash": "B2K3zNAd5Lk2bxiO/L9EDWcSIMxs23XHbnWJJ4ef2M4="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1452,7 +1176,7 @@
           "hash": "06Is3B0YZInuFjgInxTcE6zVLC7YLLEnQTUR3qOcNlg="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1464,7 +1188,7 @@
           "hash": "BaFZhcOgAQBhi/pQ9wE+sNk31u0moswFAYTJTElsTkQ="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1473,10 +1197,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.newgui.settings.viewmodel.SettingsViewModel.html",
-          "hash": "YHPiTQ9zvJEX+CmqL6m9ER0t25gEgjEfDpUo0sfuFGE="
+          "hash": "NmlQUabugWrHxR9w5pkto41lYQ91LcH3oO2YHR/A+eE="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1488,7 +1212,7 @@
           "hash": "bQWliS0u9n51sbirWkrbR4cLV3qbCo3TUCBFjB/i1tQ="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1500,7 +1224,7 @@
           "hash": "NbFg7qdm6+gjupQfnAR8uHxfmxS7lyCQtbvv2DCAzas="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1509,10 +1233,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.newgui.visualize.ComparisonRowBase.html",
-          "hash": "KJQ1ofxDy0JP1sOvn/jc1e8L6cupHrQlvjMRWKijUso="
+          "hash": "OkN6kK5g03WbsEcQ1vAOefh+U5L4lSsM/RZxFga6wgo="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1521,70 +1245,82 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.newgui.visualize.ILiveReplayViewModel.html",
-          "hash": "aNS2kWCHDgfo6nPmBPenyHTTTV3heYxcbdCLBcClGHs="
+          "hash": "Ma9DL8ql7nOVTUkn6+BYABqAJXkHLM7ow0UfrI+mheI="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.newgui.visualize.ILiveStatisticsViewModel.yml",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.ILiveViewModel.yml",
       "output": {
         ".html": {
-          "relative_path": "api_visab/org.visab.newgui.visualize.ILiveStatisticsViewModel.html",
-          "hash": "Rcf+XYDmZBGWJvj7cnsm3TzOxo6J6Esc/KJXnDCP/Qc="
+          "relative_path": "api_visab/org.visab.newgui.visualize.ILiveViewModel.html",
+          "hash": "hAEZmp8CWJzkwhONB3wJ7TwVvhd/NsAvEN9JaI232qI="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.newgui.visualize.IReplayViewModel.yml",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.IVisualizeViewModel.yml",
       "output": {
         ".html": {
-          "relative_path": "api_visab/org.visab.newgui.visualize.IReplayViewModel.html",
-          "hash": "cS5kaFZW+jbVsepb9cQmCdVLHq72KKAut1HDUUJ4EB4="
+          "relative_path": "api_visab/org.visab.newgui.visualize.IVisualizeViewModel.html",
+          "hash": "OuNubW1WKccfi0epBt47TxbxkaQFxrjRipfhLvCePQ0="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.newgui.visualize.IStatisticsViewModel.yml",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.LiveViewModelBase.yml",
       "output": {
         ".html": {
-          "relative_path": "api_visab/org.visab.newgui.visualize.IStatisticsViewModel.html",
-          "hash": "+3nslJ2yY95AgYEoBzbNDpwHUm4YIpYZQoSc/bzv9/Q="
+          "relative_path": "api_visab/org.visab.newgui.visualize.LiveViewModelBase.html",
+          "hash": "qEtJ58ivFPPazb1PMI87XcjKWhQcfHvOqfjjjYFfQZY="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.newgui.visualize.LiveStatisticsViewModelBase.yml",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.PlayerInformation.yml",
       "output": {
         ".html": {
-          "relative_path": "api_visab/org.visab.newgui.visualize.LiveStatisticsViewModelBase.html",
-          "hash": "Ot0E4burl8bRFTn1kwfnRHo6pXsadZpmLxG1vWe71Q8="
+          "relative_path": "api_visab/org.visab.newgui.visualize.PlayerInformation.html",
+          "hash": "GvX45UqJZZpEaKc414tvHiZsnGTllm5zEC6CcbsU9Jk="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.newgui.visualize.StatisticsViewModelBase.yml",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.ReplayViewModelBase.yml",
       "output": {
         ".html": {
-          "relative_path": "api_visab/org.visab.newgui.visualize.StatisticsViewModelBase.html",
-          "hash": "5LmVHDZzf8YQz7Xa+IvqUzUf2cUbp/4xJ9AYOrvcCbo="
+          "relative_path": "api_visab/org.visab.newgui.visualize.ReplayViewModelBase.html",
+          "hash": "0r2IqRLAt8PkFQaii3JJbZUjUL2x7r/AKJe4XfUki2E="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.StatisticsDataStructure.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.StatisticsDataStructure.html",
+          "hash": "TS6zoSzhw59zUIvbkPvkc7Mp/uoywnevHsopmKeUoSE="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1593,10 +1329,22 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.newgui.visualize.VisualizeScope.html",
-          "hash": "fYll0LlUiOPhhs+o4mfIQF/Kz+7WivHfRgc6bOzeovk="
+          "hash": "Wcoa1atSOYPjPaB6dkP0/GFWmVJ5VduNll1hKphj2gM="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.VisualizeViewModelBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.VisualizeViewModelBase.html",
+          "hash": "DkE8V9nBp0tOyF1B4pedXPUNNwnHhoNS6RA4o9acTeo="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1605,10 +1353,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.model.CBRShooterComparisonRowBase.html",
-          "hash": "6SnLjIbzHkFbW6xgMAMFS9VIOzMpE8EGwuyxP6zzjGU="
+          "hash": "R61Y/BuDgiRXbiJrPZelRdilTYhEP6CeoeEeZ0uXk6I="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1617,10 +1365,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.model.CBRShooterImplicator.html",
-          "hash": "Y9frvUeA2NJ6UOIlUBsm9nZ/BZJHxvhrNWAh3b/MAGg="
+          "hash": "HmdNjEogBaoOQNaN7rBszU9pbZhoUptMdylTWm5/R44="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1632,7 +1380,31 @@
           "hash": "cKLF2qrdNRG+2GjDLjpW2AyyOc2or+/m9psk/1wCmLw="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.model.CoordinateHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.model.CoordinateHelper.html",
+          "hash": "+MpWw75O7RbGVARLLkQniJg1SqLB9UDX3Y43m6quzt0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.model.PlayerDataRow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.model.PlayerDataRow.html",
+          "hash": "0dXIlz8gFGllY4x8lwQxdxrM+Q5tVAcR47F3UZFViDg="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1644,7 +1416,43 @@
           "hash": "fAkThbD5PMUBPaudb7GO8hItUdbMEjGZ2QT4ddYHwlY="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.model.PlayerVisuals.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.model.PlayerVisuals.html",
+          "hash": "S+xLLd5DdEmZXx3sZQm0YZIuy9OectCnsueD2r0J4qU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.model.PlayerVisualsRow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.model.PlayerVisualsRow.html",
+          "hash": "AxMUnX+SCGiTIjx/pN2e05wtuQmHuSsicj5vrcWOgc0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.model.RoundResults.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.model.RoundResults.html",
+          "hash": "Y4/joM4tt4ZVWO7O7vgROXxefX+WpogdfmIq4/jqTi4="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1653,10 +1461,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.model.comparison.AimRatioComparisonRow.html",
-          "hash": "ma2xeFYlAmfOT1tCS6clXqg99S/2qFLMYG+520P9SFA="
+          "hash": "4Bo5zN4Vl/aaolU90vjICK4Ws9SnxA2dEaUjKj5lzg8="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1665,10 +1473,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.model.comparison.CollectedComparisonRow.html",
-          "hash": "dVQtjbSK9T8xghF+SyX5c8qIDj6LQUTlIcJZ4j/d76I="
+          "hash": "37y4Dcu0JfJVzpVX+aOEDy2J6nMHm5tw8Ak3A26m18g="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1677,10 +1485,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.model.comparison.DeathsComparisonRow.html",
-          "hash": "qiNT3/LvGOI9BfRqp34tLoxoX5wmOsBlHDeaAR82G7w="
+          "hash": "p0S1kdFeuRGcW6lCS+YBxuW63tibRpyfoxXGaD7/QFs="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1689,10 +1497,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.model.comparison.HitsComparisonRow.html",
-          "hash": "BXTX2Nv6hbkeX1i1/hgbbgdUTCVzhNlVOD9ukq+wNdY="
+          "hash": "IGzHDlu7BUPw1GffnwiNzxxtxki5i5PF1EEtF0VIEKM="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1701,10 +1509,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.model.comparison.KillsComparisonRow.html",
-          "hash": "X1gGCfIgI4ylty9pPxqFzG9LKVKkdZf/mro09Mkx/rY="
+          "hash": "kPpRIXc3xgJMYo33e2EVwH6lctk7rGBO0mTVB/5x0Wg="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1713,10 +1521,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.model.comparison.MovementComparisonRow.html",
-          "hash": "xVEMBdwu/uNNJ13f2vReCOLYjlRu8hcxDjbtk3yxj7I="
+          "hash": "bhytdF6lbcojgiODsX0C4/h/K+vebVrUaWOo46Ie0SY="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1725,10 +1533,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.model.comparison.PlayerTypeComparisonRow.html",
-          "hash": "1Xw2GJoVJj63ZG3Jdb7tErPVfbpB8Q20NmjMH4wVrAE="
+          "hash": "wvswXgf+4BOhxj4XBkRhvFPnC9tfHBFVjoAQkNEkyRE="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1737,10 +1545,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.model.comparison.ShotsComparisonRow.html",
-          "hash": "cu6P5F5/YcWbTFmnL+gXhqGU+0aWAidOx9fFUDtWH4U="
+          "hash": "duWOcq0sz52i9o9sQi0OdNdwoah8pD8bkEl3c1HYuSA="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1752,7 +1560,7 @@
           "hash": "e4TDjY4/yocS89PTV4RG/OIjWhPewXDhBk3fptcRK6g="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1761,10 +1569,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.model.html",
-          "hash": "ACrJfGnj68FAcyuR1NNjRU2FAlq/m7yOk0xloUYGTy0="
+          "hash": "Tz9IMwmOy5YwMqIv9mCVureatqz0tVrs/WNKA5qJZjU="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1776,7 +1584,19 @@
           "hash": "qRlvHnadWpow5OLxRJ/qTjPipB6BEJ4FQe8Pl3cM7G8="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.view.CBRShooterMetaView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.view.CBRShooterMetaView.html",
+          "hash": "60pOy8k07TYYR5GUnXoLVWg98zFRJDl7WMyA86FydEg="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1785,10 +1605,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.view.CBRShooterReplayView.html",
-          "hash": "nPMgpycIRjbWfhjoKVMn+u8VsXPISVIQ12nndJ840sg="
+          "hash": "zdAYqAhxTYj+0+RHnWE8hznMluSRPs9q8kZwXY+P9KY="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1800,7 +1620,7 @@
           "hash": "C4rjUEodZqnBdJDbGgkP69ZNm5r2+LXGsuzvkdOBxRY="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1809,10 +1629,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.view.html",
-          "hash": "dCL7mIzJNapTT9OObBIEG6DLQatXwkZVGuW32mvo0Bc="
+          "hash": "FesYu/SLbTkwWPFwI2T+M16Z78KxJoCkdXhUnQzqLDU="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1824,7 +1644,19 @@
           "hash": "FDzzSK+amqNIVktaa9KvoS8QFOu509L3XzAPnWBr+us="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterMetaViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterMetaViewModel.html",
+          "hash": "axukUajpMurAgGUqBRQUoU3oBjntYGUkWyvSIoHAHJ4="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1833,10 +1665,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.html",
-          "hash": "VleGVuse+uJ/gdj6TtT6er/tIJYlQaV5WYkhSov1IIk="
+          "hash": "yScNe5jc3HU3Cz3XmrRoHthVvW6ZZ1akFzcJqwiAN5c="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1845,10 +1677,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterStatisticsViewModel.html",
-          "hash": "JkpizGP6yOvx+w0jycGVxrQiY7IUHTggCYktdjkq19s="
+          "hash": "UcprsZwYPXfi732ojl0GnZKmQomfQpaJtUelOLxExw0="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1857,10 +1689,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.newgui.visualize.cbrshooter.viewmodel.html",
-          "hash": "ct4YNLFJOMJGNcf3yjZBrHawwwXAwN2djbR4YHbVeT0="
+          "hash": "jYKKy2upZ5p0MbuLYDrHfjqya2UUaLXSXJvWCAylvLo="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1872,7 +1704,7 @@
           "hash": "r7LdoYu3AG95VGU23XlBUeEP1jcNB/bF9989d+qrHMg="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1881,10 +1713,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.newgui.visualize.settlers.model.SettlersComparisonRowBase.html",
-          "hash": "SYr9euIqNr+unuTJU26w5H19dki92+xfZBseAogkIVs="
+          "hash": "mxKdNwId7EbWiT46xvJM1/1l08AqPgyuRm9M1/0oXt4="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1896,7 +1728,19 @@
           "hash": "gQCCjFYq0uU1KEJkI4fjyU4G7CtfAppXlX7Vdm8sPtg="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.settlers.model.SettlersImplicator.ResourceType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.settlers.model.SettlersImplicator.ResourceType.html",
+          "hash": "rw8CLDf9LJF6Bw9HawK0QMlHh3k5zKmiM7F8Sc8cja0="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1905,10 +1749,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.newgui.visualize.settlers.model.SettlersImplicator.html",
-          "hash": "IDBaITfeNN26FrcKjAkZBQA58eecKk4uO01+/++r+u0="
+          "hash": "LHQwZmH0rxUHAtTF33aN3cYrccN380p+TeQxuPmcXzY="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1917,10 +1761,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.newgui.visualize.settlers.model.comparison.BuildingsBuiltComparisonRow.html",
-          "hash": "rHpYyIa5s+/RaXcDLyRCfaSan/VCIKHFMrz2fzeV6V4="
+          "hash": "e2tdOwBd3gdDWB3cD2/w3I5gC0T9VptKYrhJrpKeP4o="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1929,10 +1773,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.newgui.visualize.settlers.model.comparison.ResourcesGainedByDiceComparisonRow.html",
-          "hash": "fipMMkP0TKdQYPi14G+ihphZRrMSMahVv8L5lOqpJAQ="
+          "hash": "4R4DfFOx3sozfmguiclFSkt+KN6gq0ZHjtVGBNrKdPE="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1941,10 +1785,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.newgui.visualize.settlers.model.comparison.ResourcesSpentComparisonRow.html",
-          "hash": "SW9UZjOVaNM5EJuxLiXqRZh99NAApJcYM/0HaSDtM5k="
+          "hash": "494p+6Ll51+vnsSAl08/Lkv329MTrcHUmQh2zr1PWus="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1953,10 +1797,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.newgui.visualize.settlers.model.comparison.VictoryPointsComparisonRow.html",
-          "hash": "9v9w8ZgfIk2ltU9FIcBg7vcEghWYsReXMXn6tgbyBmk="
+          "hash": "fqR17xhYZ61dV/F7mdqioLY5ueGcIlM/tD3okV7blg8="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1968,7 +1812,7 @@
           "hash": "oM2AJCSKARpBIb236ICjIF50AG+Q41Mb/hWYALvM6UA="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1977,10 +1821,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.newgui.visualize.settlers.model.html",
-          "hash": "8y/WKaX+td5UK/bp6rlm7NE5J0LWfeZ3twuRz8tlLXU="
+          "hash": "NW3ExsrGfSbej61+3weo774NXTjZ5Y9MNjbuWhmHZ+w="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1992,7 +1836,19 @@
           "hash": "VzWy3KN40VKKKm+ZwEPW8p+DurdK43/acSk7/9pYMt0="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.settlers.view.SettlersMetaView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.settlers.view.SettlersMetaView.html",
+          "hash": "JLg0ISI206g6jJapvj4KGGN6xUySNASWkb/RCg9RXn0="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2004,7 +1860,19 @@
           "hash": "oOxhZ6zRjBh6MTtA6+3WCluMY+My6sVC8XCUjTiMBik="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.settlers.view.SettlersStatisticsDetailView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.settlers.view.SettlersStatisticsDetailView.html",
+          "hash": "/ZEixeYiMs/yLndz+VUzeGDvr45j/DuX8NkPV2JXw7A="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2016,7 +1884,7 @@
           "hash": "nV/fkCw7sv2e+fKN/H78NzHZxrJdecvxAHkoCxlGJOw="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2025,10 +1893,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.newgui.visualize.settlers.view.html",
-          "hash": "ggXVIruw1X77QijsaXk2ww9zwHn8tOkZ/HdnrJioCBo="
+          "hash": "J3VTb08KYMi0ZKDZsJKQhBrqxz8884PdZ/duCahSLvM="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2040,7 +1908,19 @@
           "hash": "e91WvjDBXUGmmoqH0TrjpmRfYIcrUCUNEJOxVoTwH70="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.newgui.visualize.settlers.viewmodel.SettlersMetaViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.newgui.visualize.settlers.viewmodel.SettlersMetaViewModel.html",
+          "hash": "XYvSX4j0rpsAewUtCnEYwZTMBo/OwPeCP1dhIM+GE5I="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2052,7 +1932,7 @@
           "hash": "l0gXMcGNKhMPbxWsxzjyCSOlg+5FTdOE2NlXnyqOJRM="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2061,10 +1941,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.newgui.visualize.settlers.viewmodel.SettlersStatisticsViewModel.html",
-          "hash": "/2J9f8v+7ECUhN4ifmUO086jJhzH6s0E9ICbwFcCWlk="
+          "hash": "54XrNYUb0TjUcyXUsl5BQcqXecc9d9O0GJtYxyYhW+A="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2073,10 +1953,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.newgui.visualize.settlers.viewmodel.html",
-          "hash": "XWao5uXX+3xON0YH65hdmwepwSgHVZNN0NimfMrHUFU="
+          "hash": "oy/G++MHNvMx9sUyCJ5VxV/BW+9FLZqPNBkhEEO6nSA="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2088,7 +1968,7 @@
           "hash": "kyfZs4qbIEpDezxNU9r5XabA3ahNu1VHWvP6jkWbQbQ="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2097,10 +1977,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.newgui.visualize.starter.view.DefaultStatisticsViewModel.html",
-          "hash": "GoQVFPDlJzFlGCBTMgeWhqiIFRalJrowtn/2YzwvfYI="
+          "hash": "FS0B7iLpNOSWeXdBcarSMU1vIsbUhUpDsfv0NthSD5I="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2112,7 +1992,7 @@
           "hash": "BgxQZ6ckQWEsm6AxRq5zWukFJMDon1gx6chqHKFKv+A="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2121,10 +2001,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.newgui.visualize.html",
-          "hash": "nEainw3+ET7tBRs4SYATdNm/APGBU0NNXrLNITdKzb0="
+          "hash": "pPuzI+BQ7Jpomrd4phggt877AlTpoG19wuOjbljYoNA="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2133,94 +2013,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.newgui.html",
-          "hash": "H4W9lfnAVwLbtsVXLrUmRshiGzHkWk4ulXu/cDTo9f8="
+          "hash": "RbtDAAYBtOg+W1rCNfBDw3FWiKf0C3bT1/rKCpdWXpg="
         }
       },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.oldgui.AboutWindowController.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visab/org.visab.oldgui.AboutWindowController.html",
-          "hash": "Q4kcO/oSz7heAKC0Pd+BollZMkZSBKeZyi891nUzJE4="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.oldgui.GUIMain.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visab/org.visab.oldgui.GUIMain.html",
-          "hash": "14jaDDvhzEDB7ZXAMEIDWBlSzrjfUzu83zt416DkURk="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.oldgui.HelpWindowController.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visab/org.visab.oldgui.HelpWindowController.html",
-          "hash": "w8aNZIZPAcPDJ47HjjBSZmZhjWoM1fGVHScKHnumD1g="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.oldgui.MainWindowController.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visab/org.visab.oldgui.MainWindowController.html",
-          "hash": "tA0KOJGeDW8CygAABZySaLfkwpCp1H1mwZ+MEOjyyHk="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.oldgui.PathViewerWindowController.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visab/org.visab.oldgui.PathViewerWindowController.html",
-          "hash": "IQUYXhzX+VmE6FvDGwWJVDl1Vaa796Lew6DI0jjXEf8="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.oldgui.StatisticsWindowController.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visab/org.visab.oldgui.StatisticsWindowController.html",
-          "hash": "sJpF2Bp3jccIOFuSiJy7KYrx3wMFQyNPujPpSphiqj4="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.oldgui.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visab/org.visab.oldgui.html",
-          "hash": "YmPAYGkQk7WElEOvXH0Eb6HnKl7IS20PviymkVJd9Ys="
-        }
-      },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2229,10 +2025,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.processing.ILiveViewable.html",
-          "hash": "KsAUZ607UjJPqQeuRXhdDMqOW56IFPBGlQs63JsihKs="
+          "hash": "jG4ikiZgSnWyJSZmOnsbyPQE5uv+1CIP+Mo2rPe1o2o="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2241,22 +2037,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.processing.IReplayLiveViewable.html",
-          "hash": "IvapqStmjVWQ6Q4DLOPsItSYoqLUP+LtmlSzt/CZA/U="
+          "hash": "eBc5TztkvlnZAEkyA5DGJvGeSI/gUhk541jHX3Vgk2M="
         }
       },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.processing.IReplaySessionListener.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visab/org.visab.processing.IReplaySessionListener.html",
-          "hash": "zQ8EZhuPAOyI9GYum7LP3EUWUWsiF1ZewpB8h7yzKp0="
-        }
-      },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2265,10 +2049,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.processing.ISessionListener.html",
-          "hash": "Lv7hhbNIZHyoKIkEX5Jqa8dwp8o4duDW99UYW3dwxqw="
+          "hash": "lJuLZnLCA77rEiXJ5eEBoP08Q8KnB8lQj1yIew4sQxM="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2277,10 +2061,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.processing.ReplaySessionListenerBase.html",
-          "hash": "lRENcma4yI514jCl77ejagCrD4AcPSZHPxHTBUYjqxQ="
+          "hash": "Axgxbac2yTPlLA83Ir0zelu60Pne/+p89hdHArl68bE="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2289,10 +2073,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.processing.SessionListenerAdministration.html",
-          "hash": "T2IvJylVxGnSR3LUWqGrn0Geabj2SkONmQok/HxncXo="
+          "hash": "UYaNHKo/f9UXKoicSkK6t/nnKuWPnqpKacIzTLtb58M="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2301,10 +2085,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.processing.SessionListenerBase.html",
-          "hash": "M1OyRdd3wlIVpl0lU8wioJMVIVX91bYmjIqa3Aswwk0="
+          "hash": "H0Xx9B2CS+HfjJFMuIwBMaKmoqVElEg6blgdDhAkMf0="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2313,10 +2097,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.processing.SessionListenerFactory.html",
-          "hash": "+MjRm/8w3dkX3gWYpO2mCVrWhc+poETegw+3KVxKD2w="
+          "hash": "r/BKqSFKFOhv73vTTtluux4b2FXtsExRC5ULy8XCfpM="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2325,10 +2109,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.processing.cbrshooter.CBRShooterListener.html",
-          "hash": "QSA90wdgHh9aYS1uLfnMkt/+YG606Sp7f4dunoHVNyM="
+          "hash": "smbJH4Xz5M7yxXW3MFglQ452392x/iNPQRSNQl69+Po="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2337,10 +2121,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.processing.cbrshooter.html",
-          "hash": "Tl5Cx8EI79SJAW94GcoGEXtc2gu9E47JUEoUXyoV3wA="
+          "hash": "iFwiVwG34ZwfZCSlXaa5Nd4rb4aALC9ADvQqhByuB9Y="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2349,10 +2133,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.processing.settlers.SettlersListener.html",
-          "hash": "WB304BcgtToXmGNuZ9kfHkBPAuvyX4ZCNu7IhI4bQxQ="
+          "hash": "DcXOcv0l9vQ1ZB39+qF8nVHbvA9hxhfLO8hr1zhJG/w="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2364,7 +2148,7 @@
           "hash": "JcMKpLz2hVD+K2UAnta+FqTOhxnPXUQX8exL/IrR2xY="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2373,10 +2157,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.processing.starter.DefaultSessionListener.html",
-          "hash": "UxSSHuCLoNGqlpFH8UmTkQ5QKYJPJStXvGJcZb+BwbQ="
+          "hash": "VDxx4IRZTxkgWaNrmeQ7cpV9AYN8mS+qDEzdFaV407o="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2385,10 +2169,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.processing.starter.html",
-          "hash": "AP2kwgvYeaXlHm83nL5GJ7xE3GVzXTkx3GNTpPCcTEc="
+          "hash": "GYfjnlFySD3CQEQUYwr2UHyDCctXlLuVUe/NexpImS8="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2397,10 +2181,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.processing.html",
-          "hash": "1tP2HAtlSfhVt6YVazN/NGZqKjRb19dSGfKCVw3S+D0="
+          "hash": "gualLKfcmQRcraglWNkEchlk/dFmiKkFp+4vT0qxsHY="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2409,22 +2193,58 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.util.FileSizeHelper.html",
-          "hash": "xV+sxhyKgT8lcbqMseo6emapwNcO3Oe3WEMtnB37DlI="
+          "hash": "G2hSnABPHl4dH1lFwOinUUG037VHrAc+RdADvJ4i6Nc="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.util.JsonConvert.yml",
+      "source_relative_path": "api_visab/org.visab.util.JSONConvert.yml",
       "output": {
         ".html": {
-          "relative_path": "api_visab/org.visab.util.JsonConvert.html",
-          "hash": "zmWBCiY8+a+eqVjLiHzYj8HabeZJX/0yZbRMXx4gr5s="
+          "relative_path": "api_visab/org.visab.util.JSONConvert.html",
+          "hash": "gEq3HJ2/IUDh7XYk/RcX0sbYRpJAnpU+Ez/qIRsvjo8="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.util.NiceString.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.util.NiceString.html",
+          "hash": "xhD/QMCuAv5yWITQv5mrEKsuh3M5iBuw1j939M+Lwpg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.util.OSUtil.OS.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.util.OSUtil.OS.html",
+          "hash": "tf2AI8g5HdiRqywHYW4N/BTKnIhtZJFie3AYmZ2ulbU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.util.OSUtil.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.util.OSUtil.html",
+          "hash": "bAhuaqI6pRXZAQv/KVkM7k4bF/5eoqoOLwpvAA64X7I="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2433,46 +2253,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.util.StreamUtil.html",
-          "hash": "g12kr4tCJ5cNhPYME420712lZ6UNq0VyGT7WOPQ8Oww="
+          "hash": "53OJkUwuTlWN97M7GVMk/1PZRoIErqA3dw2RoMQ+UsA="
         }
       },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.util.StringFormat.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visab/org.visab.util.StringFormat.html",
-          "hash": "+Fv8ZkLpXhxyl9UfVhk20y15Myqctx/fTBKFBdVSzRk="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.util.UserSettings.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visab/org.visab.util.UserSettings.html",
-          "hash": "YN9Zf3mGYxG1zFEvtI8DloKq5cMv9OTRfY4HLoIlTaQ="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.util.VISABUtil.OS.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visab/org.visab.util.VISABUtil.OS.html",
-          "hash": "rpqIAqAWWmbUV31rgdfz/YG4aEtLoZZ2LmbWBjeV594="
-        }
-      },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2481,10 +2265,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.util.VISABUtil.html",
-          "hash": "rDC5OlOV7Sq8wF4AuwsKSSrRsgHhGV6WZO+s7mZ00bg="
+          "hash": "caEV5fCtNCnW2d7fRA+ELfqSKnJ4f6uk7p+7zR9UFdg="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2493,10 +2277,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.util.html",
-          "hash": "rxYfGcqLuOW7U6RTx6YGljQDAcyGhsRCeMb9GqTben8="
+          "hash": "bCntTmopf1h6sqdzrlaZb2iX4ndJn/2SiU/TAZPVnzk="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2505,10 +2289,22 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.workspace.BasicRepository.html",
-          "hash": "c0Z8YW9c9+79nlaQCRkmZHxugMHuyjT3VT6s+OYgDmk="
+          "hash": "AceYvGZiyCxKHGF66XYihzMoC9JuQ8VLsClRCDExEtc="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.workspace.ConfigManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.workspace.ConfigManager.html",
+          "hash": "fpI0aArpJ0lsRiUCa/NuDk4SbcPf3z1WVrOFTuw3kv0="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2517,10 +2313,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.workspace.ConfigRepository.html",
-          "hash": "cV5hyFWw76805u7h0binjMydSLXa4r5alrzeKTrJFdI="
+          "hash": "sBNTXIlKPNxMjfLlax3FbVSlSHQLJcHtxpDcstQdX88="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2529,10 +2325,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.workspace.DatabaseManager.html",
-          "hash": "uL9KLstwMpm0ynqI/CZ0ae++Lvd/vfDtK0wkeaPwlBU="
+          "hash": "CJerG8Qwj3NikZSztMyzy0DBkaixJa9pfvxMoazPrls="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2541,10 +2337,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.workspace.DatabaseRepository.html",
-          "hash": "D71zUVhI1EnH0HfyyGlHUi07j1Pv6a/6CaJkb3lHdjs="
+          "hash": "Y8NsQ2e275K4zb8RfHzD0Onpa7Ts97GXf5Geu97ZuwM="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2553,34 +2349,22 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.workspace.IRepository.html",
-          "hash": "LBNhRc3aeTWyX3yL+GghlGSz7to8OcfXmUODNYCEDKM="
+          "hash": "j1rGkbNf/K1yv/ZUVQq6pk61hwk0cwHTB1F9tGht+50="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.workspace.LogManager.yml",
+      "source_relative_path": "api_visab/org.visab.workspace.Mapping.yml",
       "output": {
         ".html": {
-          "relative_path": "api_visab/org.visab.workspace.LogManager.html",
-          "hash": "ymreLWJlyRgYgX4ErXjBkg0eu54vie8fDJaYywGrlSg="
+          "relative_path": "api_visab/org.visab.workspace.Mapping.html",
+          "hash": "RfHG8G1EPHeTVx6LPHGeH9MMmU+hX5UVtnBe6zOZbaU="
         }
       },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.workspace.LogRepository.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visab/org.visab.workspace.LogRepository.html",
-          "hash": "5SN3nFIQHoyAaJT0fo+0W0mWF/djJngjd9Bt6FJJmF8="
-        }
-      },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2589,10 +2373,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.workspace.RepositoryBase.html",
-          "hash": "f/VoouuqVxgmxvFs6kTwJu68UUkGGuyerxHxlKcIKlI="
+          "hash": "ST6AC8Mo6cUA6qGLTimicUteGvTiGttt2fiAuDHTzfY="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2601,10 +2385,22 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.workspace.SavedFileInformation.html",
-          "hash": "ZFbu7sULJBob7H41ad4B2mQuRREzU6wQh/vcbIYD9l0="
+          "hash": "gEs1Gt1hahh5WOj8bQhA9G6wLd6cW++KaJrZbT/4vyA="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visab/org.visab.workspace.UserSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visab/org.visab.workspace.UserSettings.html",
+          "hash": "WiJxETce7/iiH4YZc5Oqk8DtZxF7qiRttGKAJ5kaD4A="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2613,58 +2409,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.workspace.Workspace.html",
-          "hash": "LyD35VDj23YoRzzF+scWhPHyngg1gcheLbDRUtgFvqw="
+          "hash": "fVYul13sAZT07BDHyc11dttNpFrbSDh0ZDeD05vxsz0="
         }
       },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.workspace.config.ConfigManager.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visab/org.visab.workspace.config.ConfigManager.html",
-          "hash": "eDnPmggjJiSwW5S2iZpc9Ahha0AFyKn5lX1ca+ah0Jk="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.workspace.config.model.Mapping.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visab/org.visab.workspace.config.model.Mapping.html",
-          "hash": "EmAyJT1XEJHZY04JL2EbKDcuUBeERHMIevGqSiJ20Fk="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.workspace.config.model.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visab/org.visab.workspace.config.model.html",
-          "hash": "2yyaFGgsqRKRbRqYQNzVbcnCY9VkaBoOnDsnvmFGLGY="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visab/org.visab.workspace.config.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visab/org.visab.workspace.config.html",
-          "hash": "UpLojbUJvZ2npJ2wSLynqoglM+xOOKIG9V/ZUopqZxo="
-        }
-      },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2673,10 +2421,10 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.workspace.html",
-          "hash": "4LAdD+vm7ZM2u4Bbc5xNPB8Cw444J60R0KPgp14Sr8I="
+          "hash": "4CmXeDd/g6uZbuhcU+S3yyz+3G5MprXUFcAd3ngRhas="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2685,7 +2433,7 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/toc.html",
-          "hash": "k468ydS77nhs6BaM9PX1jrf0w9ZiDmbJMvOxRxJRr1E="
+          "hash": "2giOCBhtjtpWs0RR77upaFxkjgXI5Zrkm6ifXySZlug="
         }
       },
       "is_incremental": false,
@@ -2697,19 +2445,7 @@
       "output": {
         ".html": {
           "relative_path": "api_visabconnector/VISABConnector.ApiResponse-1.html",
-          "hash": "UvRTvId5o1YRvVBzsqTnsO61Gwvz8YH0TRlGUw1GY9Y="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visabconnector/VISABConnector.ClosingEventArgs.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visabconnector/VISABConnector.ClosingEventArgs.html",
-          "hash": "XjpP6KYmabGwLthwfKxhThCmgHQbjpv38B47ay6+9Fo="
+          "hash": "Py1sPD41njlUetTBMaTCZl8WMZHFFkL49C3nIGxIkLw="
         }
       },
       "is_incremental": true,
@@ -2721,7 +2457,7 @@
       "output": {
         ".html": {
           "relative_path": "api_visabconnector/VISABConnector.Default.html",
-          "hash": "nKYYJd0If9Q4oeL/qziEepYiNPvNlfu/c2a/urIHZis="
+          "hash": "2YozbHWZrQmQvNs7MAQbSDbS1KcFhhgOrVzJ+5kUYCY="
         }
       },
       "is_incremental": true,
@@ -2733,7 +2469,7 @@
       "output": {
         ".html": {
           "relative_path": "api_visabconnector/VISABConnector.DontSerialize.html",
-          "hash": "jUWkEQPl/5ExP6/OdhNVqijH7uB/8odtfpsT/AaKCKY="
+          "hash": "lcNiMRv925aiOCr0mXtmPasoEpMiMxmTKWsNY8XLDac="
         }
       },
       "is_incremental": true,
@@ -2741,23 +2477,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api_visabconnector/VISABConnector.FileConsumer.yml",
+      "source_relative_path": "api_visabconnector/VISABConnector.IImageContainer.yml",
       "output": {
         ".html": {
-          "relative_path": "api_visabconnector/VISABConnector.FileConsumer.html",
-          "hash": "epfbTQoHfk89Ny6ST9MfEaTWB5CJ8zaRC5I9d6LsobA="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visabconnector/VISABConnector.IImage.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visabconnector/VISABConnector.IImage.html",
-          "hash": "zIqVF4aeiwzoDFVuQipmJjKtsuxGBKJbco0UX4rn488="
+          "relative_path": "api_visabconnector/VISABConnector.IImageContainer.html",
+          "hash": "W/CZhhIMKZXPu18vZ26aQ8ozePpVJfCDL/ZQeKxzRvs="
         }
       },
       "is_incremental": true,
@@ -2769,7 +2493,19 @@
       "output": {
         ".html": {
           "relative_path": "api_visabconnector/VISABConnector.IMetaInformation.html",
-          "hash": "dfsDLY2GxEWuVw/J95SKwnf9AOtjjxaVdpkFzvi7mNo="
+          "hash": "lrnnWifxSo7TVLxwzAgraTzrkusxP2I3lx+18aqpGvQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visabconnector/VISABConnector.IStatistics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visabconnector/VISABConnector.IStatistics.html",
+          "hash": "0jHAV45JH7QTB1B9IYqD2lWTSg9cLsA2vtv3YkAbCMc="
         }
       },
       "is_incremental": true,
@@ -2781,7 +2517,7 @@
       "output": {
         ".html": {
           "relative_path": "api_visabconnector/VISABConnector.IVISABRequestHandler.html",
-          "hash": "1qZrKNCKx+Q/lx4e9J3C3QBtLKuUez0rkLmxaVjjlSk="
+          "hash": "yLnL6jgU7xfAuBge0xbtAR0mm9hRm8YGRWpIUY775c4="
         }
       },
       "is_incremental": true,
@@ -2793,19 +2529,7 @@
       "output": {
         ".html": {
           "relative_path": "api_visabconnector/VISABConnector.IVISABSession.html",
-          "hash": "8u3N7j6Hge5S6R25wruOou+AzkcKc8/3OCuN9jQk87o="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visabconnector/VISABConnector.IVISABStatistics.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visabconnector/VISABConnector.IVISABStatistics.html",
-          "hash": "5dWF0qFJaQpIaC0N8F+E+mSotu7Wi+Wb1wj5m/bRFng="
+          "hash": "g0f0+6tDqkfRZ8ZAd8SBd7b8S2zhPXRhhAAUl3Ombwo="
         }
       },
       "is_incremental": true,
@@ -2817,19 +2541,7 @@
       "output": {
         ".html": {
           "relative_path": "api_visabconnector/VISABConnector.LoopBasedSession.html",
-          "hash": "FHVxHS8LUJ+5GHU1IvYI6KEW5Th2ma6uKe5kE9vgkYU="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api_visabconnector/VISABConnector.MessageConsumer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api_visabconnector/VISABConnector.MessageConsumer.html",
-          "hash": "JzCIdEuNYWYXxgRXdMBEYByAHmES4X7dVmyhjSHrgMk="
+          "hash": "jttBY5fDAOXn/nQEeEgRdElyigvFtNYClj0PvcuPDKg="
         }
       },
       "is_incremental": true,
@@ -2841,7 +2553,7 @@
       "output": {
         ".html": {
           "relative_path": "api_visabconnector/VISABConnector.RoundBasedSession.html",
-          "hash": "xLWHo+u/48HBDDZTqfARUFZ+jhCexeZ5EQO8V+Pc9Aw="
+          "hash": "vRQ08oax55gcGPDT+0EA3jQn87dbcHNlWt2RHTr2Obo="
         }
       },
       "is_incremental": true,
@@ -2849,11 +2561,95 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api_visabconnector/VISABConnector.Unity.ImageExtractor.yml",
+      "source_relative_path": "api_visabconnector/VISABConnector.SessionStatus.yml",
       "output": {
         ".html": {
-          "relative_path": "api_visabconnector/VISABConnector.Unity.ImageExtractor.html",
-          "hash": "AE8RAZGgk7fGCUSEIB72A5R0Hv74beCiN+afiy/aWAQ="
+          "relative_path": "api_visabconnector/VISABConnector.SessionStatus.html",
+          "hash": "BI9Fwy/z8WzGtyH4u65oEP4sX7dN/wNAcZxAelRMW5Y="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visabconnector/VISABConnector.Unity.CameraConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visabconnector/VISABConnector.Unity.CameraConfiguration.html",
+          "hash": "crEWRDR+c0dQ+KA0qjkidWRoYxA3zEc9qCSY1v6VdPo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visabconnector/VISABConnector.Unity.CameraCreator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visabconnector/VISABConnector.Unity.CameraCreator.html",
+          "hash": "iMUgq4/oz+Bzx2wWtqiHyRtT9cJPyfi3EWp0AxeJ3yw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visabconnector/VISABConnector.Unity.ImageCreator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visabconnector/VISABConnector.Unity.ImageCreator.html",
+          "hash": "7K9/VRvPivJDXwshXf8NawsqKPzQxbltCBC5cjre43I="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visabconnector/VISABConnector.Unity.InstantiationConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visabconnector/VISABConnector.Unity.InstantiationConfiguration.html",
+          "hash": "UEjzh+U+lOgrZe0GtHk8YdmUNpHir9rCD3QJ8ZV4jR4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visabconnector/VISABConnector.Unity.SnapshotConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visabconnector/VISABConnector.Unity.SnapshotConfiguration.html",
+          "hash": "7MDn4EJy3UD7LDiG/JVmWvGz/gOz+mldVk2Dt6OPH5k="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visabconnector/VISABConnector.Unity.SnapshotMethods.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visabconnector/VISABConnector.Unity.SnapshotMethods.html",
+          "hash": "BIa3XiFa7LSjNW2QSwt1a3XwMkQNo9XgW8omOkMJNWw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api_visabconnector/VISABConnector.Unity.UnityExtensionMethods.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api_visabconnector/VISABConnector.Unity.UnityExtensionMethods.html",
+          "hash": "TLTJnfPWHdXJoHmRzO4x9bFs5vtWfIouzwXzRx3EqnQ="
         }
       },
       "is_incremental": true,
@@ -2865,7 +2661,7 @@
       "output": {
         ".html": {
           "relative_path": "api_visabconnector/VISABConnector.Unity.html",
-          "hash": "ioci1yKZfFdr26gumddkw8t36y12lbWMIaIOKzbvO6k="
+          "hash": "wR4uyf9memIxneHIUjhSQvLFQiALCudy0InkvueIvb4="
         }
       },
       "is_incremental": true,
@@ -2877,7 +2673,7 @@
       "output": {
         ".html": {
           "relative_path": "api_visabconnector/VISABConnector.VISABApi.html",
-          "hash": "FcVX/dnUBla7BH1qJrbUZPsfqwXR6H3BBvz3T/iKNqQ="
+          "hash": "Wb54NWv8Ormv9qQpXyDSg4LKO5pVnIi90ojVTfb0KUk="
         }
       },
       "is_incremental": true,
@@ -2889,7 +2685,7 @@
       "output": {
         ".html": {
           "relative_path": "api_visabconnector/VISABConnector.html",
-          "hash": "jyMR/fDzDO+l/h45Z/FvqkwP8vhcM2rTjH2x0ByFkqY="
+          "hash": "z9SoChoJKZ+SaQUeKfLk4uiuBQG+FkgaRSLhNiUqGnA="
         }
       },
       "is_incremental": true,
@@ -2913,7 +2709,7 @@
       "output": {
         ".html": {
           "relative_path": "api_visabconnector/toc.html",
-          "hash": "rp93wyNlqjiAjqdLI3Yap2xOIJn/x3ZkEgTDROV74LI="
+          "hash": "+0Aeq5KgtlZaVeX1+BFMdUBzJjLhKSf7QsEheQ3nXTc="
         }
       },
       "is_incremental": false,
@@ -2945,6 +2741,56 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "getting_started/connector.md",
+      "output": {
+        ".html": {
+          "relative_path": "getting_started/connector.html",
+          "hash": "wJOlpTkKqO+V+4tkOvP/0CafwpPXJoKr0PP98gTr0uc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "getting_started/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "getting_started/intro.html",
+          "hash": "K8Tzn8bzX56eXCyNXblu0w1IjuFZ6W1cOaxpy0MljCo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Toc",
+      "source_relative_path": "getting_started/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "getting_started/toc.html",
+          "hash": "s7APEiwUxGs8S654+tIUAPv+DwuRHzEqJIs1AbOFLjI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Tetrominos.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Tetrominos.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
         ".html": {
@@ -2956,12 +2802,23 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "misc/visab_documentation.pdf",
+      "output": {
+        "resource": {
+          "relative_path": "misc/visab_documentation.pdf"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "E4ZWxoaAV7n81f3VYekEG3dJElj1r/TDbz3xHnTOuqY="
+          "hash": "bQ7Ij113G3uWP2Xy5w/UQrq7lnC7UcHy6w//E94eyJg="
         }
       },
       "is_incremental": false,
@@ -2980,14 +2837,21 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 4,
-          "skipped_file_count": 4
+          "total_file_count": 6,
+          "skipped_file_count": 6
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 239,
-          "skipped_file_count": 239
+          "total_file_count": 222,
+          "skipped_file_count": 63
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
           "can_incremental": false,

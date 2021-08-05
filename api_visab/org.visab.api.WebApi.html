@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class WebApi
+    <title>Class WebAPI
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class WebApi
+    <meta name="title" content="Class WebAPI
    ">
     <meta name="generator" content="docfx 2.58.0.0">
     
@@ -67,140 +67,23 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="org.visab.api.WebApi">
+            <article class="content wrap" id="_content" data-uid="org.visab.api.WebAPI">
   
   
-  <h1 id="org_visab_api_WebApi" data-uid="org.visab.api.WebApi" class="text-break">Class WebApi
+  <h1 id="org_visab_api_WebAPI" data-uid="org.visab.api.WebAPI" class="text-break">Class WebAPI
   </h1>
-  <div class="markdown level0 summary"><p>The main WebApi that hosts a small HTTP server. This is the entry point for all HTTP communication.</p>
+  <div class="markdown level0 summary"><p>The HTTP-Protocol based WebAPI that can be used by game clients. Most importantly used for reciving images and statistics of games.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">java.lang.Object</span></div>
-    <div class="level1"><span class="xref">fi.iki.elonen.NanoHTTPD</span></div>
-    <div class="level2"><span class="xref">fi.iki.elonen.router.RouterNanoHTTPD</span></div>
-    <div class="level3"><span class="xref">WebApi</span></div>
+    <div class="level1"><span class="xref">org.nanohttpd.protocols.http.NanoHTTPD</span></div>
+    <div class="level2"><span class="xref">org.nanohttpd.router.RouterNanoHTTPD</span></div>
+    <div class="level3"><span class="xref">WebAPI</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">fi.iki.elonen.NanoHTTPD.closeAllConnections()</span>
-    </div>
-    <div>
-      <span class="xref">fi.iki.elonen.NanoHTTPD.createClientHandler(java.net.Socket,java.io.InputStream)</span>
-    </div>
-    <div>
-      <span class="xref">fi.iki.elonen.NanoHTTPD.createServerRunnable(int)</span>
-    </div>
-    <div>
-      <span class="xref">fi.iki.elonen.NanoHTTPD.decodeParameters(java.lang.String)</span>
-    </div>
-    <div>
-      <span class="xref">fi.iki.elonen.NanoHTTPD.decodeParameters(java.util.Map&lt;java.lang.String,java.lang.String&gt;)</span>
-    </div>
-    <div>
-      <span class="xref">fi.iki.elonen.NanoHTTPD.decodePercent(java.lang.String)</span>
-    </div>
-    <div>
-      <span class="xref">fi.iki.elonen.NanoHTTPD.getHostname()</span>
-    </div>
-    <div>
-      <span class="xref">fi.iki.elonen.NanoHTTPD.getListeningPort()</span>
-    </div>
-    <div>
-      <span class="xref">fi.iki.elonen.NanoHTTPD.getMimeTypeForFile(java.lang.String)</span>
-    </div>
-    <div>
-      <span class="xref">fi.iki.elonen.NanoHTTPD.getServerSocketFactory()</span>
-    </div>
-    <div>
-      <span class="xref">fi.iki.elonen.NanoHTTPD.getTempFileManagerFactory()</span>
-    </div>
-    <div>
-      <span class="xref">fi.iki.elonen.NanoHTTPD.isAlive()</span>
-    </div>
-    <div>
-      <span class="xref">fi.iki.elonen.NanoHTTPD.makeSSLSocketFactory(java.lang.String,char[])</span>
-    </div>
-    <div>
-      <span class="xref">fi.iki.elonen.NanoHTTPD.makeSSLSocketFactory(java.security.KeyStore,javax.net.ssl.KeyManagerFactory)</span>
-    </div>
-    <div>
-      <span class="xref">fi.iki.elonen.NanoHTTPD.makeSSLSocketFactory(java.security.KeyStore,javax.net.ssl.KeyManager[])</span>
-    </div>
-    <div>
-      <span class="xref">fi.iki.elonen.NanoHTTPD.makeSecure(javax.net.ssl.SSLServerSocketFactory,java.lang.String[])</span>
-    </div>
-    <div>
-      <span class="xref">fi.iki.elonen.NanoHTTPD.mimeTypes()</span>
-    </div>
-    <div>
-      <span class="xref">fi.iki.elonen.NanoHTTPD.newChunkedResponse(fi.iki.elonen.NanoHTTPD.Response.IStatus,java.lang.String,java.io.InputStream)</span>
-    </div>
-    <div>
-      <span class="xref">fi.iki.elonen.NanoHTTPD.newFixedLengthResponse(fi.iki.elonen.NanoHTTPD.Response.IStatus,java.lang.String,java.io.InputStream,long)</span>
-    </div>
-    <div>
-      <span class="xref">fi.iki.elonen.NanoHTTPD.newFixedLengthResponse(fi.iki.elonen.NanoHTTPD.Response.IStatus,java.lang.String,java.lang.String)</span>
-    </div>
-    <div>
-      <span class="xref">fi.iki.elonen.NanoHTTPD.newFixedLengthResponse(java.lang.String)</span>
-    </div>
-    <div>
-      <span class="xref">fi.iki.elonen.NanoHTTPD.serve(java.lang.String,fi.iki.elonen.NanoHTTPD.Method,java.util.Map&lt;java.lang.String,java.lang.String&gt;,java.util.Map&lt;java.lang.String,java.lang.String&gt;,java.util.Map&lt;java.lang.String,java.lang.String&gt;)</span>
-    </div>
-    <div>
-      <span class="xref">fi.iki.elonen.NanoHTTPD.setAsyncRunner(fi.iki.elonen.NanoHTTPD.AsyncRunner)</span>
-    </div>
-    <div>
-      <span class="xref">fi.iki.elonen.NanoHTTPD.setServerSocketFactory(fi.iki.elonen.NanoHTTPD.ServerSocketFactory)</span>
-    </div>
-    <div>
-      <span class="xref">fi.iki.elonen.NanoHTTPD.setTempFileManagerFactory(fi.iki.elonen.NanoHTTPD.TempFileManagerFactory)</span>
-    </div>
-    <div>
-      <span class="xref">fi.iki.elonen.NanoHTTPD.start()</span>
-    </div>
-    <div>
-      <span class="xref">fi.iki.elonen.NanoHTTPD.start(int)</span>
-    </div>
-    <div>
-      <span class="xref">fi.iki.elonen.NanoHTTPD.start(int,boolean)</span>
-    </div>
-    <div>
-      <span class="xref">fi.iki.elonen.NanoHTTPD.stop()</span>
-    </div>
-    <div>
-      <span class="xref">fi.iki.elonen.NanoHTTPD.useGzipWhenAccepted(fi.iki.elonen.NanoHTTPD.Response)</span>
-    </div>
-    <div>
-      <span class="xref">fi.iki.elonen.NanoHTTPD.wasStarted()</span>
-    </div>
-    <div>
-      <span class="xref">fi.iki.elonen.router.RouterNanoHTTPD.&lt;T&gt;setNotFoundHandler(java.lang.Class&lt;T&gt;)</span>
-    </div>
-    <div>
-      <span class="xref">fi.iki.elonen.router.RouterNanoHTTPD.&lt;T&gt;setNotImplementedHandler(java.lang.Class&lt;T&gt;)</span>
-    </div>
-    <div>
-      <span class="xref">fi.iki.elonen.router.RouterNanoHTTPD.addMappings()</span>
-    </div>
-    <div>
-      <span class="xref">fi.iki.elonen.router.RouterNanoHTTPD.addRoute(java.lang.String,java.lang.Class&lt;?&gt;,java.lang.Object...)</span>
-    </div>
-    <div>
-      <span class="xref">fi.iki.elonen.router.RouterNanoHTTPD.normalizeUri(java.lang.String)</span>
-    </div>
-    <div>
-      <span class="xref">fi.iki.elonen.router.RouterNanoHTTPD.removeRoute(java.lang.String)</span>
-    </div>
-    <div>
-      <span class="xref">fi.iki.elonen.router.RouterNanoHTTPD.serve(fi.iki.elonen.NanoHTTPD.IHTTPSession)</span>
-    </div>
-    <div>
-      <span class="xref">fi.iki.elonen.router.RouterNanoHTTPD.setRoutePrioritizer(fi.iki.elonen.router.RouterNanoHTTPD.IRoutePrioritizer)</span>
-    </div>
     <div>
       <span class="xref">java.lang.Object.clone()</span>
     </div>
@@ -234,20 +117,161 @@
     <div>
       <span class="xref">java.lang.Object.wait(long,int)</span>
     </div>
+    <div>
+      <span class="xref">org.nanohttpd.protocols.http.NanoHTTPD.addHTTPInterceptor(org.nanohttpd.util.IHandler&lt;org.nanohttpd.protocols.http.IHTTPSession,org.nanohttpd.protocols.http.response.Response&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">org.nanohttpd.protocols.http.NanoHTTPD.closeAllConnections()</span>
+    </div>
+    <div>
+      <span class="xref">org.nanohttpd.protocols.http.NanoHTTPD.createClientHandler(java.net.Socket,java.io.InputStream)</span>
+    </div>
+    <div>
+      <span class="xref">org.nanohttpd.protocols.http.NanoHTTPD.createServerRunnable(int)</span>
+    </div>
+    <div>
+      <span class="xref">org.nanohttpd.protocols.http.NanoHTTPD.decodeParameters(java.lang.String)</span>
+    </div>
+    <div>
+      <span class="xref">org.nanohttpd.protocols.http.NanoHTTPD.decodeParameters(java.util.Map&lt;java.lang.String,java.lang.String&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">org.nanohttpd.protocols.http.NanoHTTPD.decodePercent(java.lang.String)</span>
+    </div>
+    <div>
+      <span class="xref">org.nanohttpd.protocols.http.NanoHTTPD.getHostname()</span>
+    </div>
+    <div>
+      <span class="xref">org.nanohttpd.protocols.http.NanoHTTPD.getListeningPort()</span>
+    </div>
+    <div>
+      <span class="xref">org.nanohttpd.protocols.http.NanoHTTPD.getMimeTypeForFile(java.lang.String)</span>
+    </div>
+    <div>
+      <span class="xref">org.nanohttpd.protocols.http.NanoHTTPD.getMyServerSocket()</span>
+    </div>
+    <div>
+      <span class="xref">org.nanohttpd.protocols.http.NanoHTTPD.getServerSocketFactory()</span>
+    </div>
+    <div>
+      <span class="xref">org.nanohttpd.protocols.http.NanoHTTPD.getTempFileManagerFactory()</span>
+    </div>
+    <div>
+      <span class="xref">org.nanohttpd.protocols.http.NanoHTTPD.handle(org.nanohttpd.protocols.http.IHTTPSession)</span>
+    </div>
+    <div>
+      <span class="xref">org.nanohttpd.protocols.http.NanoHTTPD.isAlive()</span>
+    </div>
+    <div>
+      <span class="xref">org.nanohttpd.protocols.http.NanoHTTPD.makeSSLSocketFactory(java.lang.String,char[])</span>
+    </div>
+    <div>
+      <span class="xref">org.nanohttpd.protocols.http.NanoHTTPD.makeSSLSocketFactory(java.security.KeyStore,javax.net.ssl.KeyManagerFactory)</span>
+    </div>
+    <div>
+      <span class="xref">org.nanohttpd.protocols.http.NanoHTTPD.makeSSLSocketFactory(java.security.KeyStore,javax.net.ssl.KeyManager[])</span>
+    </div>
+    <div>
+      <span class="xref">org.nanohttpd.protocols.http.NanoHTTPD.makeSecure(javax.net.ssl.SSLServerSocketFactory,java.lang.String[])</span>
+    </div>
+    <div>
+      <span class="xref">org.nanohttpd.protocols.http.NanoHTTPD.mimeTypes()</span>
+    </div>
+    <div>
+      <span class="xref">org.nanohttpd.protocols.http.NanoHTTPD.safeClose(java.lang.Object)</span>
+    </div>
+    <div>
+      <span class="xref">org.nanohttpd.protocols.http.NanoHTTPD.setAsyncRunner(org.nanohttpd.protocols.http.threading.IAsyncRunner)</span>
+    </div>
+    <div>
+      <span class="xref">org.nanohttpd.protocols.http.NanoHTTPD.setHTTPHandler(org.nanohttpd.util.IHandler&lt;org.nanohttpd.protocols.http.IHTTPSession,org.nanohttpd.protocols.http.response.Response&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">org.nanohttpd.protocols.http.NanoHTTPD.setServerSocketFactory(org.nanohttpd.util.IFactoryThrowing&lt;java.net.ServerSocket,java.io.IOException&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">org.nanohttpd.protocols.http.NanoHTTPD.setTempFileManagerFactory(org.nanohttpd.util.IFactory&lt;org.nanohttpd.protocols.http.tempfiles.ITempFileManager&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">org.nanohttpd.protocols.http.NanoHTTPD.start()</span>
+    </div>
+    <div>
+      <span class="xref">org.nanohttpd.protocols.http.NanoHTTPD.start(int)</span>
+    </div>
+    <div>
+      <span class="xref">org.nanohttpd.protocols.http.NanoHTTPD.start(int,boolean)</span>
+    </div>
+    <div>
+      <span class="xref">org.nanohttpd.protocols.http.NanoHTTPD.stop()</span>
+    </div>
+    <div>
+      <span class="xref">org.nanohttpd.protocols.http.NanoHTTPD.wasStarted()</span>
+    </div>
+    <div>
+      <span class="xref">org.nanohttpd.router.RouterNanoHTTPD.&lt;T&gt;setNotFoundHandler(java.lang.Class&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">org.nanohttpd.router.RouterNanoHTTPD.&lt;T&gt;setNotImplementedHandler(java.lang.Class&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">org.nanohttpd.router.RouterNanoHTTPD.addMappings()</span>
+    </div>
+    <div>
+      <span class="xref">org.nanohttpd.router.RouterNanoHTTPD.addRoute(java.lang.String,java.lang.Class&lt;?&gt;,java.lang.Object...)</span>
+    </div>
+    <div>
+      <span class="xref">org.nanohttpd.router.RouterNanoHTTPD.normalizeUri(java.lang.String)</span>
+    </div>
+    <div>
+      <span class="xref">org.nanohttpd.router.RouterNanoHTTPD.removeRoute(java.lang.String)</span>
+    </div>
+    <div>
+      <span class="xref">org.nanohttpd.router.RouterNanoHTTPD.serve(org.nanohttpd.protocols.http.IHTTPSession)</span>
+    </div>
+    <div>
+      <span class="xref">org.nanohttpd.router.RouterNanoHTTPD.setRoutePrioritizer(org.nanohttpd.router.RouterNanoHTTPD.IRoutePrioritizer)</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: </h6>
   <h6><strong>Assembly</strong>: .dll</h6>
-  <h5 id="org_visab_api_WebApi_syntax">Syntax</h5>
+  <h5 id="org_visab_api_WebAPI_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class WebApi extends RouterNanoHTTPD</code></pre>
+    <pre><code class="lang-csharp hljs">public class WebAPI extends RouterNanoHTTPD</code></pre>
   </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="org_visab_api_WebAPI_SESSION_ALREADY_CLOSED_RESPONSE" data-uid="org.visab.api.WebAPI.SESSION_ALREADY_CLOSED_RESPONSE">SESSION_ALREADY_CLOSED_RESPONSE</h4>
+  <div class="markdown level1 summary"><p>Should be returned if session specific data like statistics or images were sent, but the session was already closed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static final String SESSION_ALREADY_CLOSED_RESPONSE</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   
   
-  <a id="org_visab_api_WebApi_addMappings_" data-uid="org.visab.api.WebApi.addMappings*"></a>
-  <h4 id="org_visab_api_WebApi_addMappings__" data-uid="org.visab.api.WebApi.addMappings()">addMappings()</h4>
-  <div class="markdown level1 summary"><p>Add the controllers to the endpoints</p>
+  <a id="org_visab_api_WebAPI_addMappings_" data-uid="org.visab.api.WebAPI.addMappings*"></a>
+  <h4 id="org_visab_api_WebAPI_addMappings__" data-uid="org.visab.api.WebAPI.addMappings()">addMappings()</h4>
+  <div class="markdown level1 summary"><p>Adds the controllers for the endpoints.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -255,17 +279,17 @@
     <pre><code class="lang-csharp hljs">public void addMappings()</code></pre>
   </div>
   <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">fi.iki.elonen.router.RouterNanoHTTPD.addMappings()</span></div>
+  <div><span class="xref">org.nanohttpd.router.RouterNanoHTTPD.addMappings()</span></div>
   
   
-  <a id="org_visab_api_WebApi_getInstance_" data-uid="org.visab.api.WebApi.getInstance*"></a>
-  <h4 id="org_visab_api_WebApi_getInstance__" data-uid="org.visab.api.WebApi.getInstance()">getInstance()</h4>
+  <a id="org_visab_api_WebAPI_getInstance_" data-uid="org.visab.api.WebAPI.getInstance*"></a>
+  <h4 id="org_visab_api_WebAPI_getInstance__" data-uid="org.visab.api.WebAPI.getInstance()">getInstance()</h4>
   <div class="markdown level1 summary"><p>Gets the singelton instance</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static WebApi getInstance()</code></pre>
+    <pre><code class="lang-csharp hljs">public static WebAPI getInstance()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -285,9 +309,10 @@
   </table>
   
   
-  <a id="org_visab_api_WebApi_getSessionAdministration_" data-uid="org.visab.api.WebApi.getSessionAdministration*"></a>
-  <h4 id="org_visab_api_WebApi_getSessionAdministration__" data-uid="org.visab.api.WebApi.getSessionAdministration()">getSessionAdministration()</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="org_visab_api_WebAPI_getSessionAdministration_" data-uid="org.visab.api.WebAPI.getSessionAdministration*"></a>
+  <h4 id="org_visab_api_WebAPI_getSessionAdministration__" data-uid="org.visab.api.WebAPI.getSessionAdministration()">getSessionAdministration()</h4>
+  <div class="markdown level1 summary"><p>The SessionAdministration of the WebApi instance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -310,9 +335,9 @@
   </table>
   
   
-  <a id="org_visab_api_WebApi_restart_" data-uid="org.visab.api.WebApi.restart*"></a>
-  <h4 id="org_visab_api_WebApi_restart__" data-uid="org.visab.api.WebApi.restart()">restart()</h4>
-  <div class="markdown level1 summary"><p>Restarts the WebApi, SessionListenerFactory and SessionWatchdog</p>
+  <a id="org_visab_api_WebAPI_restart_" data-uid="org.visab.api.WebAPI.restart*"></a>
+  <h4 id="org_visab_api_WebAPI_restart__" data-uid="org.visab.api.WebAPI.restart()">restart()</h4>
+  <div class="markdown level1 summary"><p>Restarts the WebApi, SessionListenerFactory and SessionWatchdog.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -321,9 +346,9 @@
   </div>
   
   
-  <a id="org_visab_api_WebApi_shutdown_" data-uid="org.visab.api.WebApi.shutdown*"></a>
-  <h4 id="org_visab_api_WebApi_shutdown__" data-uid="org.visab.api.WebApi.shutdown()">shutdown()</h4>
-  <div class="markdown level1 summary"><p>Shutsdown the WebApi, SessionListenerFactory and SessionWatchdog</p>
+  <a id="org_visab_api_WebAPI_shutdown_" data-uid="org.visab.api.WebAPI.shutdown*"></a>
+  <h4 id="org_visab_api_WebAPI_shutdown__" data-uid="org.visab.api.WebAPI.shutdown()">shutdown()</h4>
+  <div class="markdown level1 summary"><p>Shutsdown the WebApi, SessionListenerFactory and SessionWatchdog.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -332,9 +357,9 @@
   </div>
   
   
-  <a id="org_visab_api_WebApi_start_" data-uid="org.visab.api.WebApi.start*"></a>
-  <h4 id="org_visab_api_WebApi_start__" data-uid="org.visab.api.WebApi.start()">start()</h4>
-  <div class="markdown level1 summary"><p>Starts the WebApi, SessionListenerFactory, SessionWatchdog</p>
+  <a id="org_visab_api_WebAPI_start_" data-uid="org.visab.api.WebAPI.start*"></a>
+  <h4 id="org_visab_api_WebAPI_start__" data-uid="org.visab.api.WebAPI.start()">start()</h4>
+  <div class="markdown level1 summary"><p>Starts the WebApi, SessionListenerFactory, SessionWatchdog.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -342,7 +367,7 @@
     <pre><code class="lang-csharp hljs">public void start()</code></pre>
   </div>
   <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">fi.iki.elonen.NanoHTTPD.start()</span></div>
+  <div><span class="xref">org.nanohttpd.protocols.http.NanoHTTPD.start()</span></div>
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>

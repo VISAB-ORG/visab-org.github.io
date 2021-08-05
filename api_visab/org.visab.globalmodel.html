@@ -76,8 +76,7 @@
  All model-style JAVA classes that are necessarily used across a variety of
  locations within VISAB shall be placed here or in a fitting sub-package.
  
- Furthermore generic interfaces for specific implementations are also
- maintained in here.
+ Furthermore, the interfaces for these models can also be found in here.
  </p>
 </div>
   <div class="markdown level0 conceptual"></div>
@@ -85,28 +84,36 @@
     <h3 id="classes">Classes
   </h3>
       <h4><a class="xref" href="org.visab.globalmodel.BasicVISABFile.html">BasicVISABFile</a></h4>
-      <section><p>The basic VISABFile that holds all meta information required by IVISABFile.</p>
+      <section><p>The BasicVISABFile which serves as an instantiable base implementation for the IVISABFile interface.</p>
 </section>
       <h4><a class="xref" href="org.visab.globalmodel.ControlledBy.html">ControlledBy</a></h4>
-      <section></section>
+      <section><p>Constants for the agent type. Can be used if the game uses the same strings.</p>
+</section>
+      <h4><a class="xref" href="org.visab.globalmodel.GameName.html">GameName</a></h4>
+      <section><p>Constants for the game names. These names are not required in any way when implemententing a new game, but may be helpful to avoid typos.</p>
+</section>
       <h4><a class="xref" href="org.visab.globalmodel.Rectangle.html">Rectangle</a></h4>
-      <section></section>
+      <section><p>A rectangle is defined by its width, height and its top left corner anchor point.</p>
+</section>
       <h4><a class="xref" href="org.visab.globalmodel.SessionStatus.html">SessionStatus</a></h4>
-      <section></section>
+      <section><p>The SessionStatus class holds information on the current status of a tranmission session.</p>
+</section>
       <h4><a class="xref" href="org.visab.globalmodel.Vector2.html">Vector2</a></h4>
-      <section></section>
+      <section><p>A two dimensional vector representation.</p>
+</section>
     <h3 id="interfaces">Interfaces
   </h3>
-      <h4><a class="xref" href="org.visab.globalmodel.IImage.html">IImage</a></h4>
-      <section><p>The marker interface, that all image classes have to implement. IImage POJOs are essentially mirrors of the class which was serialized on the game side.</p>
+      <h4><a class="xref" href="org.visab.globalmodel.IImageContainer.html">IImageContainer</a></h4>
+      <section><p>The marker interface, that all image classes have to implement. IImageContainer POJOs are essentially mirrors of the class which was serialized on the game side.</p>
 </section>
       <h4><a class="xref" href="org.visab.globalmodel.IMetaInformation.html">IMetaInformation</a></h4>
-      <section></section>
+      <section><p>The IMetaInformation interface, that all meta information POJOs have to implement. Mirrors the IMetaInformation that was sent by the game.</p>
+</section>
       <h4><a class="xref" href="org.visab.globalmodel.IStatistics.html">IStatistics</a></h4>
       <section><p>The marker interface, that all statistic POJOs have to implement. IStatistic POJOs are essentially mirrors of the class which was serialized on the game side.</p>
 </section>
       <h4><a class="xref" href="org.visab.globalmodel.IVISABFile.html">IVISABFile</a></h4>
-      <section><p>The IVISABFile interface that all VISAB POJOs have to implement. Usual IVISABFiles contain meta information, a list of statistics and optionally images.</p>
+      <section><p>The IVISABFile interface that all VISAB file POJOs have to implement.</p>
 </section>
 </article>
           </div>

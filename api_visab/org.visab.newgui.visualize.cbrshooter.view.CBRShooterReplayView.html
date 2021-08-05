@@ -72,12 +72,18 @@
   
   <h1 id="org_visab_newgui_visualize_cbrshooter_view_CBRShooterReplayView" data-uid="org.visab.newgui.visualize.cbrshooter.view.CBRShooterReplayView" class="text-break">Class CBRShooterReplayView
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>View that is associated with the respective fxml as a controller to represent its data in terms of the chosen MVVM GUI pattern.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">java.lang.Object</span></div>
     <div class="level1"><span class="xref">CBRShooterReplayView</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">de.saxsys.mvvmfx.FxmlView&lt;org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel&gt;</span></div>
+    <div><span class="xref">javafx.fxml.Initializable</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -119,7 +125,7 @@
   <h6><strong>Assembly</strong>: .dll</h6>
   <h5 id="org_visab_newgui_visualize_cbrshooter_view_CBRShooterReplayView_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class CBRShooterReplayView</code></pre>
+    <pre><code class="lang-csharp hljs">public class CBRShooterReplayView implements FxmlView&lt;CBRShooterReplayViewModel&gt;, Initializable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -132,6 +138,124 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public CBRShooterReplayView()</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="org_visab_newgui_visualize_cbrshooter_view_CBRShooterReplayView_handleFrameSlider_" data-uid="org.visab.newgui.visualize.cbrshooter.view.CBRShooterReplayView.handleFrameSlider*"></a>
+  <h4 id="org_visab_newgui_visualize_cbrshooter_view_CBRShooterReplayView_handleFrameSlider__" data-uid="org.visab.newgui.visualize.cbrshooter.view.CBRShooterReplayView.handleFrameSlider()">handleFrameSlider()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void handleFrameSlider()</code></pre>
+  </div>
+  
+  
+  <a id="org_visab_newgui_visualize_cbrshooter_view_CBRShooterReplayView_handlePlayPause_" data-uid="org.visab.newgui.visualize.cbrshooter.view.CBRShooterReplayView.handlePlayPause*"></a>
+  <h4 id="org_visab_newgui_visualize_cbrshooter_view_CBRShooterReplayView_handlePlayPause_javafx_event_ActionEvent_" data-uid="org.visab.newgui.visualize.cbrshooter.view.CBRShooterReplayView.handlePlayPause(javafx.event.ActionEvent)">handlePlayPause(ActionEvent event)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void handlePlayPause(ActionEvent event)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">javafx.event.ActionEvent</span></td>
+        <td><span class="parametername">event</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_newgui_visualize_cbrshooter_view_CBRShooterReplayView_handleVeloSlider_" data-uid="org.visab.newgui.visualize.cbrshooter.view.CBRShooterReplayView.handleVeloSlider*"></a>
+  <h4 id="org_visab_newgui_visualize_cbrshooter_view_CBRShooterReplayView_handleVeloSlider__" data-uid="org.visab.newgui.visualize.cbrshooter.view.CBRShooterReplayView.handleVeloSlider()">handleVeloSlider()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void handleVeloSlider()</code></pre>
+  </div>
+  
+  
+  <a id="org_visab_newgui_visualize_cbrshooter_view_CBRShooterReplayView_initialize_" data-uid="org.visab.newgui.visualize.cbrshooter.view.CBRShooterReplayView.initialize*"></a>
+  <h4 id="org_visab_newgui_visualize_cbrshooter_view_CBRShooterReplayView_initialize_java_net_URL_java_util_ResourceBundle_" data-uid="org.visab.newgui.visualize.cbrshooter.view.CBRShooterReplayView.initialize(java.net.URL,java.util.ResourceBundle)">initialize(URL location, ResourceBundle resources)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void initialize(URL location, ResourceBundle resources)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.net.URL</span></td>
+        <td><span class="parametername">location</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">java.util.ResourceBundle</span></td>
+        <td><span class="parametername">resources</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_newgui_visualize_cbrshooter_view_CBRShooterReplayView_visualizeAmmuItem_" data-uid="org.visab.newgui.visualize.cbrshooter.view.CBRShooterReplayView.visualizeAmmuItem*"></a>
+  <h4 id="org_visab_newgui_visualize_cbrshooter_view_CBRShooterReplayView_visualizeAmmuItem__" data-uid="org.visab.newgui.visualize.cbrshooter.view.CBRShooterReplayView.visualizeAmmuItem()">visualizeAmmuItem()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void visualizeAmmuItem()</code></pre>
+  </div>
+  
+  
+  <a id="org_visab_newgui_visualize_cbrshooter_view_CBRShooterReplayView_visualizeHealthItem_" data-uid="org.visab.newgui.visualize.cbrshooter.view.CBRShooterReplayView.visualizeHealthItem*"></a>
+  <h4 id="org_visab_newgui_visualize_cbrshooter_view_CBRShooterReplayView_visualizeHealthItem__" data-uid="org.visab.newgui.visualize.cbrshooter.view.CBRShooterReplayView.visualizeHealthItem()">visualizeHealthItem()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void visualizeHealthItem()</code></pre>
+  </div>
+  
+  
+  <a id="org_visab_newgui_visualize_cbrshooter_view_CBRShooterReplayView_visualizeWeapon_" data-uid="org.visab.newgui.visualize.cbrshooter.view.CBRShooterReplayView.visualizeWeapon*"></a>
+  <h4 id="org_visab_newgui_visualize_cbrshooter_view_CBRShooterReplayView_visualizeWeapon__" data-uid="org.visab.newgui.visualize.cbrshooter.view.CBRShooterReplayView.visualizeWeapon()">visualizeWeapon()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void visualizeWeapon()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">de.saxsys.mvvmfx.FxmlView&lt;org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel&gt;</span>
+  </div>
+  <div>
+      <span class="xref">javafx.fxml.Initializable</span>
   </div>
 </article>
           </div>

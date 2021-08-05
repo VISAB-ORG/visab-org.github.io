@@ -138,6 +138,48 @@
   </h3>
   
   
+  <a id="org_visab_newgui_UiHelper_greyScaleImage_" data-uid="org.visab.newgui.UiHelper.greyScaleImage*"></a>
+  <h4 id="org_visab_newgui_UiHelper_greyScaleImage_javafx_scene_image_Image_" data-uid="org.visab.newgui.UiHelper.greyScaleImage(javafx.scene.image.Image)">greyScaleImage(Image inputImage)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ImageView greyScaleImage(Image inputImage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">javafx.scene.image.Image</span></td>
+        <td><span class="parametername">inputImage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">javafx.scene.image.ImageView</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="org_visab_newgui_UiHelper_inovkeOnUiThread_" data-uid="org.visab.newgui.UiHelper.inovkeOnUiThread*"></a>
   <h4 id="org_visab_newgui_UiHelper_inovkeOnUiThread_java_lang_Runnable_" data-uid="org.visab.newgui.UiHelper.inovkeOnUiThread(java.lang.Runnable)">inovkeOnUiThread(Runnable runnable)</h4>
   <div class="markdown level1 summary"><p>invoke a Runnable on the Ui Thread. Use this when you you want to update the Ui but are not on the Ui Thread.</p>
@@ -162,6 +204,95 @@
         <td><span class="parametername">runnable</span></td>
         <td><p>The runnable to invoke</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_newgui_UiHelper_recolorImage_" data-uid="org.visab.newgui.UiHelper.recolorImage*"></a>
+  <h4 id="org_visab_newgui_UiHelper_recolorImage_javafx_scene_image_Image_javafx_scene_paint_Color_" data-uid="org.visab.newgui.UiHelper.recolorImage(javafx.scene.image.Image,javafx.scene.paint.Color)">recolorImage(Image inputImage, Color newColor)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Image recolorImage(Image inputImage, Color newColor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">javafx.scene.image.Image</span></td>
+        <td><span class="parametername">inputImage</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">javafx.scene.paint.Color</span></td>
+        <td><span class="parametername">newColor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">javafx.scene.image.Image</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_newgui_UiHelper_translateHexToRgbColor_" data-uid="org.visab.newgui.UiHelper.translateHexToRgbColor*"></a>
+  <h4 id="org_visab_newgui_UiHelper_translateHexToRgbColor_java_lang_String_" data-uid="org.visab.newgui.UiHelper.translateHexToRgbColor(java.lang.String)">translateHexToRgbColor(String hexCode)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Color translateHexToRgbColor(String hexCode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">hexCode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">javafx.scene.paint.Color</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>

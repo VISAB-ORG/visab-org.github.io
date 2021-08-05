@@ -72,7 +72,7 @@
   
   <h1 id="org_visab_api_SessionAdministration" data-uid="org.visab.api.SessionAdministration" class="text-break">Class SessionAdministration
   </h1>
-  <div class="markdown level0 summary"><p>Class for administering the current transmission sessions. Holds a reference to the current transmission sessions and checks them for timeout. Publishes all api related events.</p>
+  <div class="markdown level0 summary"><p>The SessionAdministration class is used for administering the current transmission sessions. It has a list of all the transmission sessions that are currently open and publishes all API related events.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -140,12 +140,12 @@
   
   <a id="org_visab_api_SessionAdministration_closeSession_" data-uid="org.visab.api.SessionAdministration.closeSession*"></a>
   <h4 id="org_visab_api_SessionAdministration_closeSession_java_util_UUID_" data-uid="org.visab.api.SessionAdministration.closeSession(java.util.UUID)">closeSession(UUID sessionId)</h4>
-  <div class="markdown level1 summary"><p>Closes a given session and publishes a SessionClosedEvent.</p>
+  <div class="markdown level1 summary"><p>Closes a transmission session and publishes a SessionClosedEvent.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void closeSession(UUID sessionId)</code></pre>
+    <pre><code class="lang-csharp hljs">public boolean closeSession(UUID sessionId)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -160,7 +160,23 @@
       <tr>
         <td><span class="xref">java.util.UUID</span></td>
         <td><span class="parametername">sessionId</span></td>
-        <td><p>The sessionId to remove the transmission session of</p>
+        <td><p>The sessionId of the transmission session to close</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td><p>True</p>
 </td>
       </tr>
     </tbody>
@@ -169,7 +185,8 @@
   
   <a id="org_visab_api_SessionAdministration_getActiveSessionStatuses_" data-uid="org.visab.api.SessionAdministration.getActiveSessionStatuses*"></a>
   <h4 id="org_visab_api_SessionAdministration_getActiveSessionStatuses__" data-uid="org.visab.api.SessionAdministration.getActiveSessionStatuses()">getActiveSessionStatuses()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>A list containing the session statuses for all currently active tranmission session.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -192,54 +209,10 @@
   </table>
   
   
-  <a id="org_visab_api_SessionAdministration_getGame_" data-uid="org.visab.api.SessionAdministration.getGame*"></a>
-  <h4 id="org_visab_api_SessionAdministration_getGame_java_util_UUID_" data-uid="org.visab.api.SessionAdministration.getGame(java.util.UUID)">getGame(UUID sessionId)</h4>
-  <div class="markdown level1 summary"><p>Gets the corresponding game for a given sessionId.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public String getGame(UUID sessionId)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">java.util.UUID</span></td>
-        <td><span class="parametername">sessionId</span></td>
-        <td><p>The sessionId</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">java.lang.String</span></td>
-        <td><p>The game if session is active, &quot;&quot; else</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <a id="org_visab_api_SessionAdministration_getSessionStatuses_" data-uid="org.visab.api.SessionAdministration.getSessionStatuses*"></a>
   <h4 id="org_visab_api_SessionAdministration_getSessionStatuses__" data-uid="org.visab.api.SessionAdministration.getSessionStatuses()">getSessionStatuses()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>A list containing the session statuses for all transmission sessions of the current runtime.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -264,7 +237,8 @@
   
   <a id="org_visab_api_SessionAdministration_getStatus_" data-uid="org.visab.api.SessionAdministration.getStatus*"></a>
   <h4 id="org_visab_api_SessionAdministration_getStatus_java_util_UUID_" data-uid="org.visab.api.SessionAdministration.getStatus(java.util.UUID)">getStatus(UUID sessionId)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the SessionStatus of a tranmission session.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -283,7 +257,8 @@
       <tr>
         <td><span class="xref">java.util.UUID</span></td>
         <td><span class="parametername">sessionId</span></td>
-        <td></td>
+        <td><p>The sessionId whose session status to get</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -298,7 +273,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="org.visab.globalmodel.SessionStatus.html">SessionStatus</a></td>
-        <td></td>
+        <td><p>The SessionStatus of the tranmission session if found, null else</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -306,7 +282,7 @@
   
   <a id="org_visab_api_SessionAdministration_isSessionActive_" data-uid="org.visab.api.SessionAdministration.isSessionActive*"></a>
   <h4 id="org_visab_api_SessionAdministration_isSessionActive_java_util_UUID_" data-uid="org.visab.api.SessionAdministration.isSessionActive(java.util.UUID)">isSessionActive(UUID sessionId)</h4>
-  <div class="markdown level1 summary"><p>Gets whether a transmission session is active.</p>
+  <div class="markdown level1 summary"><p>Checks if the transmission session is active.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -326,7 +302,7 @@
       <tr>
         <td><span class="xref">java.util.UUID</span></td>
         <td><span class="parametername">sessionId</span></td>
-        <td><p>The sessionId to check</p>
+        <td><p>The sessionId whose session status to check</p>
 </td>
       </tr>
     </tbody>
@@ -350,13 +326,13 @@
   
   
   <a id="org_visab_api_SessionAdministration_openSession_" data-uid="org.visab.api.SessionAdministration.openSession*"></a>
-  <h4 id="org_visab_api_SessionAdministration_openSession_java_util_UUID_org_visab_globalmodel_IMetaInformation_java_lang_String_java_lang_String_" data-uid="org.visab.api.SessionAdministration.openSession(java.util.UUID,org.visab.globalmodel.IMetaInformation,java.lang.String,java.lang.String)">openSession(UUID sessionId, IMetaInformation metaInformation, String remoteCallerIp, String remoteCallerHostName)</h4>
+  <h4 id="org_visab_api_SessionAdministration_openSession_java_util_UUID_org_visab_globalmodel_IMetaInformation_java_lang_String_" data-uid="org.visab.api.SessionAdministration.openSession(java.util.UUID,org.visab.globalmodel.IMetaInformation,java.lang.String)">openSession(UUID sessionId, IMetaInformation metaInformation, String remoteCallerIp)</h4>
   <div class="markdown level1 summary"><p>Opens a new transmission session and publishes a SessionOpenedEvent.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public boolean openSession(UUID sessionId, IMetaInformation metaInformation, String remoteCallerIp, String remoteCallerHostName)</code></pre>
+    <pre><code class="lang-csharp hljs">public boolean openSession(UUID sessionId, IMetaInformation metaInformation, String remoteCallerIp)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -377,19 +353,13 @@
       <tr>
         <td><a class="xref" href="org.visab.globalmodel.IMetaInformation.html">IMetaInformation</a></td>
         <td><span class="parametername">metaInformation</span></td>
-        <td><p>The metainformation of the session</p>
+        <td><p>The IMetaInformation of the session</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">java.lang.String</span></td>
         <td><span class="parametername">remoteCallerIp</span></td>
-        <td><p>The ip of the device that made the api call</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">java.lang.String</span></td>
-        <td><span class="parametername">remoteCallerHostName</span></td>
-        <td><p>The hostname of the device that made the api call</p>
+        <td><p>The ip of the device that made the API call</p>
 </td>
       </tr>
     </tbody>
@@ -405,7 +375,8 @@
     <tbody>
       <tr>
         <td><span class="xref">boolean</span></td>
-        <td></td>
+        <td><p>True</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -413,7 +384,8 @@
   
   <a id="org_visab_api_SessionAdministration_receiveImage_" data-uid="org.visab.api.SessionAdministration.receiveImage*"></a>
   <h4 id="org_visab_api_SessionAdministration_receiveImage_java_util_UUID_java_lang_String_java_lang_String_" data-uid="org.visab.api.SessionAdministration.receiveImage(java.util.UUID,java.lang.String,java.lang.String)">receiveImage(UUID sessionId, String game, String imageJson)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Deserializes an IImageContainer object from a json string and publishes a ImageReceivedEvent.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -432,17 +404,20 @@
       <tr>
         <td><span class="xref">java.util.UUID</span></td>
         <td><span class="parametername">sessionId</span></td>
-        <td></td>
+        <td><p>The sessionId of the tranmission session who sent the images</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">java.lang.String</span></td>
         <td><span class="parametername">game</span></td>
-        <td></td>
+        <td><p>The game of the tranmission session who sent the images</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">java.lang.String</span></td>
         <td><span class="parametername">imageJson</span></td>
-        <td></td>
+        <td><p>The IImageContainer json</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -450,7 +425,8 @@
   
   <a id="org_visab_api_SessionAdministration_receiveStatistics_" data-uid="org.visab.api.SessionAdministration.receiveStatistics*"></a>
   <h4 id="org_visab_api_SessionAdministration_receiveStatistics_java_util_UUID_java_lang_String_java_lang_String_" data-uid="org.visab.api.SessionAdministration.receiveStatistics(java.util.UUID,java.lang.String,java.lang.String)">receiveStatistics(UUID sessionId, String game, String statisticsJson)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Deserializes an IStatistics object from a json string and publishes a ImageReceivedEvent.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -469,12 +445,14 @@
       <tr>
         <td><span class="xref">java.util.UUID</span></td>
         <td><span class="parametername">sessionId</span></td>
-        <td></td>
+        <td><p>The sessionId of the tranmission session who sent the images</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">java.lang.String</span></td>
         <td><span class="parametername">game</span></td>
-        <td></td>
+        <td><p>The game of the tranmission session who sent the images</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">java.lang.String</span></td>

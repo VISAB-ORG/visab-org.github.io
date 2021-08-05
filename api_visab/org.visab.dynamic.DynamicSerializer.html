@@ -72,7 +72,7 @@
   
   <h1 id="org_visab_dynamic_DynamicSerializer" data-uid="org.visab.dynamic.DynamicSerializer" class="text-break">Class DynamicSerializer
   </h1>
-  <div class="markdown level0 summary"><p>The DynamicSerializer used for deserializing json strings into java objects of a classified class name. Used for deserializing statistics, images and VISAB files.</p>
+  <div class="markdown level0 summary"><p>The DynamicSerializer used for deserializing json strings into java objects with a classified class name. Used for deserializing into IStatistics, IImageContainer, IMetaInformation and IVISABFile.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -140,12 +140,12 @@
   
   <a id="org_visab_dynamic_DynamicSerializer_deserializeImage_" data-uid="org.visab.dynamic.DynamicSerializer.deserializeImage*"></a>
   <h4 id="org_visab_dynamic_DynamicSerializer_deserializeImage_java_lang_String_java_lang_String_" data-uid="org.visab.dynamic.DynamicSerializer.deserializeImage(java.lang.String,java.lang.String)">deserializeImage(String json, String game)</h4>
-  <div class="markdown level1 summary"><p>Deserialize a json string into a IImage.</p>
+  <div class="markdown level1 summary"><p>Deserialize a json string into a IImage instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IImage deserializeImage(String json, String game)</code></pre>
+    <pre><code class="lang-csharp hljs">public static final IImageContainer deserializeImage(String json, String game)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -181,7 +181,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="org.visab.globalmodel.IImage.html">IImage</a></td>
+        <td><a class="xref" href="org.visab.globalmodel.IImageContainer.html">IImageContainer</a></td>
         <td><p>An IImage object if successful, null else</p>
 </td>
       </tr>
@@ -191,12 +191,12 @@
   
   <a id="org_visab_dynamic_DynamicSerializer_deserializeMetaInformation_" data-uid="org.visab.dynamic.DynamicSerializer.deserializeMetaInformation*"></a>
   <h4 id="org_visab_dynamic_DynamicSerializer_deserializeMetaInformation_java_lang_String_" data-uid="org.visab.dynamic.DynamicSerializer.deserializeMetaInformation(java.lang.String)">deserializeMetaInformation(String json)</h4>
-  <div class="markdown level1 summary"><p>Deserializes a json string into a IMetaInformation.</p>
+  <div class="markdown level1 summary"><p>Deserializes a json string into a IMetaInformation instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IMetaInformation deserializeMetaInformation(String json)</code></pre>
+    <pre><code class="lang-csharp hljs">public static final IMetaInformation deserializeMetaInformation(String json)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -236,12 +236,12 @@
   
   <a id="org_visab_dynamic_DynamicSerializer_deserializeStatistics_" data-uid="org.visab.dynamic.DynamicSerializer.deserializeStatistics*"></a>
   <h4 id="org_visab_dynamic_DynamicSerializer_deserializeStatistics_java_lang_String_java_lang_String_" data-uid="org.visab.dynamic.DynamicSerializer.deserializeStatistics(java.lang.String,java.lang.String)">deserializeStatistics(String json, String game)</h4>
-  <div class="markdown level1 summary"><p>Deserialize a json string into a IStatistics.</p>
+  <div class="markdown level1 summary"><p>Deserialize a json string into a IStatistics instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IStatistics deserializeStatistics(String json, String game)</code></pre>
+    <pre><code class="lang-csharp hljs">public static final IStatistics deserializeStatistics(String json, String game)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -287,12 +287,12 @@
   
   <a id="org_visab_dynamic_DynamicSerializer_deserializeVISABFile_" data-uid="org.visab.dynamic.DynamicSerializer.deserializeVISABFile*"></a>
   <h4 id="org_visab_dynamic_DynamicSerializer_deserializeVISABFile_java_lang_String_java_lang_String_" data-uid="org.visab.dynamic.DynamicSerializer.deserializeVISABFile(java.lang.String,java.lang.String)">deserializeVISABFile(String json, String game)</h4>
-  <div class="markdown level1 summary"><p>Deserialize a json string into a VISAB file.</p>
+  <div class="markdown level1 summary"><p>Deserialize a json string into a IVISABFile instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IVISABFile deserializeVISABFile(String json, String game)</code></pre>
+    <pre><code class="lang-csharp hljs">public static final IVISABFile deserializeVISABFile(String json, String game)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -331,33 +331,6 @@
         <td><a class="xref" href="org.visab.globalmodel.IVISABFile.html">IVISABFile</a></td>
         <td><p>An IVISABFile object if successful, null else</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="org_visab_dynamic_DynamicSerializer_main_" data-uid="org.visab.dynamic.DynamicSerializer.main*"></a>
-  <h4 id="org_visab_dynamic_DynamicSerializer_main_java_lang_String___" data-uid="org.visab.dynamic.DynamicSerializer.main(java.lang.String[])">main(String[] args)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void main(String[] args)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">java.lang.String</span>[]</td>
-        <td><span class="parametername">args</span></td>
-        <td></td>
       </tr>
     </tbody>
   </table>

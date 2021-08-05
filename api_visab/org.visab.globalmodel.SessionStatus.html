@@ -72,7 +72,8 @@
   
   <h1 id="org_visab_globalmodel_SessionStatus" data-uid="org.visab.globalmodel.SessionStatus" class="text-break">Class SessionStatus
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The SessionStatus class holds information on the current status of a tranmission session.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -126,12 +127,12 @@
   
   
   <a id="org_visab_globalmodel_SessionStatus_SessionStatus_" data-uid="org.visab.globalmodel.SessionStatus.SessionStatus*"></a>
-  <h4 id="org_visab_globalmodel_SessionStatus_SessionStatus_java_util_UUID_java_lang_String_boolean_java_time_LocalTime_java_time_LocalTime_java_time_LocalTime_int_int_int_java_lang_String_java_lang_String_" data-uid="org.visab.globalmodel.SessionStatus.SessionStatus(java.util.UUID,java.lang.String,boolean,java.time.LocalTime,java.time.LocalTime,java.time.LocalTime,int,int,int,java.lang.String,java.lang.String)">SessionStatus(UUID sessionId, String game, boolean isActive, LocalTime lastRequest, LocalTime sessionOpened, LocalTime sessionClosed, int receivedStatistics, int receivedImages, int totalRequests, String hostName, String ip)</h4>
+  <h4 id="org_visab_globalmodel_SessionStatus_SessionStatus_java_util_UUID_java_lang_String_boolean_java_time_LocalTime_java_time_LocalTime_java_time_LocalTime_int_int_int_java_lang_String_java_lang_String_" data-uid="org.visab.globalmodel.SessionStatus.SessionStatus(java.util.UUID,java.lang.String,boolean,java.time.LocalTime,java.time.LocalTime,java.time.LocalTime,int,int,int,java.lang.String,java.lang.String)">SessionStatus(UUID sessionId, String game, boolean isActive, LocalTime lastRequest, LocalTime sessionOpened, LocalTime sessionClosed, int receivedStatistics, int receivedImages, int totalRequests, String ip, String statusType)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SessionStatus(UUID sessionId, String game, boolean isActive, LocalTime lastRequest, LocalTime sessionOpened, LocalTime sessionClosed, int receivedStatistics, int receivedImages, int totalRequests, String hostName, String ip)</code></pre>
+    <pre><code class="lang-csharp hljs">public SessionStatus(UUID sessionId, String game, boolean isActive, LocalTime lastRequest, LocalTime sessionOpened, LocalTime sessionClosed, int receivedStatistics, int receivedImages, int totalRequests, String ip, String statusType)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -190,12 +191,12 @@
       </tr>
       <tr>
         <td><span class="xref">java.lang.String</span></td>
-        <td><span class="parametername">hostName</span></td>
+        <td><span class="parametername">ip</span></td>
         <td></td>
       </tr>
       <tr>
         <td><span class="xref">java.lang.String</span></td>
-        <td><span class="parametername">ip</span></td>
+        <td><span class="parametername">statusType</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -211,31 +212,6 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public String getGame()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">java.lang.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="org_visab_globalmodel_SessionStatus_getHostName_" data-uid="org.visab.globalmodel.SessionStatus.getHostName*"></a>
-  <h4 id="org_visab_globalmodel_SessionStatus_getHostName__" data-uid="org.visab.globalmodel.SessionStatus.getHostName()">getHostName()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public String getHostName()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -273,6 +249,31 @@
     <tbody>
       <tr>
         <td><span class="xref">java.lang.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_globalmodel_SessionStatus_getIsActive_" data-uid="org.visab.globalmodel.SessionStatus.getIsActive*"></a>
+  <h4 id="org_visab_globalmodel_SessionStatus_getIsActive__" data-uid="org.visab.globalmodel.SessionStatus.getIsActive()">getIsActive()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public boolean getIsActive()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">boolean</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -423,6 +424,31 @@
     <tbody>
       <tr>
         <td><span class="xref">java.time.LocalTime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_globalmodel_SessionStatus_getStatusType_" data-uid="org.visab.globalmodel.SessionStatus.getStatusType*"></a>
+  <h4 id="org_visab_globalmodel_SessionStatus_getStatusType__" data-uid="org.visab.globalmodel.SessionStatus.getStatusType()">getStatusType()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String getStatusType()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -733,6 +759,33 @@
       <tr>
         <td><span class="xref">java.time.LocalTime</span></td>
         <td><span class="parametername">sessionClosed</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_globalmodel_SessionStatus_setStatusType_" data-uid="org.visab.globalmodel.SessionStatus.setStatusType*"></a>
+  <h4 id="org_visab_globalmodel_SessionStatus_setStatusType_java_lang_String_" data-uid="org.visab.globalmodel.SessionStatus.setStatusType(java.lang.String)">setStatusType(String statusType)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setStatusType(String statusType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">statusType</span></td>
         <td></td>
       </tr>
     </tbody>

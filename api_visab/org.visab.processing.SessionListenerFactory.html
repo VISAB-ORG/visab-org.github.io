@@ -78,7 +78,7 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">java.lang.Object</span></div>
-    <div class="level1"><a class="xref" href="org.visab.eventbus.subscriber.ApiSubscriberBase.html">ApiSubscriberBase</a></div>
+    <div class="level1"><a class="xref" href="org.visab.eventbus.APISubscriberBase.html">APISubscriberBase</a></div>
     <div class="level2"><span class="xref">SessionListenerFactory</span></div>
   </div>
   <div class="inheritedMembers">
@@ -117,17 +117,17 @@
       <span class="xref">java.lang.Object.wait(long,int)</span>
     </div>
     <div>
-      <a class="xref" href="org.visab.eventbus.subscriber.ApiSubscriberBase.html#org_visab_eventbus_subscriber_ApiSubscriberBase_getSubscribedEventType__">ApiSubscriberBase.getSubscribedEventType()</a>
+      <a class="xref" href="org.visab.eventbus.APISubscriberBase.html#org_visab_eventbus_APISubscriberBase_getSubscribedEventType__">APISubscriberBase.getSubscribedEventType()</a>
     </div>
     <div>
-      <a class="xref" href="org.visab.eventbus.subscriber.ApiSubscriberBase.html#org_visab_eventbus_subscriber_ApiSubscriberBase_notify_TEvent_">ApiSubscriberBase.notify(TEvent)</a>
+      <a class="xref" href="org.visab.eventbus.APISubscriberBase.html#org_visab_eventbus_APISubscriberBase_notify_TEvent_">APISubscriberBase.notify(TEvent)</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: </h6>
   <h6><strong>Assembly</strong>: .dll</h6>
   <h5 id="org_visab_processing_SessionListenerFactory_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class SessionListenerFactory extends ApiSubscriberBase&lt;SessionOpenedEvent&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class SessionListenerFactory extends APISubscriberBase&lt;SessionOpenedEvent&gt;</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -147,7 +147,7 @@
   
   <a id="org_visab_processing_SessionListenerFactory_addListener_" data-uid="org.visab.processing.SessionListenerFactory.addListener*"></a>
   <h4 id="org_visab_processing_SessionListenerFactory_addListener_java_util_UUID_org_visab_globalmodel_IMetaInformation_" data-uid="org.visab.processing.SessionListenerFactory.addListener(java.util.UUID,org.visab.globalmodel.IMetaInformation)">addListener(UUID sessionId, IMetaInformation metaInformation)</h4>
-  <div class="markdown level1 summary"><p>Instantiates a new listener based on the given game and adds it to the SessionListenerAdministration.</p>
+  <div class="markdown level1 summary"><p>Instantiates a new listener based on the given game, adds it to the SessionListenerAdministration and finally initializes it with the given meta information.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -167,12 +167,15 @@
       <tr>
         <td><span class="xref">java.util.UUID</span></td>
         <td><span class="parametername">sessionId</span></td>
-        <td></td>
+        <td><p>The sessionId that the listener will listen to</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="org.visab.globalmodel.IMetaInformation.html">IMetaInformation</a></td>
         <td><span class="parametername">metaInformation</span></td>
-        <td></td>
+        <td><p>The meta information using which the session was
+opened</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -205,12 +208,12 @@
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="org.visab.eventbus.subscriber.ApiSubscriberBase.html#org_visab_eventbus_subscriber_ApiSubscriberBase_notify_TEvent_">ApiSubscriberBase&lt;TEvent&gt;.notify(TEvent event)</a></div>
+  <div><a class="xref" href="org.visab.eventbus.APISubscriberBase.html#org_visab_eventbus_APISubscriberBase_notify_TEvent_">APISubscriberBase&lt;TEvent&gt;.notify(TEvent event)</a></div>
   
   
   <a id="org_visab_processing_SessionListenerFactory_startFactory_" data-uid="org.visab.processing.SessionListenerFactory.startFactory*"></a>
   <h4 id="org_visab_processing_SessionListenerFactory_startFactory__" data-uid="org.visab.processing.SessionListenerFactory.startFactory()">startFactory()</h4>
-  <div class="markdown level1 summary"><p>Starts the Factory by subscribing it to the EventBus</p>
+  <div class="markdown level1 summary"><p>Starts the Factory by subscribing it to the EventBus.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -221,7 +224,7 @@
   
   <a id="org_visab_processing_SessionListenerFactory_stopFactory_" data-uid="org.visab.processing.SessionListenerFactory.stopFactory*"></a>
   <h4 id="org_visab_processing_SessionListenerFactory_stopFactory__" data-uid="org.visab.processing.SessionListenerFactory.stopFactory()">stopFactory()</h4>
-  <div class="markdown level1 summary"><p>Stops the factory by unsubscribing it from the eventbus</p>
+  <div class="markdown level1 summary"><p>Stops the factory by unsubscribing it from the eventbus.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>

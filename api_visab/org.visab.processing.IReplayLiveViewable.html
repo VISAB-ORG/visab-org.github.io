@@ -72,7 +72,7 @@
   
   <h1 id="org_visab_processing_IReplayLiveViewable" data-uid="org.visab.processing.IReplayLiveViewable" class="text-break">Interface IReplayLiveViewable&lt;TStatistics,TImage&gt;
   </h1>
-  <div class="markdown level0 summary"><p>The IReplayLiveViewable interface, that all replay live viewable SessionListeners have to implement. Extends the ILiveViewable interface by the capability of getting the images received.</p>
+  <div class="markdown level0 summary"><p>The IReplayLiveViewable interface, that all replay live viewable SessionListeners have to implement. Extends the ILiveViewable interface by the capability of informing the ViewModels when images are received.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div classs="implements">
@@ -166,7 +166,7 @@
   
   <a id="org_visab_processing_IReplayLiveViewable_notifyImageAdded_" data-uid="org.visab.processing.IReplayLiveViewable.notifyImageAdded*"></a>
   <h4 id="org_visab_processing_IReplayLiveViewable_notifyImageAdded_TImage_" data-uid="org.visab.processing.IReplayLiveViewable.notifyImageAdded(TImage)">notifyImageAdded(TImage addedImage)</h4>
-  <div class="markdown level1 summary"><p>Notifies the observing ViewModels that images were added.</p>
+  <div class="markdown level1 summary"><p>Notifies the observing ViewModels that images were added. Serves as a reminder that this functionality should be implemented, but should never be called outside the classes themselves.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -187,6 +187,35 @@
         <td><span class="xref">TImage</span></td>
         <td><span class="parametername">addedImage</span></td>
         <td><p>The added images</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_processing_IReplayLiveViewable_removeViewModel_" data-uid="org.visab.processing.IReplayLiveViewable.removeViewModel*"></a>
+  <h4 id="org_visab_processing_IReplayLiveViewable_removeViewModel_org_visab_newgui_visualize_ILiveReplayViewModel_TStatistics_TImage__" data-uid="org.visab.processing.IReplayLiveViewable.removeViewModel(org.visab.newgui.visualize.ILiveReplayViewModel&lt;TStatistics,TImage&gt;)">removeViewModel(ILiveReplayViewModel&lt;TStatistics,TImage&gt; viewModel)</h4>
+  <div class="markdown level1 summary"><p>Removes a ViewModel from the list of ViewModels that will be informed of added statistics and images.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void removeViewModel(ILiveReplayViewModel&lt;TStatistics,TImage&gt; viewModel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="org.visab.newgui.visualize.ILiveReplayViewModel.html">ILiveReplayViewModel</a>&lt;<span class="xref">TStatistics</span>,<span class="xref">TImage</span>&gt;</td>
+        <td><span class="parametername">viewModel</span></td>
+        <td><p>The ViewModel to remove</p>
 </td>
       </tr>
     </tbody>

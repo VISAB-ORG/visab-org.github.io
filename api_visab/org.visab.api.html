@@ -78,7 +78,7 @@ VISAB.</p>
  communicating with VISAB to send its game data to be visualized.
  
  Despite games there may be other use cases in the future that implement some
- communication with the VISAB API, e.g. exposing files from the database to
+ communication with the VISAB API. E.g. exposing files from the database to
  other services.
  </p>
 </div>
@@ -87,13 +87,16 @@ VISAB.</p>
     <h3 id="classes">Classes
   </h3>
       <h4><a class="xref" href="org.visab.api.SessionAdministration.html">SessionAdministration</a></h4>
-      <section><p>Class for administering the current transmission sessions. Holds a reference to the current transmission sessions and checks them for timeout. Publishes all api related events.</p>
+      <section><p>The SessionAdministration class is used for administering the current transmission sessions. It has a list of all the transmission sessions that are currently open and publishes all API related events.</p>
 </section>
-      <h4><a class="xref" href="org.visab.api.WebApi.html">WebApi</a></h4>
-      <section><p>The main WebApi that hosts a small HTTP server. This is the entry point for all HTTP communication.</p>
+      <h4><a class="xref" href="org.visab.api.SessionWatchdog.html">SessionWatchdog</a></h4>
+      <section><p>The SessionWatchdog watches the currently active tranmission sessions, checks if they should be timeouted and timeouts them if needed.</p>
 </section>
-      <h4><a class="xref" href="org.visab.api.WebApiHelper.html">WebApiHelper</a></h4>
-      <section><p>A helper class containing various methods that are used by controllers.</p>
+      <h4><a class="xref" href="org.visab.api.WebAPI.html">WebAPI</a></h4>
+      <section><p>The HTTP-Protocol based WebAPI that can be used by game clients. Most importantly used for reciving images and statistics of games.</p>
+</section>
+      <h4><a class="xref" href="org.visab.api.WebAPIHelper.html">WebAPIHelper</a></h4>
+      <section><p>A helper class containing various methods that are used by the HTTP controllers.</p>
 </section>
 </article>
           </div>

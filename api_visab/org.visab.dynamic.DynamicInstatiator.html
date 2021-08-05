@@ -72,7 +72,7 @@
   
   <h1 id="org_visab_dynamic_DynamicInstatiator" data-uid="org.visab.dynamic.DynamicInstatiator" class="text-break">Class DynamicInstatiator
   </h1>
-  <div class="markdown level0 summary"><p>The DyanmicInstatiator using which objects can be instantiates from a fully classified class name. Is used for creating SessionListener instances.</p>
+  <div class="markdown level0 summary"><p>The DyanmicInstatiator using which instances can be created from a fully classified class name. Is used for creating SessionListener instances.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -145,7 +145,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Object instantiateClass(Class&lt;?&gt; class_, Object[] arguments)</code></pre>
+    <pre><code class="lang-csharp hljs">public static final Object instantiateClass(Class&lt;?&gt; class_, Object[] arguments)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -196,7 +196,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ISessionListener&lt;?&gt; instantiateSessionListener(String game, UUID sessionId)</code></pre>
+    <pre><code class="lang-csharp hljs">public static final ISessionListener instantiateSessionListener(String game, UUID sessionId)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -217,7 +217,8 @@
       <tr>
         <td><span class="xref">java.util.UUID</span></td>
         <td><span class="parametername">sessionId</span></td>
-        <td><p>The sessionId</p>
+        <td><p>The sessionId to pass as a constructor argument to the
+listener</p>
 </td>
       </tr>
     </tbody>
@@ -232,7 +233,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="org.visab.processing.ISessionListener.html">ISessionListener</a>&lt;<span class="xref">?</span>&gt;</td>
+        <td><a class="xref" href="org.visab.processing.ISessionListener.html">ISessionListener</a></td>
         <td><p>A SessionListener instance if successful, null else</p>
 </td>
       </tr>
@@ -247,7 +248,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Object instatiateClass(String className, Object[] arguments)</code></pre>
+    <pre><code class="lang-csharp hljs">public static final Object instatiateClass(String className, Object[] arguments)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -286,33 +287,6 @@
         <td><span class="xref">java.lang.Object</span></td>
         <td><p>An instance of the class if successful, null else</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="org_visab_dynamic_DynamicInstatiator_main_" data-uid="org.visab.dynamic.DynamicInstatiator.main*"></a>
-  <h4 id="org_visab_dynamic_DynamicInstatiator_main_java_lang_String___" data-uid="org.visab.dynamic.DynamicInstatiator.main(java.lang.String[])">main(String[] args)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void main(String[] args)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">java.lang.String</span>[]</td>
-        <td><span class="parametername">args</span></td>
-        <td></td>
       </tr>
     </tbody>
   </table>

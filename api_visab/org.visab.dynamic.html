@@ -71,25 +71,27 @@
   
   <h1 id="org_visab_dynamic" data-uid="org.visab.dynamic" class="text-break">Namespace org.visab.dynamic
   </h1>
-  <div class="markdown level0 summary"><p>This package contains &quot;middle-men-classes&quot; that are responsible for dynamic
-handling for processing data within VISAB.</p>
+  <div class="markdown level0 summary"><p>This package contains classes responsible creating instances of classes at
+runtime based on their fully classified class name.</p>
  <p>
- For example the DynamicInstantiator is used in the processing package to
- avoid having the distinction of games directly within the processing. This
- way the responsibility of using the correct classes is handled by classes
- within this package.
+ The DyanmicInstantiator is used by the SessionListenerFactory of the
+ processing package to avoid having to distinct games by a switch case. The
+ DynamicSerializer is used to deserialize json data received by the API
+ controller directly into the games corresponding java object.
+ </p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
       <h4><a class="xref" href="org.visab.dynamic.DynamicHelper.html">DynamicHelper</a></h4>
-      <section></section>
+      <section><p>Class containing helper methods used by the dynamic classes.</p>
+</section>
       <h4><a class="xref" href="org.visab.dynamic.DynamicInstatiator.html">DynamicInstatiator</a></h4>
-      <section><p>The DyanmicInstatiator using which objects can be instantiates from a fully classified class name. Is used for creating SessionListener instances.</p>
+      <section><p>The DyanmicInstatiator using which instances can be created from a fully classified class name. Is used for creating SessionListener instances.</p>
 </section>
       <h4><a class="xref" href="org.visab.dynamic.DynamicSerializer.html">DynamicSerializer</a></h4>
-      <section><p>The DynamicSerializer used for deserializing json strings into java objects of a classified class name. Used for deserializing statistics, images and VISAB files.</p>
+      <section><p>The DynamicSerializer used for deserializing json strings into java objects with a classified class name. Used for deserializing into IStatistics, IImageContainer, IMetaInformation and IVISABFile.</p>
 </section>
 </article>
           </div>

@@ -71,38 +71,50 @@
   
   <h1 id="org_visab_workspace" data-uid="org.visab.workspace" class="text-break">Namespace org.visab.workspace
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The workspace package contains Managers for manipulating persistent VISAB
+data. Manipulation examples are 1. Saving VISAB files 2. Deleting VISAB files
+3. Saving Settings.</p>
+<p>The IO operations required should be done seperately in repository classes
+with the Manager classes wrapping around them and provide validation checks.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
       <h4><a class="xref" href="org.visab.workspace.BasicRepository.html">BasicRepository</a></h4>
-      <section><p>A basic repository class.</p>
+      <section><p>An instantiable repository base implementation.</p>
+</section>
+      <h4><a class="xref" href="org.visab.workspace.ConfigManager.html">ConfigManager</a></h4>
+      <section><p>The ConfigManager that is used for loading mappings and settings aswell as modifying settings.</p>
 </section>
       <h4><a class="xref" href="org.visab.workspace.ConfigRepository.html">ConfigRepository</a></h4>
-      <section></section>
+      <section><p>The ConfigRepository that is used for loading and saving Settings to the database.</p>
+</section>
       <h4><a class="xref" href="org.visab.workspace.DatabaseManager.html">DatabaseManager</a></h4>
-      <section><p>The DatabaseManager that is used for deleting/adding/removing VISAB files. TODO: Check if file name already exists in list of saved files.</p>
+      <section><p>The DatabaseManager that is used for deleting, adding, and removing VISAB files.</p>
 </section>
       <h4><a class="xref" href="org.visab.workspace.DatabaseRepository.html">DatabaseRepository</a></h4>
-      <section><p>A repository for saving and loading VISAB files from VISABs database.</p>
+      <section><p>A repository for loading, saving, and removing VISAB files from VISABs database.</p>
 </section>
-      <h4><a class="xref" href="org.visab.workspace.LogManager.html">LogManager</a></h4>
-      <section></section>
-      <h4><a class="xref" href="org.visab.workspace.LogRepository.html">LogRepository</a></h4>
-      <section></section>
+      <h4><a class="xref" href="org.visab.workspace.Mapping.html">Mapping</a></h4>
+      <section><p>POJO representing a mapping configuration. Mappings are used by VISAB to determine where to find the implementations for which game. They are loaded once at the start of VISAB from the classMapping.json file. Each of these fields has the fully qualifying name of a java class as their value.</p>
+</section>
       <h4><a class="xref" href="org.visab.workspace.RepositoryBase.html">RepositoryBase</a></h4>
-      <section><p>The base repository that all repositories should inherit from. Used for any IO operations inside of VISAB. If you need to import any java IO libs in non repository classes, you are likely doing it wrong. Create a specific repository instead or check if there isnt a repositry implementation that supports your wanted action.</p>
+      <section><p>The base repository that all repositories should inherit from. Used for any I/O operations inside of VISAB. If you need to import any java IO libs in non repository classes, you are likely doing it wrong. Create a specific repository instead or check if there isnt a repositry implementation that supports your wanted functionality already.</p>
 </section>
       <h4><a class="xref" href="org.visab.workspace.SavedFileInformation.html">SavedFileInformation</a></h4>
-      <section></section>
+      <section><p>Represents the information when a file was saved.</p>
+</section>
+      <h4><a class="xref" href="org.visab.workspace.UserSettings.html">UserSettings</a></h4>
+      <section><p>Represents the settings that may be manipulated using VISABs Settings view. This class is serialized as json and written to the settings.json file.</p>
+</section>
       <h4><a class="xref" href="org.visab.workspace.Workspace.html">Workspace</a></h4>
-      <section><p>The VISAB workspace, from which config, database and log management can be done. It is the central point for modifying settings, viewmanagement and deleting/adding/renaming VISAB files.</p>
+      <section><p>The VISAB workspace, from which config and database management can be done. It is the central point for modifying settings and deleting, adding, and renaming VISAB files. For consistency reasons, the only Manager instances should be the ones in the Workspace singelton instance.</p>
 </section>
     <h3 id="interfaces">Interfaces
   </h3>
       <h4><a class="xref" href="org.visab.workspace.IRepository.html">IRepository</a></h4>
-      <section><p>The IRepository interface that all Repositories have to implement. Repositories are used for IO operations, so that we dont have to spread those accross the project.</p>
+      <section><p>The IRepository interface that all Repositories have to implement. Repositories are used for I/O operations, so that we dont have to spread those accross the project.</p>
 </section>
 </article>
           </div>

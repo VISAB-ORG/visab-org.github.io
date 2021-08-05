@@ -78,7 +78,7 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">java.lang.Object</span></div>
-    <div class="level1"><a class="xref" href="org.visab.eventbus.event.ApiEventBase.html">ApiEventBase</a></div>
+    <div class="level1"><a class="xref" href="org.visab.eventbus.APIEventBase.html">APIEventBase</a></div>
     <div class="level2"><span class="xref">ImageReceivedEvent</span></div>
   </div>
   <div class="inheritedMembers">
@@ -117,29 +117,29 @@
       <span class="xref">java.lang.Object.wait(long,int)</span>
     </div>
     <div>
-      <a class="xref" href="org.visab.eventbus.event.ApiEventBase.html#org_visab_eventbus_event_ApiEventBase_getSessionId__">ApiEventBase.getSessionId()</a>
+      <a class="xref" href="org.visab.eventbus.APIEventBase.html#org_visab_eventbus_APIEventBase_getSessionId__">APIEventBase.getSessionId()</a>
     </div>
     <div>
-      <a class="xref" href="org.visab.eventbus.event.ApiEventBase.html#org_visab_eventbus_event_ApiEventBase_getStatus__">ApiEventBase.getStatus()</a>
+      <a class="xref" href="org.visab.eventbus.APIEventBase.html#org_visab_eventbus_APIEventBase_getStatus__">APIEventBase.getStatus()</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: </h6>
   <h6><strong>Assembly</strong>: .dll</h6>
   <h5 id="org_visab_eventbus_event_ImageReceivedEvent_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ImageReceivedEvent extends ApiEventBase</code></pre>
+    <pre><code class="lang-csharp hljs">public class ImageReceivedEvent extends APIEventBase</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   
   
   <a id="org_visab_eventbus_event_ImageReceivedEvent_ImageReceivedEvent_" data-uid="org.visab.eventbus.event.ImageReceivedEvent.ImageReceivedEvent*"></a>
-  <h4 id="org_visab_eventbus_event_ImageReceivedEvent_ImageReceivedEvent_java_util_UUID_org_visab_globalmodel_SessionStatus_java_lang_String_org_visab_globalmodel_IImage_" data-uid="org.visab.eventbus.event.ImageReceivedEvent.ImageReceivedEvent(java.util.UUID,org.visab.globalmodel.SessionStatus,java.lang.String,org.visab.globalmodel.IImage)">ImageReceivedEvent(UUID sessionId, SessionStatus status, String game, IImage mapImage)</h4>
+  <h4 id="org_visab_eventbus_event_ImageReceivedEvent_ImageReceivedEvent_java_util_UUID_org_visab_globalmodel_SessionStatus_java_lang_String_org_visab_globalmodel_IImageContainer_" data-uid="org.visab.eventbus.event.ImageReceivedEvent.ImageReceivedEvent(java.util.UUID,org.visab.globalmodel.SessionStatus,java.lang.String,org.visab.globalmodel.IImageContainer)">ImageReceivedEvent(UUID sessionId, SessionStatus status, String game, IImageContainer mapImage)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ImageReceivedEvent(UUID sessionId, SessionStatus status, String game, IImage mapImage)</code></pre>
+    <pre><code class="lang-csharp hljs">public ImageReceivedEvent(UUID sessionId, SessionStatus status, String game, IImageContainer mapImage)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -167,7 +167,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="org.visab.globalmodel.IImage.html">IImage</a></td>
+        <td><a class="xref" href="org.visab.globalmodel.IImageContainer.html">IImageContainer</a></td>
         <td><span class="parametername">mapImage</span></td>
         <td></td>
       </tr>
@@ -208,7 +208,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IImage getImage()</code></pre>
+    <pre><code class="lang-csharp hljs">public IImageContainer getImage()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -220,7 +220,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="org.visab.globalmodel.IImage.html">IImage</a></td>
+        <td><a class="xref" href="org.visab.globalmodel.IImageContainer.html">IImageContainer</a></td>
         <td></td>
       </tr>
     </tbody>

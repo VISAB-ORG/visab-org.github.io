@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class SessionListenerBase&lt;TStatistics&gt;
+    <title>Class SessionListenerBase&lt;TMeta,TStatistics&gt;
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class SessionListenerBase&lt;TStatistics&gt;
+    <meta name="title" content="Class SessionListenerBase&lt;TMeta,TStatistics&gt;
    ">
     <meta name="generator" content="docfx 2.58.0.0">
     
@@ -70,7 +70,7 @@
             <article class="content wrap" id="_content" data-uid="org.visab.processing.SessionListenerBase">
   
   
-  <h1 id="org_visab_processing_SessionListenerBase" data-uid="org.visab.processing.SessionListenerBase" class="text-break">Class SessionListenerBase&lt;TStatistics&gt;
+  <h1 id="org_visab_processing_SessionListenerBase" data-uid="org.visab.processing.SessionListenerBase" class="text-break">Class SessionListenerBase&lt;TMeta,TStatistics&gt;
   </h1>
   <div class="markdown level0 summary"><p>The base SessionListener class, that should be implemented by all session listeners.</p>
 </div>
@@ -78,11 +78,11 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">java.lang.Object</span></div>
-    <div class="level1"><span class="xref">SessionListenerBase&lt;TStatistics&gt;</span></div>
+    <div class="level1"><span class="xref">SessionListenerBase&lt;TMeta,TStatistics&gt;</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><span class="xref">org.visab.processing.ISessionListener&lt;TStatistics&gt;</span></div>
+    <div><a class="xref" href="org.visab.processing.ISessionListener.html">ISessionListener</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -124,7 +124,7 @@
   <h6><strong>Assembly</strong>: .dll</h6>
   <h5 id="org_visab_processing_SessionListenerBase_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class SessionListenerBase&lt;TStatistics&gt; implements ISessionListener&lt;TStatistics&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class SessionListenerBase&lt;TMeta,TStatistics&gt; implements ISessionListener</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -135,6 +135,10 @@
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td><span class="parametername">TMeta</span></td>
+        <td></td>
+      </tr>
       <tr>
         <td><span class="parametername">TStatistics</span></td>
         <td></td>
@@ -255,7 +259,7 @@
   
   
   <h4 id="org_visab_processing_SessionListenerBase_logger" data-uid="org.visab.processing.SessionListenerBase.logger">logger</h4>
-  <div class="markdown level1 summary"><p>The logger. TODO: Check if this shows the inheriting class (I believe it should).</p>
+  <div class="markdown level1 summary"><p>The logger.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -305,7 +309,8 @@
   
   
   <h4 id="org_visab_processing_SessionListenerBase_sessionId" data-uid="org.visab.processing.SessionListenerBase.sessionId">sessionId</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The sessionId of the corresponding transmission session.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -409,7 +414,7 @@
   
   <a id="org_visab_processing_SessionListenerBase_getSessionId_" data-uid="org.visab.processing.SessionListenerBase.getSessionId*"></a>
   <h4 id="org_visab_processing_SessionListenerBase_getSessionId__" data-uid="org.visab.processing.SessionListenerBase.getSessionId()">getSessionId()</h4>
-  <div class="markdown level1 summary"><p>The session listeners corresponding sessionId.</p>
+  <div class="markdown level1 summary"><p>The session listeners corresponding tranmission session sessionId.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -427,6 +432,34 @@
     <tbody>
       <tr>
         <td><span class="xref">java.util.UUID</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_processing_SessionListenerBase_initialize_" data-uid="org.visab.processing.SessionListenerBase.initialize*"></a>
+  <h4 id="org_visab_processing_SessionListenerBase_initialize_org_visab_globalmodel_IMetaInformation_" data-uid="org.visab.processing.SessionListenerBase.initialize(org.visab.globalmodel.IMetaInformation)">initialize(IMetaInformation metaInformation)</h4>
+  <div class="markdown level1 summary"><p>Initializes the SessionListener with the meta information for the session.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void initialize(IMetaInformation metaInformation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="org.visab.globalmodel.IMetaInformation.html">IMetaInformation</a></td>
+        <td><span class="parametername">metaInformation</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -466,18 +499,18 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract void onSessionClosed()</code></pre>
+    <pre><code class="lang-csharp hljs">protected abstract void onSessionClosed()</code></pre>
   </div>
   
   
   <a id="org_visab_processing_SessionListenerBase_onSessionStarted_" data-uid="org.visab.processing.SessionListenerBase.onSessionStarted*"></a>
-  <h4 id="org_visab_processing_SessionListenerBase_onSessionStarted_org_visab_globalmodel_IMetaInformation_" data-uid="org.visab.processing.SessionListenerBase.onSessionStarted(org.visab.globalmodel.IMetaInformation)">onSessionStarted(IMetaInformation metaInformation)</h4>
+  <h4 id="org_visab_processing_SessionListenerBase_onSessionStarted_TMeta_" data-uid="org.visab.processing.SessionListenerBase.onSessionStarted(TMeta)">onSessionStarted(TMeta metaInformation)</h4>
   <div class="markdown level1 summary"><p>Called when the listeners is started.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract void onSessionStarted(IMetaInformation metaInformation)</code></pre>
+    <pre><code class="lang-csharp hljs">protected abstract void onSessionStarted(TMeta metaInformation)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -490,9 +523,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="org.visab.globalmodel.IMetaInformation.html">IMetaInformation</a></td>
+        <td><span class="xref">TMeta</span></td>
         <td><span class="parametername">metaInformation</span></td>
-        <td></td>
+        <td><p>The meta information object using which the session
+was opened.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -505,7 +540,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract void processStatistics(TStatistics statistics)</code></pre>
+    <pre><code class="lang-csharp hljs">protected abstract void processStatistics(TStatistics statistics)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -520,7 +555,8 @@
       <tr>
         <td><span class="xref">TStatistics</span></td>
         <td><span class="parametername">statistics</span></td>
-        <td></td>
+        <td><p>The received TStatistics object</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -561,7 +597,7 @@
   </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <span class="xref">org.visab.processing.ISessionListener&lt;TStatistics&gt;</span>
+      <a class="xref" href="org.visab.processing.ISessionListener.html">ISessionListener</a>
   </div>
 </article>
           </div>

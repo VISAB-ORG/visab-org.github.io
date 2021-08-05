@@ -139,13 +139,13 @@
   
   
   <a id="org_visab_processing_SessionListenerAdministration_addListener_" data-uid="org.visab.processing.SessionListenerAdministration.addListener*"></a>
-  <h4 id="org_visab_processing_SessionListenerAdministration_addListener_org_visab_processing_ISessionListener____" data-uid="org.visab.processing.SessionListenerAdministration.addListener(org.visab.processing.ISessionListener&lt;?&gt;)">addListener(ISessionListener&lt;?&gt; listener)</h4>
+  <h4 id="org_visab_processing_SessionListenerAdministration_addListener_org_visab_processing_ISessionListener_" data-uid="org.visab.processing.SessionListenerAdministration.addListener(org.visab.processing.ISessionListener)">addListener(ISessionListener listener)</h4>
   <div class="markdown level1 summary"><p>Adds a listener to the list of active listeners. Should only be called by the SessionListenerFactory.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected static void addListener(ISessionListener&lt;?&gt; listener)</code></pre>
+    <pre><code class="lang-csharp hljs">protected static void addListener(ISessionListener listener)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -158,7 +158,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="org.visab.processing.ISessionListener.html">ISessionListener</a>&lt;<span class="xref">?</span>&gt;</td>
+        <td><a class="xref" href="org.visab.processing.ISessionListener.html">ISessionListener</a></td>
         <td><span class="parametername">listener</span></td>
         <td><p>The listener to add</p>
 </td>
@@ -169,12 +169,12 @@
   
   <a id="org_visab_processing_SessionListenerAdministration_getActiveListeners_" data-uid="org.visab.processing.SessionListenerAdministration.getActiveListeners*"></a>
   <h4 id="org_visab_processing_SessionListenerAdministration_getActiveListeners__" data-uid="org.visab.processing.SessionListenerAdministration.getActiveListeners()">getActiveListeners()</h4>
-  <div class="markdown level1 summary"><p>Returns a copy of the currently active listeners. Warning: Does not return the reference to activeListeners, so dont try modifying the listeners via this.</p>
+  <div class="markdown level1 summary"><p>Returns a list of the currently active listeners.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static List&lt;ISessionListener&lt;?&gt;&gt; getActiveListeners()</code></pre>
+    <pre><code class="lang-csharp hljs">public static List&lt;ISessionListener&gt; getActiveListeners()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -186,8 +186,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">java.util.List</span>&lt;<a class="xref" href="org.visab.processing.ISessionListener.html">ISessionListener</a>&lt;<span class="xref">?</span>&gt;&gt;</td>
-        <td><p>A copy of the currently active listeners</p>
+        <td><span class="xref">java.util.List</span>&lt;<a class="xref" href="org.visab.processing.ISessionListener.html">ISessionListener</a>&gt;</td>
+        <td><p>A copy of the list of the currently active listeners</p>
 </td>
       </tr>
     </tbody>
@@ -196,12 +196,12 @@
   
   <a id="org_visab_processing_SessionListenerAdministration_getActiveListeners_" data-uid="org.visab.processing.SessionListenerAdministration.getActiveListeners*"></a>
   <h4 id="org_visab_processing_SessionListenerAdministration_getActiveListeners_java_lang_String_" data-uid="org.visab.processing.SessionListenerAdministration.getActiveListeners(java.lang.String)">getActiveListeners(String game)</h4>
-  <div class="markdown level1 summary"><p>Returns a copy of the currently active listeners filtered by their game.</p>
+  <div class="markdown level1 summary"><p>Returns a list of the currently active listeners filtered by their game.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static List&lt;ISessionListener&lt;?&gt;&gt; getActiveListeners(String game)</code></pre>
+    <pre><code class="lang-csharp hljs">public static List&lt;ISessionListener&gt; getActiveListeners(String game)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -231,7 +231,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">java.util.List</span>&lt;<a class="xref" href="org.visab.processing.ISessionListener.html">ISessionListener</a>&lt;<span class="xref">?</span>&gt;&gt;</td>
+        <td><span class="xref">java.util.List</span>&lt;<a class="xref" href="org.visab.processing.ISessionListener.html">ISessionListener</a>&gt;</td>
         <td><p>The list of listeners</p>
 </td>
       </tr>
@@ -241,12 +241,12 @@
   
   <a id="org_visab_processing_SessionListenerAdministration_getSessionListener_" data-uid="org.visab.processing.SessionListenerAdministration.getSessionListener*"></a>
   <h4 id="org_visab_processing_SessionListenerAdministration_getSessionListener_java_util_UUID_" data-uid="org.visab.processing.SessionListenerAdministration.getSessionListener(java.util.UUID)">getSessionListener(UUID sessionId)</h4>
-  <div class="markdown level1 summary"><p>Gets a session listener based for a given sessionId.</p>
+  <div class="markdown level1 summary"><p>Gets a session listener based on a given sessionId.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ISessionListener&lt;?&gt; getSessionListener(UUID sessionId)</code></pre>
+    <pre><code class="lang-csharp hljs">public static ISessionListener getSessionListener(UUID sessionId)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -276,7 +276,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="org.visab.processing.ISessionListener.html">ISessionListener</a>&lt;<span class="xref">?</span>&gt;</td>
+        <td><a class="xref" href="org.visab.processing.ISessionListener.html">ISessionListener</a></td>
         <td><p>The session listener if found, null else</p>
 </td>
       </tr>
@@ -285,13 +285,13 @@
   
   
   <a id="org_visab_processing_SessionListenerAdministration_removeListener_" data-uid="org.visab.processing.SessionListenerAdministration.removeListener*"></a>
-  <h4 id="org_visab_processing_SessionListenerAdministration_removeListener_org_visab_processing_ISessionListener____" data-uid="org.visab.processing.SessionListenerAdministration.removeListener(org.visab.processing.ISessionListener&lt;?&gt;)">removeListener(ISessionListener&lt;?&gt; listener)</h4>
+  <h4 id="org_visab_processing_SessionListenerAdministration_removeListener_org_visab_processing_ISessionListener_" data-uid="org.visab.processing.SessionListenerAdministration.removeListener(org.visab.processing.ISessionListener)">removeListener(ISessionListener listener)</h4>
   <div class="markdown level1 summary"><p>Removes a listener from the list of active listeners. Should only be called from the session listeners themselves.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected static void removeListener(ISessionListener&lt;?&gt; listener)</code></pre>
+    <pre><code class="lang-csharp hljs">protected static void removeListener(ISessionListener listener)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -304,7 +304,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="org.visab.processing.ISessionListener.html">ISessionListener</a>&lt;<span class="xref">?</span>&gt;</td>
+        <td><a class="xref" href="org.visab.processing.ISessionListener.html">ISessionListener</a></td>
         <td><span class="parametername">listener</span></td>
         <td><p>The listener to remove</p>
 </td>

@@ -72,7 +72,7 @@
   
   <h1 id="org_visab_api_controller_SessionController" data-uid="org.visab.api.controller.SessionController" class="text-break">Class SessionController
   </h1>
-  <div class="markdown level0 summary"><p>The SessionController, used for opening and closing VISAB transmission sessions through the SessionWatchdog. Can also give information on session status and show currently active sessions.</p>
+  <div class="markdown level0 summary"><p>Controller for opening and closing VISAB transmission sessions and getting the status for a transmission session.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -117,10 +117,10 @@
       <span class="xref">java.lang.Object.wait(long,int)</span>
     </div>
     <div>
-      <a class="xref" href="org.visab.api.controller.HTTPControllerBase.html#org_visab_api_controller_HTTPControllerBase_delete_fi_iki_elonen_router_RouterNanoHTTPD_UriResource_java_util_Map_java_lang_String_java_lang_String__fi_iki_elonen_NanoHTTPD_IHTTPSession_">HTTPControllerBase.delete(RouterNanoHTTPD.UriResource,Map&lt;String,String&gt;,NanoHTTPD.IHTTPSession)</a>
+      <a class="xref" href="org.visab.api.controller.HTTPControllerBase.html#org_visab_api_controller_HTTPControllerBase_delete_org_nanohttpd_router_RouterNanoHTTPD_UriResource_java_util_Map_java_lang_String_java_lang_String__org_nanohttpd_protocols_http_IHTTPSession_">HTTPControllerBase.delete(RouterNanoHTTPD.UriResource,Map&lt;String,String&gt;,IHTTPSession)</a>
     </div>
     <div>
-      <a class="xref" href="org.visab.api.controller.HTTPControllerBase.html#org_visab_api_controller_HTTPControllerBase_get_fi_iki_elonen_router_RouterNanoHTTPD_UriResource_java_util_Map_java_lang_String_java_lang_String__fi_iki_elonen_NanoHTTPD_IHTTPSession_">HTTPControllerBase.get(RouterNanoHTTPD.UriResource,Map&lt;String,String&gt;,NanoHTTPD.IHTTPSession)</a>
+      <a class="xref" href="org.visab.api.controller.HTTPControllerBase.html#org_visab_api_controller_HTTPControllerBase_get_org_nanohttpd_router_RouterNanoHTTPD_UriResource_java_util_Map_java_lang_String_java_lang_String__org_nanohttpd_protocols_http_IHTTPSession_">HTTPControllerBase.get(RouterNanoHTTPD.UriResource,Map&lt;String,String&gt;,IHTTPSession)</a>
     </div>
     <div>
       <a class="xref" href="org.visab.api.controller.HTTPControllerBase.html#org_visab_api_controller_HTTPControllerBase_getBadRequestResponse_java_lang_String_">HTTPControllerBase.getBadRequestResponse(String)</a>
@@ -135,28 +135,28 @@
       <a class="xref" href="org.visab.api.controller.HTTPControllerBase.html#org_visab_api_controller_HTTPControllerBase_getJsonResponse_java_lang_String_">HTTPControllerBase.getJsonResponse(String)</a>
     </div>
     <div>
-      <a class="xref" href="org.visab.api.controller.HTTPControllerBase.html#org_visab_api_controller_HTTPControllerBase_getNotFoundResponse_fi_iki_elonen_router_RouterNanoHTTPD_UriResource_">HTTPControllerBase.getNotFoundResponse(RouterNanoHTTPD.UriResource)</a>
+      <a class="xref" href="org.visab.api.controller.HTTPControllerBase.html#org_visab_api_controller_HTTPControllerBase_getNotFoundResponse_org_nanohttpd_router_RouterNanoHTTPD_UriResource_">HTTPControllerBase.getNotFoundResponse(RouterNanoHTTPD.UriResource)</a>
     </div>
     <div>
-      <a class="xref" href="org.visab.api.controller.HTTPControllerBase.html#org_visab_api_controller_HTTPControllerBase_getNotFoundResponse_fi_iki_elonen_router_RouterNanoHTTPD_UriResource_java_lang_String_">HTTPControllerBase.getNotFoundResponse(RouterNanoHTTPD.UriResource,String)</a>
+      <a class="xref" href="org.visab.api.controller.HTTPControllerBase.html#org_visab_api_controller_HTTPControllerBase_getNotFoundResponse_org_nanohttpd_router_RouterNanoHTTPD_UriResource_java_lang_String_">HTTPControllerBase.getNotFoundResponse(RouterNanoHTTPD.UriResource,String)</a>
     </div>
     <div>
       <a class="xref" href="org.visab.api.controller.HTTPControllerBase.html#org_visab_api_controller_HTTPControllerBase_getOkResponse_java_lang_String_">HTTPControllerBase.getOkResponse(String)</a>
     </div>
     <div>
-      <a class="xref" href="org.visab.api.controller.HTTPControllerBase.html#org_visab_api_controller_HTTPControllerBase_handleGet_fi_iki_elonen_router_RouterNanoHTTPD_UriResource_java_util_Map_java_lang_String_java_lang_String__fi_iki_elonen_NanoHTTPD_IHTTPSession_">HTTPControllerBase.handleGet(RouterNanoHTTPD.UriResource,Map&lt;String,String&gt;,NanoHTTPD.IHTTPSession)</a>
+      <a class="xref" href="org.visab.api.controller.HTTPControllerBase.html#org_visab_api_controller_HTTPControllerBase_handleGet_org_nanohttpd_router_RouterNanoHTTPD_UriResource_java_util_Map_java_lang_String_java_lang_String__org_nanohttpd_protocols_http_IHTTPSession_">HTTPControllerBase.handleGet(RouterNanoHTTPD.UriResource,Map&lt;String,String&gt;,IHTTPSession)</a>
     </div>
     <div>
-      <a class="xref" href="org.visab.api.controller.HTTPControllerBase.html#org_visab_api_controller_HTTPControllerBase_handlePost_fi_iki_elonen_router_RouterNanoHTTPD_UriResource_java_util_Map_java_lang_String_java_lang_String__fi_iki_elonen_NanoHTTPD_IHTTPSession_">HTTPControllerBase.handlePost(RouterNanoHTTPD.UriResource,Map&lt;String,String&gt;,NanoHTTPD.IHTTPSession)</a>
+      <a class="xref" href="org.visab.api.controller.HTTPControllerBase.html#org_visab_api_controller_HTTPControllerBase_handlePost_org_nanohttpd_router_RouterNanoHTTPD_UriResource_java_util_Map_java_lang_String_java_lang_String__org_nanohttpd_protocols_http_IHTTPSession_">HTTPControllerBase.handlePost(RouterNanoHTTPD.UriResource,Map&lt;String,String&gt;,IHTTPSession)</a>
     </div>
     <div>
-      <a class="xref" href="org.visab.api.controller.HTTPControllerBase.html#org_visab_api_controller_HTTPControllerBase_other_java_lang_String_fi_iki_elonen_router_RouterNanoHTTPD_UriResource_java_util_Map_java_lang_String_java_lang_String__fi_iki_elonen_NanoHTTPD_IHTTPSession_">HTTPControllerBase.other(String,RouterNanoHTTPD.UriResource,Map&lt;String,String&gt;,NanoHTTPD.IHTTPSession)</a>
+      <a class="xref" href="org.visab.api.controller.HTTPControllerBase.html#org_visab_api_controller_HTTPControllerBase_other_java_lang_String_org_nanohttpd_router_RouterNanoHTTPD_UriResource_java_util_Map_java_lang_String_java_lang_String__org_nanohttpd_protocols_http_IHTTPSession_">HTTPControllerBase.other(String,RouterNanoHTTPD.UriResource,Map&lt;String,String&gt;,IHTTPSession)</a>
     </div>
     <div>
-      <a class="xref" href="org.visab.api.controller.HTTPControllerBase.html#org_visab_api_controller_HTTPControllerBase_post_fi_iki_elonen_router_RouterNanoHTTPD_UriResource_java_util_Map_java_lang_String_java_lang_String__fi_iki_elonen_NanoHTTPD_IHTTPSession_">HTTPControllerBase.post(RouterNanoHTTPD.UriResource,Map&lt;String,String&gt;,NanoHTTPD.IHTTPSession)</a>
+      <a class="xref" href="org.visab.api.controller.HTTPControllerBase.html#org_visab_api_controller_HTTPControllerBase_post_org_nanohttpd_router_RouterNanoHTTPD_UriResource_java_util_Map_java_lang_String_java_lang_String__org_nanohttpd_protocols_http_IHTTPSession_">HTTPControllerBase.post(RouterNanoHTTPD.UriResource,Map&lt;String,String&gt;,IHTTPSession)</a>
     </div>
     <div>
-      <a class="xref" href="org.visab.api.controller.HTTPControllerBase.html#org_visab_api_controller_HTTPControllerBase_put_fi_iki_elonen_router_RouterNanoHTTPD_UriResource_java_util_Map_java_lang_String_java_lang_String__fi_iki_elonen_NanoHTTPD_IHTTPSession_">HTTPControllerBase.put(RouterNanoHTTPD.UriResource,Map&lt;String,String&gt;,NanoHTTPD.IHTTPSession)</a>
+      <a class="xref" href="org.visab.api.controller.HTTPControllerBase.html#org_visab_api_controller_HTTPControllerBase_put_org_nanohttpd_router_RouterNanoHTTPD_UriResource_java_util_Map_java_lang_String_java_lang_String__org_nanohttpd_protocols_http_IHTTPSession_">HTTPControllerBase.put(RouterNanoHTTPD.UriResource,Map&lt;String,String&gt;,IHTTPSession)</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: </h6>
@@ -182,13 +182,13 @@
   
   
   <a id="org_visab_api_controller_SessionController_handleGet_" data-uid="org.visab.api.controller.SessionController.handleGet*"></a>
-  <h4 id="org_visab_api_controller_SessionController_handleGet_fi_iki_elonen_router_RouterNanoHTTPD_UriResource_java_util_Map_java_lang_String_java_lang_String__fi_iki_elonen_NanoHTTPD_IHTTPSession_" data-uid="org.visab.api.controller.SessionController.handleGet(fi.iki.elonen.router.RouterNanoHTTPD.UriResource,java.util.Map&lt;java.lang.String,java.lang.String&gt;,fi.iki.elonen.NanoHTTPD.IHTTPSession)">handleGet(RouterNanoHTTPD.UriResource uriResource, Map&lt;String,String&gt; urlParams, NanoHTTPD.IHTTPSession httpSession)</h4>
-  <div class="markdown level1 summary"><p>Handler for Http GET requests.</p>
+  <h4 id="org_visab_api_controller_SessionController_handleGet_org_nanohttpd_router_RouterNanoHTTPD_UriResource_java_util_Map_java_lang_String_java_lang_String__org_nanohttpd_protocols_http_IHTTPSession_" data-uid="org.visab.api.controller.SessionController.handleGet(org.nanohttpd.router.RouterNanoHTTPD.UriResource,java.util.Map&lt;java.lang.String,java.lang.String&gt;,org.nanohttpd.protocols.http.IHTTPSession)">handleGet(RouterNanoHTTPD.UriResource uriResource, Map&lt;String,String&gt; urlParams, IHTTPSession httpSession)</h4>
+  <div class="markdown level1 summary"><p>Handler for HTTP GET requests.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public NanoHTTPD.Response handleGet(RouterNanoHTTPD.UriResource uriResource, Map&lt;String,String&gt; urlParams, NanoHTTPD.IHTTPSession httpSession)</code></pre>
+    <pre><code class="lang-csharp hljs">public Response handleGet(RouterNanoHTTPD.UriResource uriResource, Map&lt;String,String&gt; urlParams, IHTTPSession httpSession)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -201,7 +201,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">fi.iki.elonen.router.RouterNanoHTTPD.UriResource</span></td>
+        <td><span class="xref">org.nanohttpd.router.RouterNanoHTTPD.UriResource</span></td>
         <td><span class="parametername">uriResource</span></td>
         <td></td>
       </tr>
@@ -211,7 +211,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">fi.iki.elonen.NanoHTTPD.IHTTPSession</span></td>
+        <td><span class="xref">org.nanohttpd.protocols.http.IHTTPSession</span></td>
         <td><span class="parametername">httpSession</span></td>
         <td></td>
       </tr>
@@ -227,23 +227,23 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">fi.iki.elonen.NanoHTTPD.Response</span></td>
+        <td><span class="xref">org.nanohttpd.protocols.http.response.Response</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="org.visab.api.controller.HTTPControllerBase.html#org_visab_api_controller_HTTPControllerBase_handleGet_fi_iki_elonen_router_RouterNanoHTTPD_UriResource_java_util_Map_java_lang_String_java_lang_String__fi_iki_elonen_NanoHTTPD_IHTTPSession_">HTTPControllerBase.handleGet(RouterNanoHTTPD.UriResource uriResource, Map&lt;String,String&gt; urlParams, NanoHTTPD.IHTTPSession session)</a></div>
+  <div><a class="xref" href="org.visab.api.controller.HTTPControllerBase.html#org_visab_api_controller_HTTPControllerBase_handleGet_org_nanohttpd_router_RouterNanoHTTPD_UriResource_java_util_Map_java_lang_String_java_lang_String__org_nanohttpd_protocols_http_IHTTPSession_">HTTPControllerBase.handleGet(RouterNanoHTTPD.UriResource uriResource, Map&lt;String,String&gt; urlParams, IHTTPSession session)</a></div>
   
   
   <a id="org_visab_api_controller_SessionController_handlePost_" data-uid="org.visab.api.controller.SessionController.handlePost*"></a>
-  <h4 id="org_visab_api_controller_SessionController_handlePost_fi_iki_elonen_router_RouterNanoHTTPD_UriResource_java_util_Map_java_lang_String_java_lang_String__fi_iki_elonen_NanoHTTPD_IHTTPSession_" data-uid="org.visab.api.controller.SessionController.handlePost(fi.iki.elonen.router.RouterNanoHTTPD.UriResource,java.util.Map&lt;java.lang.String,java.lang.String&gt;,fi.iki.elonen.NanoHTTPD.IHTTPSession)">handlePost(RouterNanoHTTPD.UriResource uriResource, Map&lt;String,String&gt; urlParams, NanoHTTPD.IHTTPSession session)</h4>
-  <div class="markdown level1 summary"><p>Handler for Http POST requests.</p>
+  <h4 id="org_visab_api_controller_SessionController_handlePost_org_nanohttpd_router_RouterNanoHTTPD_UriResource_java_util_Map_java_lang_String_java_lang_String__org_nanohttpd_protocols_http_IHTTPSession_" data-uid="org.visab.api.controller.SessionController.handlePost(org.nanohttpd.router.RouterNanoHTTPD.UriResource,java.util.Map&lt;java.lang.String,java.lang.String&gt;,org.nanohttpd.protocols.http.IHTTPSession)">handlePost(RouterNanoHTTPD.UriResource uriResource, Map&lt;String,String&gt; urlParams, IHTTPSession session)</h4>
+  <div class="markdown level1 summary"><p>Handler for HTTP POST requests.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public NanoHTTPD.Response handlePost(RouterNanoHTTPD.UriResource uriResource, Map&lt;String,String&gt; urlParams, NanoHTTPD.IHTTPSession session)</code></pre>
+    <pre><code class="lang-csharp hljs">public Response handlePost(RouterNanoHTTPD.UriResource uriResource, Map&lt;String,String&gt; urlParams, IHTTPSession session)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -256,7 +256,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">fi.iki.elonen.router.RouterNanoHTTPD.UriResource</span></td>
+        <td><span class="xref">org.nanohttpd.router.RouterNanoHTTPD.UriResource</span></td>
         <td><span class="parametername">uriResource</span></td>
         <td></td>
       </tr>
@@ -266,7 +266,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">fi.iki.elonen.NanoHTTPD.IHTTPSession</span></td>
+        <td><span class="xref">org.nanohttpd.protocols.http.IHTTPSession</span></td>
         <td><span class="parametername">session</span></td>
         <td></td>
       </tr>
@@ -282,13 +282,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">fi.iki.elonen.NanoHTTPD.Response</span></td>
+        <td><span class="xref">org.nanohttpd.protocols.http.response.Response</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="org.visab.api.controller.HTTPControllerBase.html#org_visab_api_controller_HTTPControllerBase_handlePost_fi_iki_elonen_router_RouterNanoHTTPD_UriResource_java_util_Map_java_lang_String_java_lang_String__fi_iki_elonen_NanoHTTPD_IHTTPSession_">HTTPControllerBase.handlePost(RouterNanoHTTPD.UriResource uriResource, Map&lt;String,String&gt; urlParams, NanoHTTPD.IHTTPSession session)</a></div>
+  <div><a class="xref" href="org.visab.api.controller.HTTPControllerBase.html#org_visab_api_controller_HTTPControllerBase_handlePost_org_nanohttpd_router_RouterNanoHTTPD_UriResource_java_util_Map_java_lang_String_java_lang_String__org_nanohttpd_protocols_http_IHTTPSession_">HTTPControllerBase.handlePost(RouterNanoHTTPD.UriResource uriResource, Map&lt;String,String&gt; urlParams, IHTTPSession session)</a></div>
 </article>
           </div>
           

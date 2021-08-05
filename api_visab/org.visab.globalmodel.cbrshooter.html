@@ -71,11 +71,12 @@
   
   <h1 id="org_visab_globalmodel_cbrshooter" data-uid="org.visab.globalmodel.cbrshooter" class="text-break">Namespace org.visab.globalmodel.cbrshooter
   </h1>
-  <div class="markdown level0 summary"><p>This package contains all globally used models that are shooter-specific.</p>
+  <div class="markdown level0 summary"><p>This package contains all globally used model classes that are
+CBRShooter-specific.</p>
  <p>
- Every model class that is only used for shooter-specific purposes shall be
- placed in this package. Generic models for VISAB or specific models for other
- games should not be placed in here.
+ Every model class that is only used for CBRShooter-specific purposes shall be
+ placed in this package. Generic model classes for VISAB or specific models
+ for other games should be placed in in org.visab.globalmodel instead.
  </p>
 </div>
   <div class="markdown level0 conceptual"></div>
@@ -83,20 +84,24 @@
     <h3 id="classes">Classes
   </h3>
       <h4><a class="xref" href="org.visab.globalmodel.cbrshooter.CBRShooterFile.html">CBRShooterFile</a></h4>
-      <section></section>
-      <h4><a class="xref" href="org.visab.globalmodel.cbrshooter.CBRShooterMapImage.html">CBRShooterMapImage</a></h4>
-      <section></section>
-      <h4><a class="xref" href="org.visab.globalmodel.cbrshooter.CBRShooterMetaInformation.html">CBRShooterMetaInformation</a></h4>
-      <section></section>
-      <h4><a class="xref" href="org.visab.globalmodel.cbrshooter.CBRShooterStatistics.html">CBRShooterStatistics</a></h4>
-      <section><p>The CBRShooterStatistics class, representing the information given by the CBRShooter.</p>
+      <section><p>Represents the CBRShooter VISAB file containing that contains all information necesarry for visualizing. This class is serialized to json and written to .visab files.</p>
 </section>
-      <h4><a class="xref" href="org.visab.globalmodel.cbrshooter.PlayerInformation.html">PlayerInformation</a></h4>
+      <h4><a class="xref" href="org.visab.globalmodel.cbrshooter.CBRShooterImages.html">CBRShooterImages</a></h4>
+      <section><p>The CBRShooter image container that contains all images that were sent by the Unity game. The images are in png format.</p>
+</section>
+      <h4><a class="xref" href="org.visab.globalmodel.cbrshooter.CBRShooterMetaInformation.html">CBRShooterMetaInformation</a></h4>
+      <section><p>The CBRShooter meta information that is sent at the start of a session by the Unity game. This information is also saved in the file.</p>
+</section>
+      <h4><a class="xref" href="org.visab.globalmodel.cbrshooter.CBRShooterStatistics.html">CBRShooterStatistics</a></h4>
+      <section><p>The CBRShooter statistics, that are periodically sent by the Unity game. The visualization is based on all the statistics received.</p>
+</section>
+      <h4><a class="xref" href="org.visab.globalmodel.cbrshooter.Player.html">Player</a></h4>
       <section></section>
       <h4><a class="xref" href="org.visab.globalmodel.cbrshooter.PlayerStatistics.html">PlayerStatistics</a></h4>
       <section></section>
       <h4><a class="xref" href="org.visab.globalmodel.cbrshooter.WeaponInformation.html">WeaponInformation</a></h4>
-      <section></section>
+      <section><p>Contains the information on all weapons eligable for the players within the session.</p>
+</section>
 </article>
           </div>
           

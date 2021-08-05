@@ -78,8 +78,8 @@
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">java.lang.Object</span></div>
     <div class="level1"><a class="xref" href="org.visab.newgui.ViewModelBase.html">ViewModelBase</a></div>
-    <div class="level2"><a class="xref" href="org.visab.newgui.visualize.StatisticsViewModelBase.html">StatisticsViewModelBase&lt;TFile&gt;</a></div>
-    <div class="level3"><a class="xref" href="org.visab.newgui.visualize.LiveStatisticsViewModelBase.html">LiveStatisticsViewModelBase</a></div>
+    <div class="level2"><a class="xref" href="org.visab.newgui.visualize.VisualizeViewModelBase.html">VisualizeViewModelBase&lt;TFile&gt;</a></div>
+    <div class="level3"><a class="xref" href="org.visab.newgui.visualize.LiveViewModelBase.html">LiveViewModelBase</a></div>
     <div class="level4"><span class="xref">CBRShooterStatisticsViewModel</span></div>
   </div>
   <div class="inheritedMembers">
@@ -127,32 +127,26 @@
       <a class="xref" href="org.visab.newgui.ViewModelBase.html#org_visab_newgui_ViewModelBase_runnableCommand_java_lang_Runnable_">ViewModelBase.runnableCommand(Runnable)</a>
     </div>
     <div>
-      <a class="xref" href="org.visab.newgui.visualize.LiveStatisticsViewModelBase.html#org_visab_newgui_visualize_LiveStatisticsViewModelBase_initializeLive_org_visab_processing_ILiveViewable___extends_org_visab_globalmodel_IStatistics__">LiveStatisticsViewModelBase.initializeLive(ILiveViewable&lt;? extends IStatistics&gt;)</a>
+      <a class="xref" href="org.visab.newgui.visualize.LiveViewModelBase.html#org_visab_newgui_visualize_LiveViewModelBase_initialize_org_visab_processing_ILiveViewable___extends_org_visab_globalmodel_IStatistics__">LiveViewModelBase.initialize(ILiveViewable&lt;? extends IStatistics&gt;)</a>
     </div>
     <div>
-      <a class="xref" href="org.visab.newgui.visualize.LiveStatisticsViewModelBase.html#org_visab_newgui_visualize_LiveStatisticsViewModelBase_liveSessionActiveProperty__">LiveStatisticsViewModelBase.liveSessionActiveProperty()</a>
+      <a class="xref" href="org.visab.newgui.visualize.LiveViewModelBase.html#org_visab_newgui_visualize_LiveViewModelBase_liveViewActiveProperty__">LiveViewModelBase.liveViewActiveProperty()</a>
     </div>
     <div>
-      <a class="xref" href="org.visab.newgui.visualize.LiveStatisticsViewModelBase.html#org_visab_newgui_visualize_LiveStatisticsViewModelBase_onSessionClosed__">LiveStatisticsViewModelBase.onSessionClosed()</a>
+      <a class="xref" href="org.visab.newgui.visualize.LiveViewModelBase.html#org_visab_newgui_visualize_LiveViewModelBase_onSessionClosed__">LiveViewModelBase.onSessionClosed()</a>
     </div>
     <div>
-      <a class="xref" href="org.visab.newgui.visualize.LiveStatisticsViewModelBase.html#org_visab_newgui_visualize_LiveStatisticsViewModelBase_onStatisticsAdded_TStatistics_">LiveStatisticsViewModelBase.onStatisticsAdded(TStatistics)</a>
+      <a class="xref" href="org.visab.newgui.visualize.LiveViewModelBase.html#org_visab_newgui_visualize_LiveViewModelBase_onStatisticsAdded_TStatistics_java_util_List_TStatistics__">LiveViewModelBase.onStatisticsAdded(TStatistics,List&lt;TStatistics&gt;)</a>
     </div>
     <div>
-      <a class="xref" href="org.visab.newgui.visualize.StatisticsViewModelBase.html#org_visab_newgui_visualize_StatisticsViewModelBase_initialize_org_visab_globalmodel_IVISABFile_">StatisticsViewModelBase.initialize(IVISABFile)</a>
-    </div>
-    <div>
-      <a class="xref" href="org.visab.newgui.visualize.StatisticsViewModelBase.html#org_visab_newgui_visualize_StatisticsViewModelBase_isLiveViewProperty__">StatisticsViewModelBase.isLiveViewProperty()</a>
-    </div>
-    <div>
-      <a class="xref" href="org.visab.newgui.visualize.StatisticsViewModelBase.html#org_visab_newgui_visualize_StatisticsViewModelBase_supportsLiveViewing__">StatisticsViewModelBase.supportsLiveViewing()</a>
+      <a class="xref" href="org.visab.newgui.visualize.VisualizeViewModelBase.html#org_visab_newgui_visualize_VisualizeViewModelBase_initialize_org_visab_globalmodel_IVISABFile_">VisualizeViewModelBase.initialize(IVISABFile)</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: </h6>
   <h6><strong>Assembly</strong>: .dll</h6>
   <h5 id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterStatisticsViewModel_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class CBRShooterStatisticsViewModel extends LiveStatisticsViewModelBase&lt;CBRShooterFile,CBRShooterStatistics&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class CBRShooterStatisticsViewModel extends LiveViewModelBase&lt;CBRShooterFile,CBRShooterStatistics&gt;</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -237,6 +231,56 @@
   </table>
   
   
+  <a id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterStatisticsViewModel_getPlayerColors_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterStatisticsViewModel.getPlayerColors*"></a>
+  <h4 id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterStatisticsViewModel_getPlayerColors__" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterStatisticsViewModel.getPlayerColors()">getPlayerColors()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Map&lt;String,String&gt; getPlayerColors()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.util.Map</span>&lt;<span class="xref">java.lang.String</span>,<span class="xref">java.lang.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterStatisticsViewModel_getPlayerInformation_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterStatisticsViewModel.getPlayerInformation*"></a>
+  <h4 id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterStatisticsViewModel_getPlayerInformation__" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterStatisticsViewModel.getPlayerInformation()">getPlayerInformation()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Map&lt;String,String&gt; getPlayerInformation()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.util.Map</span>&lt;<span class="xref">java.lang.String</span>,<span class="xref">java.lang.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterStatisticsViewModel_getPlayerKillsSeries_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterStatisticsViewModel.getPlayerKillsSeries*"></a>
   <h4 id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterStatisticsViewModel_getPlayerKillsSeries__" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterStatisticsViewModel.getPlayerKillsSeries()">getPlayerKillsSeries()</h4>
   <div class="markdown level1 summary"></div>
@@ -287,6 +331,56 @@
   </table>
   
   
+  <a id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterStatisticsViewModel_getPlayerStatsSeries_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterStatisticsViewModel.getPlayerStatsSeries*"></a>
+  <h4 id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterStatisticsViewModel_getPlayerStatsSeries__" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterStatisticsViewModel.getPlayerStatsSeries()">getPlayerStatsSeries()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObservableList&lt;XYChart.Series&lt;Integer,Number&gt;&gt; getPlayerStatsSeries()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">javafx.collections.ObservableList</span>&lt;<span class="xref">javafx.scene.chart.XYChart.Series</span>&lt;<span class="xref">java.lang.Integer</span>,<span class="xref">java.lang.Number</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterStatisticsViewModel_graphYLabelProperty_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterStatisticsViewModel.graphYLabelProperty*"></a>
+  <h4 id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterStatisticsViewModel_graphYLabelProperty__" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterStatisticsViewModel.graphYLabelProperty()">graphYLabelProperty()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StringProperty graphYLabelProperty()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">javafx.beans.property.StringProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterStatisticsViewModel_initialize_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterStatisticsViewModel.initialize*"></a>
   <h4 id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterStatisticsViewModel_initialize__" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterStatisticsViewModel.initialize()">initialize()</h4>
   <div class="markdown level1 summary"><p>Called after the instance was constructed by javafx/mvvmfx.</p>
@@ -298,27 +392,14 @@
   </div>
   
   
-  <a id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterStatisticsViewModel_onSessionClosed_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterStatisticsViewModel.onSessionClosed*"></a>
-  <h4 id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterStatisticsViewModel_onSessionClosed__" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterStatisticsViewModel.onSessionClosed()">onSessionClosed()</h4>
-  <div class="markdown level1 summary"><p>Called by the docked listener upon closing the session.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void onSessionClosed()</code></pre>
-  </div>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="org.visab.newgui.visualize.LiveStatisticsViewModelBase.html#org_visab_newgui_visualize_LiveStatisticsViewModelBase_onSessionClosed__">LiveStatisticsViewModelBase&lt;TFile,TStatistics&gt;.onSessionClosed()</a></div>
-  
-  
   <a id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterStatisticsViewModel_onStatisticsAdded_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterStatisticsViewModel.onStatisticsAdded*"></a>
-  <h4 id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterStatisticsViewModel_onStatisticsAdded_org_visab_globalmodel_cbrshooter_CBRShooterStatistics_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterStatisticsViewModel.onStatisticsAdded(org.visab.globalmodel.cbrshooter.CBRShooterStatistics)">onStatisticsAdded(CBRShooterStatistics newStatistics)</h4>
+  <h4 id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterStatisticsViewModel_onStatisticsAdded_org_visab_globalmodel_cbrshooter_CBRShooterStatistics_java_util_List_org_visab_globalmodel_cbrshooter_CBRShooterStatistics__" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterStatisticsViewModel.onStatisticsAdded(org.visab.globalmodel.cbrshooter.CBRShooterStatistics,java.util.List&lt;org.visab.globalmodel.cbrshooter.CBRShooterStatistics&gt;)">onStatisticsAdded(CBRShooterStatistics newStatistics, List&lt;CBRShooterStatistics&gt; statisticsCopy)</h4>
   <div class="markdown level1 summary"><p>Called by the docked listener upon reciving new statistics.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void onStatisticsAdded(CBRShooterStatistics newStatistics)</code></pre>
+    <pre><code class="lang-csharp hljs">public void onStatisticsAdded(CBRShooterStatistics newStatistics, List&lt;CBRShooterStatistics&gt; statisticsCopy)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -335,19 +416,49 @@
         <td><span class="parametername">newStatistics</span></td>
         <td></td>
       </tr>
+      <tr>
+        <td><span class="xref">java.util.List</span>&lt;<a class="xref" href="org.visab.globalmodel.cbrshooter.CBRShooterStatistics.html">CBRShooterStatistics</a>&gt;</td>
+        <td><span class="parametername">statisticsCopy</span></td>
+        <td></td>
+      </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="org.visab.newgui.visualize.LiveStatisticsViewModelBase.html#org_visab_newgui_visualize_LiveStatisticsViewModelBase_onStatisticsAdded_TStatistics_">LiveStatisticsViewModelBase&lt;TFile,TStatistics&gt;.onStatisticsAdded(TStatistics newStatistics)</a></div>
+  <div><a class="xref" href="org.visab.newgui.visualize.LiveViewModelBase.html#org_visab_newgui_visualize_LiveViewModelBase_onStatisticsAdded_TStatistics_java_util_List_TStatistics__">LiveViewModelBase&lt;TFile,TStatistics&gt;.onStatisticsAdded(TStatistics newStatistics, List&lt;TStatistics&gt; statisticsCopy)</a></div>
   
   
-  <a id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterStatisticsViewModel_selectedRowProperty_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterStatisticsViewModel.selectedRowProperty*"></a>
-  <h4 id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterStatisticsViewModel_selectedRowProperty__" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterStatisticsViewModel.selectedRowProperty()">selectedRowProperty()</h4>
+  <a id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterStatisticsViewModel_playerStatsChartCommand_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterStatisticsViewModel.playerStatsChartCommand*"></a>
+  <h4 id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterStatisticsViewModel_playerStatsChartCommand__" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterStatisticsViewModel.playerStatsChartCommand()">playerStatsChartCommand()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ObjectProperty&lt;ComparisonRowBase&lt;?&gt;&gt; selectedRowProperty()</code></pre>
+    <pre><code class="lang-csharp hljs">public Command playerStatsChartCommand()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">de.saxsys.mvvmfx.utils.commands.Command</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterStatisticsViewModel_selectedStatisticsProperty_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterStatisticsViewModel.selectedStatisticsProperty*"></a>
+  <h4 id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterStatisticsViewModel_selectedStatisticsProperty__" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterStatisticsViewModel.selectedStatisticsProperty()">selectedStatisticsProperty()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectProperty&lt;ComparisonRowBase&lt;?&gt;&gt; selectedStatisticsProperty()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -360,31 +471,6 @@
     <tbody>
       <tr>
         <td><span class="xref">javafx.beans.property.ObjectProperty</span>&lt;<a class="xref" href="org.visab.newgui.visualize.ComparisonRowBase.html">ComparisonRowBase</a>&lt;<span class="xref">?</span>&gt;&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterStatisticsViewModel_snapshotPerIngameSecondProperty_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterStatisticsViewModel.snapshotPerIngameSecondProperty*"></a>
-  <h4 id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterStatisticsViewModel_snapshotPerIngameSecondProperty__" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterStatisticsViewModel.snapshotPerIngameSecondProperty()">snapshotPerIngameSecondProperty()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public FloatProperty snapshotPerIngameSecondProperty()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">javafx.beans.property.FloatProperty</span></td>
         <td></td>
       </tr>
     </tbody>

@@ -71,32 +71,43 @@
   
   <h1 id="org_visab_eventbus" data-uid="org.visab.eventbus" class="text-break">Namespace org.visab.eventbus
   </h1>
-  <div class="markdown level0 summary"><p>This package contains the high level event bus for communication as well as
-generic interfaces to be implemented for specific features.</p>
+  <div class="markdown level0 summary"><p>This package contains the an event bus implementation, that is used for
+communicating API related events aswell as API unreleated events.</p>
  <p>
  Basic communication on throughout the publish-subscribe pattern focuses on
- the concept of a common event bus. Publishers kind of act like a datasource
- to that bus, while subscribers are some kind of data sinks.
+ the concept of a common event bus. Publishers act like a datasource to that
+ bus, while subscribers are data sinks.
  
  The bus itself handles the distribution of information by notifying
- subscribers about an event that got put to it by a publisher.
+ subscribers about an event that got was published by a publisher.
  </p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
-      <h4><a class="xref" href="org.visab.eventbus.ApiEventBus.html">ApiEventBus</a></h4>
-      <section><p>The ApiEventBus, used for notifying subscribers of new messages to the api. Subscribers will be notified, when their subscribed event occurs.</p>
+      <h4><a class="xref" href="org.visab.eventbus.APIEventBase.html">APIEventBase</a></h4>
+      <section><p>A base API event class, that all API events should inherit from.</p>
+</section>
+      <h4><a class="xref" href="org.visab.eventbus.APIEventBus.html">APIEventBus</a></h4>
+      <section><p>The APIEventBus, used for notifying subscribers of new messages to the api. Subscribers will be notified when their subscribed event occurs.</p>
+</section>
+      <h4><a class="xref" href="org.visab.eventbus.APIPublisherBase.html">APIPublisherBase&lt;TEvent&gt;</a></h4>
+      <section><p>The APIPublisherBase class, that all api event publishers should inherit from.</p>
+</section>
+      <h4><a class="xref" href="org.visab.eventbus.APISubscriberBase.html">APISubscriberBase&lt;TEvent&gt;</a></h4>
+      <section><p>The APISubscriberBase class, that all API event subscribers should inherit from.</p>
 </section>
       <h4><a class="xref" href="org.visab.eventbus.EventBusBase.html">EventBusBase&lt;T&gt;</a></h4>
-      <section></section>
+      <section><p>An abstract base implementation of the EventPus.</p>
+</section>
       <h4><a class="xref" href="org.visab.eventbus.GeneralEventBus.html">GeneralEventBus</a></h4>
-      <section></section>
+      <section><p>The GeneralEventBus used for publish API unrelated events.</p>
+</section>
     <h3 id="interfaces">Interfaces
   </h3>
-      <h4><a class="xref" href="org.visab.eventbus.IApiEvent.html">IApiEvent</a></h4>
-      <section><p>The IApiEvent interface that all api events have to implement.</p>
+      <h4><a class="xref" href="org.visab.eventbus.IAPIEvent.html">IAPIEvent</a></h4>
+      <section><p>The IAPIEvent interface that all API related events have to implement.</p>
 </section>
       <h4><a class="xref" href="org.visab.eventbus.IEvent.html">IEvent</a></h4>
       <section><p>Marker interface for events.</p>
@@ -105,7 +116,7 @@ generic interfaces to be implemented for specific features.</p>
       <section><p>The IPublisher interface, that all publishers have to implement.</p>
 </section>
       <h4><a class="xref" href="org.visab.eventbus.ISubscriber.html">ISubscriber&lt;TEvent&gt;</a></h4>
-      <section><p>The ISubscriber interface that all subscribers have to implement. This interface is needed, so that the EventBus can publish the exact event.</p>
+      <section><p>The ISubscriber interface that all subscribers have to implement. This interface is needed, so that the EventBus can publish events of the exact type without having to cast at compile time.</p>
 </section>
 </article>
           </div>

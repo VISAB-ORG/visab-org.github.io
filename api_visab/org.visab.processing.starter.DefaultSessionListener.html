@@ -72,7 +72,7 @@
   
   <h1 id="org_visab_processing_starter_DefaultSessionListener" data-uid="org.visab.processing.starter.DefaultSessionListener" class="text-break">Class DefaultSessionListener
   </h1>
-  <div class="markdown level0 summary"><p>This is a session listener default class, used for when games are allowed (added in settings) but there is no SessionListener implementation for them yet.</p>
+  <div class="markdown level0 summary"><p>Serves as a session listener default class, that can be used for when games are allowed in VISAB settings but there is no implemenatation for them yet.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -126,13 +126,16 @@
       <a class="xref" href="org.visab.processing.SessionListenerBase.html#org_visab_processing_SessionListenerBase_getSessionId__">SessionListenerBase.getSessionId()</a>
     </div>
     <div>
+      <a class="xref" href="org.visab.processing.SessionListenerBase.html#org_visab_processing_SessionListenerBase_initialize_org_visab_globalmodel_IMetaInformation_">SessionListenerBase.initialize(IMetaInformation)</a>
+    </div>
+    <div>
       <a class="xref" href="org.visab.processing.SessionListenerBase.html#org_visab_processing_SessionListenerBase_isActive__">SessionListenerBase.isActive()</a>
     </div>
     <div>
       <a class="xref" href="org.visab.processing.SessionListenerBase.html#org_visab_processing_SessionListenerBase_onSessionClosed__">SessionListenerBase.onSessionClosed()</a>
     </div>
     <div>
-      <a class="xref" href="org.visab.processing.SessionListenerBase.html#org_visab_processing_SessionListenerBase_onSessionStarted_org_visab_globalmodel_IMetaInformation_">SessionListenerBase.onSessionStarted(IMetaInformation)</a>
+      <a class="xref" href="org.visab.processing.SessionListenerBase.html#org_visab_processing_SessionListenerBase_onSessionStarted_TMeta_">SessionListenerBase.onSessionStarted(TMeta)</a>
     </div>
     <div>
       <a class="xref" href="org.visab.processing.SessionListenerBase.html#org_visab_processing_SessionListenerBase_processStatistics_TStatistics_">SessionListenerBase.processStatistics(TStatistics)</a>
@@ -145,7 +148,7 @@
   <h6><strong>Assembly</strong>: .dll</h6>
   <h5 id="org_visab_processing_starter_DefaultSessionListener_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DefaultSessionListener extends SessionListenerBase&lt;DefaultStatistics&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class DefaultSessionListener extends SessionListenerBase&lt;DefaultMetaInformation,DefaultStatistics&gt;</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -185,6 +188,31 @@
   </h3>
   
   
+  <a id="org_visab_processing_starter_DefaultSessionListener_getCurrentFile_" data-uid="org.visab.processing.starter.DefaultSessionListener.getCurrentFile*"></a>
+  <h4 id="org_visab_processing_starter_DefaultSessionListener_getCurrentFile__" data-uid="org.visab.processing.starter.DefaultSessionListener.getCurrentFile()">getCurrentFile()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IVISABFile getCurrentFile()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="org.visab.globalmodel.IVISABFile.html">IVISABFile</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="org_visab_processing_starter_DefaultSessionListener_onSessionClosed_" data-uid="org.visab.processing.starter.DefaultSessionListener.onSessionClosed*"></a>
   <h4 id="org_visab_processing_starter_DefaultSessionListener_onSessionClosed__" data-uid="org.visab.processing.starter.DefaultSessionListener.onSessionClosed()">onSessionClosed()</h4>
   <div class="markdown level1 summary"><p>Called when the listeners corresponding session is closed.</p>
@@ -195,17 +223,17 @@
     <pre><code class="lang-csharp hljs">public void onSessionClosed()</code></pre>
   </div>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="org.visab.processing.SessionListenerBase.html#org_visab_processing_SessionListenerBase_onSessionClosed__">SessionListenerBase&lt;TStatistics&gt;.onSessionClosed()</a></div>
+  <div><a class="xref" href="org.visab.processing.SessionListenerBase.html#org_visab_processing_SessionListenerBase_onSessionClosed__">SessionListenerBase&lt;TMeta,TStatistics&gt;.onSessionClosed()</a></div>
   
   
   <a id="org_visab_processing_starter_DefaultSessionListener_onSessionStarted_" data-uid="org.visab.processing.starter.DefaultSessionListener.onSessionStarted*"></a>
-  <h4 id="org_visab_processing_starter_DefaultSessionListener_onSessionStarted_org_visab_globalmodel_IMetaInformation_" data-uid="org.visab.processing.starter.DefaultSessionListener.onSessionStarted(org.visab.globalmodel.IMetaInformation)">onSessionStarted(IMetaInformation metaInformation)</h4>
+  <h4 id="org_visab_processing_starter_DefaultSessionListener_onSessionStarted_org_visab_globalmodel_starter_DefaultMetaInformation_" data-uid="org.visab.processing.starter.DefaultSessionListener.onSessionStarted(org.visab.globalmodel.starter.DefaultMetaInformation)">onSessionStarted(DefaultMetaInformation metaInformation)</h4>
   <div class="markdown level1 summary"><p>Called when the listeners is started.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void onSessionStarted(IMetaInformation metaInformation)</code></pre>
+    <pre><code class="lang-csharp hljs">public void onSessionStarted(DefaultMetaInformation metaInformation)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -218,14 +246,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="org.visab.globalmodel.IMetaInformation.html">IMetaInformation</a></td>
+        <td><a class="xref" href="org.visab.globalmodel.starter.DefaultMetaInformation.html">DefaultMetaInformation</a></td>
         <td><span class="parametername">metaInformation</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="org.visab.processing.SessionListenerBase.html#org_visab_processing_SessionListenerBase_onSessionStarted_org_visab_globalmodel_IMetaInformation_">SessionListenerBase&lt;TStatistics&gt;.onSessionStarted(IMetaInformation metaInformation)</a></div>
+  <div><a class="xref" href="org.visab.processing.SessionListenerBase.html#org_visab_processing_SessionListenerBase_onSessionStarted_TMeta_">SessionListenerBase&lt;TMeta,TStatistics&gt;.onSessionStarted(TMeta metaInformation)</a></div>
   
   
   <a id="org_visab_processing_starter_DefaultSessionListener_processStatistics_" data-uid="org.visab.processing.starter.DefaultSessionListener.processStatistics*"></a>
@@ -255,7 +283,7 @@
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="org.visab.processing.SessionListenerBase.html#org_visab_processing_SessionListenerBase_processStatistics_TStatistics_">SessionListenerBase&lt;TStatistics&gt;.processStatistics(TStatistics statistics)</a></div>
+  <div><a class="xref" href="org.visab.processing.SessionListenerBase.html#org_visab_processing_SessionListenerBase_processStatistics_TStatistics_">SessionListenerBase&lt;TMeta,TStatistics&gt;.processStatistics(TStatistics statistics)</a></div>
 </article>
           </div>
           

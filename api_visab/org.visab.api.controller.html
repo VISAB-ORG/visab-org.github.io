@@ -78,7 +78,7 @@ requests on the different API end points.</p>
  pattern with a central event bus that handles information distribution
  accordingly when getting accessed by these controllers.
  
- The actual implementation of the event bus can be found in another package.
+ The actual implementation of the event bus can be found in the org.visab.eventbus package.
  </p>
 </div>
   <div class="markdown level0 conceptual"></div>
@@ -86,20 +86,22 @@ requests on the different API end points.</p>
     <h3 id="classes">Classes
   </h3>
       <h4><a class="xref" href="org.visab.api.controller.FileController.html">FileController</a></h4>
-      <section></section>
+      <section><p>Controller for reciving any VISAB file and sending VISAB files that were created during the current runtime to the client.</p>
+</section>
       <h4><a class="xref" href="org.visab.api.controller.GameSupportController.html">GameSupportController</a></h4>
-      <section><p>Api Controller for getting the games supported by VISAB.</p>
+      <section><p>Controller for getting a list of the games supported by VISAB.</p>
 </section>
       <h4><a class="xref" href="org.visab.api.controller.HTTPControllerBase.html">HTTPControllerBase</a></h4>
-      <section><p>The base controller that all new controllers should inherit from.</p>
+      <section><p>The HTTPControllerBass class that all concrete controllers should inherit from.</p>
 </section>
       <h4><a class="xref" href="org.visab.api.controller.ImageController.html">ImageController</a></h4>
-      <section></section>
+      <section><p>Controller for reciving images from an active transmission session.</p>
+</section>
       <h4><a class="xref" href="org.visab.api.controller.SessionController.html">SessionController</a></h4>
-      <section><p>The SessionController, used for opening and closing VISAB transmission sessions through the SessionWatchdog. Can also give information on session status and show currently active sessions.</p>
+      <section><p>Controller for opening and closing VISAB transmission sessions and getting the status for a transmission session.</p>
 </section>
       <h4><a class="xref" href="org.visab.api.controller.StatisticsController.html">StatisticsController</a></h4>
-      <section><p>The statistics controller, used for transmitting statistics data.</p>
+      <section><p>Controller for reciving statistics from an active transmission session.</p>
 </section>
 </article>
           </div>

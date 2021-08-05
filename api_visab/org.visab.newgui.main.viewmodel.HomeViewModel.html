@@ -80,6 +80,10 @@
     <div class="level1"><a class="xref" href="org.visab.newgui.ViewModelBase.html">ViewModelBase</a></div>
     <div class="level2"><span class="xref">HomeViewModel</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">org.visab.eventbus.ISubscriber&lt;org.visab.eventbus.event.VISABFileSavedEvent&gt;</span></div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -129,7 +133,7 @@
   <h6><strong>Assembly</strong>: .dll</h6>
   <h5 id="org_visab_newgui_main_viewmodel_HomeViewModel_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class HomeViewModel extends ViewModelBase</code></pre>
+    <pre><code class="lang-csharp hljs">public class HomeViewModel extends ViewModelBase implements ISubscriber&lt;VISABFileSavedEvent&gt;</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -337,6 +341,70 @@
         <td><a class="xref" href="org.visab.newgui.control.ExplorerFile.html">ExplorerFile</a></td>
         <td><p>The initialized baseFile</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_newgui_main_viewmodel_HomeViewModel_getSubscribedEventType_" data-uid="org.visab.newgui.main.viewmodel.HomeViewModel.getSubscribedEventType*"></a>
+  <h4 id="org_visab_newgui_main_viewmodel_HomeViewModel_getSubscribedEventType__" data-uid="org.visab.newgui.main.viewmodel.HomeViewModel.getSubscribedEventType()">getSubscribedEventType()</h4>
+  <div class="markdown level1 summary"><p>Gets the subscribed events simple name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String getSubscribedEventType()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_newgui_main_viewmodel_HomeViewModel_initialize_" data-uid="org.visab.newgui.main.viewmodel.HomeViewModel.initialize*"></a>
+  <h4 id="org_visab_newgui_main_viewmodel_HomeViewModel_initialize__" data-uid="org.visab.newgui.main.viewmodel.HomeViewModel.initialize()">initialize()</h4>
+  <div class="markdown level1 summary"><p>ENDREGION: DATABASE VIEW</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void initialize()</code></pre>
+  </div>
+  
+  
+  <a id="org_visab_newgui_main_viewmodel_HomeViewModel_notify_" data-uid="org.visab.newgui.main.viewmodel.HomeViewModel.notify*"></a>
+  <h4 id="org_visab_newgui_main_viewmodel_HomeViewModel_notify_org_visab_eventbus_event_VISABFileSavedEvent_" data-uid="org.visab.newgui.main.viewmodel.HomeViewModel.notify(org.visab.eventbus.event.VISABFileSavedEvent)">notify(VISABFileSavedEvent event)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void notify(VISABFileSavedEvent event)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="org.visab.eventbus.event.VISABFileSavedEvent.html">VISABFileSavedEvent</a></td>
+        <td><span class="parametername">event</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -620,6 +688,10 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">org.visab.eventbus.ISubscriber&lt;org.visab.eventbus.event.VISABFileSavedEvent&gt;</span>
+  </div>
 </article>
           </div>
           

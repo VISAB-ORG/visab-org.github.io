@@ -361,12 +361,12 @@
   
   
   <a id="org_visab_newgui_DialogHelper_showView_" data-uid="org.visab.newgui.DialogHelper.showView*"></a>
-  <h4 id="org_visab_newgui_DialogHelper_showView_java_lang_Class___extends_de_saxsys_mvvmfx_FxmlView___extends_de_saxsys_mvvmfx_ViewModel___java_lang_String_boolean_" data-uid="org.visab.newgui.DialogHelper.showView(java.lang.Class&lt;? extends de.saxsys.mvvmfx.FxmlView&lt;? extends de.saxsys.mvvmfx.ViewModel&gt;&gt;,java.lang.String,boolean)">showView(Class&lt;? extends FxmlView&lt;? extends ViewModel&gt;&gt; viewType, String title, boolean blockWindows)</h4>
+  <h4 id="org_visab_newgui_DialogHelper_showView_org_visab_newgui_ShowViewConfiguration_de_saxsys_mvvmfx_Scope____" data-uid="org.visab.newgui.DialogHelper.showView(org.visab.newgui.ShowViewConfiguration,de.saxsys.mvvmfx.Scope...)">showView(ShowViewConfiguration configuration, Scope[] scopes)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void showView(Class&lt;? extends FxmlView&lt;? extends ViewModel&gt;&gt; viewType, String title, boolean blockWindows)</code></pre>
+    <pre><code class="lang-csharp hljs">public void showView(ShowViewConfiguration configuration, Scope[] scopes)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -379,18 +379,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">java.lang.Class</span>&lt;<span class="xref">? extends de.saxsys.mvvmfx.FxmlView</span>&lt;<span class="xref">? extends de.saxsys.mvvmfx.ViewModel</span>&gt;&gt;</td>
-        <td><span class="parametername">viewType</span></td>
+        <td><a class="xref" href="org.visab.newgui.ShowViewConfiguration.html">ShowViewConfiguration</a></td>
+        <td><span class="parametername">configuration</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">java.lang.String</span></td>
-        <td><span class="parametername">title</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">boolean</span></td>
-        <td><span class="parametername">blockWindows</span></td>
+        <td><span class="xref">de.saxsys.mvvmfx.Scope</span>[]</td>
+        <td><span class="parametername">scopes</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -398,12 +393,12 @@
   
   
   <a id="org_visab_newgui_DialogHelper_showView_" data-uid="org.visab.newgui.DialogHelper.showView*"></a>
-  <h4 id="org_visab_newgui_DialogHelper_showView_java_lang_Class___extends_de_saxsys_mvvmfx_FxmlView___extends_de_saxsys_mvvmfx_ViewModel___java_lang_String_boolean_de_saxsys_mvvmfx_ViewModel_" data-uid="org.visab.newgui.DialogHelper.showView(java.lang.Class&lt;? extends de.saxsys.mvvmfx.FxmlView&lt;? extends de.saxsys.mvvmfx.ViewModel&gt;&gt;,java.lang.String,boolean,de.saxsys.mvvmfx.ViewModel)">showView(Class&lt;? extends FxmlView&lt;? extends ViewModel&gt;&gt; viewType, String title, boolean blockWindows, ViewModel initViewModel)</h4>
+  <h4 id="org_visab_newgui_DialogHelper_showView_org_visab_newgui_ShowViewConfiguration_de_saxsys_mvvmfx_ViewModel_de_saxsys_mvvmfx_Scope____" data-uid="org.visab.newgui.DialogHelper.showView(org.visab.newgui.ShowViewConfiguration,de.saxsys.mvvmfx.ViewModel,de.saxsys.mvvmfx.Scope...)">showView(ShowViewConfiguration configuration, ViewModel viewModel, Scope[] scopes)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void showView(Class&lt;? extends FxmlView&lt;? extends ViewModel&gt;&gt; viewType, String title, boolean blockWindows, ViewModel initViewModel)</code></pre>
+    <pre><code class="lang-csharp hljs">public void showView(ShowViewConfiguration configuration, ViewModel viewModel, Scope[] scopes)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -416,23 +411,18 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">java.lang.Class</span>&lt;<span class="xref">? extends de.saxsys.mvvmfx.FxmlView</span>&lt;<span class="xref">? extends de.saxsys.mvvmfx.ViewModel</span>&gt;&gt;</td>
-        <td><span class="parametername">viewType</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">java.lang.String</span></td>
-        <td><span class="parametername">title</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">boolean</span></td>
-        <td><span class="parametername">blockWindows</span></td>
+        <td><a class="xref" href="org.visab.newgui.ShowViewConfiguration.html">ShowViewConfiguration</a></td>
+        <td><span class="parametername">configuration</span></td>
         <td></td>
       </tr>
       <tr>
         <td><span class="xref">de.saxsys.mvvmfx.ViewModel</span></td>
-        <td><span class="parametername">initViewModel</span></td>
+        <td><span class="parametername">viewModel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">de.saxsys.mvvmfx.Scope</span>[]</td>
+        <td><span class="parametername">scopes</span></td>
         <td></td>
       </tr>
     </tbody>

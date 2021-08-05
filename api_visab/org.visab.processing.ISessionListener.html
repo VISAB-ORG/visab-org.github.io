@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Interface ISessionListener&lt;TStatistics&gt;
+    <title>Interface ISessionListener
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Interface ISessionListener&lt;TStatistics&gt;
+    <meta name="title" content="Interface ISessionListener
    ">
     <meta name="generator" content="docfx 2.58.0.0">
     
@@ -70,34 +70,45 @@
             <article class="content wrap" id="_content" data-uid="org.visab.processing.ISessionListener">
   
   
-  <h1 id="org_visab_processing_ISessionListener" data-uid="org.visab.processing.ISessionListener" class="text-break">Interface ISessionListener&lt;TStatistics&gt;
+  <h1 id="org_visab_processing_ISessionListener" data-uid="org.visab.processing.ISessionListener" class="text-break">Interface ISessionListener
   </h1>
-  <div class="markdown level0 summary"><p>The ISessionListener interface, that all SessionListeners have to implement.</p>
+  <div class="markdown level0 summary"><p>The ISessionListener interface, that all SessionListeners have to implement. SessionListeners are responsible for processing the information that was sent to VISABs WebApi by the game. Every open transmission session has exactly one SessionListener instance. Instead of implementing this yourself, consider inheriting from SessionListenerBase or ReplayListenerBase instead.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: </h6>
   <h6><strong>Assembly</strong>: .dll</h6>
   <h5 id="org_visab_processing_ISessionListener_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface ISessionListener&lt;TStatistics&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public interface ISessionListener</code></pre>
   </div>
-  <h5 class="typeParameters">Type Parameters</h5>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="org_visab_processing_ISessionListener_getCurrentFile_" data-uid="org.visab.processing.ISessionListener.getCurrentFile*"></a>
+  <h4 id="org_visab_processing_ISessionListener_getCurrentFile__" data-uid="org.visab.processing.ISessionListener.getCurrentFile()">getCurrentFile()</h4>
+  <div class="markdown level1 summary"><p>Returns the current (likely unfinished) IVISABFile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract IVISABFile getCurrentFile()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
-        <th>Name</th>
+        <th>Type</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">TStatistics</span></td>
+        <td><a class="xref" href="org.visab.globalmodel.IVISABFile.html">IVISABFile</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h3 id="methods">Methods
-  </h3>
   
   
   <a id="org_visab_processing_ISessionListener_getGame_" data-uid="org.visab.processing.ISessionListener.getGame*"></a>
@@ -155,7 +166,7 @@
   
   <a id="org_visab_processing_ISessionListener_getSessionId_" data-uid="org.visab.processing.ISessionListener.getSessionId*"></a>
   <h4 id="org_visab_processing_ISessionListener_getSessionId__" data-uid="org.visab.processing.ISessionListener.getSessionId()">getSessionId()</h4>
-  <div class="markdown level1 summary"><p>The session listeners corresponding sessionId.</p>
+  <div class="markdown level1 summary"><p>The session listeners corresponding tranmission session sessionId.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -173,7 +184,37 @@
     <tbody>
       <tr>
         <td><span class="xref">java.util.UUID</span></td>
-        <td></td>
+        <td><p>The sessionId</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_processing_ISessionListener_initialize_" data-uid="org.visab.processing.ISessionListener.initialize*"></a>
+  <h4 id="org_visab_processing_ISessionListener_initialize_org_visab_globalmodel_IMetaInformation_" data-uid="org.visab.processing.ISessionListener.initialize(org.visab.globalmodel.IMetaInformation)">initialize(IMetaInformation metaInformation)</h4>
+  <div class="markdown level1 summary"><p>Initializes the SessionListener with the meta information for the session.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void initialize(IMetaInformation metaInformation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="org.visab.globalmodel.IMetaInformation.html">IMetaInformation</a></td>
+        <td><span class="parametername">metaInformation</span></td>
+        <td><p>The meta information that was sent</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -200,76 +241,6 @@
       <tr>
         <td><span class="xref">boolean</span></td>
         <td><p>True if still listening</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="org_visab_processing_ISessionListener_onSessionClosed_" data-uid="org.visab.processing.ISessionListener.onSessionClosed*"></a>
-  <h4 id="org_visab_processing_ISessionListener_onSessionClosed__" data-uid="org.visab.processing.ISessionListener.onSessionClosed()">onSessionClosed()</h4>
-  <div class="markdown level1 summary"><p>Called when the listeners corresponding session is closed.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract void onSessionClosed()</code></pre>
-  </div>
-  
-  
-  <a id="org_visab_processing_ISessionListener_onSessionStarted_" data-uid="org.visab.processing.ISessionListener.onSessionStarted*"></a>
-  <h4 id="org_visab_processing_ISessionListener_onSessionStarted_org_visab_globalmodel_IMetaInformation_" data-uid="org.visab.processing.ISessionListener.onSessionStarted(org.visab.globalmodel.IMetaInformation)">onSessionStarted(IMetaInformation metaInformation)</h4>
-  <div class="markdown level1 summary"><p>Called when the listeners is started.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract void onSessionStarted(IMetaInformation metaInformation)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="org.visab.globalmodel.IMetaInformation.html">IMetaInformation</a></td>
-        <td><span class="parametername">metaInformation</span></td>
-        <td><p>The meta information object using which the session
-was opened.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="org_visab_processing_ISessionListener_processStatistics_" data-uid="org.visab.processing.ISessionListener.processStatistics*"></a>
-  <h4 id="org_visab_processing_ISessionListener_processStatistics_TStatistics_" data-uid="org.visab.processing.ISessionListener.processStatistics(TStatistics)">processStatistics(TStatistics statistics)</h4>
-  <div class="markdown level1 summary"><p>Called upon reciving statistics for the current session. Is only called if the received Statistics object was not null.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract void processStatistics(TStatistics statistics)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">TStatistics</span></td>
-        <td><span class="parametername">statistics</span></td>
-        <td><p>The received TStatistics object</p>
 </td>
       </tr>
     </tbody>

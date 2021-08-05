@@ -77,7 +77,13 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">java.lang.Object</span></div>
-    <div class="level1"><span class="xref">CBRShooterReplayViewModel</span></div>
+    <div class="level1"><a class="xref" href="org.visab.newgui.ViewModelBase.html">ViewModelBase</a></div>
+    <div class="level2"><a class="xref" href="org.visab.newgui.visualize.ReplayViewModelBase.html">ReplayViewModelBase</a></div>
+    <div class="level3"><span class="xref">CBRShooterReplayViewModel</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">org.visab.newgui.visualize.ILiveViewModel&lt;org.visab.globalmodel.cbrshooter.CBRShooterStatistics&gt;</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -114,12 +120,24 @@
     <div>
       <span class="xref">java.lang.Object.wait(long,int)</span>
     </div>
+    <div>
+      <a class="xref" href="org.visab.newgui.ViewModelBase.html#org_visab_newgui_ViewModelBase_getDialogHelper__">ViewModelBase.getDialogHelper()</a>
+    </div>
+    <div>
+      <a class="xref" href="org.visab.newgui.ViewModelBase.html#org_visab_newgui_ViewModelBase_main_java_lang_String___">ViewModelBase.main(String[])</a>
+    </div>
+    <div>
+      <a class="xref" href="org.visab.newgui.ViewModelBase.html#org_visab_newgui_ViewModelBase_runnableCommand_java_lang_Runnable_">ViewModelBase.runnableCommand(Runnable)</a>
+    </div>
+    <div>
+      <a class="xref" href="org.visab.newgui.visualize.ReplayViewModelBase.html#org_visab_newgui_visualize_ReplayViewModelBase_initialize_org_visab_globalmodel_IVISABFile_">ReplayViewModelBase.initialize(IVISABFile)</a>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: </h6>
   <h6><strong>Assembly</strong>: .dll</h6>
   <h5 id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class CBRShooterReplayViewModel</code></pre>
+    <pre><code class="lang-csharp hljs">public class CBRShooterReplayViewModel extends ReplayViewModelBase&lt;CBRShooterFile&gt; implements ILiveViewModel&lt;CBRShooterStatistics&gt;</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -132,6 +150,907 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public CBRShooterReplayViewModel()</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_getAmmuCoordsProperty_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.getAmmuCoordsProperty*"></a>
+  <h4 id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_getAmmuCoordsProperty__" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.getAmmuCoordsProperty()">getAmmuCoordsProperty()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SimpleStringProperty getAmmuCoordsProperty()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">javafx.beans.property.SimpleStringProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_getCurrentPlayerStats_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.getCurrentPlayerStats*"></a>
+  <h4 id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_getCurrentPlayerStats__" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.getCurrentPlayerStats()">getCurrentPlayerStats()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObservableList&lt;PlayerDataRow&gt; getCurrentPlayerStats()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">javafx.collections.ObservableList</span>&lt;<a class="xref" href="org.visab.newgui.visualize.cbrshooter.model.PlayerDataRow.html">PlayerDataRow</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_getFrameSliderMaxProperty_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.getFrameSliderMaxProperty*"></a>
+  <h4 id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_getFrameSliderMaxProperty__" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.getFrameSliderMaxProperty()">getFrameSliderMaxProperty()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SimpleIntegerProperty getFrameSliderMaxProperty()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">javafx.beans.property.SimpleIntegerProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_getFrameSliderTickUnitProperty_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.getFrameSliderTickUnitProperty*"></a>
+  <h4 id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_getFrameSliderTickUnitProperty__" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.getFrameSliderTickUnitProperty()">getFrameSliderTickUnitProperty()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SimpleIntegerProperty getFrameSliderTickUnitProperty()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">javafx.beans.property.SimpleIntegerProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_getFrameSliderValueProperty_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.getFrameSliderValueProperty*"></a>
+  <h4 id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_getFrameSliderValueProperty__" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.getFrameSliderValueProperty()">getFrameSliderValueProperty()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SimpleDoubleProperty getFrameSliderValueProperty()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">javafx.beans.property.SimpleDoubleProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_getHealthCoordsProperty_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.getHealthCoordsProperty*"></a>
+  <h4 id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_getHealthCoordsProperty__" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.getHealthCoordsProperty()">getHealthCoordsProperty()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SimpleStringProperty getHealthCoordsProperty()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">javafx.beans.property.SimpleStringProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_getMapElements_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.getMapElements*"></a>
+  <h4 id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_getMapElements__" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.getMapElements()">getMapElements()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObservableList&lt;Node&gt; getMapElements()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">javafx.collections.ObservableList</span>&lt;<span class="xref">javafx.scene.Node</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_getPlayerVisualsRows_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.getPlayerVisualsRows*"></a>
+  <h4 id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_getPlayerVisualsRows__" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.getPlayerVisualsRows()">getPlayerVisualsRows()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObservableList&lt;PlayerVisualsRow&gt; getPlayerVisualsRows()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">javafx.collections.ObservableList</span>&lt;<a class="xref" href="org.visab.newgui.visualize.cbrshooter.model.PlayerVisualsRow.html">PlayerVisualsRow</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_getRoundProperty_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.getRoundProperty*"></a>
+  <h4 id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_getRoundProperty__" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.getRoundProperty()">getRoundProperty()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SimpleStringProperty getRoundProperty()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">javafx.beans.property.SimpleStringProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_getRoundTimeProperty_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.getRoundTimeProperty*"></a>
+  <h4 id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_getRoundTimeProperty__" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.getRoundTimeProperty()">getRoundTimeProperty()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SimpleStringProperty getRoundTimeProperty()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">javafx.beans.property.SimpleStringProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_getSelectedFrame_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.getSelectedFrame*"></a>
+  <h4 id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_getSelectedFrame__" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.getSelectedFrame()">getSelectedFrame()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int getSelectedFrame()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_getTotalTimeProperty_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.getTotalTimeProperty*"></a>
+  <h4 id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_getTotalTimeProperty__" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.getTotalTimeProperty()">getTotalTimeProperty()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SimpleStringProperty getTotalTimeProperty()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">javafx.beans.property.SimpleStringProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_getWeaponCoordsProperty_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.getWeaponCoordsProperty*"></a>
+  <h4 id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_getWeaponCoordsProperty__" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.getWeaponCoordsProperty()">getWeaponCoordsProperty()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SimpleStringProperty getWeaponCoordsProperty()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">javafx.beans.property.SimpleStringProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_initialize_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.initialize*"></a>
+  <h4 id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_initialize__" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.initialize()">initialize()</h4>
+  <div class="markdown level1 summary"><p>Called after the instance was constructed by javafx/mvvmfx.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void initialize()</code></pre>
+  </div>
+  
+  
+  <a id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_initialize_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.initialize*"></a>
+  <h4 id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_initialize_org_visab_processing_ILiveViewable___extends_org_visab_globalmodel_IStatistics__" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.initialize(org.visab.processing.ILiveViewable&lt;? extends org.visab.globalmodel.IStatistics&gt;)">initialize(ILiveViewable&lt;? extends IStatistics&gt; listener)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void initialize(ILiveViewable&lt;? extends IStatistics&gt; listener)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="org.visab.processing.ILiveViewable.html">ILiveViewable</a>&lt;<span class="xref">? extends org.visab.globalmodel.IStatistics</span>&gt;</td>
+        <td><span class="parametername">listener</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_onSessionClosed_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.onSessionClosed*"></a>
+  <h4 id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_onSessionClosed__" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.onSessionClosed()">onSessionClosed()</h4>
+  <div class="markdown level1 summary"><p>Called by the docked listener upon closing the session.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void onSessionClosed()</code></pre>
+  </div>
+  
+  
+  <a id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_onStatisticsAdded_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.onStatisticsAdded*"></a>
+  <h4 id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_onStatisticsAdded_org_visab_globalmodel_cbrshooter_CBRShooterStatistics_java_util_List_org_visab_globalmodel_cbrshooter_CBRShooterStatistics__" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.onStatisticsAdded(org.visab.globalmodel.cbrshooter.CBRShooterStatistics,java.util.List&lt;org.visab.globalmodel.cbrshooter.CBRShooterStatistics&gt;)">onStatisticsAdded(CBRShooterStatistics newStatistics, List&lt;CBRShooterStatistics&gt; statisticsCopy)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void onStatisticsAdded(CBRShooterStatistics newStatistics, List&lt;CBRShooterStatistics&gt; statisticsCopy)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="org.visab.globalmodel.cbrshooter.CBRShooterStatistics.html">CBRShooterStatistics</a></td>
+        <td><span class="parametername">newStatistics</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">java.util.List</span>&lt;<a class="xref" href="org.visab.globalmodel.cbrshooter.CBRShooterStatistics.html">CBRShooterStatistics</a>&gt;</td>
+        <td><span class="parametername">statisticsCopy</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_pauseData_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.pauseData*"></a>
+  <h4 id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_pauseData__" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.pauseData()">pauseData()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Command pauseData()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">de.saxsys.mvvmfx.utils.commands.Command</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_playData_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.playData*"></a>
+  <h4 id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_playData__" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.playData()">playData()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Command playData()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">de.saxsys.mvvmfx.utils.commands.Command</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_setAmmuCoordsProperty_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.setAmmuCoordsProperty*"></a>
+  <h4 id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_setAmmuCoordsProperty_javafx_beans_property_SimpleStringProperty_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.setAmmuCoordsProperty(javafx.beans.property.SimpleStringProperty)">setAmmuCoordsProperty(SimpleStringProperty ammuCoordsProperty)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setAmmuCoordsProperty(SimpleStringProperty ammuCoordsProperty)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">javafx.beans.property.SimpleStringProperty</span></td>
+        <td><span class="parametername">ammuCoordsProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_setCurrentPlayerStats_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.setCurrentPlayerStats*"></a>
+  <h4 id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_setCurrentPlayerStats_javafx_collections_ObservableList_org_visab_newgui_visualize_cbrshooter_model_PlayerDataRow__" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.setCurrentPlayerStats(javafx.collections.ObservableList&lt;org.visab.newgui.visualize.cbrshooter.model.PlayerDataRow&gt;)">setCurrentPlayerStats(ObservableList&lt;PlayerDataRow&gt; currentPlayerStats)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setCurrentPlayerStats(ObservableList&lt;PlayerDataRow&gt; currentPlayerStats)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">javafx.collections.ObservableList</span>&lt;<a class="xref" href="org.visab.newgui.visualize.cbrshooter.model.PlayerDataRow.html">PlayerDataRow</a>&gt;</td>
+        <td><span class="parametername">currentPlayerStats</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_setFrameSliderProperty_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.setFrameSliderProperty*"></a>
+  <h4 id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_setFrameSliderProperty_javafx_beans_property_SimpleIntegerProperty_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.setFrameSliderProperty(javafx.beans.property.SimpleIntegerProperty)">setFrameSliderProperty(SimpleIntegerProperty frameSliderMaxProperty)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setFrameSliderProperty(SimpleIntegerProperty frameSliderMaxProperty)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">javafx.beans.property.SimpleIntegerProperty</span></td>
+        <td><span class="parametername">frameSliderMaxProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_setFrameSliderTickUnitProperty_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.setFrameSliderTickUnitProperty*"></a>
+  <h4 id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_setFrameSliderTickUnitProperty_javafx_beans_property_SimpleIntegerProperty_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.setFrameSliderTickUnitProperty(javafx.beans.property.SimpleIntegerProperty)">setFrameSliderTickUnitProperty(SimpleIntegerProperty frameSliderTickUnitProperty)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setFrameSliderTickUnitProperty(SimpleIntegerProperty frameSliderTickUnitProperty)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">javafx.beans.property.SimpleIntegerProperty</span></td>
+        <td><span class="parametername">frameSliderTickUnitProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_setFrameSliderValueProperty_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.setFrameSliderValueProperty*"></a>
+  <h4 id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_setFrameSliderValueProperty_javafx_beans_property_SimpleDoubleProperty_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.setFrameSliderValueProperty(javafx.beans.property.SimpleDoubleProperty)">setFrameSliderValueProperty(SimpleDoubleProperty frameSliderValueProperty)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setFrameSliderValueProperty(SimpleDoubleProperty frameSliderValueProperty)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">javafx.beans.property.SimpleDoubleProperty</span></td>
+        <td><span class="parametername">frameSliderValueProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_setHealthCoordsProperty_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.setHealthCoordsProperty*"></a>
+  <h4 id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_setHealthCoordsProperty_javafx_beans_property_SimpleStringProperty_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.setHealthCoordsProperty(javafx.beans.property.SimpleStringProperty)">setHealthCoordsProperty(SimpleStringProperty healthCoordsProperty)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setHealthCoordsProperty(SimpleStringProperty healthCoordsProperty)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">javafx.beans.property.SimpleStringProperty</span></td>
+        <td><span class="parametername">healthCoordsProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_setPlayerVisualsRows_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.setPlayerVisualsRows*"></a>
+  <h4 id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_setPlayerVisualsRows_javafx_collections_ObservableList_org_visab_newgui_visualize_cbrshooter_model_PlayerVisualsRow__" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.setPlayerVisualsRows(javafx.collections.ObservableList&lt;org.visab.newgui.visualize.cbrshooter.model.PlayerVisualsRow&gt;)">setPlayerVisualsRows(ObservableList&lt;PlayerVisualsRow&gt; playerVisualsRows)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setPlayerVisualsRows(ObservableList&lt;PlayerVisualsRow&gt; playerVisualsRows)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">javafx.collections.ObservableList</span>&lt;<a class="xref" href="org.visab.newgui.visualize.cbrshooter.model.PlayerVisualsRow.html">PlayerVisualsRow</a>&gt;</td>
+        <td><span class="parametername">playerVisualsRows</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_setRoundProperty_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.setRoundProperty*"></a>
+  <h4 id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_setRoundProperty_javafx_beans_property_SimpleStringProperty_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.setRoundProperty(javafx.beans.property.SimpleStringProperty)">setRoundProperty(SimpleStringProperty roundProperty)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setRoundProperty(SimpleStringProperty roundProperty)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">javafx.beans.property.SimpleStringProperty</span></td>
+        <td><span class="parametername">roundProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_setRoundTimeProperty_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.setRoundTimeProperty*"></a>
+  <h4 id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_setRoundTimeProperty_javafx_beans_property_SimpleStringProperty_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.setRoundTimeProperty(javafx.beans.property.SimpleStringProperty)">setRoundTimeProperty(SimpleStringProperty roundTimeProperty)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setRoundTimeProperty(SimpleStringProperty roundTimeProperty)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">javafx.beans.property.SimpleStringProperty</span></td>
+        <td><span class="parametername">roundTimeProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_setSelectedFrame_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.setSelectedFrame*"></a>
+  <h4 id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_setSelectedFrame_int_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.setSelectedFrame(int)">setSelectedFrame(int frame)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Command setSelectedFrame(int frame)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">frame</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">de.saxsys.mvvmfx.utils.commands.Command</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_setTotalTimeProperty_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.setTotalTimeProperty*"></a>
+  <h4 id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_setTotalTimeProperty_javafx_beans_property_SimpleStringProperty_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.setTotalTimeProperty(javafx.beans.property.SimpleStringProperty)">setTotalTimeProperty(SimpleStringProperty totalTimeProperty)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setTotalTimeProperty(SimpleStringProperty totalTimeProperty)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">javafx.beans.property.SimpleStringProperty</span></td>
+        <td><span class="parametername">totalTimeProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_setUpdateInterval_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.setUpdateInterval*"></a>
+  <h4 id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_setUpdateInterval_double_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.setUpdateInterval(double)">setUpdateInterval(double newInterval)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Command setUpdateInterval(double newInterval)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">double</span></td>
+        <td><span class="parametername">newInterval</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">de.saxsys.mvvmfx.utils.commands.Command</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_setWeaponCoordsProperty_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.setWeaponCoordsProperty*"></a>
+  <h4 id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_setWeaponCoordsProperty_javafx_beans_property_SimpleStringProperty_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.setWeaponCoordsProperty(javafx.beans.property.SimpleStringProperty)">setWeaponCoordsProperty(SimpleStringProperty weaponCoordsProperty)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setWeaponCoordsProperty(SimpleStringProperty weaponCoordsProperty)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">javafx.beans.property.SimpleStringProperty</span></td>
+        <td><span class="parametername">weaponCoordsProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_updateCurrentGameStatsByFrame_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.updateCurrentGameStatsByFrame*"></a>
+  <h4 id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_updateCurrentGameStatsByFrame__" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.updateCurrentGameStatsByFrame()">updateCurrentGameStatsByFrame()</h4>
+  <div class="markdown level1 summary"><p>This method is responsible to update the given statistics according to the global variable of the currently selected frame based on various types of inputs or events. The view model always refers to a specific index of the overall statistics that have been loaded from the file to properly display the relevant information on the underlying UI of the CBR Shooter visualizer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void updateCurrentGameStatsByFrame()</code></pre>
+  </div>
+  
+  
+  <a id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_visualizeMapElement_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.visualizeMapElement*"></a>
+  <h4 id="org_visab_newgui_visualize_cbrshooter_viewmodel_CBRShooterReplayViewModel_visualizeMapElement_java_lang_String_boolean_" data-uid="org.visab.newgui.visualize.cbrshooter.viewmodel.CBRShooterReplayViewModel.visualizeMapElement(java.lang.String,boolean)">visualizeMapElement(String key, boolean value)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Command visualizeMapElement(String key, boolean value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">de.saxsys.mvvmfx.utils.commands.Command</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">org.visab.newgui.visualize.ILiveViewModel&lt;org.visab.globalmodel.cbrshooter.CBRShooterStatistics&gt;</span>
   </div>
 </article>
           </div>

@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class WebApiHelper
+    <title>Class WebAPIHelper
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class WebApiHelper
+    <meta name="title" content="Class WebAPIHelper
    ">
     <meta name="generator" content="docfx 2.58.0.0">
     
@@ -67,18 +67,18 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="org.visab.api.WebApiHelper">
+            <article class="content wrap" id="_content" data-uid="org.visab.api.WebAPIHelper">
   
   
-  <h1 id="org_visab_api_WebApiHelper" data-uid="org.visab.api.WebApiHelper" class="text-break">Class WebApiHelper
+  <h1 id="org_visab_api_WebAPIHelper" data-uid="org.visab.api.WebAPIHelper" class="text-break">Class WebAPIHelper
   </h1>
-  <div class="markdown level0 summary"><p>A helper class containing various methods that are used by controllers.</p>
+  <div class="markdown level0 summary"><p>A helper class containing various methods that are used by the HTTP controllers.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">java.lang.Object</span></div>
-    <div class="level1"><span class="xref">WebApiHelper</span></div>
+    <div class="level1"><span class="xref">WebAPIHelper</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -118,56 +118,29 @@
   </div>
   <h6><strong>Namespace</strong>: </h6>
   <h6><strong>Assembly</strong>: .dll</h6>
-  <h5 id="org_visab_api_WebApiHelper_syntax">Syntax</h5>
+  <h5 id="org_visab_api_WebAPIHelper_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public final class WebApiHelper</code></pre>
+    <pre><code class="lang-csharp hljs">public final class WebAPIHelper</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   
   
-  <a id="org_visab_api_WebApiHelper_WebApiHelper_" data-uid="org.visab.api.WebApiHelper.WebApiHelper*"></a>
-  <h4 id="org_visab_api_WebApiHelper_WebApiHelper__" data-uid="org.visab.api.WebApiHelper.WebApiHelper()">WebApiHelper()</h4>
+  <a id="org_visab_api_WebAPIHelper_WebAPIHelper_" data-uid="org.visab.api.WebAPIHelper.WebAPIHelper*"></a>
+  <h4 id="org_visab_api_WebAPIHelper_WebAPIHelper__" data-uid="org.visab.api.WebAPIHelper.WebAPIHelper()">WebAPIHelper()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public WebApiHelper()</code></pre>
+    <pre><code class="lang-csharp hljs">public WebAPIHelper()</code></pre>
   </div>
-  <h3 id="fields">Fields
-  </h3>
-  
-  
-  <h4 id="org_visab_api_WebApiHelper_SESSION_ALREADY_CLOSED_RESPONSE" data-uid="org.visab.api.WebApiHelper.SESSION_ALREADY_CLOSED_RESPONSE">SESSION_ALREADY_CLOSED_RESPONSE</h4>
-  <div class="markdown level1 summary"><p>Is returned if session specific data like statistics or images were sent, but the session was already closed.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static final String SESSION_ALREADY_CLOSED_RESPONSE</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">java.lang.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="methods">Methods
   </h3>
   
   
-  <a id="org_visab_api_WebApiHelper_extractGame_" data-uid="org.visab.api.WebApiHelper.extractGame*"></a>
-  <h4 id="org_visab_api_WebApiHelper_extractGame_java_util_Map_java_lang_String_java_lang_String__" data-uid="org.visab.api.WebApiHelper.extractGame(java.util.Map&lt;java.lang.String,java.lang.String&gt;)">extractGame(Map&lt;String,String&gt; headers)</h4>
-  <div class="markdown level1 summary"><p>Extracts the game from the headers of a Http request.</p>
+  <a id="org_visab_api_WebAPIHelper_extractGame_" data-uid="org.visab.api.WebAPIHelper.extractGame*"></a>
+  <h4 id="org_visab_api_WebAPIHelper_extractGame_java_util_Map_java_lang_String_java_lang_String__" data-uid="org.visab.api.WebAPIHelper.extractGame(java.util.Map&lt;java.lang.String,java.lang.String&gt;)">extractGame(Map&lt;String,String&gt; headers)</h4>
+  <div class="markdown level1 summary"><p>Extracts the game from the headers of a HTTP request.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -187,7 +160,7 @@
       <tr>
         <td><span class="xref">java.util.Map</span>&lt;<span class="xref">java.lang.String</span>,<span class="xref">java.lang.String</span>&gt;</td>
         <td><span class="parametername">headers</span></td>
-        <td><p>The headers</p>
+        <td><p>The headers of the HTTP request</p>
 </td>
       </tr>
     </tbody>
@@ -210,14 +183,14 @@
   </table>
   
   
-  <a id="org_visab_api_WebApiHelper_extractJsonBody_" data-uid="org.visab.api.WebApiHelper.extractJsonBody*"></a>
-  <h4 id="org_visab_api_WebApiHelper_extractJsonBody_fi_iki_elonen_NanoHTTPD_IHTTPSession_" data-uid="org.visab.api.WebApiHelper.extractJsonBody(fi.iki.elonen.NanoHTTPD.IHTTPSession)">extractJsonBody(NanoHTTPD.IHTTPSession session)</h4>
-  <div class="markdown level1 summary"><p>Extracts a json string from the body of a Http session.</p>
+  <a id="org_visab_api_WebAPIHelper_extractJsonBody_" data-uid="org.visab.api.WebAPIHelper.extractJsonBody*"></a>
+  <h4 id="org_visab_api_WebAPIHelper_extractJsonBody_org_nanohttpd_protocols_http_IHTTPSession_" data-uid="org.visab.api.WebAPIHelper.extractJsonBody(org.nanohttpd.protocols.http.IHTTPSession)">extractJsonBody(IHTTPSession session)</h4>
+  <div class="markdown level1 summary"><p>Extracts a json string from the body of a HTTP session.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static final String extractJsonBody(NanoHTTPD.IHTTPSession session)</code></pre>
+    <pre><code class="lang-csharp hljs">public static final String extractJsonBody(IHTTPSession session)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -230,7 +203,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">fi.iki.elonen.NanoHTTPD.IHTTPSession</span></td>
+        <td><span class="xref">org.nanohttpd.protocols.http.IHTTPSession</span></td>
         <td><span class="parametername">session</span></td>
         <td><p>The session to get the body of</p>
 </td>
@@ -255,9 +228,9 @@
   </table>
   
   
-  <a id="org_visab_api_WebApiHelper_extractSessionId_" data-uid="org.visab.api.WebApiHelper.extractSessionId*"></a>
-  <h4 id="org_visab_api_WebApiHelper_extractSessionId_java_util_Map_java_lang_String_java_lang_String__" data-uid="org.visab.api.WebApiHelper.extractSessionId(java.util.Map&lt;java.lang.String,java.lang.String&gt;)">extractSessionId(Map&lt;String,String&gt; headers)</h4>
-  <div class="markdown level1 summary"><p>Extracts the sessionId from the headers of a Http request.</p>
+  <a id="org_visab_api_WebAPIHelper_extractSessionId_" data-uid="org.visab.api.WebAPIHelper.extractSessionId*"></a>
+  <h4 id="org_visab_api_WebAPIHelper_extractSessionId_java_util_Map_java_lang_String_java_lang_String__" data-uid="org.visab.api.WebAPIHelper.extractSessionId(java.util.Map&lt;java.lang.String,java.lang.String&gt;)">extractSessionId(Map&lt;String,String&gt; headers)</h4>
+  <div class="markdown level1 summary"><p>Extracts the sessionId from the headers of a HTTP request.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -277,7 +250,7 @@
       <tr>
         <td><span class="xref">java.util.Map</span>&lt;<span class="xref">java.lang.String</span>,<span class="xref">java.lang.String</span>&gt;</td>
         <td><span class="parametername">headers</span></td>
-        <td><p>The headers</p>
+        <td><p>The headers of the HTTP request</p>
 </td>
       </tr>
     </tbody>
@@ -300,8 +273,8 @@
   </table>
   
   
-  <a id="org_visab_api_WebApiHelper_tryParseUUID_" data-uid="org.visab.api.WebApiHelper.tryParseUUID*"></a>
-  <h4 id="org_visab_api_WebApiHelper_tryParseUUID_java_lang_String_" data-uid="org.visab.api.WebApiHelper.tryParseUUID(java.lang.String)">tryParseUUID(String UUIDString)</h4>
+  <a id="org_visab_api_WebAPIHelper_tryParseUUID_" data-uid="org.visab.api.WebAPIHelper.tryParseUUID*"></a>
+  <h4 id="org_visab_api_WebAPIHelper_tryParseUUID_java_lang_String_" data-uid="org.visab.api.WebAPIHelper.tryParseUUID(java.lang.String)">tryParseUUID(String UUIDString)</h4>
   <div class="markdown level1 summary"><p>Parses a UUID from a given string.</p>
 </div>
   <div class="markdown level1 conceptual"></div>

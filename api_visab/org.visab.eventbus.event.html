@@ -71,22 +71,12 @@
   
   <h1 id="org_visab_eventbus_event" data-uid="org.visab.eventbus.event" class="text-break">Namespace org.visab.eventbus.event
   </h1>
-  <div class="markdown level0 summary"><p>This package contains an abstract base event and all specific implementations
-that inherit from it.</p>
- <p>
- The base event only provides a kind of template of information and
- functionality that every event on the bus should have. All specific
- information and characteristics of events have to be implemented in a
- specific event class.
- </p>
+  <div class="markdown level0 summary"><p>This package contains all concrete event implementations.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
-      <h4><a class="xref" href="org.visab.eventbus.event.ApiEventBase.html">ApiEventBase</a></h4>
-      <section><p>A base api event class, that all api events should inherit from.</p>
-</section>
       <h4><a class="xref" href="org.visab.eventbus.event.ImageReceivedEvent.html">ImageReceivedEvent</a></h4>
       <section><p>The ImageReceivedEvent, that occurs when images are received by the VISAB api.</p>
 </section>
@@ -100,9 +90,11 @@ that inherit from it.</p>
       <section><p>The StatisticsReceivedEvent, that occurs when new statistics are received by the VISAB api.</p>
 </section>
       <h4><a class="xref" href="org.visab.eventbus.event.VISABFileSavedEvent.html">VISABFileSavedEvent</a></h4>
-      <section></section>
-      <h4><a class="xref" href="org.visab.eventbus.event.VISABFileViewedEvent.html">VISABFileViewedEvent</a></h4>
-      <section></section>
+      <section><p>The VISABFileSavedEvent that occurs when a VISAB file is saved by the DatabaseManager.</p>
+</section>
+      <h4><a class="xref" href="org.visab.eventbus.event.VISABFileVisualizedEvent.html">VISABFileVisualizedEvent</a></h4>
+      <section><p>The VISABFileViewedEvent that occurs when a VISAB file is visualized by using the DynamicViewLoader.</p>
+</section>
 </article>
           </div>
           

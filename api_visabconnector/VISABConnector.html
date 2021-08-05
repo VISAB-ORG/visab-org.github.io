@@ -77,13 +77,10 @@
     <h3 id="classes">Classes
   </h3>
       <h4><a class="xref" href="VISABConnector.ApiResponse-1.html">ApiResponse&lt;T&gt;</a></h4>
-      <section><p>Is returned when requests to the VISAB WebApi are made.</p>
-</section>
-      <h4><a class="xref" href="VISABConnector.ClosingEventArgs.html">ClosingEventArgs</a></h4>
-      <section><p>Event args for when the IVISABSession being closed.</p>
+      <section><p>Represents a response that is made by the VISAB WebApi.</p>
 </section>
       <h4><a class="xref" href="VISABConnector.Default.html">Default</a></h4>
-      <section><p>Contains default values used for communication with the VISAB WebApi.</p>
+      <section><p>Default values used for communication with the VISAB WebApi.</p>
 </section>
       <h4><a class="xref" href="VISABConnector.DontSerialize.html">DontSerialize</a></h4>
       <section><p>Properties decorated with this Attribute wont be serialized.</p>
@@ -94,35 +91,30 @@
       <h4><a class="xref" href="VISABConnector.RoundBasedSession.html">RoundBasedSession</a></h4>
       <section><p>A wrapper class for communicating with the VISAB WebApi in round based games.</p>
 </section>
+      <h4><a class="xref" href="VISABConnector.SessionStatus.html">SessionStatus</a></h4>
+      <section><p>Represents the status of a transmission session at the VISAB WebApi.</p>
+</section>
       <h4><a class="xref" href="VISABConnector.VISABApi.html">VISABApi</a></h4>
       <section><p>Class for initializing transmission sessions and making requests independant of sessions to
 the VISAB WebApi.</p>
 </section>
     <h3 id="interfaces">Interfaces
   </h3>
-      <h4><a class="xref" href="VISABConnector.IImage.html">IImage</a></h4>
-      <section><p>The marker interface all classes used for sending images have to implement.</p>
+      <h4><a class="xref" href="VISABConnector.IImageContainer.html">IImageContainer</a></h4>
+      <section><p>The marker interface all classes representing a container of images have to implement.</p>
 </section>
       <h4><a class="xref" href="VISABConnector.IMetaInformation.html">IMetaInformation</a></h4>
-      <section><p>The interface that all classes used for sending meta information have to implement. This
+      <section><p>The interface that all classes representing meta information have to implement. This
 information is required upon opening the session.</p>
+</section>
+      <h4><a class="xref" href="VISABConnector.IStatistics.html">IStatistics</a></h4>
+      <section><p>The marker interface that all classes representing statistics have to implement.</p>
 </section>
       <h4><a class="xref" href="VISABConnector.IVISABRequestHandler.html">IVISABRequestHandler</a></h4>
       <section><p>Used for making Http requests to the VISAB WebApi.</p>
 </section>
       <h4><a class="xref" href="VISABConnector.IVISABSession.html">IVISABSession</a></h4>
-      <section><p>Class that provides access the functionality provided by a transmission session at the VISAB WebApi.</p>
-</section>
-      <h4><a class="xref" href="VISABConnector.IVISABStatistics.html">IVISABStatistics</a></h4>
-      <section><p>The marker interface that all classes used for sending statistics have to implement.</p>
-</section>
-    <h3 id="delegates">Delegates
-  </h3>
-      <h4><a class="xref" href="VISABConnector.FileConsumer.html">FileConsumer</a></h4>
-      <section><p>The file consumer delegate type.</p>
-</section>
-      <h4><a class="xref" href="VISABConnector.MessageConsumer.html">MessageConsumer</a></h4>
-      <section><p>The message consumer delegate type.</p>
+      <section><p>Interface that represents a transmission session at the VISAB WebApi and provides functionality for it.</p>
 </section>
 </article>
           </div>

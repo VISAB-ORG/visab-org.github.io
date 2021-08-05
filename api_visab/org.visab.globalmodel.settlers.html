@@ -71,32 +71,34 @@
   
   <h1 id="org_visab_globalmodel_settlers" data-uid="org.visab.globalmodel.settlers" class="text-break">Namespace org.visab.globalmodel.settlers
   </h1>
-  <div class="markdown level0 summary"><p>This package contains all globally used models that are settlers-specific.</p>
+  <div class="markdown level0 summary"><p>This package contains all globally used models that are Settlers-specific.</p>
  <p>
- Every model class that is only used for settlers-specific purposes shall be
- placed in this package. Generic models for VISAB or specific models for other
- games should not be placed in here.
+ Every model class that is only used for Settlers-specific purposes shall be
+ placed in this package. Generic model classes for VISAB or specific models
+ for other games should be placed in in org.visab.globalmodel instead.
  </p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
-      <h4><a class="xref" href="org.visab.globalmodel.settlers.PlayerInformation.html">PlayerInformation</a></h4>
+      <h4><a class="xref" href="org.visab.globalmodel.settlers.Player.html">Player</a></h4>
       <section><p>Represents all available information for a player in (Unity-) Settlers of Catan that is given at a certain time in the game.</p>
 </section>
       <h4><a class="xref" href="org.visab.globalmodel.settlers.PlayerResources.html">PlayerResources</a></h4>
-      <section></section>
-      <h4><a class="xref" href="org.visab.globalmodel.settlers.SettlersFile.html">SettlersFile</a></h4>
-      <section><p>This class represents the structure of a VISAB data file generated from Settlers of Catan data.</p>
+      <section><p>Represents a snapshot of the resources availible.</p>
 </section>
-      <h4><a class="xref" href="org.visab.globalmodel.settlers.SettlersMapImage.html">SettlersMapImage</a></h4>
-      <section><p>This class represents the map image of Settlers of Catan which is sent by the game.</p>
+      <h4><a class="xref" href="org.visab.globalmodel.settlers.SettlersFile.html">SettlersFile</a></h4>
+      <section><p>Represents the Settlers VISAB file containing that contains all information necesarry for visualizing. This class is serialized to json and written to .visab files.</p>
+</section>
+      <h4><a class="xref" href="org.visab.globalmodel.settlers.SettlersImages.html">SettlersImages</a></h4>
+      <section><p>This class represents the images of Settlers of Catan which are sent by the Unity game.</p>
 </section>
       <h4><a class="xref" href="org.visab.globalmodel.settlers.SettlersMetaInformation.html">SettlersMetaInformation</a></h4>
-      <section></section>
+      <section><p>The Settlers meta information that is sent at the start of a session by the Unity game. This information is also saved in the file.</p>
+</section>
       <h4><a class="xref" href="org.visab.globalmodel.settlers.SettlersStatistics.html">SettlersStatistics</a></h4>
-      <section><p>The SettlersStatistics class, representing the information given by the Unity Settlers of Catan Game.</p>
+      <section><p>The SettlersStatistics class, representing the information given per turn by the Unity Settlers of Catan Game. The visualization is based mostly on this.</p>
 </section>
 </article>
           </div>

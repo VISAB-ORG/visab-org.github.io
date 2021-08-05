@@ -78,8 +78,8 @@
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">java.lang.Object</span></div>
     <div class="level1"><a class="xref" href="org.visab.newgui.ViewModelBase.html">ViewModelBase</a></div>
-    <div class="level2"><a class="xref" href="org.visab.newgui.visualize.StatisticsViewModelBase.html">StatisticsViewModelBase&lt;TFile&gt;</a></div>
-    <div class="level3"><a class="xref" href="org.visab.newgui.visualize.LiveStatisticsViewModelBase.html">LiveStatisticsViewModelBase</a></div>
+    <div class="level2"><a class="xref" href="org.visab.newgui.visualize.VisualizeViewModelBase.html">VisualizeViewModelBase&lt;TFile&gt;</a></div>
+    <div class="level3"><a class="xref" href="org.visab.newgui.visualize.LiveViewModelBase.html">LiveViewModelBase</a></div>
     <div class="level4"><span class="xref">SettlersStatisticsViewModel</span></div>
   </div>
   <div class="inheritedMembers">
@@ -127,32 +127,26 @@
       <a class="xref" href="org.visab.newgui.ViewModelBase.html#org_visab_newgui_ViewModelBase_runnableCommand_java_lang_Runnable_">ViewModelBase.runnableCommand(Runnable)</a>
     </div>
     <div>
-      <a class="xref" href="org.visab.newgui.visualize.LiveStatisticsViewModelBase.html#org_visab_newgui_visualize_LiveStatisticsViewModelBase_initializeLive_org_visab_processing_ILiveViewable___extends_org_visab_globalmodel_IStatistics__">LiveStatisticsViewModelBase.initializeLive(ILiveViewable&lt;? extends IStatistics&gt;)</a>
+      <a class="xref" href="org.visab.newgui.visualize.LiveViewModelBase.html#org_visab_newgui_visualize_LiveViewModelBase_initialize_org_visab_processing_ILiveViewable___extends_org_visab_globalmodel_IStatistics__">LiveViewModelBase.initialize(ILiveViewable&lt;? extends IStatistics&gt;)</a>
     </div>
     <div>
-      <a class="xref" href="org.visab.newgui.visualize.LiveStatisticsViewModelBase.html#org_visab_newgui_visualize_LiveStatisticsViewModelBase_liveSessionActiveProperty__">LiveStatisticsViewModelBase.liveSessionActiveProperty()</a>
+      <a class="xref" href="org.visab.newgui.visualize.LiveViewModelBase.html#org_visab_newgui_visualize_LiveViewModelBase_liveViewActiveProperty__">LiveViewModelBase.liveViewActiveProperty()</a>
     </div>
     <div>
-      <a class="xref" href="org.visab.newgui.visualize.LiveStatisticsViewModelBase.html#org_visab_newgui_visualize_LiveStatisticsViewModelBase_onSessionClosed__">LiveStatisticsViewModelBase.onSessionClosed()</a>
+      <a class="xref" href="org.visab.newgui.visualize.LiveViewModelBase.html#org_visab_newgui_visualize_LiveViewModelBase_onSessionClosed__">LiveViewModelBase.onSessionClosed()</a>
     </div>
     <div>
-      <a class="xref" href="org.visab.newgui.visualize.LiveStatisticsViewModelBase.html#org_visab_newgui_visualize_LiveStatisticsViewModelBase_onStatisticsAdded_TStatistics_">LiveStatisticsViewModelBase.onStatisticsAdded(TStatistics)</a>
+      <a class="xref" href="org.visab.newgui.visualize.LiveViewModelBase.html#org_visab_newgui_visualize_LiveViewModelBase_onStatisticsAdded_TStatistics_java_util_List_TStatistics__">LiveViewModelBase.onStatisticsAdded(TStatistics,List&lt;TStatistics&gt;)</a>
     </div>
     <div>
-      <a class="xref" href="org.visab.newgui.visualize.StatisticsViewModelBase.html#org_visab_newgui_visualize_StatisticsViewModelBase_initialize_org_visab_globalmodel_IVISABFile_">StatisticsViewModelBase.initialize(IVISABFile)</a>
-    </div>
-    <div>
-      <a class="xref" href="org.visab.newgui.visualize.StatisticsViewModelBase.html#org_visab_newgui_visualize_StatisticsViewModelBase_isLiveViewProperty__">StatisticsViewModelBase.isLiveViewProperty()</a>
-    </div>
-    <div>
-      <a class="xref" href="org.visab.newgui.visualize.StatisticsViewModelBase.html#org_visab_newgui_visualize_StatisticsViewModelBase_supportsLiveViewing__">StatisticsViewModelBase.supportsLiveViewing()</a>
+      <a class="xref" href="org.visab.newgui.visualize.VisualizeViewModelBase.html#org_visab_newgui_visualize_VisualizeViewModelBase_initialize_org_visab_globalmodel_IVISABFile_">VisualizeViewModelBase.initialize(IVISABFile)</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: </h6>
   <h6><strong>Assembly</strong>: .dll</h6>
   <h5 id="org_visab_newgui_visualize_settlers_viewmodel_SettlersStatisticsViewModel_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class SettlersStatisticsViewModel extends LiveStatisticsViewModelBase&lt;SettlersFile,SettlersStatistics&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class SettlersStatisticsViewModel extends LiveViewModelBase&lt;SettlersFile,SettlersStatistics&gt;</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -220,6 +214,81 @@
   </table>
   
   
+  <a id="org_visab_newgui_visualize_settlers_viewmodel_SettlersStatisticsViewModel_getPlayerColors_" data-uid="org.visab.newgui.visualize.settlers.viewmodel.SettlersStatisticsViewModel.getPlayerColors*"></a>
+  <h4 id="org_visab_newgui_visualize_settlers_viewmodel_SettlersStatisticsViewModel_getPlayerColors__" data-uid="org.visab.newgui.visualize.settlers.viewmodel.SettlersStatisticsViewModel.getPlayerColors()">getPlayerColors()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Map&lt;String,String&gt; getPlayerColors()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.util.Map</span>&lt;<span class="xref">java.lang.String</span>,<span class="xref">java.lang.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_newgui_visualize_settlers_viewmodel_SettlersStatisticsViewModel_getPlayerDetailedStatisticsSeries_" data-uid="org.visab.newgui.visualize.settlers.viewmodel.SettlersStatisticsViewModel.getPlayerDetailedStatisticsSeries*"></a>
+  <h4 id="org_visab_newgui_visualize_settlers_viewmodel_SettlersStatisticsViewModel_getPlayerDetailedStatisticsSeries__" data-uid="org.visab.newgui.visualize.settlers.viewmodel.SettlersStatisticsViewModel.getPlayerDetailedStatisticsSeries()">getPlayerDetailedStatisticsSeries()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObservableList&lt;XYChart.Series&lt;String,Number&gt;&gt; getPlayerDetailedStatisticsSeries()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">javafx.collections.ObservableList</span>&lt;<span class="xref">javafx.scene.chart.XYChart.Series</span>&lt;<span class="xref">java.lang.String</span>,<span class="xref">java.lang.Number</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_newgui_visualize_settlers_viewmodel_SettlersStatisticsViewModel_getPlayerInformation_" data-uid="org.visab.newgui.visualize.settlers.viewmodel.SettlersStatisticsViewModel.getPlayerInformation*"></a>
+  <h4 id="org_visab_newgui_visualize_settlers_viewmodel_SettlersStatisticsViewModel_getPlayerInformation__" data-uid="org.visab.newgui.visualize.settlers.viewmodel.SettlersStatisticsViewModel.getPlayerInformation()">getPlayerInformation()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Map&lt;String,String&gt; getPlayerInformation()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.util.Map</span>&lt;<span class="xref">java.lang.String</span>,<span class="xref">java.lang.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="org_visab_newgui_visualize_settlers_viewmodel_SettlersStatisticsViewModel_getPlayerNames_" data-uid="org.visab.newgui.visualize.settlers.viewmodel.SettlersStatisticsViewModel.getPlayerNames*"></a>
   <h4 id="org_visab_newgui_visualize_settlers_viewmodel_SettlersStatisticsViewModel_getPlayerNames__" data-uid="org.visab.newgui.visualize.settlers.viewmodel.SettlersStatisticsViewModel.getPlayerNames()">getPlayerNames()</h4>
   <div class="markdown level1 summary"></div>
@@ -239,6 +308,31 @@
     <tbody>
       <tr>
         <td><span class="xref">java.util.List</span>&lt;<span class="xref">java.lang.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_newgui_visualize_settlers_viewmodel_SettlersStatisticsViewModel_getPlayerStatsSeries_" data-uid="org.visab.newgui.visualize.settlers.viewmodel.SettlersStatisticsViewModel.getPlayerStatsSeries*"></a>
+  <h4 id="org_visab_newgui_visualize_settlers_viewmodel_SettlersStatisticsViewModel_getPlayerStatsSeries__" data-uid="org.visab.newgui.visualize.settlers.viewmodel.SettlersStatisticsViewModel.getPlayerStatsSeries()">getPlayerStatsSeries()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObservableList&lt;XYChart.Series&lt;Integer,Number&gt;&gt; getPlayerStatsSeries()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">javafx.collections.ObservableList</span>&lt;<span class="xref">javafx.scene.chart.XYChart.Series</span>&lt;<span class="xref">java.lang.Integer</span>,<span class="xref">java.lang.Number</span>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -266,17 +360,17 @@
     <pre><code class="lang-csharp hljs">public void onSessionClosed()</code></pre>
   </div>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="org.visab.newgui.visualize.LiveStatisticsViewModelBase.html#org_visab_newgui_visualize_LiveStatisticsViewModelBase_onSessionClosed__">LiveStatisticsViewModelBase&lt;TFile,TStatistics&gt;.onSessionClosed()</a></div>
+  <div><a class="xref" href="org.visab.newgui.visualize.LiveViewModelBase.html#org_visab_newgui_visualize_LiveViewModelBase_onSessionClosed__">LiveViewModelBase&lt;TFile,TStatistics&gt;.onSessionClosed()</a></div>
   
   
   <a id="org_visab_newgui_visualize_settlers_viewmodel_SettlersStatisticsViewModel_onStatisticsAdded_" data-uid="org.visab.newgui.visualize.settlers.viewmodel.SettlersStatisticsViewModel.onStatisticsAdded*"></a>
-  <h4 id="org_visab_newgui_visualize_settlers_viewmodel_SettlersStatisticsViewModel_onStatisticsAdded_org_visab_globalmodel_settlers_SettlersStatistics_" data-uid="org.visab.newgui.visualize.settlers.viewmodel.SettlersStatisticsViewModel.onStatisticsAdded(org.visab.globalmodel.settlers.SettlersStatistics)">onStatisticsAdded(SettlersStatistics newStatistics)</h4>
+  <h4 id="org_visab_newgui_visualize_settlers_viewmodel_SettlersStatisticsViewModel_onStatisticsAdded_org_visab_globalmodel_settlers_SettlersStatistics_java_util_List_org_visab_globalmodel_settlers_SettlersStatistics__" data-uid="org.visab.newgui.visualize.settlers.viewmodel.SettlersStatisticsViewModel.onStatisticsAdded(org.visab.globalmodel.settlers.SettlersStatistics,java.util.List&lt;org.visab.globalmodel.settlers.SettlersStatistics&gt;)">onStatisticsAdded(SettlersStatistics newStatistics, List&lt;SettlersStatistics&gt; statisticsCopy)</h4>
   <div class="markdown level1 summary"><p>Called by the docked listener upon reciving new statistics.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void onStatisticsAdded(SettlersStatistics newStatistics)</code></pre>
+    <pre><code class="lang-csharp hljs">public void onStatisticsAdded(SettlersStatistics newStatistics, List&lt;SettlersStatistics&gt; statisticsCopy)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -293,10 +387,40 @@
         <td><span class="parametername">newStatistics</span></td>
         <td></td>
       </tr>
+      <tr>
+        <td><span class="xref">java.util.List</span>&lt;<a class="xref" href="org.visab.globalmodel.settlers.SettlersStatistics.html">SettlersStatistics</a>&gt;</td>
+        <td><span class="parametername">statisticsCopy</span></td>
+        <td></td>
+      </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="org.visab.newgui.visualize.LiveStatisticsViewModelBase.html#org_visab_newgui_visualize_LiveStatisticsViewModelBase_onStatisticsAdded_TStatistics_">LiveStatisticsViewModelBase&lt;TFile,TStatistics&gt;.onStatisticsAdded(TStatistics newStatistics)</a></div>
+  <div><a class="xref" href="org.visab.newgui.visualize.LiveViewModelBase.html#org_visab_newgui_visualize_LiveViewModelBase_onStatisticsAdded_TStatistics_java_util_List_TStatistics__">LiveViewModelBase&lt;TFile,TStatistics&gt;.onStatisticsAdded(TStatistics newStatistics, List&lt;TStatistics&gt; statisticsCopy)</a></div>
+  
+  
+  <a id="org_visab_newgui_visualize_settlers_viewmodel_SettlersStatisticsViewModel_playerStatsChartCommand_" data-uid="org.visab.newgui.visualize.settlers.viewmodel.SettlersStatisticsViewModel.playerStatsChartCommand*"></a>
+  <h4 id="org_visab_newgui_visualize_settlers_viewmodel_SettlersStatisticsViewModel_playerStatsChartCommand__" data-uid="org.visab.newgui.visualize.settlers.viewmodel.SettlersStatisticsViewModel.playerStatsChartCommand()">playerStatsChartCommand()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Command playerStatsChartCommand()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">de.saxsys.mvvmfx.utils.commands.Command</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="org_visab_newgui_visualize_settlers_viewmodel_SettlersStatisticsViewModel_selectedRowProperty_" data-uid="org.visab.newgui.visualize.settlers.viewmodel.SettlersStatisticsViewModel.selectedRowProperty*"></a>
@@ -318,6 +442,106 @@
     <tbody>
       <tr>
         <td><span class="xref">javafx.beans.property.ObjectProperty</span>&lt;<a class="xref" href="org.visab.newgui.visualize.ComparisonRowBase.html">ComparisonRowBase</a>&lt;<span class="xref">?</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_newgui_visualize_settlers_viewmodel_SettlersStatisticsViewModel_selectedStatisticsProperty_" data-uid="org.visab.newgui.visualize.settlers.viewmodel.SettlersStatisticsViewModel.selectedStatisticsProperty*"></a>
+  <h4 id="org_visab_newgui_visualize_settlers_viewmodel_SettlersStatisticsViewModel_selectedStatisticsProperty__" data-uid="org.visab.newgui.visualize.settlers.viewmodel.SettlersStatisticsViewModel.selectedStatisticsProperty()">selectedStatisticsProperty()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectProperty&lt;ComparisonRowBase&lt;?&gt;&gt; selectedStatisticsProperty()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">javafx.beans.property.ObjectProperty</span>&lt;<a class="xref" href="org.visab.newgui.visualize.ComparisonRowBase.html">ComparisonRowBase</a>&lt;<span class="xref">?</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_newgui_visualize_settlers_viewmodel_SettlersStatisticsViewModel_showDetailsCommand_" data-uid="org.visab.newgui.visualize.settlers.viewmodel.SettlersStatisticsViewModel.showDetailsCommand*"></a>
+  <h4 id="org_visab_newgui_visualize_settlers_viewmodel_SettlersStatisticsViewModel_showDetailsCommand__" data-uid="org.visab.newgui.visualize.settlers.viewmodel.SettlersStatisticsViewModel.showDetailsCommand()">showDetailsCommand()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Command showDetailsCommand()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">de.saxsys.mvvmfx.utils.commands.Command</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_newgui_visualize_settlers_viewmodel_SettlersStatisticsViewModel_yLabelDetailProperty_" data-uid="org.visab.newgui.visualize.settlers.viewmodel.SettlersStatisticsViewModel.yLabelDetailProperty*"></a>
+  <h4 id="org_visab_newgui_visualize_settlers_viewmodel_SettlersStatisticsViewModel_yLabelDetailProperty__" data-uid="org.visab.newgui.visualize.settlers.viewmodel.SettlersStatisticsViewModel.yLabelDetailProperty()">yLabelDetailProperty()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StringProperty yLabelDetailProperty()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">javafx.beans.property.StringProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_newgui_visualize_settlers_viewmodel_SettlersStatisticsViewModel_yLabelProperty_" data-uid="org.visab.newgui.visualize.settlers.viewmodel.SettlersStatisticsViewModel.yLabelProperty*"></a>
+  <h4 id="org_visab_newgui_visualize_settlers_viewmodel_SettlersStatisticsViewModel_yLabelProperty__" data-uid="org.visab.newgui.visualize.settlers.viewmodel.SettlersStatisticsViewModel.yLabelProperty()">yLabelProperty()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StringProperty yLabelProperty()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">javafx.beans.property.StringProperty</span></td>
         <td></td>
       </tr>
     </tbody>

@@ -72,13 +72,13 @@
   
   <h1 id="org_visab_processing_cbrshooter_CBRShooterListener" data-uid="org.visab.processing.cbrshooter.CBRShooterListener" class="text-break">Class CBRShooterListener
   </h1>
-  <div class="markdown level0 summary"><p>The CBRShooterListener class, that is responsible for listening to information sent by the CBRShooter game and creating files of that information.</p>
+  <div class="markdown level0 summary"><p>The CBRShooterListener class, that is responsible for listening to information sent by the CBRShooter game and creating files with that information.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">java.lang.Object</span></div>
-    <div class="level1"><a class="xref" href="org.visab.processing.SessionListenerBase.html">SessionListenerBase&lt;TStatistics&gt;</a></div>
+    <div class="level1"><a class="xref" href="org.visab.processing.SessionListenerBase.html">SessionListenerBase&lt;TMeta,TStatistics&gt;</a></div>
     <div class="level2"><a class="xref" href="org.visab.processing.ReplaySessionListenerBase.html">ReplaySessionListenerBase</a></div>
     <div class="level3"><span class="xref">CBRShooterListener</span></div>
   </div>
@@ -134,13 +134,16 @@
       <a class="xref" href="org.visab.processing.SessionListenerBase.html#org_visab_processing_SessionListenerBase_getSessionId__">SessionListenerBase.getSessionId()</a>
     </div>
     <div>
+      <a class="xref" href="org.visab.processing.SessionListenerBase.html#org_visab_processing_SessionListenerBase_initialize_org_visab_globalmodel_IMetaInformation_">SessionListenerBase.initialize(IMetaInformation)</a>
+    </div>
+    <div>
       <a class="xref" href="org.visab.processing.SessionListenerBase.html#org_visab_processing_SessionListenerBase_isActive__">SessionListenerBase.isActive()</a>
     </div>
     <div>
       <a class="xref" href="org.visab.processing.SessionListenerBase.html#org_visab_processing_SessionListenerBase_onSessionClosed__">SessionListenerBase.onSessionClosed()</a>
     </div>
     <div>
-      <a class="xref" href="org.visab.processing.SessionListenerBase.html#org_visab_processing_SessionListenerBase_onSessionStarted_org_visab_globalmodel_IMetaInformation_">SessionListenerBase.onSessionStarted(IMetaInformation)</a>
+      <a class="xref" href="org.visab.processing.SessionListenerBase.html#org_visab_processing_SessionListenerBase_onSessionStarted_TMeta_">SessionListenerBase.onSessionStarted(TMeta)</a>
     </div>
     <div>
       <a class="xref" href="org.visab.processing.SessionListenerBase.html#org_visab_processing_SessionListenerBase_processStatistics_TStatistics_">SessionListenerBase.processStatistics(TStatistics)</a>
@@ -153,7 +156,7 @@
   <h6><strong>Assembly</strong>: .dll</h6>
   <h5 id="org_visab_processing_cbrshooter_CBRShooterListener_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class CBRShooterListener extends ReplaySessionListenerBase&lt;CBRShooterStatistics,CBRShooterMapImage&gt; implements ILiveViewable&lt;CBRShooterStatistics&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class CBRShooterListener extends ReplaySessionListenerBase&lt;CBRShooterMetaInformation,CBRShooterStatistics,CBRShooterImages&gt; implements ILiveViewable&lt;CBRShooterStatistics&gt;</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -189,12 +192,12 @@
   
   
   <a id="org_visab_processing_cbrshooter_CBRShooterListener_addViewModel_" data-uid="org.visab.processing.cbrshooter.CBRShooterListener.addViewModel*"></a>
-  <h4 id="org_visab_processing_cbrshooter_CBRShooterListener_addViewModel_org_visab_newgui_visualize_ILiveStatisticsViewModel_org_visab_globalmodel_cbrshooter_CBRShooterStatistics__" data-uid="org.visab.processing.cbrshooter.CBRShooterListener.addViewModel(org.visab.newgui.visualize.ILiveStatisticsViewModel&lt;org.visab.globalmodel.cbrshooter.CBRShooterStatistics&gt;)">addViewModel(ILiveStatisticsViewModel&lt;CBRShooterStatistics&gt; viewModel)</h4>
+  <h4 id="org_visab_processing_cbrshooter_CBRShooterListener_addViewModel_org_visab_newgui_visualize_ILiveViewModel_org_visab_globalmodel_cbrshooter_CBRShooterStatistics__" data-uid="org.visab.processing.cbrshooter.CBRShooterListener.addViewModel(org.visab.newgui.visualize.ILiveViewModel&lt;org.visab.globalmodel.cbrshooter.CBRShooterStatistics&gt;)">addViewModel(ILiveViewModel&lt;CBRShooterStatistics&gt; viewModel)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void addViewModel(ILiveStatisticsViewModel&lt;CBRShooterStatistics&gt; viewModel)</code></pre>
+    <pre><code class="lang-csharp hljs">public void addViewModel(ILiveViewModel&lt;CBRShooterStatistics&gt; viewModel)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -207,7 +210,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="org.visab.newgui.visualize.ILiveStatisticsViewModel.html">ILiveStatisticsViewModel</a>&lt;<a class="xref" href="org.visab.globalmodel.cbrshooter.CBRShooterStatistics.html">CBRShooterStatistics</a>&gt;</td>
+        <td><a class="xref" href="org.visab.newgui.visualize.ILiveViewModel.html">ILiveViewModel</a>&lt;<a class="xref" href="org.visab.globalmodel.cbrshooter.CBRShooterStatistics.html">CBRShooterStatistics</a>&gt;</td>
         <td><span class="parametername">viewModel</span></td>
         <td></td>
       </tr>
@@ -241,14 +244,14 @@
   </table>
   
   
-  <a id="org_visab_processing_cbrshooter_CBRShooterListener_getReceivedStatistics_" data-uid="org.visab.processing.cbrshooter.CBRShooterListener.getReceivedStatistics*"></a>
-  <h4 id="org_visab_processing_cbrshooter_CBRShooterListener_getReceivedStatistics__" data-uid="org.visab.processing.cbrshooter.CBRShooterListener.getReceivedStatistics()">getReceivedStatistics()</h4>
+  <a id="org_visab_processing_cbrshooter_CBRShooterListener_getStatisticsCopy_" data-uid="org.visab.processing.cbrshooter.CBRShooterListener.getStatisticsCopy*"></a>
+  <h4 id="org_visab_processing_cbrshooter_CBRShooterListener_getStatisticsCopy__" data-uid="org.visab.processing.cbrshooter.CBRShooterListener.getStatisticsCopy()">getStatisticsCopy()</h4>
   <div class="markdown level1 summary"><p>Returns a copy of all statistics that were added till now.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;CBRShooterStatistics&gt; getReceivedStatistics()</code></pre>
+    <pre><code class="lang-csharp hljs">public List&lt;CBRShooterStatistics&gt; getStatisticsCopy()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -269,7 +272,7 @@
   
   <a id="org_visab_processing_cbrshooter_CBRShooterListener_notifySessionClosed_" data-uid="org.visab.processing.cbrshooter.CBRShooterListener.notifySessionClosed*"></a>
   <h4 id="org_visab_processing_cbrshooter_CBRShooterListener_notifySessionClosed__" data-uid="org.visab.processing.cbrshooter.CBRShooterListener.notifySessionClosed()">notifySessionClosed()</h4>
-  <div class="markdown level1 summary"><p>Notifies the observing ViewModels that the session was closed.</p>
+  <div class="markdown level1 summary"><p>Notifies the observing ViewModels that the session was closed. Serves as a reminder that this functionality should be implemented, but should never be called outside the classes themselves.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -315,17 +318,17 @@
     <pre><code class="lang-csharp hljs">public void onSessionClosed()</code></pre>
   </div>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="org.visab.processing.SessionListenerBase.html#org_visab_processing_SessionListenerBase_onSessionClosed__">SessionListenerBase&lt;TStatistics&gt;.onSessionClosed()</a></div>
+  <div><a class="xref" href="org.visab.processing.SessionListenerBase.html#org_visab_processing_SessionListenerBase_onSessionClosed__">SessionListenerBase&lt;TMeta,TStatistics&gt;.onSessionClosed()</a></div>
   
   
   <a id="org_visab_processing_cbrshooter_CBRShooterListener_onSessionStarted_" data-uid="org.visab.processing.cbrshooter.CBRShooterListener.onSessionStarted*"></a>
-  <h4 id="org_visab_processing_cbrshooter_CBRShooterListener_onSessionStarted_org_visab_globalmodel_IMetaInformation_" data-uid="org.visab.processing.cbrshooter.CBRShooterListener.onSessionStarted(org.visab.globalmodel.IMetaInformation)">onSessionStarted(IMetaInformation metaInformation)</h4>
+  <h4 id="org_visab_processing_cbrshooter_CBRShooterListener_onSessionStarted_org_visab_globalmodel_cbrshooter_CBRShooterMetaInformation_" data-uid="org.visab.processing.cbrshooter.CBRShooterListener.onSessionStarted(org.visab.globalmodel.cbrshooter.CBRShooterMetaInformation)">onSessionStarted(CBRShooterMetaInformation metaInformation)</h4>
   <div class="markdown level1 summary"><p>Called when the listeners is started.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void onSessionStarted(IMetaInformation metaInformation)</code></pre>
+    <pre><code class="lang-csharp hljs">public void onSessionStarted(CBRShooterMetaInformation metaInformation)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -338,24 +341,24 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="org.visab.globalmodel.IMetaInformation.html">IMetaInformation</a></td>
+        <td><a class="xref" href="org.visab.globalmodel.cbrshooter.CBRShooterMetaInformation.html">CBRShooterMetaInformation</a></td>
         <td><span class="parametername">metaInformation</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="org.visab.processing.SessionListenerBase.html#org_visab_processing_SessionListenerBase_onSessionStarted_org_visab_globalmodel_IMetaInformation_">SessionListenerBase&lt;TStatistics&gt;.onSessionStarted(IMetaInformation metaInformation)</a></div>
+  <div><a class="xref" href="org.visab.processing.SessionListenerBase.html#org_visab_processing_SessionListenerBase_onSessionStarted_TMeta_">SessionListenerBase&lt;TMeta,TStatistics&gt;.onSessionStarted(TMeta metaInformation)</a></div>
   
   
   <a id="org_visab_processing_cbrshooter_CBRShooterListener_processImage_" data-uid="org.visab.processing.cbrshooter.CBRShooterListener.processImage*"></a>
-  <h4 id="org_visab_processing_cbrshooter_CBRShooterListener_processImage_org_visab_globalmodel_cbrshooter_CBRShooterMapImage_" data-uid="org.visab.processing.cbrshooter.CBRShooterListener.processImage(org.visab.globalmodel.cbrshooter.CBRShooterMapImage)">processImage(CBRShooterMapImage mapImage)</h4>
-  <div class="markdown level1 summary"><p>Called upon reciving map images for the current session. Is only called if the received Image object was not null.</p>
+  <h4 id="org_visab_processing_cbrshooter_CBRShooterListener_processImage_org_visab_globalmodel_cbrshooter_CBRShooterImages_" data-uid="org.visab.processing.cbrshooter.CBRShooterListener.processImage(org.visab.globalmodel.cbrshooter.CBRShooterImages)">processImage(CBRShooterImages mapImage)</h4>
+  <div class="markdown level1 summary"><p>This is called when images are received.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void processImage(CBRShooterMapImage mapImage)</code></pre>
+    <pre><code class="lang-csharp hljs">public void processImage(CBRShooterImages mapImage)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -368,14 +371,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="org.visab.globalmodel.cbrshooter.CBRShooterMapImage.html">CBRShooterMapImage</a></td>
+        <td><a class="xref" href="org.visab.globalmodel.cbrshooter.CBRShooterImages.html">CBRShooterImages</a></td>
         <td><span class="parametername">mapImage</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="org.visab.processing.ReplaySessionListenerBase.html#org_visab_processing_ReplaySessionListenerBase_processImage_TImage_">ReplaySessionListenerBase&lt;TStatistics,TImage&gt;.processImage(TImage image)</a></div>
+  <div><a class="xref" href="org.visab.processing.ReplaySessionListenerBase.html#org_visab_processing_ReplaySessionListenerBase_processImage_TImage_">ReplaySessionListenerBase&lt;TMeta,TStatistics,TImage&gt;.processImage(TImage images)</a></div>
   
   
   <a id="org_visab_processing_cbrshooter_CBRShooterListener_processStatistics_" data-uid="org.visab.processing.cbrshooter.CBRShooterListener.processStatistics*"></a>
@@ -405,7 +408,34 @@
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="org.visab.processing.SessionListenerBase.html#org_visab_processing_SessionListenerBase_processStatistics_TStatistics_">SessionListenerBase&lt;TStatistics&gt;.processStatistics(TStatistics statistics)</a></div>
+  <div><a class="xref" href="org.visab.processing.SessionListenerBase.html#org_visab_processing_SessionListenerBase_processStatistics_TStatistics_">SessionListenerBase&lt;TMeta,TStatistics&gt;.processStatistics(TStatistics statistics)</a></div>
+  
+  
+  <a id="org_visab_processing_cbrshooter_CBRShooterListener_removeViewModel_" data-uid="org.visab.processing.cbrshooter.CBRShooterListener.removeViewModel*"></a>
+  <h4 id="org_visab_processing_cbrshooter_CBRShooterListener_removeViewModel_org_visab_newgui_visualize_ILiveViewModel_org_visab_globalmodel_cbrshooter_CBRShooterStatistics__" data-uid="org.visab.processing.cbrshooter.CBRShooterListener.removeViewModel(org.visab.newgui.visualize.ILiveViewModel&lt;org.visab.globalmodel.cbrshooter.CBRShooterStatistics&gt;)">removeViewModel(ILiveViewModel&lt;CBRShooterStatistics&gt; viewModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void removeViewModel(ILiveViewModel&lt;CBRShooterStatistics&gt; viewModel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="org.visab.newgui.visualize.ILiveViewModel.html">ILiveViewModel</a>&lt;<a class="xref" href="org.visab.globalmodel.cbrshooter.CBRShooterStatistics.html">CBRShooterStatistics</a>&gt;</td>
+        <td><span class="parametername">viewModel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="implements">Implements</h3>
   <div>
       <span class="xref">org.visab.processing.ILiveViewable&lt;org.visab.globalmodel.cbrshooter.CBRShooterStatistics&gt;</span>

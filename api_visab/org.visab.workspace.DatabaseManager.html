@@ -72,7 +72,7 @@
   
   <h1 id="org_visab_workspace_DatabaseManager" data-uid="org.visab.workspace.DatabaseManager" class="text-break">Class DatabaseManager
   </h1>
-  <div class="markdown level0 summary"><p>The DatabaseManager that is used for deleting/adding/removing VISAB files. TODO: Check if file name already exists in list of saved files.</p>
+  <div class="markdown level0 summary"><p>The DatabaseManager that is used for deleting, adding, and removing VISAB files.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -164,6 +164,30 @@
       </tr>
     </tbody>
   </table>
+  
+  
+  <h4 id="org_visab_workspace_DatabaseManager_DATA_PATH_SUFFIX" data-uid="org.visab.workspace.DatabaseManager.DATA_PATH_SUFFIX">DATA_PATH_SUFFIX</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static final String DATA_PATH_SUFFIX</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   
@@ -221,7 +245,8 @@
   
   <a id="org_visab_workspace_DatabaseManager_getRepository_" data-uid="org.visab.workspace.DatabaseManager.getRepository*"></a>
   <h4 id="org_visab_workspace_DatabaseManager_getRepository__" data-uid="org.visab.workspace.DatabaseManager.getRepository()">getRepository()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The repository that is internally used for the I/O operations.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -244,9 +269,36 @@
   </table>
   
   
+  <a id="org_visab_workspace_DatabaseManager_getSavedFiles_" data-uid="org.visab.workspace.DatabaseManager.getSavedFiles*"></a>
+  <h4 id="org_visab_workspace_DatabaseManager_getSavedFiles__" data-uid="org.visab.workspace.DatabaseManager.getSavedFiles()">getSavedFiles()</h4>
+  <div class="markdown level1 summary"><p>A list of file information for files that were recently saved via SessionListeners or FileExplorer view.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;SavedFileInformation&gt; getSavedFiles()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.util.List</span>&lt;<a class="xref" href="org.visab.workspace.SavedFileInformation.html">SavedFileInformation</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="org_visab_workspace_DatabaseManager_getSessionFileName_" data-uid="org.visab.workspace.DatabaseManager.getSessionFileName*"></a>
   <h4 id="org_visab_workspace_DatabaseManager_getSessionFileName_java_util_UUID_" data-uid="org.visab.workspace.DatabaseManager.getSessionFileName(java.util.UUID)">getSessionFileName(UUID sessionId)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the name of a file that was saved under the given sessionId.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -265,7 +317,8 @@
       <tr>
         <td><span class="xref">java.util.UUID</span></td>
         <td><span class="parametername">sessionId</span></td>
-        <td></td>
+        <td><p>The sessionId to get the file for</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -280,7 +333,8 @@
     <tbody>
       <tr>
         <td><span class="xref">java.lang.String</span></td>
-        <td></td>
+        <td><p>The saved files name if one was saved, &quot;&quot; else</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -288,7 +342,8 @@
   
   <a id="org_visab_workspace_DatabaseManager_loadFile_" data-uid="org.visab.workspace.DatabaseManager.loadFile*"></a>
   <h4 id="org_visab_workspace_DatabaseManager_loadFile_java_lang_String_" data-uid="org.visab.workspace.DatabaseManager.loadFile(java.lang.String)">loadFile(String absolutePath)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Loads a VISAB file from the given path.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -307,7 +362,8 @@
       <tr>
         <td><span class="xref">java.lang.String</span></td>
         <td><span class="parametername">absolutePath</span></td>
-        <td></td>
+        <td><p>The path to the file</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -322,7 +378,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="org.visab.globalmodel.IVISABFile.html">IVISABFile</a></td>
-        <td></td>
+        <td><p>The file if successfully loaded, null else</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -330,7 +387,7 @@
   
   <a id="org_visab_workspace_DatabaseManager_loadFile_" data-uid="org.visab.workspace.DatabaseManager.loadFile*"></a>
   <h4 id="org_visab_workspace_DatabaseManager_loadFile_java_lang_String_java_lang_String_" data-uid="org.visab.workspace.DatabaseManager.loadFile(java.lang.String,java.lang.String)">loadFile(String fileName, String game)</h4>
-  <div class="markdown level1 summary"><p>Loads a VISABFile from the database.</p>
+  <div class="markdown level1 summary"><p>Loads a VISAB file from the database.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -453,7 +510,7 @@
   
   <a id="org_visab_workspace_DatabaseManager_saveFile_" data-uid="org.visab.workspace.DatabaseManager.saveFile*"></a>
   <h4 id="org_visab_workspace_DatabaseManager_saveFile_org_visab_globalmodel_IVISABFile_java_lang_String_" data-uid="org.visab.workspace.DatabaseManager.saveFile(org.visab.globalmodel.IVISABFile,java.lang.String)">saveFile(IVISABFile file, String fileName)</h4>
-  <div class="markdown level1 summary"><p>Saves a VISAB file. When calling from SessionListeners, use the overload containing the sessionId as 3rd parameter.</p>
+  <div class="markdown level1 summary"><p>Saves a VISAB file. When calling from SessionListeners, use the overload containing the sessionId as 3rd parameter instead.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>

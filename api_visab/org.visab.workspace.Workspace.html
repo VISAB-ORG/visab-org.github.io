@@ -72,7 +72,7 @@
   
   <h1 id="org_visab_workspace_Workspace" data-uid="org.visab.workspace.Workspace" class="text-break">Class Workspace
   </h1>
-  <div class="markdown level0 summary"><p>The VISAB workspace, from which config, database and log management can be done. It is the central point for modifying settings, viewmanagement and deleting/adding/renaming VISAB files.</p>
+  <div class="markdown level0 summary"><p>The VISAB workspace, from which config and database management can be done. It is the central point for modifying settings and deleting, adding, and renaming VISAB files. For consistency reasons, the only Manager instances should be the ones in the Workspace singelton instance.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -131,7 +131,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static final String WORKSPACE_PATH</code></pre>
+    <pre><code class="lang-csharp hljs">protected static final String WORKSPACE_PATH</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -154,7 +154,8 @@
   
   <a id="org_visab_workspace_Workspace_getConfigManager_" data-uid="org.visab.workspace.Workspace.getConfigManager*"></a>
   <h4 id="org_visab_workspace_Workspace_getConfigManager__" data-uid="org.visab.workspace.Workspace.getConfigManager()">getConfigManager()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The ConfigManager instance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -170,7 +171,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="org.visab.workspace.config.ConfigManager.html">ConfigManager</a></td>
+        <td><a class="xref" href="org.visab.workspace.ConfigManager.html">ConfigManager</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -179,7 +180,8 @@
   
   <a id="org_visab_workspace_Workspace_getDatabaseManager_" data-uid="org.visab.workspace.Workspace.getDatabaseManager*"></a>
   <h4 id="org_visab_workspace_Workspace_getDatabaseManager__" data-uid="org.visab.workspace.Workspace.getDatabaseManager()">getDatabaseManager()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The DatabaseManager instance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -224,31 +226,6 @@
         <td></td>
         <td><p>The singelton instance</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="org_visab_workspace_Workspace_getLogManager_" data-uid="org.visab.workspace.Workspace.getLogManager*"></a>
-  <h4 id="org_visab_workspace_Workspace_getLogManager__" data-uid="org.visab.workspace.Workspace.getLogManager()">getLogManager()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public LogManager getLogManager()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="org.visab.workspace.LogManager.html">LogManager</a></td>
-        <td></td>
       </tr>
     </tbody>
   </table>

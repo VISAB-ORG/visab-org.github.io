@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class ReplaySessionListenerBase&lt;TStatistics,TImage&gt;
+    <title>Class ReplaySessionListenerBase&lt;TMeta,TStatistics,TImage&gt;
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class ReplaySessionListenerBase&lt;TStatistics,TImage&gt;
+    <meta name="title" content="Class ReplaySessionListenerBase&lt;TMeta,TStatistics,TImage&gt;
    ">
     <meta name="generator" content="docfx 2.58.0.0">
     
@@ -70,7 +70,7 @@
             <article class="content wrap" id="_content" data-uid="org.visab.processing.ReplaySessionListenerBase">
   
   
-  <h1 id="org_visab_processing_ReplaySessionListenerBase" data-uid="org.visab.processing.ReplaySessionListenerBase" class="text-break">Class ReplaySessionListenerBase&lt;TStatistics,TImage&gt;
+  <h1 id="org_visab_processing_ReplaySessionListenerBase" data-uid="org.visab.processing.ReplaySessionListenerBase" class="text-break">Class ReplaySessionListenerBase&lt;TMeta,TStatistics,TImage&gt;
   </h1>
   <div class="markdown level0 summary"><p>The base ReplaySessionListener class, that should be implemented by all session listeners with replay functionality.</p>
 </div>
@@ -79,11 +79,7 @@
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">java.lang.Object</span></div>
     <div class="level1"><a class="xref" href="org.visab.processing.SessionListenerBase.html">SessionListenerBase</a></div>
-    <div class="level2"><span class="xref">ReplaySessionListenerBase&lt;TStatistics,TImage&gt;</span></div>
-  </div>
-  <div classs="implements">
-    <h5>Implements</h5>
-    <div><span class="xref">org.visab.processing.IReplaySessionListener&lt;TStatistics,TImage&gt;</span></div>
+    <div class="level2"><span class="xref">ReplaySessionListenerBase&lt;TMeta,TStatistics,TImage&gt;</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -130,13 +126,16 @@
       <a class="xref" href="org.visab.processing.SessionListenerBase.html#org_visab_processing_SessionListenerBase_getSessionId__">SessionListenerBase.getSessionId()</a>
     </div>
     <div>
+      <a class="xref" href="org.visab.processing.SessionListenerBase.html#org_visab_processing_SessionListenerBase_initialize_org_visab_globalmodel_IMetaInformation_">SessionListenerBase.initialize(IMetaInformation)</a>
+    </div>
+    <div>
       <a class="xref" href="org.visab.processing.SessionListenerBase.html#org_visab_processing_SessionListenerBase_isActive__">SessionListenerBase.isActive()</a>
     </div>
     <div>
       <a class="xref" href="org.visab.processing.SessionListenerBase.html#org_visab_processing_SessionListenerBase_onSessionClosed__">SessionListenerBase.onSessionClosed()</a>
     </div>
     <div>
-      <a class="xref" href="org.visab.processing.SessionListenerBase.html#org_visab_processing_SessionListenerBase_onSessionStarted_org_visab_globalmodel_IMetaInformation_">SessionListenerBase.onSessionStarted(IMetaInformation)</a>
+      <a class="xref" href="org.visab.processing.SessionListenerBase.html#org_visab_processing_SessionListenerBase_onSessionStarted_TMeta_">SessionListenerBase.onSessionStarted(TMeta)</a>
     </div>
     <div>
       <a class="xref" href="org.visab.processing.SessionListenerBase.html#org_visab_processing_SessionListenerBase_processStatistics_TStatistics_">SessionListenerBase.processStatistics(TStatistics)</a>
@@ -149,7 +148,7 @@
   <h6><strong>Assembly</strong>: .dll</h6>
   <h5 id="org_visab_processing_ReplaySessionListenerBase_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class ReplaySessionListenerBase&lt;TStatistics,TImage&gt; extends SessionListenerBase&lt;TStatistics&gt; implements IReplaySessionListener&lt;TStatistics,TImage&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class ReplaySessionListenerBase&lt;TMeta,TStatistics,TImage&gt; extends SessionListenerBase&lt;TMeta,TStatistics&gt;</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -160,6 +159,10 @@
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td><span class="parametername">TMeta</span></td>
+        <td></td>
+      </tr>
       <tr>
         <td><span class="parametername">TStatistics</span></td>
         <td></td>
@@ -209,13 +212,13 @@
   
   
   <a id="org_visab_processing_ReplaySessionListenerBase_processImage_" data-uid="org.visab.processing.ReplaySessionListenerBase.processImage*"></a>
-  <h4 id="org_visab_processing_ReplaySessionListenerBase_processImage_TImage_" data-uid="org.visab.processing.ReplaySessionListenerBase.processImage(TImage)">processImage(TImage image)</h4>
-  <div class="markdown level1 summary"><p>Called upon reciving map images for the current session. Is only called if the received Image object was not null.</p>
+  <h4 id="org_visab_processing_ReplaySessionListenerBase_processImage_TImage_" data-uid="org.visab.processing.ReplaySessionListenerBase.processImage(TImage)">processImage(TImage images)</h4>
+  <div class="markdown level1 summary"><p>This is called when images are received.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract void processImage(TImage image)</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract void processImage(TImage images)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -229,15 +232,11 @@
     <tbody>
       <tr>
         <td><span class="xref">TImage</span></td>
-        <td><span class="parametername">image</span></td>
+        <td><span class="parametername">images</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <span class="xref">org.visab.processing.IReplaySessionListener&lt;TStatistics,TImage&gt;</span>
-  </div>
 </article>
           </div>
           
