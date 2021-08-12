@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Interface IMetaInformation
+    <title>Interface ILiveViewModel&lt;TStatistics&gt;
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Interface IMetaInformation
+    <meta name="title" content="Interface ILiveViewModel&lt;TStatistics&gt;
    ">
     <meta name="generator" content="docfx 2.58.0.0">
     
@@ -68,51 +68,103 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="VISABConnector.IMetaInformation">
+            <article class="content wrap" id="_content" data-uid="org.visab.gui.visualize.ILiveViewModel">
   
   
-  <h1 id="VISABConnector_IMetaInformation" data-uid="VISABConnector.IMetaInformation" class="text-break">Interface IMetaInformation
+  <h1 id="org_visab_gui_visualize_ILiveViewModel" data-uid="org.visab.gui.visualize.ILiveViewModel" class="text-break">Interface ILiveViewModel&lt;TStatistics&gt;
   </h1>
-  <div class="markdown level0 summary"><p>The interface that all classes representing meta information have to implement. This
-information is required upon opening the session.</p>
+  <div class="markdown level0 summary"><p>The ILiveViewModel interface, that view models wanting to support live views have to implement. The session listener that is docked onto has this interface as its dependancy to the viewmodel.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="VISABConnector.html">VISABConnector</a></h6>
-  <h6><strong>Assembly</strong>: VISABConnector.dll</h6>
-  <h5 id="VISABConnector_IMetaInformation_syntax">Syntax</h5>
+  <h6><strong>Namespace</strong>: </h6>
+  <h6><strong>Assembly</strong>: .dll</h6>
+  <h5 id="org_visab_gui_visualize_ILiveViewModel_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IMetaInformation</code></pre>
+    <pre><code class="lang-csharp hljs">public interface ILiveViewModel&lt;TStatistics&gt;</code></pre>
   </div>
-  <h3 id="properties">Properties
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/VocalTrance/VISABConnector/new/f_unity/apiSpec/new?filename=VISABConnector_IMetaInformation_Game.md&amp;value=---%0Auid%3A%20VISABConnector.IMetaInformation.Game%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/VocalTrance/VISABConnector/blob/f_unity/src/VISABConnector/Interface/IMetaInformation.cs/#L12">View Source</a>
-  </span>
-  <a id="VISABConnector_IMetaInformation_Game_" data-uid="VISABConnector.IMetaInformation.Game*"></a>
-  <h4 id="VISABConnector_IMetaInformation_Game" data-uid="VISABConnector.IMetaInformation.Game">Game</h4>
-  <div class="markdown level1 summary"><p>The game of which data will be sent.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">string Game { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
-        <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">TStatistics</span></td>
         <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="org_visab_gui_visualize_ILiveViewModel_initialize_" data-uid="org.visab.gui.visualize.ILiveViewModel.initialize*"></a>
+  <h4 id="org_visab_gui_visualize_ILiveViewModel_initialize_org_visab_processing_ILiveViewable___extends_org_visab_globalmodel_IStatistics__" data-uid="org.visab.gui.visualize.ILiveViewModel.initialize(org.visab.processing.ILiveViewable&lt;? extends org.visab.globalmodel.IStatistics&gt;)">initialize(ILiveViewable&lt;? extends IStatistics&gt; listener)</h4>
+  <div class="markdown level1 summary"><p>Initalizes the viewmodel with the listener by docking on to it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void initialize(ILiveViewable&lt;? extends IStatistics&gt; listener)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="org.visab.processing.ILiveViewable.html">ILiveViewable</a>&lt;<span class="xref">? extends org.visab.globalmodel.IStatistics</span>&gt;</td>
+        <td><span class="parametername">listener</span></td>
+        <td><p>The lister to dock on to</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_gui_visualize_ILiveViewModel_onSessionClosed_" data-uid="org.visab.gui.visualize.ILiveViewModel.onSessionClosed*"></a>
+  <h4 id="org_visab_gui_visualize_ILiveViewModel_onSessionClosed__" data-uid="org.visab.gui.visualize.ILiveViewModel.onSessionClosed()">onSessionClosed()</h4>
+  <div class="markdown level1 summary"><p>Called by the docked listener upon closing the session.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void onSessionClosed()</code></pre>
+  </div>
+  
+  
+  <a id="org_visab_gui_visualize_ILiveViewModel_onStatisticsAdded_" data-uid="org.visab.gui.visualize.ILiveViewModel.onStatisticsAdded*"></a>
+  <h4 id="org_visab_gui_visualize_ILiveViewModel_onStatisticsAdded_TStatistics_" data-uid="org.visab.gui.visualize.ILiveViewModel.onStatisticsAdded(TStatistics)">onStatisticsAdded(TStatistics newStatistics)</h4>
+  <div class="markdown level1 summary"><p>Called by the docked listener upon reciving new statistics.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void onStatisticsAdded(TStatistics newStatistics)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TStatistics</span></td>
+        <td><span class="parametername">newStatistics</span></td>
+        <td><p>The newely received statistics.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -123,12 +175,6 @@ information is required upon opening the session.</p>
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
-                  <li>
-                    <a href="https://github.com/VocalTrance/VISABConnector/new/f_unity/apiSpec/new?filename=VISABConnector_IMetaInformation.md&amp;value=---%0Auid%3A%20VISABConnector.IMetaInformation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/VocalTrance/VISABConnector/blob/f_unity/src/VISABConnector/Interface/IMetaInformation.cs/#L7" class="contribution-link">View Source</a>
-                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

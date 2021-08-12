@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class Rectangle
+    <title>Class DynamicViewLoader
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class Rectangle
+    <meta name="title" content="Class DynamicViewLoader
    ">
     <meta name="generator" content="docfx 2.58.0.0">
     
@@ -68,18 +68,22 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="org.visab.globalmodel.Rectangle">
+            <article class="content wrap" id="_content" data-uid="org.visab.gui.DynamicViewLoader">
   
   
-  <h1 id="org_visab_globalmodel_Rectangle" data-uid="org.visab.globalmodel.Rectangle" class="text-break">Class Rectangle
+  <h1 id="org_visab_gui_DynamicViewLoader" data-uid="org.visab.gui.DynamicViewLoader" class="text-break">Class DynamicViewLoader
   </h1>
-  <div class="markdown level0 summary"><p>A rectangle is defined by its width, height and its top left corner anchor point.</p>
+  <div class="markdown level0 summary"><p>The DynamicViewLoader provides methods for loading visualizer views based on a given game name. Views may be loaded from a transmission session or from a file. As a basis for deciding which view should be loaded, the mappings defined in the json configuration file are used.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">java.lang.Object</span></div>
-    <div class="level1"><span class="xref">Rectangle</span></div>
+    <div class="level1"><span class="xref">DynamicViewLoader</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">org.visab.eventbus.IPublisher&lt;org.visab.eventbus.event.VISABFileVisualizedEvent&gt;</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -119,108 +123,34 @@
   </div>
   <h6><strong>Namespace</strong>: </h6>
   <h6><strong>Assembly</strong>: .dll</h6>
-  <h5 id="org_visab_globalmodel_Rectangle_syntax">Syntax</h5>
+  <h5 id="org_visab_gui_DynamicViewLoader_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Rectangle</code></pre>
+    <pre><code class="lang-csharp hljs">public final class DynamicViewLoader implements IPublisher&lt;VISABFileVisualizedEvent&gt;</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   
   
-  <a id="org_visab_globalmodel_Rectangle_Rectangle_" data-uid="org.visab.globalmodel.Rectangle.Rectangle*"></a>
-  <h4 id="org_visab_globalmodel_Rectangle_Rectangle__" data-uid="org.visab.globalmodel.Rectangle.Rectangle()">Rectangle()</h4>
+  <a id="org_visab_gui_DynamicViewLoader_DynamicViewLoader_" data-uid="org.visab.gui.DynamicViewLoader.DynamicViewLoader*"></a>
+  <h4 id="org_visab_gui_DynamicViewLoader_DynamicViewLoader__" data-uid="org.visab.gui.DynamicViewLoader.DynamicViewLoader()">DynamicViewLoader()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Rectangle()</code></pre>
+    <pre><code class="lang-csharp hljs">public DynamicViewLoader()</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   
   
-  <a id="org_visab_globalmodel_Rectangle_getHeight_" data-uid="org.visab.globalmodel.Rectangle.getHeight*"></a>
-  <h4 id="org_visab_globalmodel_Rectangle_getHeight__" data-uid="org.visab.globalmodel.Rectangle.getHeight()">getHeight()</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="org_visab_gui_DynamicViewLoader_loadVisualizerView_" data-uid="org.visab.gui.DynamicViewLoader.loadVisualizerView*"></a>
+  <h4 id="org_visab_gui_DynamicViewLoader_loadVisualizerView_java_lang_String_java_lang_String_org_visab_globalmodel_IVISABFile_" data-uid="org.visab.gui.DynamicViewLoader.loadVisualizerView(java.lang.String,java.lang.String,org.visab.globalmodel.IVISABFile)">loadVisualizerView(String game, String fileName, IVISABFile file)</h4>
+  <div class="markdown level1 summary"><p>Loads the visualizer view for a given file.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double getHeight()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">double</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="org_visab_globalmodel_Rectangle_getTopLeftAnchorPoint_" data-uid="org.visab.globalmodel.Rectangle.getTopLeftAnchorPoint*"></a>
-  <h4 id="org_visab_globalmodel_Rectangle_getTopLeftAnchorPoint__" data-uid="org.visab.globalmodel.Rectangle.getTopLeftAnchorPoint()">getTopLeftAnchorPoint()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector2&lt;Double&gt; getTopLeftAnchorPoint()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="org.visab.globalmodel.Vector2.html">Vector2</a>&lt;<span class="xref">java.lang.Double</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="org_visab_globalmodel_Rectangle_getWidth_" data-uid="org.visab.globalmodel.Rectangle.getWidth*"></a>
-  <h4 id="org_visab_globalmodel_Rectangle_getWidth__" data-uid="org.visab.globalmodel.Rectangle.getWidth()">getWidth()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double getWidth()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">double</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="org_visab_globalmodel_Rectangle_setHeight_" data-uid="org.visab.globalmodel.Rectangle.setHeight*"></a>
-  <h4 id="org_visab_globalmodel_Rectangle_setHeight_double_" data-uid="org.visab.globalmodel.Rectangle.setHeight(double)">setHeight(double height)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void setHeight(double height)</code></pre>
+    <pre><code class="lang-csharp hljs">public static final void loadVisualizerView(String game, String fileName, IVISABFile file)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -233,21 +163,36 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">double</span></td>
-        <td><span class="parametername">height</span></td>
-        <td></td>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">game</span></td>
+        <td><p>The game of the file</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">fileName</span></td>
+        <td><p>The fileName of the file. This has to be only the fileName,
+paths are not supported.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="org.visab.globalmodel.IVISABFile.html">IVISABFile</a></td>
+        <td><span class="parametername">file</span></td>
+        <td><p>The file to visualize</p>
+</td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="org_visab_globalmodel_Rectangle_setTopLeftAnchorPoint_" data-uid="org.visab.globalmodel.Rectangle.setTopLeftAnchorPoint*"></a>
-  <h4 id="org_visab_globalmodel_Rectangle_setTopLeftAnchorPoint_org_visab_globalmodel_Vector2_java_lang_Double__" data-uid="org.visab.globalmodel.Rectangle.setTopLeftAnchorPoint(org.visab.globalmodel.Vector2&lt;java.lang.Double&gt;)">setTopLeftAnchorPoint(Vector2&lt;Double&gt; topLeftAnchorPoint)</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="org_visab_gui_DynamicViewLoader_loadVisualizerView_" data-uid="org.visab.gui.DynamicViewLoader.loadVisualizerView*"></a>
+  <h4 id="org_visab_gui_DynamicViewLoader_loadVisualizerView_java_lang_String_java_util_UUID_" data-uid="org.visab.gui.DynamicViewLoader.loadVisualizerView(java.lang.String,java.util.UUID)">loadVisualizerView(String game, UUID sessionId)</h4>
+  <div class="markdown level1 summary"><p>Loads the visualizer view for a given transmission session. If the transmission session is active and the corresponding session listener implements ILiveViewable the live view is loaded. Otherwise the regular, non live, view is loaded.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void setTopLeftAnchorPoint(Vector2&lt;Double&gt; topLeftAnchorPoint)</code></pre>
+    <pre><code class="lang-csharp hljs">public static final void loadVisualizerView(String game, UUID sessionId)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -260,21 +205,28 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="org.visab.globalmodel.Vector2.html">Vector2</a>&lt;<span class="xref">java.lang.Double</span>&gt;</td>
-        <td><span class="parametername">topLeftAnchorPoint</span></td>
-        <td></td>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">game</span></td>
+        <td><p>The game of the session</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">java.util.UUID</span></td>
+        <td><span class="parametername">sessionId</span></td>
+        <td><p>The sessionId of the session</p>
+</td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="org_visab_globalmodel_Rectangle_setWidth_" data-uid="org.visab.globalmodel.Rectangle.setWidth*"></a>
-  <h4 id="org_visab_globalmodel_Rectangle_setWidth_int_" data-uid="org.visab.globalmodel.Rectangle.setWidth(int)">setWidth(int width)</h4>
+  <a id="org_visab_gui_DynamicViewLoader_publish_" data-uid="org.visab.gui.DynamicViewLoader.publish*"></a>
+  <h4 id="org_visab_gui_DynamicViewLoader_publish_org_visab_eventbus_event_VISABFileVisualizedEvent_" data-uid="org.visab.gui.DynamicViewLoader.publish(org.visab.eventbus.event.VISABFileVisualizedEvent)">publish(VISABFileVisualizedEvent event)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void setWidth(int width)</code></pre>
+    <pre><code class="lang-csharp hljs">public void publish(VISABFileVisualizedEvent event)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -287,12 +239,16 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">int</span></td>
-        <td><span class="parametername">width</span></td>
+        <td><a class="xref" href="org.visab.eventbus.event.VISABFileVisualizedEvent.html">VISABFileVisualizedEvent</a></td>
+        <td><span class="parametername">event</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">org.visab.eventbus.IPublisher&lt;org.visab.eventbus.event.VISABFileVisualizedEvent&gt;</span>
+  </div>
 </article>
           </div>
           

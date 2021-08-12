@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class Vector2&lt;T&gt;
+    <title>Class ExplorerFile
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class Vector2&lt;T&gt;
+    <meta name="title" content="Class ExplorerFile
    ">
     <meta name="generator" content="docfx 2.58.0.0">
     
@@ -68,18 +68,18 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="org.visab.globalmodel.Vector2">
+            <article class="content wrap" id="_content" data-uid="org.visab.gui.control.ExplorerFile">
   
   
-  <h1 id="org_visab_globalmodel_Vector2" data-uid="org.visab.globalmodel.Vector2" class="text-break">Class Vector2&lt;T&gt;
+  <h1 id="org_visab_gui_control_ExplorerFile" data-uid="org.visab.gui.control.ExplorerFile" class="text-break">Class ExplorerFile
   </h1>
-  <div class="markdown level0 summary"><p>A two dimensional vector representation.</p>
+  <div class="markdown level0 summary"><p>Represents a file in the explorer in your os. A file can therefore be an directory or a file. Is used by the FileExplorer control.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">java.lang.Object</span></div>
-    <div class="level1"><span class="xref">Vector2&lt;T&gt;</span></div>
+    <div class="level1"><span class="xref">ExplorerFile</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -119,46 +119,21 @@
   </div>
   <h6><strong>Namespace</strong>: </h6>
   <h6><strong>Assembly</strong>: .dll</h6>
-  <h5 id="org_visab_globalmodel_Vector2_syntax">Syntax</h5>
+  <h5 id="org_visab_gui_control_ExplorerFile_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Vector2&lt;T&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class ExplorerFile</code></pre>
   </div>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="constructors">Constructors
   </h3>
   
   
-  <a id="org_visab_globalmodel_Vector2_Vector2_" data-uid="org.visab.globalmodel.Vector2.Vector2*"></a>
-  <h4 id="org_visab_globalmodel_Vector2_Vector2__" data-uid="org.visab.globalmodel.Vector2.Vector2()">Vector2()</h4>
+  <a id="org_visab_gui_control_ExplorerFile_ExplorerFile_" data-uid="org.visab.gui.control.ExplorerFile.ExplorerFile*"></a>
+  <h4 id="org_visab_gui_control_ExplorerFile_ExplorerFile_java_lang_String_java_time_LocalDateTime_long_java_lang_String_boolean_org_visab_gui_control_ExplorerFile_" data-uid="org.visab.gui.control.ExplorerFile.ExplorerFile(java.lang.String,java.time.LocalDateTime,long,java.lang.String,boolean,org.visab.gui.control.ExplorerFile)">ExplorerFile(String name, LocalDateTime creationDate, long size, String absolutePath, boolean isDirectory, ExplorerFile parentDir)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector2()</code></pre>
-  </div>
-  
-  
-  <a id="org_visab_globalmodel_Vector2_Vector2_" data-uid="org.visab.globalmodel.Vector2.Vector2*"></a>
-  <h4 id="org_visab_globalmodel_Vector2_Vector2_T_T_" data-uid="org.visab.globalmodel.Vector2.Vector2(T,T)">Vector2(T x, T y)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector2(T x, T y)</code></pre>
+    <pre><code class="lang-csharp hljs">public ExplorerFile(String name, LocalDateTime creationDate, long size, String absolutePath, boolean isDirectory, ExplorerFile parentDir)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -171,13 +146,33 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">x</span></td>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">name</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">y</span></td>
+        <td><span class="xref">java.time.LocalDateTime</span></td>
+        <td><span class="parametername">creationDate</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">long</span></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">absolutePath</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td><span class="parametername">isDirectory</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><span class="parametername">parentDir</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -186,167 +181,13 @@
   </h3>
   
   
-  <a id="org_visab_globalmodel_Vector2_checkIfNull_" data-uid="org.visab.globalmodel.Vector2.checkIfNull*"></a>
-  <h4 id="org_visab_globalmodel_Vector2_checkIfNull__" data-uid="org.visab.globalmodel.Vector2.checkIfNull()">checkIfNull()</h4>
+  <a id="org_visab_gui_control_ExplorerFile_getAbsolutePath_" data-uid="org.visab.gui.control.ExplorerFile.getAbsolutePath*"></a>
+  <h4 id="org_visab_gui_control_ExplorerFile_getAbsolutePath__" data-uid="org.visab.gui.control.ExplorerFile.getAbsolutePath()">getAbsolutePath()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public boolean checkIfNull()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="org_visab_globalmodel_Vector2_checkIfZero_" data-uid="org.visab.globalmodel.Vector2.checkIfZero*"></a>
-  <h4 id="org_visab_globalmodel_Vector2_checkIfZero__" data-uid="org.visab.globalmodel.Vector2.checkIfZero()">checkIfZero()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public boolean checkIfZero()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="org_visab_globalmodel_Vector2_getX_" data-uid="org.visab.globalmodel.Vector2.getX*"></a>
-  <h4 id="org_visab_globalmodel_Vector2_getX__" data-uid="org.visab.globalmodel.Vector2.getX()">getX()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T getX()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="org_visab_globalmodel_Vector2_getY_" data-uid="org.visab.globalmodel.Vector2.getY*"></a>
-  <h4 id="org_visab_globalmodel_Vector2_getY__" data-uid="org.visab.globalmodel.Vector2.getY()">getY()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T getY()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="org_visab_globalmodel_Vector2_setX_" data-uid="org.visab.globalmodel.Vector2.setX*"></a>
-  <h4 id="org_visab_globalmodel_Vector2_setX_T_" data-uid="org.visab.globalmodel.Vector2.setX(T)">setX(T x)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void setX(T x)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">x</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="org_visab_globalmodel_Vector2_setY_" data-uid="org.visab.globalmodel.Vector2.setY*"></a>
-  <h4 id="org_visab_globalmodel_Vector2_setY_T_" data-uid="org.visab.globalmodel.Vector2.setY(T)">setY(T y)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void setY(T y)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">y</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="org_visab_globalmodel_Vector2_toString_" data-uid="org.visab.globalmodel.Vector2.toString*"></a>
-  <h4 id="org_visab_globalmodel_Vector2_toString__" data-uid="org.visab.globalmodel.Vector2.toString()">toString()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public String toString()</code></pre>
+    <pre><code class="lang-csharp hljs">public String getAbsolutePath()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -363,8 +204,237 @@
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">java.lang.Object.toString()</span></div>
+  
+  
+  <a id="org_visab_gui_control_ExplorerFile_getCreationDate_" data-uid="org.visab.gui.control.ExplorerFile.getCreationDate*"></a>
+  <h4 id="org_visab_gui_control_ExplorerFile_getCreationDate__" data-uid="org.visab.gui.control.ExplorerFile.getCreationDate()">getCreationDate()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LocalDateTime getCreationDate()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.time.LocalDateTime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_gui_control_ExplorerFile_getFiles_" data-uid="org.visab.gui.control.ExplorerFile.getFiles*"></a>
+  <h4 id="org_visab_gui_control_ExplorerFile_getFiles__" data-uid="org.visab.gui.control.ExplorerFile.getFiles()">getFiles()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObservableList&lt;ExplorerFile&gt; getFiles()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">javafx.collections.ObservableList</span>&lt;<a class="xref" href="org.visab.gui.control.ExplorerFile.html">ExplorerFile</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_gui_control_ExplorerFile_getName_" data-uid="org.visab.gui.control.ExplorerFile.getName*"></a>
+  <h4 id="org_visab_gui_control_ExplorerFile_getName__" data-uid="org.visab.gui.control.ExplorerFile.getName()">getName()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String getName()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_gui_control_ExplorerFile_getParentDir_" data-uid="org.visab.gui.control.ExplorerFile.getParentDir*"></a>
+  <h4 id="org_visab_gui_control_ExplorerFile_getParentDir__" data-uid="org.visab.gui.control.ExplorerFile.getParentDir()">getParentDir()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExplorerFile getParentDir()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_gui_control_ExplorerFile_getSize_" data-uid="org.visab.gui.control.ExplorerFile.getSize*"></a>
+  <h4 id="org_visab_gui_control_ExplorerFile_getSize__" data-uid="org.visab.gui.control.ExplorerFile.getSize()">getSize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long getSize()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">long</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_gui_control_ExplorerFile_isDirectory_" data-uid="org.visab.gui.control.ExplorerFile.isDirectory*"></a>
+  <h4 id="org_visab_gui_control_ExplorerFile_isDirectory__" data-uid="org.visab.gui.control.ExplorerFile.isDirectory()">isDirectory()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public boolean isDirectory()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_gui_control_ExplorerFile_setAbsolutePath_" data-uid="org.visab.gui.control.ExplorerFile.setAbsolutePath*"></a>
+  <h4 id="org_visab_gui_control_ExplorerFile_setAbsolutePath_java_lang_String_" data-uid="org.visab.gui.control.ExplorerFile.setAbsolutePath(java.lang.String)">setAbsolutePath(String path)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setAbsolutePath(String path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_gui_control_ExplorerFile_setName_" data-uid="org.visab.gui.control.ExplorerFile.setName*"></a>
+  <h4 id="org_visab_gui_control_ExplorerFile_setName_java_lang_String_" data-uid="org.visab.gui.control.ExplorerFile.setName(java.lang.String)">setName(String name)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setName(String name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_gui_control_ExplorerFile_setSize_" data-uid="org.visab.gui.control.ExplorerFile.setSize*"></a>
+  <h4 id="org_visab_gui_control_ExplorerFile_setSize_long_" data-uid="org.visab.gui.control.ExplorerFile.setSize(long)">setSize(long size)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setSize(long size)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">long</span></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           

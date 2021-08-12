@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class Vector2&lt;T&gt;
+    <title>Class ShowViewConfiguration
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class Vector2&lt;T&gt;
+    <meta name="title" content="Class ShowViewConfiguration
    ">
     <meta name="generator" content="docfx 2.58.0.0">
     
@@ -68,18 +68,18 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="org.visab.globalmodel.Vector2">
+            <article class="content wrap" id="_content" data-uid="org.visab.gui.ShowViewConfiguration">
   
   
-  <h1 id="org_visab_globalmodel_Vector2" data-uid="org.visab.globalmodel.Vector2" class="text-break">Class Vector2&lt;T&gt;
+  <h1 id="org_visab_gui_ShowViewConfiguration" data-uid="org.visab.gui.ShowViewConfiguration" class="text-break">Class ShowViewConfiguration
   </h1>
-  <div class="markdown level0 summary"><p>A two dimensional vector representation.</p>
+  <div class="markdown level0 summary"><p>Configuration for showing views from the viewmodel via the dialog helper.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">java.lang.Object</span></div>
-    <div class="level1"><span class="xref">Vector2&lt;T&gt;</span></div>
+    <div class="level1"><span class="xref">ShowViewConfiguration</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -119,46 +119,21 @@
   </div>
   <h6><strong>Namespace</strong>: </h6>
   <h6><strong>Assembly</strong>: .dll</h6>
-  <h5 id="org_visab_globalmodel_Vector2_syntax">Syntax</h5>
+  <h5 id="org_visab_gui_ShowViewConfiguration_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Vector2&lt;T&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class ShowViewConfiguration</code></pre>
   </div>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="constructors">Constructors
   </h3>
   
   
-  <a id="org_visab_globalmodel_Vector2_Vector2_" data-uid="org.visab.globalmodel.Vector2.Vector2*"></a>
-  <h4 id="org_visab_globalmodel_Vector2_Vector2__" data-uid="org.visab.globalmodel.Vector2.Vector2()">Vector2()</h4>
+  <a id="org_visab_gui_ShowViewConfiguration_ShowViewConfiguration_" data-uid="org.visab.gui.ShowViewConfiguration.ShowViewConfiguration*"></a>
+  <h4 id="org_visab_gui_ShowViewConfiguration_ShowViewConfiguration_java_lang_Class___extends_de_saxsys_mvvmfx_FxmlView___extends_de_saxsys_mvvmfx_ViewModel___java_lang_String_boolean_" data-uid="org.visab.gui.ShowViewConfiguration.ShowViewConfiguration(java.lang.Class&lt;? extends de.saxsys.mvvmfx.FxmlView&lt;? extends de.saxsys.mvvmfx.ViewModel&gt;&gt;,java.lang.String,boolean)">ShowViewConfiguration(Class&lt;? extends FxmlView&lt;? extends ViewModel&gt;&gt; viewClass, String stageTitle, boolean shouldBlock)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector2()</code></pre>
-  </div>
-  
-  
-  <a id="org_visab_globalmodel_Vector2_Vector2_" data-uid="org.visab.globalmodel.Vector2.Vector2*"></a>
-  <h4 id="org_visab_globalmodel_Vector2_Vector2_T_T_" data-uid="org.visab.globalmodel.Vector2.Vector2(T,T)">Vector2(T x, T y)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector2(T x, T y)</code></pre>
+    <pre><code class="lang-csharp hljs">public ShowViewConfiguration(Class&lt;? extends FxmlView&lt;? extends ViewModel&gt;&gt; viewClass, String stageTitle, boolean shouldBlock)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -171,14 +146,75 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">x</span></td>
+        <td><span class="xref">java.lang.Class</span>&lt;<span class="xref">? extends de.saxsys.mvvmfx.FxmlView</span>&lt;<span class="xref">? extends de.saxsys.mvvmfx.ViewModel</span>&gt;&gt;</td>
+        <td><span class="parametername">viewClass</span></td>
+        <td><p>The class of the view to load</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">stageTitle</span></td>
+        <td><p>The title of the stage</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td><span class="parametername">shouldBlock</span></td>
+        <td><p>True if view should make other open views inaccesible
+until it is closed</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_gui_ShowViewConfiguration_ShowViewConfiguration_" data-uid="org.visab.gui.ShowViewConfiguration.ShowViewConfiguration*"></a>
+  <h4 id="org_visab_gui_ShowViewConfiguration_ShowViewConfiguration_java_lang_Class___extends_de_saxsys_mvvmfx_FxmlView___extends_de_saxsys_mvvmfx_ViewModel___java_lang_String_boolean_int_int_" data-uid="org.visab.gui.ShowViewConfiguration.ShowViewConfiguration(java.lang.Class&lt;? extends de.saxsys.mvvmfx.FxmlView&lt;? extends de.saxsys.mvvmfx.ViewModel&gt;&gt;,java.lang.String,boolean,int,int)">ShowViewConfiguration(Class&lt;? extends FxmlView&lt;? extends ViewModel&gt;&gt; viewClass, String windowTitle, boolean shouldBlock, int height, int width)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ShowViewConfiguration(Class&lt;? extends FxmlView&lt;? extends ViewModel&gt;&gt; viewClass, String windowTitle, boolean shouldBlock, int height, int width)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.Class</span>&lt;<span class="xref">? extends de.saxsys.mvvmfx.FxmlView</span>&lt;<span class="xref">? extends de.saxsys.mvvmfx.ViewModel</span>&gt;&gt;</td>
+        <td><span class="parametername">viewClass</span></td>
+        <td><p>The class of the view to load</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">windowTitle</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">y</span></td>
-        <td></td>
+        <td><span class="xref">boolean</span></td>
+        <td><span class="parametername">shouldBlock</span></td>
+        <td><p>True if view should make other open views inaccesible
+until it is closed</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">height</span></td>
+        <td><p>The height of the stage</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">width</span></td>
+        <td><p>The width of the stage</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -186,13 +222,14 @@
   </h3>
   
   
-  <a id="org_visab_globalmodel_Vector2_checkIfNull_" data-uid="org.visab.globalmodel.Vector2.checkIfNull*"></a>
-  <h4 id="org_visab_globalmodel_Vector2_checkIfNull__" data-uid="org.visab.globalmodel.Vector2.checkIfNull()">checkIfNull()</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="org_visab_gui_ShowViewConfiguration_getHeight_" data-uid="org.visab.gui.ShowViewConfiguration.getHeight*"></a>
+  <h4 id="org_visab_gui_ShowViewConfiguration_getHeight__" data-uid="org.visab.gui.ShowViewConfiguration.getHeight()">getHeight()</h4>
+  <div class="markdown level1 summary"><p>The height of the stage.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public boolean checkIfNull()</code></pre>
+    <pre><code class="lang-csharp hljs">public int getHeight()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -204,149 +241,21 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">boolean</span></td>
+        <td><span class="xref">int</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="org_visab_globalmodel_Vector2_checkIfZero_" data-uid="org.visab.globalmodel.Vector2.checkIfZero*"></a>
-  <h4 id="org_visab_globalmodel_Vector2_checkIfZero__" data-uid="org.visab.globalmodel.Vector2.checkIfZero()">checkIfZero()</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="org_visab_gui_ShowViewConfiguration_getStageTitle_" data-uid="org.visab.gui.ShowViewConfiguration.getStageTitle*"></a>
+  <h4 id="org_visab_gui_ShowViewConfiguration_getStageTitle__" data-uid="org.visab.gui.ShowViewConfiguration.getStageTitle()">getStageTitle()</h4>
+  <div class="markdown level1 summary"><p>The title of the stage.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public boolean checkIfZero()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="org_visab_globalmodel_Vector2_getX_" data-uid="org.visab.globalmodel.Vector2.getX*"></a>
-  <h4 id="org_visab_globalmodel_Vector2_getX__" data-uid="org.visab.globalmodel.Vector2.getX()">getX()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T getX()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="org_visab_globalmodel_Vector2_getY_" data-uid="org.visab.globalmodel.Vector2.getY*"></a>
-  <h4 id="org_visab_globalmodel_Vector2_getY__" data-uid="org.visab.globalmodel.Vector2.getY()">getY()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T getY()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="org_visab_globalmodel_Vector2_setX_" data-uid="org.visab.globalmodel.Vector2.setX*"></a>
-  <h4 id="org_visab_globalmodel_Vector2_setX_T_" data-uid="org.visab.globalmodel.Vector2.setX(T)">setX(T x)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void setX(T x)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">x</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="org_visab_globalmodel_Vector2_setY_" data-uid="org.visab.globalmodel.Vector2.setY*"></a>
-  <h4 id="org_visab_globalmodel_Vector2_setY_T_" data-uid="org.visab.globalmodel.Vector2.setY(T)">setY(T y)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void setY(T y)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">y</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="org_visab_globalmodel_Vector2_toString_" data-uid="org.visab.globalmodel.Vector2.toString*"></a>
-  <h4 id="org_visab_globalmodel_Vector2_toString__" data-uid="org.visab.globalmodel.Vector2.toString()">toString()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public String toString()</code></pre>
+    <pre><code class="lang-csharp hljs">public String getStageTitle()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -363,8 +272,84 @@
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">java.lang.Object.toString()</span></div>
+  
+  
+  <a id="org_visab_gui_ShowViewConfiguration_getViewClass_" data-uid="org.visab.gui.ShowViewConfiguration.getViewClass*"></a>
+  <h4 id="org_visab_gui_ShowViewConfiguration_getViewClass__" data-uid="org.visab.gui.ShowViewConfiguration.getViewClass()">getViewClass()</h4>
+  <div class="markdown level1 summary"><p>The class of the view to load.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Class&lt;? extends FxmlView&lt;? extends ViewModel&gt;&gt; getViewClass()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.Class</span>&lt;<span class="xref">? extends de.saxsys.mvvmfx.FxmlView</span>&lt;<span class="xref">? extends de.saxsys.mvvmfx.ViewModel</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_gui_ShowViewConfiguration_getWidth_" data-uid="org.visab.gui.ShowViewConfiguration.getWidth*"></a>
+  <h4 id="org_visab_gui_ShowViewConfiguration_getWidth__" data-uid="org.visab.gui.ShowViewConfiguration.getWidth()">getWidth()</h4>
+  <div class="markdown level1 summary"><p>The width of the stage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int getWidth()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_gui_ShowViewConfiguration_shouldBlock_" data-uid="org.visab.gui.ShowViewConfiguration.shouldBlock*"></a>
+  <h4 id="org_visab_gui_ShowViewConfiguration_shouldBlock__" data-uid="org.visab.gui.ShowViewConfiguration.shouldBlock()">shouldBlock()</h4>
+  <div class="markdown level1 summary"><p>True if view should make other open views inaccesible until it is closed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public boolean shouldBlock()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           

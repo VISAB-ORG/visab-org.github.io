@@ -186,12 +186,38 @@
   
   <a id="org_visab_api_SessionAdministration_getActiveSessionStatuses_" data-uid="org.visab.api.SessionAdministration.getActiveSessionStatuses*"></a>
   <h4 id="org_visab_api_SessionAdministration_getActiveSessionStatuses__" data-uid="org.visab.api.SessionAdministration.getActiveSessionStatuses()">getActiveSessionStatuses()</h4>
-  <div class="markdown level1 summary"><p>A list containing the session statuses for all currently active tranmission session.</p>
+  <div class="markdown level1 summary"><p>A list containing the session statuses for all currently active tranmission sessions.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public List&lt;SessionStatus&gt; getActiveSessionStatuses()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.util.List</span>&lt;<a class="xref" href="org.visab.globalmodel.SessionStatus.html">SessionStatus</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_api_SessionAdministration_getCanceledSessionStatuses_" data-uid="org.visab.api.SessionAdministration.getCanceledSessionStatuses*"></a>
+  <h4 id="org_visab_api_SessionAdministration_getCanceledSessionStatuses__" data-uid="org.visab.api.SessionAdministration.getCanceledSessionStatuses()">getCanceledSessionStatuses()</h4>
+  <div class="markdown level1 summary"><p>A list containing the session statuses for all currently canceled tranmission sessions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;SessionStatus&gt; getCanceledSessionStatuses()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -276,6 +302,32 @@
         <td><a class="xref" href="org.visab.globalmodel.SessionStatus.html">SessionStatus</a></td>
         <td><p>The SessionStatus of the tranmission session if found, null else</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_api_SessionAdministration_getTimeoutedSessionStatuses_" data-uid="org.visab.api.SessionAdministration.getTimeoutedSessionStatuses*"></a>
+  <h4 id="org_visab_api_SessionAdministration_getTimeoutedSessionStatuses__" data-uid="org.visab.api.SessionAdministration.getTimeoutedSessionStatuses()">getTimeoutedSessionStatuses()</h4>
+  <div class="markdown level1 summary"><p>A list containing the session statuses for all currently timeouted tranmission sessions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;SessionStatus&gt; getTimeoutedSessionStatuses()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.util.List</span>&lt;<a class="xref" href="org.visab.globalmodel.SessionStatus.html">SessionStatus</a>&gt;</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -459,6 +511,35 @@
         <td><span class="xref">java.lang.String</span></td>
         <td><span class="parametername">statisticsJson</span></td>
         <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_api_SessionAdministration_removeByUUID_" data-uid="org.visab.api.SessionAdministration.removeByUUID*"></a>
+  <h4 id="org_visab_api_SessionAdministration_removeByUUID_java_util_UUID_" data-uid="org.visab.api.SessionAdministration.removeByUUID(java.util.UUID)">removeByUUID(UUID sessionId)</h4>
+  <div class="markdown level1 summary"><p>Removes a session status entirely from the list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void removeByUUID(UUID sessionId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.util.UUID</span></td>
+        <td><span class="parametername">sessionId</span></td>
+        <td><p>the ID of the session that shall be removed.</p>
+</td>
       </tr>
     </tbody>
   </table>

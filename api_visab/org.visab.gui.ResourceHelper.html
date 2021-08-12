@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class Vector2&lt;T&gt;
+    <title>Class ResourceHelper
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class Vector2&lt;T&gt;
+    <meta name="title" content="Class ResourceHelper
    ">
     <meta name="generator" content="docfx 2.58.0.0">
     
@@ -68,18 +68,18 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="org.visab.globalmodel.Vector2">
+            <article class="content wrap" id="_content" data-uid="org.visab.gui.ResourceHelper">
   
   
-  <h1 id="org_visab_globalmodel_Vector2" data-uid="org.visab.globalmodel.Vector2" class="text-break">Class Vector2&lt;T&gt;
+  <h1 id="org_visab_gui_ResourceHelper" data-uid="org.visab.gui.ResourceHelper" class="text-break">Class ResourceHelper
   </h1>
-  <div class="markdown level0 summary"><p>A two dimensional vector representation.</p>
+  <div class="markdown level0 summary"><p>Class containing constants and helper methods for obtaining resources from the resource directory. Used mainly by the views, but is also used for loading configuration files.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">java.lang.Object</span></div>
-    <div class="level1"><span class="xref">Vector2&lt;T&gt;</span></div>
+    <div class="level1"><span class="xref">ResourceHelper</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -119,236 +119,34 @@
   </div>
   <h6><strong>Namespace</strong>: </h6>
   <h6><strong>Assembly</strong>: .dll</h6>
-  <h5 id="org_visab_globalmodel_Vector2_syntax">Syntax</h5>
+  <h5 id="org_visab_gui_ResourceHelper_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Vector2&lt;T&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public final class ResourceHelper</code></pre>
   </div>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="constructors">Constructors
   </h3>
   
   
-  <a id="org_visab_globalmodel_Vector2_Vector2_" data-uid="org.visab.globalmodel.Vector2.Vector2*"></a>
-  <h4 id="org_visab_globalmodel_Vector2_Vector2__" data-uid="org.visab.globalmodel.Vector2.Vector2()">Vector2()</h4>
+  <a id="org_visab_gui_ResourceHelper_ResourceHelper_" data-uid="org.visab.gui.ResourceHelper.ResourceHelper*"></a>
+  <h4 id="org_visab_gui_ResourceHelper_ResourceHelper__" data-uid="org.visab.gui.ResourceHelper.ResourceHelper()">ResourceHelper()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector2()</code></pre>
+    <pre><code class="lang-csharp hljs">public ResourceHelper()</code></pre>
   </div>
-  
-  
-  <a id="org_visab_globalmodel_Vector2_Vector2_" data-uid="org.visab.globalmodel.Vector2.Vector2*"></a>
-  <h4 id="org_visab_globalmodel_Vector2_Vector2_T_T_" data-uid="org.visab.globalmodel.Vector2.Vector2(T,T)">Vector2(T x, T y)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector2(T x, T y)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">x</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">y</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
+  <h3 id="fields">Fields
   </h3>
   
   
-  <a id="org_visab_globalmodel_Vector2_checkIfNull_" data-uid="org.visab.globalmodel.Vector2.checkIfNull*"></a>
-  <h4 id="org_visab_globalmodel_Vector2_checkIfNull__" data-uid="org.visab.globalmodel.Vector2.checkIfNull()">checkIfNull()</h4>
+  <h4 id="org_visab_gui_ResourceHelper_CSS_PATH" data-uid="org.visab.gui.ResourceHelper.CSS_PATH">CSS_PATH</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public boolean checkIfNull()</code></pre>
+    <pre><code class="lang-csharp hljs">public static final String CSS_PATH</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="org_visab_globalmodel_Vector2_checkIfZero_" data-uid="org.visab.globalmodel.Vector2.checkIfZero*"></a>
-  <h4 id="org_visab_globalmodel_Vector2_checkIfZero__" data-uid="org.visab.globalmodel.Vector2.checkIfZero()">checkIfZero()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public boolean checkIfZero()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="org_visab_globalmodel_Vector2_getX_" data-uid="org.visab.globalmodel.Vector2.getX*"></a>
-  <h4 id="org_visab_globalmodel_Vector2_getX__" data-uid="org.visab.globalmodel.Vector2.getX()">getX()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T getX()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="org_visab_globalmodel_Vector2_getY_" data-uid="org.visab.globalmodel.Vector2.getY*"></a>
-  <h4 id="org_visab_globalmodel_Vector2_getY__" data-uid="org.visab.globalmodel.Vector2.getY()">getY()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T getY()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="org_visab_globalmodel_Vector2_setX_" data-uid="org.visab.globalmodel.Vector2.setX*"></a>
-  <h4 id="org_visab_globalmodel_Vector2_setX_T_" data-uid="org.visab.globalmodel.Vector2.setX(T)">setX(T x)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void setX(T x)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">x</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="org_visab_globalmodel_Vector2_setY_" data-uid="org.visab.globalmodel.Vector2.setY*"></a>
-  <h4 id="org_visab_globalmodel_Vector2_setY_T_" data-uid="org.visab.globalmodel.Vector2.setY(T)">setY(T y)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void setY(T y)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">y</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="org_visab_globalmodel_Vector2_toString_" data-uid="org.visab.globalmodel.Vector2.toString*"></a>
-  <h4 id="org_visab_globalmodel_Vector2_toString__" data-uid="org.visab.globalmodel.Vector2.toString()">toString()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public String toString()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
+  <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -363,8 +161,239 @@
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">java.lang.Object.toString()</span></div>
+  
+  
+  <h4 id="org_visab_gui_ResourceHelper_IMAGE_PATH" data-uid="org.visab.gui.ResourceHelper.IMAGE_PATH">IMAGE_PATH</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static final String IMAGE_PATH</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="org_visab_gui_ResourceHelper_JSON_MIME_TYPE" data-uid="org.visab.gui.ResourceHelper.JSON_MIME_TYPE">JSON_MIME_TYPE</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static final String JSON_MIME_TYPE</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="org_visab_gui_ResourceHelper_MEDIA_CONTENT_TYPE" data-uid="org.visab.gui.ResourceHelper.MEDIA_CONTENT_TYPE">MEDIA_CONTENT_TYPE</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static final String MEDIA_CONTENT_TYPE</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="org_visab_gui_ResourceHelper_VISAB_DOC_PATH" data-uid="org.visab.gui.ResourceHelper.VISAB_DOC_PATH">VISAB_DOC_PATH</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static final String VISAB_DOC_PATH</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="org_visab_gui_ResourceHelper_getLogoPathByGame_" data-uid="org.visab.gui.ResourceHelper.getLogoPathByGame*"></a>
+  <h4 id="org_visab_gui_ResourceHelper_getLogoPathByGame_java_lang_String_" data-uid="org.visab.gui.ResourceHelper.getLogoPathByGame(java.lang.String)">getLogoPathByGame(String game)</h4>
+  <div class="markdown level1 summary"><p>Helper method that provides a specific game logo path by game name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static final String getLogoPathByGame(String game)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">game</span></td>
+        <td><p>the name of the game the logo is needed for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><p>the logo path for the respective game.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_gui_ResourceHelper_getShooterBaseIconById_" data-uid="org.visab.gui.ResourceHelper.getShooterBaseIconById*"></a>
+  <h4 id="org_visab_gui_ResourceHelper_getShooterBaseIconById_java_lang_String_" data-uid="org.visab.gui.ResourceHelper.getShooterBaseIconById(java.lang.String)">getShooterBaseIconById(String iconId)</h4>
+  <div class="markdown level1 summary"><p>Helper method that provides a player specific base icon. Base icon means that it is white and can be recoloured.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static final String getShooterBaseIconById(String iconId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">iconId</span></td>
+        <td><p>the id of the base icon needed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><p>the base icon for the given iconId.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_gui_ResourceHelper_readResourceContents_" data-uid="org.visab.gui.ResourceHelper.readResourceContents*"></a>
+  <h4 id="org_visab_gui_ResourceHelper_readResourceContents_java_lang_String_" data-uid="org.visab.gui.ResourceHelper.readResourceContents(java.lang.String)">readResourceContents(String path)</h4>
+  <div class="markdown level1 summary"><p>Reads the bytes for a resource at a given path and returns a the byte array as a UTF-8 encoded string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static final String readResourceContents(String path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path to the resource</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td><p>The UTF-8 encoded string</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           

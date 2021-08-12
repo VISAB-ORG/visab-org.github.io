@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class Vector2&lt;T&gt;
+    <title>Class VisualizeViewModelBase&lt;TFile&gt;
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class Vector2&lt;T&gt;
+    <meta name="title" content="Class VisualizeViewModelBase&lt;TFile&gt;
    ">
     <meta name="generator" content="docfx 2.58.0.0">
     
@@ -68,18 +68,19 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="org.visab.globalmodel.Vector2">
+            <article class="content wrap" id="_content" data-uid="org.visab.gui.visualize.VisualizeViewModelBase">
   
   
-  <h1 id="org_visab_globalmodel_Vector2" data-uid="org.visab.globalmodel.Vector2" class="text-break">Class Vector2&lt;T&gt;
+  <h1 id="org_visab_gui_visualize_VisualizeViewModelBase" data-uid="org.visab.gui.visualize.VisualizeViewModelBase" class="text-break">Class VisualizeViewModelBase&lt;TFile&gt;
   </h1>
-  <div class="markdown level0 summary"><p>A two dimensional vector representation.</p>
+  <div class="markdown level0 summary"><p>The base class for any visualizer view model. If your view model should not be live viewable and isnt dependant on images, extend this. Otherwise, use one of the more specific base implementations.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">java.lang.Object</span></div>
-    <div class="level1"><span class="xref">Vector2&lt;T&gt;</span></div>
+    <div class="level1"><a class="xref" href="org.visab.gui.ViewModelBase.html">ViewModelBase</a></div>
+    <div class="level2"><span class="xref">VisualizeViewModelBase&lt;TFile&gt;</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -116,12 +117,15 @@
     <div>
       <span class="xref">java.lang.Object.wait(long,int)</span>
     </div>
+    <div>
+      <a class="xref" href="org.visab.gui.ViewModelBase.html#org_visab_gui_ViewModelBase_makeCommand_java_lang_Runnable_">ViewModelBase.makeCommand(Runnable)</a>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: </h6>
   <h6><strong>Assembly</strong>: .dll</h6>
-  <h5 id="org_visab_globalmodel_Vector2_syntax">Syntax</h5>
+  <h5 id="org_visab_gui_visualize_VisualizeViewModelBase_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Vector2&lt;T&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class VisualizeViewModelBase&lt;TFile&gt; extends ViewModelBase</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -133,7 +137,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">T</span></td>
+        <td><span class="parametername">TFile</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -142,42 +146,62 @@
   </h3>
   
   
-  <a id="org_visab_globalmodel_Vector2_Vector2_" data-uid="org.visab.globalmodel.Vector2.Vector2*"></a>
-  <h4 id="org_visab_globalmodel_Vector2_Vector2__" data-uid="org.visab.globalmodel.Vector2.Vector2()">Vector2()</h4>
+  <a id="org_visab_gui_visualize_VisualizeViewModelBase_VisualizeViewModelBase_" data-uid="org.visab.gui.visualize.VisualizeViewModelBase.VisualizeViewModelBase*"></a>
+  <h4 id="org_visab_gui_visualize_VisualizeViewModelBase_VisualizeViewModelBase__" data-uid="org.visab.gui.visualize.VisualizeViewModelBase.VisualizeViewModelBase()">VisualizeViewModelBase()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector2()</code></pre>
+    <pre><code class="lang-csharp hljs">public VisualizeViewModelBase()</code></pre>
   </div>
+  <h3 id="fields">Fields
+  </h3>
   
   
-  <a id="org_visab_globalmodel_Vector2_Vector2_" data-uid="org.visab.globalmodel.Vector2.Vector2*"></a>
-  <h4 id="org_visab_globalmodel_Vector2_Vector2_T_T_" data-uid="org.visab.globalmodel.Vector2.Vector2(T,T)">Vector2(T x, T y)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="org_visab_gui_visualize_VisualizeViewModelBase_file" data-uid="org.visab.gui.visualize.VisualizeViewModelBase.file">file</h4>
+  <div class="markdown level1 summary"><p>The file to visualize. The reference stored in this variable should not be changed.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector2(T x, T y)</code></pre>
+    <pre><code class="lang-csharp hljs">protected TFile file</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
+  <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
-        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">x</span></td>
+        <td><span class="xref">TFile</span></td>
         <td></td>
       </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="org_visab_gui_visualize_VisualizeViewModelBase_scope" data-uid="org.visab.gui.visualize.VisualizeViewModelBase.scope">scope</h4>
+  <div class="markdown level1 summary"><p>The scope that is injected by the DynamicViewLoader.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected VisualizeScope scope</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
       <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">y</span></td>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="org.visab.gui.visualize.VisualizeScope.html">VisualizeScope</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -186,113 +210,14 @@
   </h3>
   
   
-  <a id="org_visab_globalmodel_Vector2_checkIfNull_" data-uid="org.visab.globalmodel.Vector2.checkIfNull*"></a>
-  <h4 id="org_visab_globalmodel_Vector2_checkIfNull__" data-uid="org.visab.globalmodel.Vector2.checkIfNull()">checkIfNull()</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="org_visab_gui_visualize_VisualizeViewModelBase_initialize_" data-uid="org.visab.gui.visualize.VisualizeViewModelBase.initialize*"></a>
+  <h4 id="org_visab_gui_visualize_VisualizeViewModelBase_initialize_org_visab_globalmodel_IVISABFile_" data-uid="org.visab.gui.visualize.VisualizeViewModelBase.initialize(org.visab.globalmodel.IVISABFile)">initialize(IVISABFile file)</h4>
+  <div class="markdown level1 summary"><p>Initializer for non live view.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public boolean checkIfNull()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="org_visab_globalmodel_Vector2_checkIfZero_" data-uid="org.visab.globalmodel.Vector2.checkIfZero*"></a>
-  <h4 id="org_visab_globalmodel_Vector2_checkIfZero__" data-uid="org.visab.globalmodel.Vector2.checkIfZero()">checkIfZero()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public boolean checkIfZero()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="org_visab_globalmodel_Vector2_getX_" data-uid="org.visab.globalmodel.Vector2.getX*"></a>
-  <h4 id="org_visab_globalmodel_Vector2_getX__" data-uid="org.visab.globalmodel.Vector2.getX()">getX()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T getX()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="org_visab_globalmodel_Vector2_getY_" data-uid="org.visab.globalmodel.Vector2.getY*"></a>
-  <h4 id="org_visab_globalmodel_Vector2_getY__" data-uid="org.visab.globalmodel.Vector2.getY()">getY()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T getY()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="org_visab_globalmodel_Vector2_setX_" data-uid="org.visab.globalmodel.Vector2.setX*"></a>
-  <h4 id="org_visab_globalmodel_Vector2_setX_T_" data-uid="org.visab.globalmodel.Vector2.setX(T)">setX(T x)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void setX(T x)</code></pre>
+    <pre><code class="lang-csharp hljs">public void initialize(IVISABFile file)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -305,66 +230,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">x</span></td>
-        <td></td>
+        <td><a class="xref" href="org.visab.globalmodel.IVISABFile.html">IVISABFile</a></td>
+        <td><span class="parametername">file</span></td>
+        <td><p>The file to visualize</p>
+</td>
       </tr>
     </tbody>
   </table>
-  
-  
-  <a id="org_visab_globalmodel_Vector2_setY_" data-uid="org.visab.globalmodel.Vector2.setY*"></a>
-  <h4 id="org_visab_globalmodel_Vector2_setY_T_" data-uid="org.visab.globalmodel.Vector2.setY(T)">setY(T y)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void setY(T y)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">y</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="org_visab_globalmodel_Vector2_toString_" data-uid="org.visab.globalmodel.Vector2.toString*"></a>
-  <h4 id="org_visab_globalmodel_Vector2_toString__" data-uid="org.visab.globalmodel.Vector2.toString()">toString()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public String toString()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">java.lang.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">java.lang.Object.toString()</span></div>
 </article>
           </div>
           

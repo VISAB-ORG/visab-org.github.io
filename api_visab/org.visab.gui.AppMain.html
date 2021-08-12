@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class Rectangle
+    <title>Class AppMain
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class Rectangle
+    <meta name="title" content="Class AppMain
    ">
     <meta name="generator" content="docfx 2.58.0.0">
     
@@ -68,18 +68,19 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="org.visab.globalmodel.Rectangle">
+            <article class="content wrap" id="_content" data-uid="org.visab.gui.AppMain">
   
   
-  <h1 id="org_visab_globalmodel_Rectangle" data-uid="org.visab.globalmodel.Rectangle" class="text-break">Class Rectangle
+  <h1 id="org_visab_gui_AppMain" data-uid="org.visab.gui.AppMain" class="text-break">Class AppMain
   </h1>
-  <div class="markdown level0 summary"><p>A rectangle is defined by its width, height and its top left corner anchor point.</p>
+  <div class="markdown level0 summary"><p>The javafx application.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">java.lang.Object</span></div>
-    <div class="level1"><span class="xref">Rectangle</span></div>
+    <div class="level1"><span class="xref">javafx.application.Application</span></div>
+    <div class="level2"><span class="xref">AppMain</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -116,36 +117,67 @@
     <div>
       <span class="xref">java.lang.Object.wait(long,int)</span>
     </div>
+    <div>
+      <span class="xref">javafx.application.Application.getHostServices()</span>
+    </div>
+    <div>
+      <span class="xref">javafx.application.Application.getParameters()</span>
+    </div>
+    <div>
+      <span class="xref">javafx.application.Application.getUserAgentStylesheet()</span>
+    </div>
+    <div>
+      <span class="xref">javafx.application.Application.init()</span>
+    </div>
+    <div>
+      <span class="xref">javafx.application.Application.launch(java.lang.Class&lt;? extends javafx.application.Application&gt;,java.lang.String...)</span>
+    </div>
+    <div>
+      <span class="xref">javafx.application.Application.launch(java.lang.String...)</span>
+    </div>
+    <div>
+      <span class="xref">javafx.application.Application.notifyPreloader(javafx.application.Preloader.PreloaderNotification)</span>
+    </div>
+    <div>
+      <span class="xref">javafx.application.Application.setUserAgentStylesheet(java.lang.String)</span>
+    </div>
+    <div>
+      <span class="xref">javafx.application.Application.start(javafx.stage.Stage)</span>
+    </div>
+    <div>
+      <span class="xref">javafx.application.Application.stop()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: </h6>
   <h6><strong>Assembly</strong>: .dll</h6>
-  <h5 id="org_visab_globalmodel_Rectangle_syntax">Syntax</h5>
+  <h5 id="org_visab_gui_AppMain_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Rectangle</code></pre>
+    <pre><code class="lang-csharp hljs">public class AppMain extends Application</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   
   
-  <a id="org_visab_globalmodel_Rectangle_Rectangle_" data-uid="org.visab.globalmodel.Rectangle.Rectangle*"></a>
-  <h4 id="org_visab_globalmodel_Rectangle_Rectangle__" data-uid="org.visab.globalmodel.Rectangle.Rectangle()">Rectangle()</h4>
+  <a id="org_visab_gui_AppMain_AppMain_" data-uid="org.visab.gui.AppMain.AppMain*"></a>
+  <h4 id="org_visab_gui_AppMain_AppMain__" data-uid="org.visab.gui.AppMain.AppMain()">AppMain()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Rectangle()</code></pre>
+    <pre><code class="lang-csharp hljs">public AppMain()</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   
   
-  <a id="org_visab_globalmodel_Rectangle_getHeight_" data-uid="org.visab.globalmodel.Rectangle.getHeight*"></a>
-  <h4 id="org_visab_globalmodel_Rectangle_getHeight__" data-uid="org.visab.globalmodel.Rectangle.getHeight()">getHeight()</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="org_visab_gui_AppMain_getPrimaryStage_" data-uid="org.visab.gui.AppMain.getPrimaryStage*"></a>
+  <h4 id="org_visab_gui_AppMain_getPrimaryStage__" data-uid="org.visab.gui.AppMain.getPrimaryStage()">getPrimaryStage()</h4>
+  <div class="markdown level1 summary"><p>The primary stage of the Application.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double getHeight()</code></pre>
+    <pre><code class="lang-csharp hljs">public static Stage getPrimaryStage()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -157,70 +189,20 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">double</span></td>
+        <td><span class="xref">javafx.stage.Stage</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="org_visab_globalmodel_Rectangle_getTopLeftAnchorPoint_" data-uid="org.visab.globalmodel.Rectangle.getTopLeftAnchorPoint*"></a>
-  <h4 id="org_visab_globalmodel_Rectangle_getTopLeftAnchorPoint__" data-uid="org.visab.globalmodel.Rectangle.getTopLeftAnchorPoint()">getTopLeftAnchorPoint()</h4>
+  <a id="org_visab_gui_AppMain_start_" data-uid="org.visab.gui.AppMain.start*"></a>
+  <h4 id="org_visab_gui_AppMain_start_javafx_stage_Stage_" data-uid="org.visab.gui.AppMain.start(javafx.stage.Stage)">start(Stage stage)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector2&lt;Double&gt; getTopLeftAnchorPoint()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="org.visab.globalmodel.Vector2.html">Vector2</a>&lt;<span class="xref">java.lang.Double</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="org_visab_globalmodel_Rectangle_getWidth_" data-uid="org.visab.globalmodel.Rectangle.getWidth*"></a>
-  <h4 id="org_visab_globalmodel_Rectangle_getWidth__" data-uid="org.visab.globalmodel.Rectangle.getWidth()">getWidth()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double getWidth()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">double</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="org_visab_globalmodel_Rectangle_setHeight_" data-uid="org.visab.globalmodel.Rectangle.setHeight*"></a>
-  <h4 id="org_visab_globalmodel_Rectangle_setHeight_double_" data-uid="org.visab.globalmodel.Rectangle.setHeight(double)">setHeight(double height)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void setHeight(double height)</code></pre>
+    <pre><code class="lang-csharp hljs">public void start(Stage stage)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -233,66 +215,42 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">double</span></td>
-        <td><span class="parametername">height</span></td>
+        <td><span class="xref">javafx.stage.Stage</span></td>
+        <td><span class="parametername">stage</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
-  <a id="org_visab_globalmodel_Rectangle_setTopLeftAnchorPoint_" data-uid="org.visab.globalmodel.Rectangle.setTopLeftAnchorPoint*"></a>
-  <h4 id="org_visab_globalmodel_Rectangle_setTopLeftAnchorPoint_org_visab_globalmodel_Vector2_java_lang_Double__" data-uid="org.visab.globalmodel.Rectangle.setTopLeftAnchorPoint(org.visab.globalmodel.Vector2&lt;java.lang.Double&gt;)">setTopLeftAnchorPoint(Vector2&lt;Double&gt; topLeftAnchorPoint)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void setTopLeftAnchorPoint(Vector2&lt;Double&gt; topLeftAnchorPoint)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">javafx.application.Application.start(javafx.stage.Stage)</span></div>
+  <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
+        <th>Condition</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="org.visab.globalmodel.Vector2.html">Vector2</a>&lt;<span class="xref">java.lang.Double</span>&gt;</td>
-        <td><span class="parametername">topLeftAnchorPoint</span></td>
+        <td><span class="xref">java.lang.Exception</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="org_visab_globalmodel_Rectangle_setWidth_" data-uid="org.visab.globalmodel.Rectangle.setWidth*"></a>
-  <h4 id="org_visab_globalmodel_Rectangle_setWidth_int_" data-uid="org.visab.globalmodel.Rectangle.setWidth(int)">setWidth(int width)</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="org_visab_gui_AppMain_stop_" data-uid="org.visab.gui.AppMain.stop*"></a>
+  <h4 id="org_visab_gui_AppMain_stop__" data-uid="org.visab.gui.AppMain.stop()">stop()</h4>
+  <div class="markdown level1 summary"><p>Is called before the Application is csosed.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void setWidth(int width)</code></pre>
+    <pre><code class="lang-csharp hljs">public void stop()</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">int</span></td>
-        <td><span class="parametername">width</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">javafx.application.Application.stop()</span></div>
 </article>
           </div>
           
