@@ -6415,6 +6415,45 @@ references:
   commentId: T:VISABConnector.Unity.ImageCreator
   fullName: VISABConnector.Unity.ImageCreator
   nameWithType: ImageCreator
+- uid: VISABConnector.Unity.ImageCreator.CameraSetup(VISABConnector.Unity.CameraConfiguration,System.String,UnityEngine.CameraClearFlags)
+  name: CameraSetup(CameraConfiguration, String, CameraClearFlags)
+  href: api_visabconnector/VISABConnector.Unity.ImageCreator.html#VISABConnector_Unity_ImageCreator_CameraSetup_VISABConnector_Unity_CameraConfiguration_System_String_UnityEngine_CameraClearFlags_
+  commentId: M:VISABConnector.Unity.ImageCreator.CameraSetup(VISABConnector.Unity.CameraConfiguration,System.String,UnityEngine.CameraClearFlags)
+  fullName: VISABConnector.Unity.ImageCreator.CameraSetup(VISABConnector.Unity.CameraConfiguration, System.String, UnityEngine.CameraClearFlags)
+  nameWithType: ImageCreator.CameraSetup(CameraConfiguration, String, CameraClearFlags)
+- uid: VISABConnector.Unity.ImageCreator.CameraSetup*
+  name: CameraSetup
+  href: api_visabconnector/VISABConnector.Unity.ImageCreator.html#VISABConnector_Unity_ImageCreator_CameraSetup_
+  commentId: Overload:VISABConnector.Unity.ImageCreator.CameraSetup
+  isSpec: "True"
+  fullName: VISABConnector.Unity.ImageCreator.CameraSetup
+  nameWithType: ImageCreator.CameraSetup
+- uid: VISABConnector.Unity.ImageCreator.ChangeLayer(UnityEngine.GameObject,VISABConnector.Unity.SnapshotConfiguration,System.Int32)
+  name: ChangeLayer(GameObject, SnapshotConfiguration, Int32)
+  href: api_visabconnector/VISABConnector.Unity.ImageCreator.html#VISABConnector_Unity_ImageCreator_ChangeLayer_UnityEngine_GameObject_VISABConnector_Unity_SnapshotConfiguration_System_Int32_
+  commentId: M:VISABConnector.Unity.ImageCreator.ChangeLayer(UnityEngine.GameObject,VISABConnector.Unity.SnapshotConfiguration,System.Int32)
+  fullName: VISABConnector.Unity.ImageCreator.ChangeLayer(UnityEngine.GameObject, VISABConnector.Unity.SnapshotConfiguration, System.Int32)
+  nameWithType: ImageCreator.ChangeLayer(GameObject, SnapshotConfiguration, Int32)
+- uid: VISABConnector.Unity.ImageCreator.ChangeLayer*
+  name: ChangeLayer
+  href: api_visabconnector/VISABConnector.Unity.ImageCreator.html#VISABConnector_Unity_ImageCreator_ChangeLayer_
+  commentId: Overload:VISABConnector.Unity.ImageCreator.ChangeLayer
+  isSpec: "True"
+  fullName: VISABConnector.Unity.ImageCreator.ChangeLayer
+  nameWithType: ImageCreator.ChangeLayer
+- uid: VISABConnector.Unity.ImageCreator.GameObjectSetup(VISABConnector.Unity.SnapshotConfiguration)
+  name: GameObjectSetup(SnapshotConfiguration)
+  href: api_visabconnector/VISABConnector.Unity.ImageCreator.html#VISABConnector_Unity_ImageCreator_GameObjectSetup_VISABConnector_Unity_SnapshotConfiguration_
+  commentId: M:VISABConnector.Unity.ImageCreator.GameObjectSetup(VISABConnector.Unity.SnapshotConfiguration)
+  fullName: VISABConnector.Unity.ImageCreator.GameObjectSetup(VISABConnector.Unity.SnapshotConfiguration)
+  nameWithType: ImageCreator.GameObjectSetup(SnapshotConfiguration)
+- uid: VISABConnector.Unity.ImageCreator.GameObjectSetup*
+  name: GameObjectSetup
+  href: api_visabconnector/VISABConnector.Unity.ImageCreator.html#VISABConnector_Unity_ImageCreator_GameObjectSetup_
+  commentId: Overload:VISABConnector.Unity.ImageCreator.GameObjectSetup
+  isSpec: "True"
+  fullName: VISABConnector.Unity.ImageCreator.GameObjectSetup
+  nameWithType: ImageCreator.GameObjectSetup
 - uid: VISABConnector.Unity.ImageCreator.InstantiateGameObject(VISABConnector.Unity.InstantiationConfiguration)
   name: InstantiateGameObject(InstantiationConfiguration)
   href: api_visabconnector/VISABConnector.Unity.ImageCreator.html#VISABConnector_Unity_ImageCreator_InstantiateGameObject_VISABConnector_Unity_InstantiationConfiguration_
@@ -6657,63 +6696,6 @@ references:
   isSpec: "True"
   fullName: VISABConnector.Unity.SnapshotConfiguration.ShouldInstantiate
   nameWithType: SnapshotConfiguration.ShouldInstantiate
-- uid: VISABConnector.Unity.SnapshotMethods
-  name: SnapshotMethods
-  href: api_visabconnector/VISABConnector.Unity.SnapshotMethods.html
-  commentId: T:VISABConnector.Unity.SnapshotMethods
-  fullName: VISABConnector.Unity.SnapshotMethods
-  nameWithType: SnapshotMethods
-- uid: VISABConnector.Unity.SnapshotMethods.minimapCam
-  name: minimapCam
-  href: api_visabconnector/VISABConnector.Unity.SnapshotMethods.html#VISABConnector_Unity_SnapshotMethods_minimapCam
-  commentId: F:VISABConnector.Unity.SnapshotMethods.minimapCam
-  fullName: VISABConnector.Unity.SnapshotMethods.minimapCam
-  nameWithType: SnapshotMethods.minimapCam
-- uid: VISABConnector.Unity.SnapshotMethods.SnapExistingObj(VISABConnector.Unity.SnapshotConfiguration)
-  name: SnapExistingObj(SnapshotConfiguration)
-  href: api_visabconnector/VISABConnector.Unity.SnapshotMethods.html#VISABConnector_Unity_SnapshotMethods_SnapExistingObj_VISABConnector_Unity_SnapshotConfiguration_
-  commentId: M:VISABConnector.Unity.SnapshotMethods.SnapExistingObj(VISABConnector.Unity.SnapshotConfiguration)
-  fullName: VISABConnector.Unity.SnapshotMethods.SnapExistingObj(VISABConnector.Unity.SnapshotConfiguration)
-  nameWithType: SnapshotMethods.SnapExistingObj(SnapshotConfiguration)
-- uid: VISABConnector.Unity.SnapshotMethods.SnapExistingObj*
-  name: SnapExistingObj
-  href: api_visabconnector/VISABConnector.Unity.SnapshotMethods.html#VISABConnector_Unity_SnapshotMethods_SnapExistingObj_
-  commentId: Overload:VISABConnector.Unity.SnapshotMethods.SnapExistingObj
-  isSpec: "True"
-  fullName: VISABConnector.Unity.SnapshotMethods.SnapExistingObj
-  nameWithType: SnapshotMethods.SnapExistingObj
-- uid: VISABConnector.Unity.SnapshotMethods.SnapInstantiatedObj(VISABConnector.Unity.SnapshotConfiguration)
-  name: SnapInstantiatedObj(SnapshotConfiguration)
-  href: api_visabconnector/VISABConnector.Unity.SnapshotMethods.html#VISABConnector_Unity_SnapshotMethods_SnapInstantiatedObj_VISABConnector_Unity_SnapshotConfiguration_
-  commentId: M:VISABConnector.Unity.SnapshotMethods.SnapInstantiatedObj(VISABConnector.Unity.SnapshotConfiguration)
-  fullName: VISABConnector.Unity.SnapshotMethods.SnapInstantiatedObj(VISABConnector.Unity.SnapshotConfiguration)
-  nameWithType: SnapshotMethods.SnapInstantiatedObj(SnapshotConfiguration)
-- uid: VISABConnector.Unity.SnapshotMethods.SnapInstantiatedObj*
-  name: SnapInstantiatedObj
-  href: api_visabconnector/VISABConnector.Unity.SnapshotMethods.html#VISABConnector_Unity_SnapshotMethods_SnapInstantiatedObj_
-  commentId: Overload:VISABConnector.Unity.SnapshotMethods.SnapInstantiatedObj
-  isSpec: "True"
-  fullName: VISABConnector.Unity.SnapshotMethods.SnapInstantiatedObj
-  nameWithType: SnapshotMethods.SnapInstantiatedObj
-- uid: VISABConnector.Unity.SnapshotMethods.SnapshotObject(UnityEngine.GameObject,System.Single,UnityEngine.Vector3,System.Int32,System.Int32)
-  name: SnapshotObject(GameObject, Single, Vector3, Int32, Int32)
-  href: api_visabconnector/VISABConnector.Unity.SnapshotMethods.html#VISABConnector_Unity_SnapshotMethods_SnapshotObject_UnityEngine_GameObject_System_Single_UnityEngine_Vector3_System_Int32_System_Int32_
-  commentId: M:VISABConnector.Unity.SnapshotMethods.SnapshotObject(UnityEngine.GameObject,System.Single,UnityEngine.Vector3,System.Int32,System.Int32)
-  fullName: VISABConnector.Unity.SnapshotMethods.SnapshotObject(UnityEngine.GameObject, System.Single, UnityEngine.Vector3, System.Int32, System.Int32)
-  nameWithType: SnapshotMethods.SnapshotObject(GameObject, Single, Vector3, Int32, Int32)
-- uid: VISABConnector.Unity.SnapshotMethods.SnapshotObject*
-  name: SnapshotObject
-  href: api_visabconnector/VISABConnector.Unity.SnapshotMethods.html#VISABConnector_Unity_SnapshotMethods_SnapshotObject_
-  commentId: Overload:VISABConnector.Unity.SnapshotMethods.SnapshotObject
-  isSpec: "True"
-  fullName: VISABConnector.Unity.SnapshotMethods.SnapshotObject
-  nameWithType: SnapshotMethods.SnapshotObject
-- uid: VISABConnector.Unity.SnapshotMethods.spawnPoint
-  name: spawnPoint
-  href: api_visabconnector/VISABConnector.Unity.SnapshotMethods.html#VISABConnector_Unity_SnapshotMethods_spawnPoint
-  commentId: F:VISABConnector.Unity.SnapshotMethods.spawnPoint
-  fullName: VISABConnector.Unity.SnapshotMethods.spawnPoint
-  nameWithType: SnapshotMethods.spawnPoint
 - uid: VISABConnector.Unity.UnityExtensionMethods
   name: UnityExtensionMethods
   href: api_visabconnector/VISABConnector.Unity.UnityExtensionMethods.html
