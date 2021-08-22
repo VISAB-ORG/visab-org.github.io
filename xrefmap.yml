@@ -6352,31 +6352,6 @@ references:
   isSpec: "True"
   fullName: VISABConnector.Unity.CameraConfiguration.UseAbsoluteOffset
   nameWithType: CameraConfiguration.UseAbsoluteOffset
-- uid: VISABConnector.Unity.CameraCreator
-  name: CameraCreator
-  href: api_visabconnector/VISABConnector.Unity.CameraCreator.html
-  commentId: T:VISABConnector.Unity.CameraCreator
-  fullName: VISABConnector.Unity.CameraCreator
-  nameWithType: CameraCreator
-- uid: VISABConnector.Unity.CameraCreator.CameraName
-  name: CameraName
-  href: api_visabconnector/VISABConnector.Unity.CameraCreator.html#VISABConnector_Unity_CameraCreator_CameraName
-  commentId: F:VISABConnector.Unity.CameraCreator.CameraName
-  fullName: VISABConnector.Unity.CameraCreator.CameraName
-  nameWithType: CameraCreator.CameraName
-- uid: VISABConnector.Unity.CameraCreator.CreateCamera
-  name: CreateCamera()
-  href: api_visabconnector/VISABConnector.Unity.CameraCreator.html#VISABConnector_Unity_CameraCreator_CreateCamera
-  commentId: M:VISABConnector.Unity.CameraCreator.CreateCamera
-  fullName: VISABConnector.Unity.CameraCreator.CreateCamera()
-  nameWithType: CameraCreator.CreateCamera()
-- uid: VISABConnector.Unity.CameraCreator.CreateCamera*
-  name: CreateCamera
-  href: api_visabconnector/VISABConnector.Unity.CameraCreator.html#VISABConnector_Unity_CameraCreator_CreateCamera_
-  commentId: Overload:VISABConnector.Unity.CameraCreator.CreateCamera
-  isSpec: "True"
-  fullName: VISABConnector.Unity.CameraCreator.CreateCamera
-  nameWithType: CameraCreator.CreateCamera
 - uid: VISABConnector.Unity.ChildConfiguration
   name: ChildConfiguration
   href: api_visabconnector/VISABConnector.Unity.ChildConfiguration.html
