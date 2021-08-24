@@ -128,13 +128,13 @@
   
   
   <a id="org_visab_gui_visualize_CoordinateHelper_CoordinateHelper_" data-uid="org.visab.gui.visualize.CoordinateHelper.CoordinateHelper*"></a>
-  <h4 id="org_visab_gui_visualize_CoordinateHelper_CoordinateHelper_org_visab_globalmodel_Rectangle_double_double_org_visab_globalmodel_Vector2_java_lang_Double__" data-uid="org.visab.gui.visualize.CoordinateHelper.CoordinateHelper(org.visab.globalmodel.Rectangle,double,double,org.visab.globalmodel.Vector2&lt;java.lang.Double&gt;)">CoordinateHelper(Rectangle mapRectangle, double drawPaneHeight, double drawPaneWidth, Vector2&lt;Double&gt; standardIconVector)</h4>
+  <h4 id="org_visab_gui_visualize_CoordinateHelper_CoordinateHelper_org_visab_globalmodel_Rectangle_double_double_org_visab_globalmodel_Vector2_java_lang_Double__org_visab_globalmodel_Vector2_java_lang_Double__" data-uid="org.visab.gui.visualize.CoordinateHelper.CoordinateHelper(org.visab.globalmodel.Rectangle,double,double,org.visab.globalmodel.Vector2&lt;java.lang.Double&gt;,org.visab.globalmodel.Vector2&lt;java.lang.Double&gt;)">CoordinateHelper(Rectangle mapRectangle, double drawPaneHeight, double drawPaneWidth, Vector2&lt;Double&gt; standardIconVector, Vector2&lt;Double&gt; offsetVector)</h4>
   <div class="markdown level1 summary"><p>Constructs a CoordinateHelper with specific boundary information.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CoordinateHelper(Rectangle mapRectangle, double drawPaneHeight, double drawPaneWidth, Vector2&lt;Double&gt; standardIconVector)</code></pre>
+    <pre><code class="lang-csharp hljs">public CoordinateHelper(Rectangle mapRectangle, double drawPaneHeight, double drawPaneWidth, Vector2&lt;Double&gt; standardIconVector, Vector2&lt;Double&gt; offsetVector)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -162,14 +162,24 @@ positioned on.</p>
       <tr>
         <td><span class="xref">double</span></td>
         <td><span class="parametername">drawPaneWidth</span></td>
-        <td><p>the width of the draw pane elements shall be positioned
-on.</p>
+        <td><p>the width of the draw pane elements shall be
+positioned on.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="org.visab.globalmodel.Vector2.html">Vector2</a>&lt;<span class="xref">java.lang.Double</span>&gt;</td>
         <td><span class="parametername">standardIconVector</span></td>
-        <td></td>
+        <td><p>the vector of the used icon size, that is necessary
+for centering the visuals in the view.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="org.visab.globalmodel.Vector2.html">Vector2</a>&lt;<span class="xref">java.lang.Double</span>&gt;</td>
+        <td><span class="parametername">offsetVector</span></td>
+        <td><p>the vector used to provide some offset for the
+calculation if a sent map image has empty space on
+X or Y axis.</p>
+</td>
       </tr>
     </tbody>
   </table>

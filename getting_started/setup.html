@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Environment Setup </title>
+    <title>Setup </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Environment Setup ">
+    <meta name="title" content="Setup ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,8 +67,39 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="environment-setup">Environment Setup</h1>
+<h1 id="setup">Setup</h1>
 
+<p>VISABs source control is done using Git and a remote repository is hosted on <a href="https://github.com/VISAB-ORG/VISAB">GitHub</a>. Releases of VISAB include both the jar and the source files. Download the latest version from <a href="https://github.com/VISAB-ORG/VISAB/releases">here</a>.</p>
+<h2 id="installing-visab">Installing VISAB</h2>
+<p>A JRE version equal or greater than Java 11 is required for using VISAB.
+If that requirement is satisfied you can start VISAB from your shell in two modes.</p>
+<p><strong>GUI</strong>
+This mode provides features for visualizing game data files and starts the HTTP API for reciving data.<br>
+<code>java -jar VISAB.jar -mode gui</code></p>
+<p><strong>Headless</strong>
+This mode only starts the HTTP API for reciving data.<br>
+<code>java -jar VISAB.jar -mode headless</code></p>
+<h2 id="developing-visab">Developing VISAB</h2>
+<p>A JDK version equal or greater than Java 11 and <a href="https://maven.apache.org/">Maven</a> are prequisites for developing VISAB.</p>
+<p><strong>Running the application</strong></p>
+<ol>
+<li>Clone the repository using HTTPS <code>git clone https://github.com/VISAB-ORG/VISAB.git</code>.</li>
+<li>Run <code>mvn compile</code></li>
+<li>Configure <code>org.visab.main.Main</code> to be the target of your run configuration.</li>
+</ol>
+<p>You can now run VISAB from your IDE.</p>
+<h2 id="developing-visabconnector-and-visabconnectorunity">Developing VISABConnector and VISABConnector.Unity</h2>
+<p>.Net Framework 4.8 <a href="https://dotnet.microsoft.com/download/dotnet-framework/net48">Developer Pack</a> and a C# IDE (Visual Studio, Visual Studio Code, ...) are prequisites for developing VISABConnector and VISABConnector.Unity.</p>
+<p><strong>Building the assemblies</strong></p>
+<ol>
+<li>Clone the repository using HTTPS <code>git clone https://github.com/VISAB-ORG/VISABConnector.git</code>.</li>
+<li>Open the solution file at src/VISABConnector.sln</li>
+<li>Build the solution using your IDE</li>
+</ol>
+<p>The compiled assemblies appear in the bin/ directory of the project directories.</p>
+<h2 id="developing-the-unity-games">Developing the Unity games</h2>
+<p>If you want to further develop the Unity games or change what data is transmitted from the games to VISAB you need <a href="https://unity3d.com/de/unity/whats-new/2021.1.1">Unity 2021.1.1</a>.
+Afterwards you can simply open the game projects using the Unity Editor.</p>
 </article>
           </div>
           

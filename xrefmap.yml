@@ -2699,6 +2699,18 @@ references:
   fullName: org.visab.gui.DialogHelper.showInputDialog
   nameWithType: DialogHelper.showInputDialog
   package: org.visab.gui
+- uid: org.visab.gui.DialogHelper.showMessageDialog(javafx.scene.control.Alert.AlertType,java.lang.String,java.lang.String)
+  name: showMessageDialog(Alert.AlertType type, String contentText, String title)
+  href: api_visab/org.visab.gui.DialogHelper.html#org_visab_gui_DialogHelper_showMessageDialog_javafx_scene_control_Alert_AlertType_java_lang_String_java_lang_String_
+  fullName: org.visab.gui.DialogHelper.showMessageDialog(Alert.AlertType type, String contentText, String title)
+  nameWithType: DialogHelper.showMessageDialog(Alert.AlertType type, String contentText, String title)
+- uid: org.visab.gui.DialogHelper.showMessageDialog*
+  name: showMessageDialog
+  href: api_visab/org.visab.gui.DialogHelper.html#org_visab_gui_DialogHelper_showMessageDialog_
+  isSpec: "True"
+  fullName: org.visab.gui.DialogHelper.showMessageDialog
+  nameWithType: DialogHelper.showMessageDialog
+  package: org.visab.gui
 - uid: org.visab.gui.DialogHelper.showView(org.visab.gui.ShowViewConfiguration,de.saxsys.mvvmfx.Scope...)
   name: showView(ShowViewConfiguration configuration, Scope[] scopes)
   href: api_visab/org.visab.gui.DialogHelper.html#org_visab_gui_DialogHelper_showView_org_visab_gui_ShowViewConfiguration_de_saxsys_mvvmfx_Scope____
@@ -3317,11 +3329,11 @@ references:
   href: api_visab/org.visab.gui.visualize.CoordinateHelper.html
   fullName: org.visab.gui.visualize.CoordinateHelper
   nameWithType: CoordinateHelper
-- uid: org.visab.gui.visualize.CoordinateHelper.CoordinateHelper(org.visab.globalmodel.Rectangle,double,double,org.visab.globalmodel.Vector2<java.lang.Double>)
-  name: CoordinateHelper(Rectangle mapRectangle, double drawPaneHeight, double drawPaneWidth, Vector2<Double> standardIconVector)
-  href: api_visab/org.visab.gui.visualize.CoordinateHelper.html#org_visab_gui_visualize_CoordinateHelper_CoordinateHelper_org_visab_globalmodel_Rectangle_double_double_org_visab_globalmodel_Vector2_java_lang_Double__
-  fullName: org.visab.gui.visualize.CoordinateHelper.CoordinateHelper(Rectangle mapRectangle, double drawPaneHeight, double drawPaneWidth, Vector2<Double> standardIconVector)
-  nameWithType: CoordinateHelper.CoordinateHelper(Rectangle mapRectangle, double drawPaneHeight, double drawPaneWidth, Vector2<Double> standardIconVector)
+- uid: org.visab.gui.visualize.CoordinateHelper.CoordinateHelper(org.visab.globalmodel.Rectangle,double,double,org.visab.globalmodel.Vector2<java.lang.Double>,org.visab.globalmodel.Vector2<java.lang.Double>)
+  name: CoordinateHelper(Rectangle mapRectangle, double drawPaneHeight, double drawPaneWidth, Vector2<Double> standardIconVector, Vector2<Double> offsetVector)
+  href: api_visab/org.visab.gui.visualize.CoordinateHelper.html#org_visab_gui_visualize_CoordinateHelper_CoordinateHelper_org_visab_globalmodel_Rectangle_double_double_org_visab_globalmodel_Vector2_java_lang_Double__org_visab_globalmodel_Vector2_java_lang_Double__
+  fullName: org.visab.gui.visualize.CoordinateHelper.CoordinateHelper(Rectangle mapRectangle, double drawPaneHeight, double drawPaneWidth, Vector2<Double> standardIconVector, Vector2<Double> offsetVector)
+  nameWithType: CoordinateHelper.CoordinateHelper(Rectangle mapRectangle, double drawPaneHeight, double drawPaneWidth, Vector2<Double> standardIconVector, Vector2<Double> offsetVector)
 - uid: org.visab.gui.visualize.CoordinateHelper.CoordinateHelper*
   name: CoordinateHelper
   href: api_visab/org.visab.gui.visualize.CoordinateHelper.html#org_visab_gui_visualize_CoordinateHelper_CoordinateHelper_
