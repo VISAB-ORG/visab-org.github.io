@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Sendings statistics and images </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Sendings statistics and images ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="sendings-statistics-and-images">Sendings statistics and images</h1>
+
+<p>To send statistics and image data to VISAB we can use our <code>IVISABSession</code> object.
+The process of sending statistics and images only differs in the extraction phase.
+Therefore, the process of sending statistics is exemplary explained.<br>
+For extracting images refer to <a class="xref" href="../visabconnector_unity/images.html">Extracting game images</a>.</p>
+<p>First we create the statistics object based on the current game state.</p>
+<pre><code class="lang-csharp">private TetrisStatistics ExtractStatistics(int turn, IList&lt;Player&gt; players) 
+{
+    var playerPoints = new Dictionary&lt;string, int&gt;();
+    foreach (var player in players)
+        playerPoints[player.Name] = player.Score;
+
+    var statistics = new TetrisStatistics
+    {
+        PlayerPoints = playerPoints,
+        Turn = turn
+    };
+}
+</code></pre>
+<p>Then we send the statistics object to VISAB.</p>
+<pre><code class="lang-csharp">private async void SendStatistics() 
+{
+    var statistics = ExtractStatistics(...);
+
+    // Assume that the class of this method has a member IVISABSession session.
+    // If this is not an asynchronous method, we have to use block by using .Result instead again.
+    ApiResponse&lt;string&gt; response = await session.SendStatisticsAsync(statistics);
+    if (!response.IsSuccess)
+        Debug.Log(response.ErrorMessage);
+}
+</code></pre>
+<h2 id="roundbasedsession">RoundBasedSession</h2>
+<p>If we are using the <code>RoundBasedSession</code> wrapper class, we can simply</p>
+<pre><code class="lang-csharp">await RoundBasedSession.SendStatisticsAsync(statistics);
+</code></pre>
+<h2 id="loopbasedsession">LoopBasedSession</h2>
+<p>In real-time based games, we likely want to send statistics in time intervals.
+To achieve this without much effort, we can use <code>LoopBasedSession.StartStatisticsLoopAsync</code>.</p>
+<p><code>StartStatisticsLoopAsync</code> expects a <code>Func&lt;IStatistics&gt;</code> using which the statistics object is generated. The function which we will encapsulate could look like this.</p>
+<pre><code class="lang-csharp">public class PlayerStatistics
+{
+    public int Kills { get; set; }
+
+    public int Deaths { get; set; }
+}
+
+public class ShooterStatistics : IStatistics
+{
+    public IDictionary&lt;string, PlayerStatistics&gt; PlayerStatistics { get; set; }
+}
+
+private ShooterStatistics StatisticsFunc(IList&lt;Player&gt; players)
+{
+    var playerStatistics = new Dictionary&lt;string, PlayerStatistics&gt;();
+    foreach (var player in players) 
+    {
+        playerStatistics[player.Name] = new PlayerStatistics { 
+            Kills = player.Kills, 
+            Deaths = player.Deaths 
+        };
+    }
+
+    return new ShooterStatistics { PlayerStatistics = playerStatistics };
+}
+</code></pre>
+<p><code>StartStatisticsLoopAsync</code> also expects</p>
+<ul>
+<li>A <code>Func&lt;bool&gt;</code> that is evaluated to check if statistics should be extracted and sent</li>
+<li>The interval in which statistics should be sent in miliseconds</li>
+<li>A <code>CancellationToken</code> instance, that is evaluted to check if the inifinite loop of sending statistics should be stopped.</li>
+</ul>
+<p>Combining this with the <code>StatisticsFunc</code> we created already, we can start the statistics loop like this.</p>
+<pre><code class="lang-csharp">private void StartStatisticsLoop() 
+{
+    // Assume the class of our method has a member CancellationTokenSource cts.
+    cts = new CancellationTokenSource();
+    Func&lt;bool&gt; shouldSend = () =&gt; true;
+
+    // StartStatisticsLoopAsync is an async void method, which is why we cannot await it, use .Result, or .Wait().
+    LoopBasedSession.StartStatisticsLoopAsync(StatisticsFunc, shouldSend, 100, cts.Token);
+}
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/VISAB-ORG/Documentation/blob/master/docfx_project/code_samples/visabconnector/statistics.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

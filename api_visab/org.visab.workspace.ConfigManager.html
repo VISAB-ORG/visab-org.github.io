@@ -12,7 +12,7 @@
    ">
     <meta name="generator" content="docfx 2.58.0.0">
     
-    <link rel="shortcut icon" href="../VISAB_Logo_white.ico">
+    <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../VISAB_Logo_white.svg" alt="">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -192,6 +192,31 @@
   </table>
   
   
+  <a id="org_visab_workspace_ConfigManager_getCssPath_" data-uid="org.visab.workspace.ConfigManager.getCssPath*"></a>
+  <h4 id="org_visab_workspace_ConfigManager_getCssPath__" data-uid="org.visab.workspace.ConfigManager.getCssPath()">getCssPath()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String getCssPath()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">java.lang.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="org_visab_workspace_ConfigManager_getMapping_" data-uid="org.visab.workspace.ConfigManager.getMapping*"></a>
   <h4 id="org_visab_workspace_ConfigManager_getMapping_java_lang_String_" data-uid="org.visab.workspace.ConfigManager.getMapping(java.lang.String)">getMapping(String game)</h4>
   <div class="markdown level1 summary"><p>Gets the mapping for a given game.</p>
@@ -316,6 +341,33 @@
   </table>
   
   
+  <a id="org_visab_workspace_ConfigManager_isDarkModeOn_" data-uid="org.visab.workspace.ConfigManager.isDarkModeOn*"></a>
+  <h4 id="org_visab_workspace_ConfigManager_isDarkModeOn__" data-uid="org.visab.workspace.ConfigManager.isDarkModeOn()">isDarkModeOn()</h4>
+  <div class="markdown level1 summary"><p>Syntactic sugar to wrap the access on the settings object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public boolean isDarkModeOn()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td><p>the dark mode on value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="org_visab_workspace_ConfigManager_isGameAllowed_" data-uid="org.visab.workspace.ConfigManager.isGameAllowed*"></a>
   <h4 id="org_visab_workspace_ConfigManager_isGameAllowed_java_lang_String_" data-uid="org.visab.workspace.ConfigManager.isGameAllowed(java.lang.String)">isGameAllowed(String game)</h4>
   <div class="markdown level1 summary"><p>Whether the given game is allowed by VISAB.</p>
@@ -406,6 +458,35 @@
         <td><span class="xref">java.util.ArrayList</span>&lt;<span class="xref">java.lang.String</span>&gt;</td>
         <td><span class="parametername">games</span></td>
         <td><p>The new allowed games.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="org_visab_workspace_ConfigManager_updateDarkMode_" data-uid="org.visab.workspace.ConfigManager.updateDarkMode*"></a>
+  <h4 id="org_visab_workspace_ConfigManager_updateDarkMode_boolean_" data-uid="org.visab.workspace.ConfigManager.updateDarkMode(boolean)">updateDarkMode(boolean darkModeOn)</h4>
+  <div class="markdown level1 summary"><p>Syntactic sugar to wrap the access on the settings object that also provides detailed logging information according to the changes made.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void updateDarkMode(boolean darkModeOn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td><span class="parametername">darkModeOn</span></td>
+        <td><p>the value denoting if dark mode shall be on.</p>
 </td>
       </tr>
     </tbody>

@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>GUI usage </title>
+    <title>Creating POCOs and POJOs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="GUI usage ">
+    <meta name="title" content="Creating POCOs and POJOs ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -67,8 +67,69 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="gui-usage">GUI usage</h1>
+<h1 id="creating-pocos-and-pojos">Creating POCOs and POJOs</h1>
 
+<p>All information sent from games to VISAB is using JSON as its data format.<br>
+To enable the respective game to have automated serialization from C# into JSON,<br>
+we need POCOS that represent the information to be sent to VISAB.</p>
+<p>To correctly deserialize this information, VISAB needs <strong>equivalent</strong> POJOS within its own code.<br>
+By <strong>equivalent</strong> it is meant, that these classes need to resemble the exact same attributes and names for them.<br>
+Otherwise deserialization on the VISAB file will fail because of unknown attributes.</p>
+<p>It is also possible to nest further classes in the POCOS / POJOS, they only need their respective implementation.</p>
+<h3 id="code-samples-for-fictive-implementation-of-tetris-unity-game---pocos">Code Samples for Fictive Implementation of Tetris (Unity Game - POCOs)</h3>
+<h5 id="tetrismetainformation-poco">TetrisMetaInformation POCO</h5>
+<pre><code class="lang-csharp">using System.Collections.Generic;
+
+namespace VISABConnector.Example.Tetris
+{
+    public class TetrisMetaInformation : IMetaInformation
+    {
+        public string Game =&gt; &quot;Tetris&quot;;
+
+        public IList&lt;string&gt; PlayerNames { get; set; }
+
+        public int PlayerCount =&gt; PlayerNames.Count;
+    }
+}
+</code></pre>
+<h5 id="tetrisstatistics-poco">TetrisStatistics POCO</h5>
+<pre><code class="lang-csharp">using System.Collections.Generic;
+
+namespace VISABConnector.Example.Tetris
+{
+    public class TetrisStatistics : IStatistics
+    {
+        public int Turn { get; set; }
+
+        public IDictionary&lt;string, int&gt; PlayerPoints { get; set; }
+    }
+}
+</code></pre>
+<h5 id="player-poco">Player POCO</h5>
+<pre><code class="lang-csharp">namespace VISABConnector.Example.Tetris
+{
+    public class Player
+    {
+        public string Name { get; set; }
+
+        public int Score { get; set; }
+
+        public TetrisBoard Board { get; set; }
+    }
+}
+</code></pre>
+<h5 id="tetrisboard-poco">TetrisBoard POCO</h5>
+<pre><code class="lang-csharp">using UnityEngine;
+
+namespace VISABConnector.Example.Tetris
+{
+    public class TetrisBoard
+    {
+        public Color[,] Board { get; } = new Color[20, 10];
+    }
+}
+</code></pre>
+<h3 id="code-samples-for-fictive-implementation-of-tetris-game-visab---pojos">Code Samples for Fictive Implementation of Tetris game (VISAB - POJOs)</h3>
 </article>
           </div>
           
@@ -77,7 +138,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/VISAB-ORG/Documentation/blob/master/docfx_project/getting_started/user/usage.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/VISAB-ORG/Documentation/blob/master/docfx_project/code_samples/visab/pojos_pocos.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

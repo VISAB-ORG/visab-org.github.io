@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Listener </title>
+    <title>Creating a SessionListener in VISAB </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Listener ">
+    <meta name="title" content="Creating a SessionListener in VISAB ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -67,9 +67,119 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="listener">Listener</h1>
+<h1 id="creating-a-sessionlistener-in-visab">Creating a SessionListener in VISAB</h1>
 
-<p>This is just a sample page.</p>
+<p>Due to the fact, that VISABs communication interface is realized with an<br>
+event-based HTTP API, the transmission sessions opened by any game need their<br>
+very own <code>SessionListener</code> within VISAB that handles the information.</p>
+<p><em>To understand the inheritance, please have a look into the <a href="https://visab-org.github.io/api_visab/index.html">code documentation of VISAB</a>.</em></p>
+<h3 id="code-sample-for-fictive-implementation-of-tetris">Code Sample for Fictive Implementation of Tetris</h3>
+<pre><code class="lang-java">package org.visab.processing.tetris;
+
+/**
+ * The TetrisListener class, that is responsible for listening to
+ * information sent by the Tetris game and creating files with that
+ * information.
+ */
+public class TetrisListener
+        extends ReplaySessionListenerBase&lt;TetrisMetaInformation, TetrisStatistics, TetrisImages&gt;
+        implements ILiveViewable&lt;TetrisStatistics&gt; {
+
+    private TetrisFile file;
+
+    private List&lt;ILiveViewModel&lt;TetrisStatistics&gt;&gt; viewModels = new ArrayList&lt;&gt;();
+
+    public TetrisListener(UUID sessionId) {
+        super(GameName.TETRIS, sessionId);
+    }
+
+    @Override
+    public void addViewModel(ILiveViewModel&lt;TetrisStatistics&gt; viewModel) {
+        viewModels.add(viewModel);
+
+        // If the session isnt active anymore, instantly notify that it was closed.
+        if (!isActive)
+            notifySessionClosed();
+    }
+
+    @Override
+    public List&lt;TetrisStatistics&gt; getStatistics() {
+        return file.getStatistics();
+    }
+
+    @Override
+    public void notifySessionClosed() {
+        for (var viewModel : viewModels)
+            UiHelper.inovkeOnUiThread(() -&gt; viewModel.onSessionClosed());
+
+        viewModels.clear();
+    }
+
+    @Override
+    public void notifyStatisticsAdded(TetrisStatistics addedStatistics) {
+        for (var viewModel : viewModels)
+            UiHelper.inovkeOnUiThread(() -&gt; viewModel.onStatisticsAdded(addedStatistics));
+    }
+
+    @Override
+    public synchronized void onSessionClosed() {
+        if (file.getStatistics().size() &gt; 0) {
+            var lastStatistics = file.getStatistics().get(file.getStatistics().size() - 1);
+
+            int mostPoints = 0;
+            var playerName = &quot;&quot;;
+            for (var player : lastStatistics.getPlayers()) {
+                if (player.getStatistics().getPoints &gt; mostPoints) {
+                    playerName = player.getName();
+                    mostPoints = player.getStatistics().getPoints();
+                }
+            }
+            file.setWinner(playerName);
+        }
+
+        manager.saveFile(file, LocalDateTime.now().format(DateTimeFormatter.ofPattern(&quot;yyyy-MM-dd_HH-mm-ss&quot;)),
+                sessionId);
+
+        notifySessionClosed();
+    }
+
+    @Override
+    public void onSessionStarted(TetrisMetaInformation metaInformation) {
+        file = new TetrisFile();
+        file.setGameSpeed(metaInformation.getGameSpeed());
+        file.setMapRectangle(metaInformation.getMapRectangle());
+        file.setPlayerCount(metaInformation.getPlayerCount());
+        file.getPlayerInformation().putAll(metaInformation.getPlayerInformation());
+        file.getPlayerColors().putAll(metaInformation.getPlayerColors());
+    }
+
+    @Override
+    public synchronized void processImage(TetrisImages mapImage) {
+        writeLog(Level.DEBUG, &quot;Received images&quot;);
+        file.setImages(mapImage);
+    }
+
+    @Override
+    public synchronized void processStatistics(TetrisStatistics statistics) {
+        file.getStatistics().add(statistics);
+
+        writeLog(Level.DEBUG, NiceString.make(&quot;has {0} entries now&quot;, file.getStatistics().size()));
+
+        notifyStatisticsAdded(statistics);
+    }
+
+    @Override
+    public IVISABFile getCurrentFile() {
+        return file;
+    }
+
+    @Override
+    public void removeViewModel(ILiveViewModel&lt;TetrisStatistics&gt; viewModel) {
+        viewModels.remove(viewModel);
+    }
+}
+
+</code></pre>
 </article>
           </div>
           

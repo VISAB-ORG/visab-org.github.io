@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Visualizer Views </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Visualizer Views ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="visualizer-views">Visualizer Views</h1>
+
+<p>The core competence of VISAB is to illustrate agent behaviour in games. Consequently VISAB needs to have fitting views implemented that
+provide useful information extracted from the game data and show them in a clear by allowing multiple different view points.</p>
+<p>This page describes the underlying visualizer concepts and gives hints about the current set of implemented visualizers in VISAB.<br>
+If you want to have a deeper look on how to control the UI from user perspective, please have a look at the <a href="https://visab-org.github.io/getting_started/usage.html">GUI Usage Article</a>.</p>
+<p>VISAB is designed in a fashion, where any type of game may have their own set of visualizers (each visualizer adresses a different view point) <br>
+that may be useful to illustrate certain aspects of the game. However, VISAB in its current state, implements three different types of visualizers<br>
+for both <strong>Settlers of Catan</strong> and the <strong>CBRShooter</strong> which can be seen as a recommended set that should fit for any game you might want to integrate.</p>
+<p>Due to the fact that each visualizing view is very custom regarding the respective game, there are no code samples provided. <br>
+If you want to learn about the practical implementations, please have a direct look into the <a href="https://github.com/VISAB-ORG/VISAB">GitHub Repository</a>.</p>
+<p>Please note that when implementing Views, the MVVM pattern has to be followed, so that any game will<br>
+have at least two classes that realize the respective view, e.g.:</p>
+<ul>
+<li>AnyGameReplay<strong>View</strong>: Is only responsible for how the UI elements are displayed in the UI</li>
+<li>AnyGameReplay<strong>ViewModel</strong>: Is responsible for data access across the underlying model and provides it for the view class</li>
+</ul>
+<p>Furthermore, the related .fxml has to have the exact same name as the as the view, e.g.: <code>AnyGameReplayView.fxml</code> and also must be <br>
+located under the exact same package pathing within src/main/resources to be automatically locatable by the <code>FluentViewLoader</code> of JavaFX/mvvmfx.</p>
+<h2 id="meta-file-view">Meta (File) View</h2>
+<p>The meta view is used to provide static information of the VISAB file which are valid by the end of it.<br>
+For example it may contain general information about items in the game, the winner of the whole session, etc.<br></p>
+<p><em>This view is very basic and features no interactiveness and should be rather simple to implement.</em></p>
+<p><img src="SettlersMeta.PNG" alt="MetaView Example"></p>
+<h2 id="statistics-view">Statistics View</h2>
+<p>The statistics view aims at providing cumulated information for each player that is well comparable. <br>
+For example, it is highlighting the plan usage for each player very in separate charts.</p>
+<p><em>This view has some interactive options such as showing the comparison between some players for a specific measure.<br>
+Here you need to be careful about how to fill the respective graphs with data, because JavaFX sometimes shows strange behaviour<br>
+if the refilling of graph data is not done smoothly.</em></p>
+<p><img src="SettlersStatistics.PNG" alt="StatisticsView Example"></p>
+<h2 id="replay-view">Replay View</h2>
+<p>The replay view fills another gap, the statistics view still leaves open.<br>
+It may be interesting to replay a match or any specific moment of it as often as you like to get a better insight <br>
+of what circumstances in the game may have lead to specific decisions of the AI bots competing against each other.</p>
+<p><em>The replay view is the most complex view at the current state of VISAB. Due to this fact, there are some things to watch out for while implementing:<p>
+<ul>
+<li>The underlying map image is correctly scaled in terms of width and height</li>
+<li>The game objects need to be positioned correctly by translating their game coordinates to the JavaFX GUI boundaries of the map image</li>
+<li>Be careful on how and when to set the game objects to the scene graph in JavaFX due to performance issues.
+<ul>
+<li>For example completely replacing all of them at each turn might take too long and it will cause the slider to behave strange</li>
+</ul>
+</li>
+<li>Due to its capability of going <strong>forward</strong> and <strong>backward</strong> in the game data, visualization of all map objects has to be handled in a reasonable way
+<ul>
+<li>For example moving the turn slider back from 60 to 40 should correctly hide objects that were not there in turn 40 of course
+</li></ul></li></ul></em>
+
+
+
+<p><img src="SettlersReplay.PNG" alt="ReplayView Example"></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/VISAB-ORG/Documentation/blob/master/docfx_project/documentation/visualizer/visualizer.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

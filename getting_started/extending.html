@@ -5,12 +5,12 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Extending VISAB for a new game </title>
+    <title>Extending VISAB for a New Game </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Extending VISAB for a new game ">
+    <meta name="title" content="Extending VISAB for a New Game ">
     <meta name="generator" content="docfx 2.58.0.0">
     
-    <link rel="shortcut icon" href="../VISAB_Logo_white.ico">
+    <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -35,7 +35,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../VISAB_Logo_white.svg" alt="">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -67,29 +67,24 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="extending-visab-for-a-new-game">Extending VISAB for a new game</h1>
+<h1 id="extending-visab-for-a-new-game">Extending VISAB for a New Game</h1>
 
-<p>The underlying code base of VISAB is designed to be easily extensible.<br>
-This article will guide you through all relevant changes you need to perform, <br>
-if you desire to make VISAB capable of supporting a new game.<br>
-As the below order already indicates, we advise you to start with the modifications<br>
-in your game, because then you will have a fixed basis, of what shall be processed within VISAB.</p>
-<h3 id="short-overview-of-actions-to-be-performed">Short overview of actions to be performed</h3>
+<p>The underlying code base of VISAB is designed to be easily extensible. This article will guide you through <br>
+all relevant changes you need to perform, if you desire to make VISAB capable of supporting a new game.<br>
+As the below order already indicates, we advise you to start with the modifications in your game, because <br>
+then you will have a fixed basis, of what shall be processed within VISAB.</p>
+<h3 id="step-by-step-guidance">Step by Step Guidance</h3>
 <ol>
-	<li>Deploy the <code>VISABConnector</code> in your (Unity-) game</li>
-	<li>Create a statistics POJO in the game.</li>
-	<li>Implement a <code>VISABHelper</code> in your (Unity-) game</li>
-	<li>[OPTIONAL] Use the <code>VISABConnector.Unity</code> to perform snapshots</li>
-	<li>Create a new <code>SessionListener</code> in VISAB</li>
-	<li>Create a statistics POJO in VISAB.</li>
-	<li>Create a <code>VISABFile</code> in VISAB</li>
-	<li>Implement desired visualizers for your (Unity-) game</li>
-	<ul>
-		<li>Create a Meta-View</li>
-		<li>Create a Statistics-View</li>
-		<li>Create a Replay View</li>
-		<li>Create any other View you find helpful</li>
-	</ul>
+<li><a href="https://visab-org.github.io/getting_started/setup.html">Setup your environment</a></li>
+<li><a href="https://github.com/VISAB-ORG/VISABConnector">Deploy the <code>VISABConnector</code> in your (Unity-) game</a></li>
+<li><a href="https://visab-org.github.io/code_samples/visab/pojos_pocos.html">Create necessary POCOs in the game</a></li>
+<li><a href="https://visab-org.github.io/code_samples/old/connector.html">Implement a <code>VISABHelper</code> in your (Unity-) game to extract data and send it with the <code>VISABConnector</code></a></li>
+<li><a href="https://visab-org.github.io/code_samples/visabconnector_unity/images.html"><strong>[OPTIONAL]</strong> Use the <code>VISABConnector.Unity</code> to perform snapshots</a></li>
+<li><a href="https://visab-org.github.io/code_samples/visab/listener.html">Create a new <code>SessionListener</code> in VISAB</a></li>
+<li><a href="https://visab-org.github.io/code_samples/visab/pojos_pocos.html">Create necessary POJOs in VISAB</a></li>
+<li><a href="https://visab-org.github.io/code_samples/visab/file.html">Create a <code>VISABFile</code> in VISAB</a></li>
+<li><a href="https://visab-org.github.io/documentation/visualizer/index.html">Implement desired visualizers (at least one) for your (Unity-) game</a></li>
+<li><a href="https://visab-org.github.io/code_samples/visab/class_mapping.html">Add respective classes to the <code>classMapping.json</code></a></li>
 </ol>
 </article>
           </div>

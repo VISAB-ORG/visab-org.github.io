@@ -4591,6 +4591,18 @@ references:
   fullName: org.visab.workspace.ConfigManager.getAllowedGames
   nameWithType: ConfigManager.getAllowedGames
   package: org.visab.workspace
+- uid: org.visab.workspace.ConfigManager.getCssPath()
+  name: getCssPath()
+  href: api_visab/org.visab.workspace.ConfigManager.html#org_visab_workspace_ConfigManager_getCssPath__
+  fullName: org.visab.workspace.ConfigManager.getCssPath()
+  nameWithType: ConfigManager.getCssPath()
+- uid: org.visab.workspace.ConfigManager.getCssPath*
+  name: getCssPath
+  href: api_visab/org.visab.workspace.ConfigManager.html#org_visab_workspace_ConfigManager_getCssPath_
+  isSpec: "True"
+  fullName: org.visab.workspace.ConfigManager.getCssPath
+  nameWithType: ConfigManager.getCssPath
+  package: org.visab.workspace
 - uid: org.visab.workspace.ConfigManager.getMapping(java.lang.String)
   name: getMapping(String game)
   href: api_visab/org.visab.workspace.ConfigManager.html#org_visab_workspace_ConfigManager_getMapping_java_lang_String_
@@ -4639,6 +4651,18 @@ references:
   fullName: org.visab.workspace.ConfigManager.getWebApiPort
   nameWithType: ConfigManager.getWebApiPort
   package: org.visab.workspace
+- uid: org.visab.workspace.ConfigManager.isDarkModeOn()
+  name: isDarkModeOn()
+  href: api_visab/org.visab.workspace.ConfigManager.html#org_visab_workspace_ConfigManager_isDarkModeOn__
+  fullName: org.visab.workspace.ConfigManager.isDarkModeOn()
+  nameWithType: ConfigManager.isDarkModeOn()
+- uid: org.visab.workspace.ConfigManager.isDarkModeOn*
+  name: isDarkModeOn
+  href: api_visab/org.visab.workspace.ConfigManager.html#org_visab_workspace_ConfigManager_isDarkModeOn_
+  isSpec: "True"
+  fullName: org.visab.workspace.ConfigManager.isDarkModeOn
+  nameWithType: ConfigManager.isDarkModeOn
+  package: org.visab.workspace
 - uid: org.visab.workspace.ConfigManager.isGameAllowed(java.lang.String)
   name: isGameAllowed(String game)
   href: api_visab/org.visab.workspace.ConfigManager.html#org_visab_workspace_ConfigManager_isGameAllowed_java_lang_String_
@@ -4686,6 +4710,18 @@ references:
   isSpec: "True"
   fullName: org.visab.workspace.ConfigManager.updateAllowedGames
   nameWithType: ConfigManager.updateAllowedGames
+  package: org.visab.workspace
+- uid: org.visab.workspace.ConfigManager.updateDarkMode(boolean)
+  name: updateDarkMode(boolean darkModeOn)
+  href: api_visab/org.visab.workspace.ConfigManager.html#org_visab_workspace_ConfigManager_updateDarkMode_boolean_
+  fullName: org.visab.workspace.ConfigManager.updateDarkMode(boolean darkModeOn)
+  nameWithType: ConfigManager.updateDarkMode(boolean darkModeOn)
+- uid: org.visab.workspace.ConfigManager.updateDarkMode*
+  name: updateDarkMode
+  href: api_visab/org.visab.workspace.ConfigManager.html#org_visab_workspace_ConfigManager_updateDarkMode_
+  isSpec: "True"
+  fullName: org.visab.workspace.ConfigManager.updateDarkMode
+  nameWithType: ConfigManager.updateDarkMode
   package: org.visab.workspace
 - uid: org.visab.workspace.ConfigManager.updateSessionTimeout(java.util.HashMap<java.lang.String,java.lang.Integer>)
   name: updateSessionTimeout(HashMap<String,Integer> timeouts)
@@ -5513,6 +5549,18 @@ references:
   fullName: org.visab.workspace.UserSettings.getWebApiPort
   nameWithType: UserSettings.getWebApiPort
   package: org.visab.workspace
+- uid: org.visab.workspace.UserSettings.isDarkMode()
+  name: isDarkMode()
+  href: api_visab/org.visab.workspace.UserSettings.html#org_visab_workspace_UserSettings_isDarkMode__
+  fullName: org.visab.workspace.UserSettings.isDarkMode()
+  nameWithType: UserSettings.isDarkMode()
+- uid: org.visab.workspace.UserSettings.isDarkMode*
+  name: isDarkMode
+  href: api_visab/org.visab.workspace.UserSettings.html#org_visab_workspace_UserSettings_isDarkMode_
+  isSpec: "True"
+  fullName: org.visab.workspace.UserSettings.isDarkMode
+  nameWithType: UserSettings.isDarkMode
+  package: org.visab.workspace
 - uid: org.visab.workspace.UserSettings.setAllowedGames(java.util.ArrayList<java.lang.String>)
   name: setAllowedGames(ArrayList<String> games)
   href: api_visab/org.visab.workspace.UserSettings.html#org_visab_workspace_UserSettings_setAllowedGames_java_util_ArrayList_java_lang_String__
@@ -5524,6 +5572,18 @@ references:
   isSpec: "True"
   fullName: org.visab.workspace.UserSettings.setAllowedGames
   nameWithType: UserSettings.setAllowedGames
+  package: org.visab.workspace
+- uid: org.visab.workspace.UserSettings.setDarkMode(boolean)
+  name: setDarkMode(boolean darkMode)
+  href: api_visab/org.visab.workspace.UserSettings.html#org_visab_workspace_UserSettings_setDarkMode_boolean_
+  fullName: org.visab.workspace.UserSettings.setDarkMode(boolean darkMode)
+  nameWithType: UserSettings.setDarkMode(boolean darkMode)
+- uid: org.visab.workspace.UserSettings.setDarkMode*
+  name: setDarkMode
+  href: api_visab/org.visab.workspace.UserSettings.html#org_visab_workspace_UserSettings_setDarkMode_
+  isSpec: "True"
+  fullName: org.visab.workspace.UserSettings.setDarkMode
+  nameWithType: UserSettings.setDarkMode
   package: org.visab.workspace
 - uid: org.visab.workspace.UserSettings.setSessionTimeout(java.util.HashMap<java.lang.String,java.lang.Integer>)
   name: setSessionTimeout(HashMap<String,Integer> timeout)
@@ -6402,45 +6462,6 @@ references:
   commentId: T:VISABConnector.Unity.ImageCreator
   fullName: VISABConnector.Unity.ImageCreator
   nameWithType: ImageCreator
-- uid: VISABConnector.Unity.ImageCreator.CameraSetup(VISABConnector.Unity.CameraConfiguration,System.String,UnityEngine.CameraClearFlags)
-  name: CameraSetup(CameraConfiguration, String, CameraClearFlags)
-  href: api_visabconnector/VISABConnector.Unity.ImageCreator.html#VISABConnector_Unity_ImageCreator_CameraSetup_VISABConnector_Unity_CameraConfiguration_System_String_UnityEngine_CameraClearFlags_
-  commentId: M:VISABConnector.Unity.ImageCreator.CameraSetup(VISABConnector.Unity.CameraConfiguration,System.String,UnityEngine.CameraClearFlags)
-  fullName: VISABConnector.Unity.ImageCreator.CameraSetup(VISABConnector.Unity.CameraConfiguration, System.String, UnityEngine.CameraClearFlags)
-  nameWithType: ImageCreator.CameraSetup(CameraConfiguration, String, CameraClearFlags)
-- uid: VISABConnector.Unity.ImageCreator.CameraSetup*
-  name: CameraSetup
-  href: api_visabconnector/VISABConnector.Unity.ImageCreator.html#VISABConnector_Unity_ImageCreator_CameraSetup_
-  commentId: Overload:VISABConnector.Unity.ImageCreator.CameraSetup
-  isSpec: "True"
-  fullName: VISABConnector.Unity.ImageCreator.CameraSetup
-  nameWithType: ImageCreator.CameraSetup
-- uid: VISABConnector.Unity.ImageCreator.ChangeLayer(UnityEngine.GameObject,VISABConnector.Unity.SnapshotConfiguration,System.Int32)
-  name: ChangeLayer(GameObject, SnapshotConfiguration, Int32)
-  href: api_visabconnector/VISABConnector.Unity.ImageCreator.html#VISABConnector_Unity_ImageCreator_ChangeLayer_UnityEngine_GameObject_VISABConnector_Unity_SnapshotConfiguration_System_Int32_
-  commentId: M:VISABConnector.Unity.ImageCreator.ChangeLayer(UnityEngine.GameObject,VISABConnector.Unity.SnapshotConfiguration,System.Int32)
-  fullName: VISABConnector.Unity.ImageCreator.ChangeLayer(UnityEngine.GameObject, VISABConnector.Unity.SnapshotConfiguration, System.Int32)
-  nameWithType: ImageCreator.ChangeLayer(GameObject, SnapshotConfiguration, Int32)
-- uid: VISABConnector.Unity.ImageCreator.ChangeLayer*
-  name: ChangeLayer
-  href: api_visabconnector/VISABConnector.Unity.ImageCreator.html#VISABConnector_Unity_ImageCreator_ChangeLayer_
-  commentId: Overload:VISABConnector.Unity.ImageCreator.ChangeLayer
-  isSpec: "True"
-  fullName: VISABConnector.Unity.ImageCreator.ChangeLayer
-  nameWithType: ImageCreator.ChangeLayer
-- uid: VISABConnector.Unity.ImageCreator.GameObjectSetup(VISABConnector.Unity.SnapshotConfiguration)
-  name: GameObjectSetup(SnapshotConfiguration)
-  href: api_visabconnector/VISABConnector.Unity.ImageCreator.html#VISABConnector_Unity_ImageCreator_GameObjectSetup_VISABConnector_Unity_SnapshotConfiguration_
-  commentId: M:VISABConnector.Unity.ImageCreator.GameObjectSetup(VISABConnector.Unity.SnapshotConfiguration)
-  fullName: VISABConnector.Unity.ImageCreator.GameObjectSetup(VISABConnector.Unity.SnapshotConfiguration)
-  nameWithType: ImageCreator.GameObjectSetup(SnapshotConfiguration)
-- uid: VISABConnector.Unity.ImageCreator.GameObjectSetup*
-  name: GameObjectSetup
-  href: api_visabconnector/VISABConnector.Unity.ImageCreator.html#VISABConnector_Unity_ImageCreator_GameObjectSetup_
-  commentId: Overload:VISABConnector.Unity.ImageCreator.GameObjectSetup
-  isSpec: "True"
-  fullName: VISABConnector.Unity.ImageCreator.GameObjectSetup
-  nameWithType: ImageCreator.GameObjectSetup
 - uid: VISABConnector.Unity.ImageCreator.InstantiateGameObject(VISABConnector.Unity.InstantiationConfiguration)
   name: InstantiateGameObject(InstantiationConfiguration)
   href: api_visabconnector/VISABConnector.Unity.ImageCreator.html#VISABConnector_Unity_ImageCreator_InstantiateGameObject_VISABConnector_Unity_InstantiationConfiguration_
@@ -6566,19 +6587,6 @@ references:
   commentId: T:VISABConnector.Unity.SnapshotConfiguration
   fullName: VISABConnector.Unity.SnapshotConfiguration
   nameWithType: SnapshotConfiguration
-- uid: VISABConnector.Unity.SnapshotConfiguration.#ctor
-  name: SnapshotConfiguration()
-  href: api_visabconnector/VISABConnector.Unity.SnapshotConfiguration.html#VISABConnector_Unity_SnapshotConfiguration__ctor
-  commentId: M:VISABConnector.Unity.SnapshotConfiguration.#ctor
-  fullName: VISABConnector.Unity.SnapshotConfiguration.SnapshotConfiguration()
-  nameWithType: SnapshotConfiguration.SnapshotConfiguration()
-- uid: VISABConnector.Unity.SnapshotConfiguration.#ctor*
-  name: SnapshotConfiguration
-  href: api_visabconnector/VISABConnector.Unity.SnapshotConfiguration.html#VISABConnector_Unity_SnapshotConfiguration__ctor_
-  commentId: Overload:VISABConnector.Unity.SnapshotConfiguration.#ctor
-  isSpec: "True"
-  fullName: VISABConnector.Unity.SnapshotConfiguration.SnapshotConfiguration
-  nameWithType: SnapshotConfiguration.SnapshotConfiguration
 - uid: VISABConnector.Unity.SnapshotConfiguration.CameraConfiguration
   name: CameraConfiguration
   href: api_visabconnector/VISABConnector.Unity.SnapshotConfiguration.html#VISABConnector_Unity_SnapshotConfiguration_CameraConfiguration
@@ -6903,3 +6911,6 @@ references:
   isSpec: "True"
   fullName: VISABConnector.VISABApi.SessionIndependantRequestHandler
   nameWithType: VISABApi.SessionIndependantRequestHandler
+- uid: visabconnector_unity.images
+  name: Extracting game images
+  href: code_samples/visabconnector_unity/images.html

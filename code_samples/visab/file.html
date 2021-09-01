@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Environment setup </title>
+    <title>Creating a Game File in VISAB </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Environment setup ">
+    <meta name="title" content="Creating a Game File in VISAB ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -67,9 +67,98 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="environment-setup">Environment setup</h1>
+<h1 id="creating-a-game-file-in-visab">Creating a Game File in VISAB</h1>
 
-<p>Do stuff and more stuff</p>
+<p>Information sent by the respective game will be deserialized from JSON and written into<br>
+a file, so that it can be visualized afterwards. To handle this content appropriately these<br>
+game-specific files need their very own implementation in VISAB.</p>
+<p><em>To understand the inheritance, please have a look into the <a href="https://visab-org.github.io/api_visab/index.html">code documentation of VISAB</a>.</em></p>
+<h3 id="code-sample-for-fictive-implementation-of-tetris">Code Sample for Fictive Implementation of Tetris</h3>
+<pre><code class="lang-java">package org.visab.globalmodel.Tetris;
+
+/**
+ * Represents the Tetris VISAB file containing that contains all information necesarry
+ * for visualizing. This class is serialized to json and written to .visab
+ * files.
+ */
+public class TetrisFile extends BasicVISABFile {
+
+    private List&lt;TetrisStatistics&gt; statistics = new ArrayList&lt;&gt;();
+    private int playerCount;
+    private Rectangle mapRectangle;
+    private Map&lt;String, String&gt; playerInformation = new HashMap&lt;&gt;();
+    private float gameSpeed;
+    private Map&lt;String, String&gt; playerColors = new HashMap&lt;&gt;();
+    private TetrisImages images;
+    private String winner;
+
+    public TetrisFile() {
+        super(GameName.TETRIS, &quot;2.0&quot;);
+    }
+
+    public String getWinner() {
+        return winner;
+    }
+
+    public void setWinner(String winner) {
+        this.winner = winner;
+    }
+
+    public TetrisImages getImages() {
+        return images;
+    }
+
+    public void setImages(TetrisImages images) {
+        this.images = images;
+    }
+
+    public Map&lt;String, String&gt; getPlayerColors() {
+        return playerColors;
+    }
+
+    public void setPlayerColors(Map&lt;String, String&gt; playerColors) {
+        this.playerColors = playerColors;
+    }
+
+    public List&lt;TetrisStatistics&gt; getStatistics() {
+        return statistics;
+    }
+
+    public int getPlayerCount() {
+        return this.playerCount;
+    }
+
+    public void setPlayerCount(int playerCount) {
+        this.playerCount = playerCount;
+    }
+
+    public Rectangle getMapRectangle() {
+        return this.mapRectangle;
+    }
+
+    public void setMapRectangle(Rectangle mapSize) {
+        this.mapRectangle = mapSize;
+    }
+
+    public Map&lt;String, String&gt; getPlayerInformation() {
+        return this.playerInformation;
+    }
+
+    public float getGameSpeed() {
+        return this.gameSpeed;
+    }
+
+    public void setGameSpeed(float gameSpeed) {
+        this.gameSpeed = gameSpeed;
+    }
+
+    public List&lt;String&gt; getPlayerNames() {
+        return new ArrayList&lt;&gt;(playerInformation.keySet());
+    }
+
+}
+
+</code></pre>
 </article>
           </div>
           
@@ -78,7 +167,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/VISAB-ORG/Documentation/blob/master/docfx_project/getting_started/dev/setup.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/VISAB-ORG/Documentation/blob/master/docfx_project/code_samples/visab/file.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

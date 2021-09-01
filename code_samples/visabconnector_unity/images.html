@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Images </title>
+    <title>Extracting game images </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Images ">
+    <meta name="title" content="Extracting game images ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -66,10 +66,61 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
-<h1 id="images">Images</h1>
+            <article class="content wrap" id="_content" data-uid="visabconnector_unity.images">
+<h1 id="extracting-game-images">Extracting game images</h1>
 
-<p>This is just a sample page.</p>
+<p>Say we need to snapshot three different kinds of blocks for our Tetris game, also the game canvas itself.</p>
+<p>First of all we have to decide if it is viable, to instantiate the desired game objects or not. Generally speaking, it makes sense to instantiate game objects outside of the game's main view, when they will spawn rather erratically. So in our case we don't know when Tetris will spawn each block and since we need the snapshots at the start of a game session, it is advisable to instantiate them rather than trying to snapshot out of the running game.</p>
+<p>The following shows how we would set up the configuration for game objects that will be instantiated. What we need for that is the path to the Prefab (template for game objects). The spawn location can be set manually and should be outside of the main camera's view.</p>
+<pre><code class="lang-csharp">private TetrisImages TakeSnapshots() 
+{
+    Func&lt;string, SnapshotConfiguration&gt; defaultInstantiate = (prefabPath) =&gt; new SnapshotConfiguration 
+    { 
+        ImageHeight = 1024, 
+        ImageWidth = 1024, 
+        InstantiationSettings = new InstantiationConfiguration 
+        { 
+            PrefabPath = prefabPath, 
+            SpawnLocation = new Vector3(100, 100, 100), 
+        }, 
+        CameraConfiguration = new CameraConfiguration 
+        { 
+            CameraOffset = 1.5f, 
+            Orthographic = false, 
+            UseAbsoluteOffset = false, 
+            CameraRotation = new Vector3(90, 0, 0) 
+        } 
+    };
+    ...
+}
+</code></pre>
+<p>Next, we need to declare which game objects we want to snapshot. The following code sample shows how you can do that by creating a dictionary. Other than that, we can also define the prefab path in the configuration function itself (under <code>PrefabPath</code>). This allows us to configure for only one game object.</p>
+<pre><code class="lang-csharp">private TetrisImages TakeSnapshots() 
+{
+    ...
+    var bricks = new Dictionary&lt;string, string&gt; 
+    { 
+        { &quot;Big Brick&quot;, &quot;Prefabs/Big_Brick&quot; }, 
+        { &quot;Small Brick&quot;, &quot;Prefabs/Small_Brick&quot; }, 
+        { &quot;L Shape&quot;, &quot;Prefabs/L_Brick&quot; }, 
+    }; 
+}
+</code></pre>
+<p>In this case we are going to snapshot three different brick shapes, which are stored in said dictionary together with their prefab paths (values).</p>
+<p>Finally we need to conduct the actual snapshotting by invoking the <code>TakeSnapshot</code> method from the <code>ImageCreator</code> class. As displaced in the code sample below, this will be done by iterating through the bricks dictionary and passing the values as parameters to the configuration function. The returned image bytes will be added to the image container that has predefined placeholders for each image type that needs to be snapshotted for the specific game. In this case the brick shapes will be stored in the OneOneOneOne byte array.</p>
+<pre><code class="lang-csharp">private TetrisImages TakeSnapshots() 
+{
+    ...
+    var images = new TetrisImages();
+    foreach (var pair in bricks) 
+    { 
+        var config = defaultInstantiate(pair.Value); 
+        var bytes = ImageCreator.TakeSnapshot(config); 
+        images.OneOneOneOne = bytes;
+    }
+}
+</code></pre>
+<h1 id="todo-either-adapt-tetrisimages-class-or-adapt-the-example">TODO: Either adapt <code>TetrisImages</code> class or adapt the example.</h1>
 </article>
           </div>
           

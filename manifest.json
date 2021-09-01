@@ -12,7 +12,7 @@
           "hash": "aLFX19ESf5lXY+/zvbUy94wXQHZgeCOJpdlgtq/b6Hc="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1089,7 +1089,7 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.workspace.ConfigManager.html",
-          "hash": "u/xN0AFEym6iRECVekCXOt5cFE5xkxee5HrUGcmuk2A="
+          "hash": "K3SogxdwnOCPYdPVgZW1hOLWtYzrvi9e/+twYF5EJdM="
         }
       },
       "is_incremental": true,
@@ -1185,7 +1185,7 @@
       "output": {
         ".html": {
           "relative_path": "api_visab/org.visab.workspace.UserSettings.html",
-          "hash": "gzBJom2oMv8euc/FD29xSAZnIxs4wQnqy2HbTkgbf1w="
+          "hash": "TPHtuPRozdpi8Kp2QSR1SQZWJtDvzwkWhdHz7r3vT/4="
         }
       },
       "is_incremental": true,
@@ -1233,7 +1233,7 @@
       "output": {
         ".html": {
           "relative_path": "api_visabconnector/VISABConnector.ApiResponse-1.html",
-          "hash": "KYHhakFe1ppW3BTBa/MuHH4kAxbGI2d4DNi7Al7qF6M="
+          "hash": "4gAiXjGdbn+MRLH0xo69Va4O+/xpHnVKfQJOr4miw6I="
         }
       },
       "is_incremental": true,
@@ -1245,7 +1245,7 @@
       "output": {
         ".html": {
           "relative_path": "api_visabconnector/VISABConnector.Default.html",
-          "hash": "0+YoSF0RS3AeRlxiTogcwmlzVB9+diMvurIjlSoX82Q="
+          "hash": "KkEEEUYXPoivgEPFxzwFSP/U7IBE6zCY+AcccGfIjoM="
         }
       },
       "is_incremental": true,
@@ -1257,7 +1257,7 @@
       "output": {
         ".html": {
           "relative_path": "api_visabconnector/VISABConnector.DontSerialize.html",
-          "hash": "MLTjZMFwwihOMuEEwiDvKg8RCW/RzUUqJUtnZze67t8="
+          "hash": "VB3Jv/P2kdhILh0KIyPAJqO7WrbPGNQRkoaS0cTaPhA="
         }
       },
       "is_incremental": true,
@@ -1269,7 +1269,7 @@
       "output": {
         ".html": {
           "relative_path": "api_visabconnector/VISABConnector.IImageContainer.html",
-          "hash": "K01jYAMvfe2UWkbKqNcvgGdxgfxAs3tW/n6cCSIXvDo="
+          "hash": "glmi89647z7jojC7pGA2mLRkU0LTznUEaF5iH/sVHoY="
         }
       },
       "is_incremental": true,
@@ -1281,7 +1281,7 @@
       "output": {
         ".html": {
           "relative_path": "api_visabconnector/VISABConnector.IMetaInformation.html",
-          "hash": "xjD2HxVCmzbjhbCPLWK4gwn3Of5eS7BVugyp6te+Zd4="
+          "hash": "hiIckR2Xk9aStoTFOMTMTbUDasiy7CxeyfyrEqKwcvE="
         }
       },
       "is_incremental": true,
@@ -1293,7 +1293,7 @@
       "output": {
         ".html": {
           "relative_path": "api_visabconnector/VISABConnector.IStatistics.html",
-          "hash": "nNXIc1ymT881JG6gofmNQCgFe2gR1EGttxtGFqaAuYA="
+          "hash": "MnP9fGU/nPuPhjfHisZq/0jG3r3VT3kIPhi6y+RrD6I="
         }
       },
       "is_incremental": true,
@@ -1305,7 +1305,7 @@
       "output": {
         ".html": {
           "relative_path": "api_visabconnector/VISABConnector.IVISABRequestHandler.html",
-          "hash": "yFxOn7fzCi/1VJnoRuPxjKeORJLtwjuhk4ll8oAn8sA="
+          "hash": "NLMrdRtII7tcxKx7SUlP5xHMoQ+ZgWRagfvQNFOPQio="
         }
       },
       "is_incremental": true,
@@ -1317,7 +1317,7 @@
       "output": {
         ".html": {
           "relative_path": "api_visabconnector/VISABConnector.IVISABSession.html",
-          "hash": "ae7VoBh1ate9cJWMnWct61JF2H5lzNdJe2iPr6PPAPo="
+          "hash": "hocv5MTgbISoLNc9LjCf/N0Ee5BlT8Hilbnbm5eHmcc="
         }
       },
       "is_incremental": true,
@@ -1329,7 +1329,7 @@
       "output": {
         ".html": {
           "relative_path": "api_visabconnector/VISABConnector.LoopBasedSession.html",
-          "hash": "vZVa1aulYFoZhno5eAvmxvakN3719D6ZFNKO7BgdmT0="
+          "hash": "GfEb9g8fL0lLFviTJZ2msY4tgRGpEtHH8AoyPWrUoNU="
         }
       },
       "is_incremental": true,
@@ -1341,7 +1341,7 @@
       "output": {
         ".html": {
           "relative_path": "api_visabconnector/VISABConnector.RoundBasedSession.html",
-          "hash": "4IWv03y8oD66Q8RjOzLOmcCPNAsksfekdpIKc+82BXk="
+          "hash": "rszwBgIR1sdSxXmmFbzCfgY7assdl6Dn1/uXAVILOFU="
         }
       },
       "is_incremental": true,
@@ -1353,7 +1353,7 @@
       "output": {
         ".html": {
           "relative_path": "api_visabconnector/VISABConnector.SessionStatus.html",
-          "hash": "bYcbVSo20n+smlCx6rL4quf0RdPxsDnyu5SoK2UjKVI="
+          "hash": "wjZBFhzWMXaw/lwnI8p8lSaYzAkYyqJt3WhUoFntrpc="
         }
       },
       "is_incremental": true,
@@ -1365,7 +1365,7 @@
       "output": {
         ".html": {
           "relative_path": "api_visabconnector/VISABConnector.Unity.CameraConfiguration.html",
-          "hash": "nTC8GbSncu+ivkG8B9EVfbXFvYtxlEJbJCt7PXtxm3c="
+          "hash": "PuYp2A7yww7h6EGbR+9zpPIy4aamMQlQPO7BdF+g/qQ="
         }
       },
       "is_incremental": true,
@@ -1377,7 +1377,7 @@
       "output": {
         ".html": {
           "relative_path": "api_visabconnector/VISABConnector.Unity.ChildConfiguration.html",
-          "hash": "A2mKoCGa9Ip+HqC5iLSI1i4KhqxTxdaSz5MT4u+Etfk="
+          "hash": "uqxjV+dvhrPgWKjUPhfIDu2hfWkbxiJ6Fgl1sG2NFPk="
         }
       },
       "is_incremental": true,
@@ -1389,7 +1389,7 @@
       "output": {
         ".html": {
           "relative_path": "api_visabconnector/VISABConnector.Unity.ImageCreator.html",
-          "hash": "mgI7pETD1BfH7XTmqBBriR7PRQG9CD6J/GskzF+ObtQ="
+          "hash": "dV/p59VQ/C1pyAfWoaUuuGLciVoLKu2tOBtmcoYSnmA="
         }
       },
       "is_incremental": true,
@@ -1401,7 +1401,7 @@
       "output": {
         ".html": {
           "relative_path": "api_visabconnector/VISABConnector.Unity.InstantiationConfiguration.html",
-          "hash": "2tEcKvxpqLQO/zoG4thopZTdvvU0+wFAr280r5keesU="
+          "hash": "TiZT4u7Pwf3yWvV/npYPv+W+QPZFR8+jMc9b44Bn3TM="
         }
       },
       "is_incremental": true,
@@ -1413,7 +1413,7 @@
       "output": {
         ".html": {
           "relative_path": "api_visabconnector/VISABConnector.Unity.SnapshotConfiguration.html",
-          "hash": "goLDzWk/e3Ps8E8lo5LK222DFWPryVjJ0FkkswyNAB4="
+          "hash": "c55FaJbCT9pKRMj6SalCTTH7nyZodsC4t9VU04R/+D8="
         }
       },
       "is_incremental": true,
@@ -1425,7 +1425,7 @@
       "output": {
         ".html": {
           "relative_path": "api_visabconnector/VISABConnector.Unity.UnityExtensionMethods.html",
-          "hash": "UQRo9DJZEAx5lMkVCugiWVGIe7oWD/xQ+BKfYahRAPY="
+          "hash": "c3gKKy6NUBjhrzR406ZQJHW+VOcEhgauKYSluMS8bYk="
         }
       },
       "is_incremental": true,
@@ -1437,7 +1437,7 @@
       "output": {
         ".html": {
           "relative_path": "api_visabconnector/VISABConnector.Unity.html",
-          "hash": "q7NbgljelD8BMtbyxP8pTI9Ii38JAFECgxrkwIDyG0o="
+          "hash": "rhoUM8R4fB56S8kZSRkbq1imz6vDyjkaNXHYIMzpmEo="
         }
       },
       "is_incremental": true,
@@ -1449,7 +1449,7 @@
       "output": {
         ".html": {
           "relative_path": "api_visabconnector/VISABConnector.VISABApi.html",
-          "hash": "ApyU1hgcvrVAhmN63/w7iuxfA/SgmZyvE1A4uXVG7UM="
+          "hash": "MZ5sDNplNclGza6FIOr08ufMp+9m1ucYXnzMCCMc1/A="
         }
       },
       "is_incremental": true,
@@ -1473,7 +1473,7 @@
       "output": {
         ".html": {
           "relative_path": "api_visabconnector/index.html",
-          "hash": "2QCsg7FzyaplOmcqpcOC7kZbCZXEaR1lsblrRkfca/k="
+          "hash": "RvunaYCOXF4z4YfigK+EJrBRC0gAPEiA9zagoQklBTE="
         }
       },
       "is_incremental": true,
@@ -1545,10 +1545,34 @@
       "output": {
         ".html": {
           "relative_path": "code_samples/toc.html",
-          "hash": "8dTYMtY4aAzKLHWFT3k3UylcYqqVsPK0RyimW8bKngQ="
+          "hash": "PpE5/oUHsaJdwf7TL6kv5jyOgVk5ClBsu7+/zqgOi6s="
         }
       },
       "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "code_samples/visab/class_mapping.md",
+      "output": {
+        ".html": {
+          "relative_path": "code_samples/visab/class_mapping.html",
+          "hash": "/T8xusQxQ00jFr682TyhdMe2/j+8C/abzXHrnIFzjvk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "code_samples/visab/file.md",
+      "output": {
+        ".html": {
+          "relative_path": "code_samples/visab/file.html",
+          "hash": "H/Qn/HMGeDfHvHO75b0ocagTVXsQHC+OxmsLDFZ2iJU="
+        }
+      },
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1557,7 +1581,31 @@
       "output": {
         ".html": {
           "relative_path": "code_samples/visab/listener.html",
-          "hash": "XfIVp7s7wswu/WKORab6wfEXj0KOo1FixmyT83ahwmo="
+          "hash": "RSRpkmaqNucPThvqCrcA7GsT1d2knkouVugUHk09GqM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "code_samples/visab/pojos_pocos.md",
+      "output": {
+        ".html": {
+          "relative_path": "code_samples/visab/pojos_pocos.html",
+          "hash": "bGfXzEAALJSVQ+D0SqA5jCY21TdXkyOG2tDls1Ozg/c="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "code_samples/visabconnector/close.md",
+      "output": {
+        ".html": {
+          "relative_path": "code_samples/visabconnector/close.html",
+          "hash": "w0po9bmAtwKlQPEOHf2qtjyC7HcHC6CjLBJXDxdLyPA="
         }
       },
       "is_incremental": true,
@@ -1569,7 +1617,19 @@
       "output": {
         ".html": {
           "relative_path": "code_samples/visabconnector/session.html",
-          "hash": "3v3DubDwcuxfm12AFOf661VxhrG6AMw5/Y0smUGtAlk="
+          "hash": "54wpuphq9rr0hB4WzyQcLZ3cHDeQDk/L8XU548qkMpM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "code_samples/visabconnector/statistics.md",
+      "output": {
+        ".html": {
+          "relative_path": "code_samples/visabconnector/statistics.html",
+          "hash": "cbwXinsvj+IMEwUnOn6G0ijvcLf4Z7IopoCoD///N1U="
         }
       },
       "is_incremental": true,
@@ -1581,7 +1641,7 @@
       "output": {
         ".html": {
           "relative_path": "code_samples/visabconnector_unity/images.html",
-          "hash": "qTzY9Sz2LXhPcmMgZ/zz9HL/rTspPOAhq0GU9d0uACg="
+          "hash": "0LiMtNTWNR05Xosg2ybk9lYr7+5T0CDMCe9uvhqg9go="
         }
       },
       "is_incremental": true,
@@ -1589,11 +1649,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "documentation/api_http/index.md",
+      "source_relative_path": "documentation/api_http/api.md",
       "output": {
         ".html": {
-          "relative_path": "documentation/api_http/index.html",
-          "hash": "qUVjVUmt8NGaPeBMtR8f+HmatgPjk7EK/UyxuXNXjTw="
+          "relative_path": "documentation/api_http/api.html",
+          "hash": "DDwiZ7FW5Dbp4wyJVuxcMcVCfSlQd4xsWclrcqZF2Jk="
         }
       },
       "is_incremental": true,
@@ -1601,11 +1661,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "documentation/architecture/index.md",
+      "source_relative_path": "documentation/architecture/architecture.md",
       "output": {
         ".html": {
-          "relative_path": "documentation/architecture/index.html",
-          "hash": "luQmlDcdk56/PtF3KkX1ZoSXOoH93Buwv6iu/ZjWSAU="
+          "relative_path": "documentation/architecture/architecture.html",
+          "hash": "Z166yvTv9HcqoqhZsG1nlMsN0Yx+ZGQPCXsrtB4tbvM="
         }
       },
       "is_incremental": true,
@@ -1641,7 +1701,40 @@
       "output": {
         ".html": {
           "relative_path": "documentation/toc.html",
-          "hash": "yG2ITVqXjrIXTm9c2/0JsCkzELm7ndTJ1Y/nCBSF/g4="
+          "hash": "HrwqrXJ4Y7+MhsOsasoExKdpq6Y5hAXkwzG3IMzUr+k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "documentation/visualizer/SettlersMeta.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "documentation/visualizer/SettlersMeta.PNG"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "documentation/visualizer/SettlersReplay.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "documentation/visualizer/SettlersReplay.PNG"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "documentation/visualizer/SettlersStatistics.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "documentation/visualizer/SettlersStatistics.PNG"
         }
       },
       "is_incremental": false,
@@ -1649,11 +1742,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "documentation/visualizer/index.md",
+      "source_relative_path": "documentation/visualizer/visualizer.md",
       "output": {
         ".html": {
-          "relative_path": "documentation/visualizer/index.html",
-          "hash": "vSsArWhvhQEAsO8LowzmF/1PYpNbp31WTTlxePtJjq4="
+          "relative_path": "documentation/visualizer/visualizer.html",
+          "hash": "5LkmVJZJO5rdMP118PuoOby7tUd9fawgoVd35NdKEa0="
         }
       },
       "is_incremental": true,
@@ -1665,7 +1758,7 @@
       "output": {
         ".html": {
           "relative_path": "getting_started/extending.html",
-          "hash": "wTXe8ei8TSEkL/TexBZA/kH8W5Vmdm9eEXV9z+X+oAw="
+          "hash": "JPS+OQSURDEQX6nf2rwgWvU3Zg+H6SIKSOaHt4Kst4g="
         }
       },
       "is_incremental": true,
@@ -1720,12 +1813,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "getting_started/usage.md",
       "output": {
         ".html": {
           "relative_path": "getting_started/usage.html",
-          "hash": "Myj+Z6oouqBSUFjdFUSJrZzsL5905/4v+LSwN681oCA="
+          "hash": "JH+vUg2OnW9wxAJHxK1veLpr8s68b4ltC8VI4FpXTzY="
         }
       },
       "is_incremental": true,
@@ -1766,6 +1862,17 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "misc/workspace.drawio",
+      "output": {
+        "resource": {
+          "relative_path": "misc/workspace.drawio"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
@@ -1790,8 +1897,8 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 20,
-          "skipped_file_count": 19
+          "total_file_count": 25,
+          "skipped_file_count": 25
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,

@@ -73,7 +73,7 @@
   
   <h1 id="VISABConnector_Unity_ImageCreator" data-uid="VISABConnector.Unity.ImageCreator" class="text-break">Class ImageCreator
   </h1>
-  <div class="markdown level0 summary"><p>TODO: Smart Instantiate</p>
+  <div class="markdown level0 summary"><p>Class that unifies the methods in order to be able to snapshot any game item out of unity</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -115,13 +115,14 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/VocalTrance/VISABConnector/new/f_unity/apiSpec/new?filename=VISABConnector_Unity_ImageCreator_VISABLayerName.md&amp;value=---%0Auid%3A%20VISABConnector.Unity.ImageCreator.VISABLayerName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/VocalTrance/VISABConnector/new/master/apiSpec/new?filename=VISABConnector_Unity_ImageCreator_VISABLayerName.md&amp;value=---%0Auid%3A%20VISABConnector.Unity.ImageCreator.VISABLayerName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/VocalTrance/VISABConnector/blob/f_unity/src/VISABConnector.Unity/ImageCreator.cs/#L13">View Source</a>
+    <a href="https://github.com/VocalTrance/VISABConnector/blob/master/src/VISABConnector.Unity/ImageCreator.cs/#L16">View Source</a>
   </span>
   <h4 id="VISABConnector_Unity_ImageCreator_VISABLayerName" data-uid="VISABConnector.Unity.ImageCreator.VISABLayerName">VISABLayerName</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The VISAB layer variable which is assigned to every game object that will be snapshotted</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -146,159 +147,10 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/VocalTrance/VISABConnector/new/f_unity/apiSpec/new?filename=VISABConnector_Unity_ImageCreator_CameraSetup_VISABConnector_Unity_CameraConfiguration_System_String_UnityEngine_CameraClearFlags_.md&amp;value=---%0Auid%3A%20VISABConnector.Unity.ImageCreator.CameraSetup(VISABConnector.Unity.CameraConfiguration%2CSystem.String%2CUnityEngine.CameraClearFlags)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/VocalTrance/VISABConnector/new/master/apiSpec/new?filename=VISABConnector_Unity_ImageCreator_InstantiateGameObject_VISABConnector_Unity_InstantiationConfiguration_.md&amp;value=---%0Auid%3A%20VISABConnector.Unity.ImageCreator.InstantiateGameObject(VISABConnector.Unity.InstantiationConfiguration)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/VocalTrance/VISABConnector/blob/f_unity/src/VISABConnector.Unity/ImageCreator.cs/#L172">View Source</a>
-  </span>
-  <a id="VISABConnector_Unity_ImageCreator_CameraSetup_" data-uid="VISABConnector.Unity.ImageCreator.CameraSetup*"></a>
-  <h4 id="VISABConnector_Unity_ImageCreator_CameraSetup_VISABConnector_Unity_CameraConfiguration_System_String_UnityEngine_CameraClearFlags_" data-uid="VISABConnector.Unity.ImageCreator.CameraSetup(VISABConnector.Unity.CameraConfiguration,System.String,UnityEngine.CameraClearFlags)">CameraSetup(CameraConfiguration, String, CameraClearFlags)</h4>
-  <div class="markdown level1 summary"><p>Creates and sets up camera accordingly</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Camera CameraSetup(CameraConfiguration camConfig, string cullingLayer, CameraClearFlags clearFlags)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="VISABConnector.Unity.CameraConfiguration.html">CameraConfiguration</a></td>
-        <td><span class="parametername">camConfig</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">cullingLayer</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">UnityEngine.CameraClearFlags</span></td>
-        <td><span class="parametername">clearFlags</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">UnityEngine.Camera</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/VocalTrance/VISABConnector/new/f_unity/apiSpec/new?filename=VISABConnector_Unity_ImageCreator_ChangeLayer_UnityEngine_GameObject_VISABConnector_Unity_SnapshotConfiguration_System_Int32_.md&amp;value=---%0Auid%3A%20VISABConnector.Unity.ImageCreator.ChangeLayer(UnityEngine.GameObject%2CVISABConnector.Unity.SnapshotConfiguration%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/VocalTrance/VISABConnector/blob/f_unity/src/VISABConnector.Unity/ImageCreator.cs/#L153">View Source</a>
-  </span>
-  <a id="VISABConnector_Unity_ImageCreator_ChangeLayer_" data-uid="VISABConnector.Unity.ImageCreator.ChangeLayer*"></a>
-  <h4 id="VISABConnector_Unity_ImageCreator_ChangeLayer_UnityEngine_GameObject_VISABConnector_Unity_SnapshotConfiguration_System_Int32_" data-uid="VISABConnector.Unity.ImageCreator.ChangeLayer(UnityEngine.GameObject,VISABConnector.Unity.SnapshotConfiguration,System.Int32)">ChangeLayer(GameObject, SnapshotConfiguration, Int32)</h4>
-  <div class="markdown level1 summary"><p>Assigns layer to just child or parent (hence all children)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void ChangeLayer(GameObject obj, SnapshotConfiguration config, int layer)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">UnityEngine.GameObject</span></td>
-        <td><span class="parametername">obj</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="VISABConnector.Unity.SnapshotConfiguration.html">SnapshotConfiguration</a></td>
-        <td><span class="parametername">config</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">layer</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/VocalTrance/VISABConnector/new/f_unity/apiSpec/new?filename=VISABConnector_Unity_ImageCreator_GameObjectSetup_VISABConnector_Unity_SnapshotConfiguration_.md&amp;value=---%0Auid%3A%20VISABConnector.Unity.ImageCreator.GameObjectSetup(VISABConnector.Unity.SnapshotConfiguration)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/VocalTrance/VISABConnector/blob/f_unity/src/VISABConnector.Unity/ImageCreator.cs/#L191">View Source</a>
-  </span>
-  <a id="VISABConnector_Unity_ImageCreator_GameObjectSetup_" data-uid="VISABConnector.Unity.ImageCreator.GameObjectSetup*"></a>
-  <h4 id="VISABConnector_Unity_ImageCreator_GameObjectSetup_VISABConnector_Unity_SnapshotConfiguration_" data-uid="VISABConnector.Unity.ImageCreator.GameObjectSetup(VISABConnector.Unity.SnapshotConfiguration)">GameObjectSetup(SnapshotConfiguration)</h4>
-  <div class="markdown level1 summary"><p>Instantiates or grabs Game Object and/or its child object</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static GameObject GameObjectSetup(SnapshotConfiguration config)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="VISABConnector.Unity.SnapshotConfiguration.html">SnapshotConfiguration</a></td>
-        <td><span class="parametername">config</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">UnityEngine.GameObject</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/VocalTrance/VISABConnector/new/f_unity/apiSpec/new?filename=VISABConnector_Unity_ImageCreator_InstantiateGameObject_VISABConnector_Unity_InstantiationConfiguration_.md&amp;value=---%0Auid%3A%20VISABConnector.Unity.ImageCreator.InstantiateGameObject(VISABConnector.Unity.InstantiationConfiguration)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/VocalTrance/VISABConnector/blob/f_unity/src/VISABConnector.Unity/ImageCreator.cs/#L108">View Source</a>
+    <a href="https://github.com/VocalTrance/VISABConnector/blob/master/src/VISABConnector.Unity/ImageCreator.cs/#L117">View Source</a>
   </span>
   <a id="VISABConnector_Unity_ImageCreator_InstantiateGameObject_" data-uid="VISABConnector.Unity.ImageCreator.InstantiateGameObject*"></a>
   <h4 id="VISABConnector_Unity_ImageCreator_InstantiateGameObject_VISABConnector_Unity_InstantiationConfiguration_" data-uid="VISABConnector.Unity.ImageCreator.InstantiateGameObject(VISABConnector.Unity.InstantiationConfiguration)">InstantiateGameObject(InstantiationConfiguration)</h4>
@@ -345,10 +197,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/VocalTrance/VISABConnector/new/f_unity/apiSpec/new?filename=VISABConnector_Unity_ImageCreator_SetLayerRecursively_UnityEngine_GameObject_System_Int32_.md&amp;value=---%0Auid%3A%20VISABConnector.Unity.ImageCreator.SetLayerRecursively(UnityEngine.GameObject%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/VocalTrance/VISABConnector/new/master/apiSpec/new?filename=VISABConnector_Unity_ImageCreator_SetLayerRecursively_UnityEngine_GameObject_System_Int32_.md&amp;value=---%0Auid%3A%20VISABConnector.Unity.ImageCreator.SetLayerRecursively(UnityEngine.GameObject%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/VocalTrance/VISABConnector/blob/f_unity/src/VISABConnector.Unity/ImageCreator.cs/#L136">View Source</a>
+    <a href="https://github.com/VocalTrance/VISABConnector/blob/master/src/VISABConnector.Unity/ImageCreator.cs/#L147">View Source</a>
   </span>
   <a id="VISABConnector_Unity_ImageCreator_SetLayerRecursively_" data-uid="VISABConnector.Unity.ImageCreator.SetLayerRecursively*"></a>
   <h4 id="VISABConnector_Unity_ImageCreator_SetLayerRecursively_UnityEngine_GameObject_System_Int32_" data-uid="VISABConnector.Unity.ImageCreator.SetLayerRecursively(UnityEngine.GameObject,System.Int32)">SetLayerRecursively(GameObject, Int32)</h4>
@@ -383,14 +235,14 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/VocalTrance/VISABConnector/new/f_unity/apiSpec/new?filename=VISABConnector_Unity_ImageCreator_TakeSnapshot_VISABConnector_Unity_SnapshotConfiguration_.md&amp;value=---%0Auid%3A%20VISABConnector.Unity.ImageCreator.TakeSnapshot(VISABConnector.Unity.SnapshotConfiguration)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/VocalTrance/VISABConnector/new/master/apiSpec/new?filename=VISABConnector_Unity_ImageCreator_TakeSnapshot_VISABConnector_Unity_SnapshotConfiguration_.md&amp;value=---%0Auid%3A%20VISABConnector.Unity.ImageCreator.TakeSnapshot(VISABConnector.Unity.SnapshotConfiguration)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/VocalTrance/VISABConnector/blob/f_unity/src/VISABConnector.Unity/ImageCreator.cs/#L20">View Source</a>
+    <a href="https://github.com/VocalTrance/VISABConnector/blob/master/src/VISABConnector.Unity/ImageCreator.cs/#L23">View Source</a>
   </span>
   <a id="VISABConnector_Unity_ImageCreator_TakeSnapshot_" data-uid="VISABConnector.Unity.ImageCreator.TakeSnapshot*"></a>
   <h4 id="VISABConnector_Unity_ImageCreator_TakeSnapshot_VISABConnector_Unity_SnapshotConfiguration_" data-uid="VISABConnector.Unity.ImageCreator.TakeSnapshot(VISABConnector.Unity.SnapshotConfiguration)">TakeSnapshot(SnapshotConfiguration)</h4>
-  <div class="markdown level1 summary"><p>TODO: A bunch of dumb arguments checking TODO: You may also pass an existing camera.</p>
+  <div class="markdown level1 summary"><p>The actual method that conducts the snapshotting of game objects. It is calibrated by passing a config object to it</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -410,7 +262,8 @@
       <tr>
         <td><a class="xref" href="VISABConnector.Unity.SnapshotConfiguration.html">SnapshotConfiguration</a></td>
         <td><span class="parametername">config</span></td>
-        <td></td>
+        <td><p>The config object that handles the specific requirements for snapping certain game objects</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -425,20 +278,21 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
-        <td></td>
+        <td><p>A byte array which can be converted to a PNG-file or inserted into a JSON-File</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/VocalTrance/VISABConnector/new/f_unity/apiSpec/new?filename=VISABConnector_Unity_ImageCreator_TakeSnapshots_System_Collections_Generic_IEnumerable_VISABConnector_Unity_SnapshotConfiguration__.md&amp;value=---%0Auid%3A%20VISABConnector.Unity.ImageCreator.TakeSnapshots(System.Collections.Generic.IEnumerable%7BVISABConnector.Unity.SnapshotConfiguration%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/VocalTrance/VISABConnector/new/master/apiSpec/new?filename=VISABConnector_Unity_ImageCreator_TakeSnapshots_System_Collections_Generic_IEnumerable_VISABConnector_Unity_SnapshotConfiguration__.md&amp;value=---%0Auid%3A%20VISABConnector.Unity.ImageCreator.TakeSnapshots(System.Collections.Generic.IEnumerable%7BVISABConnector.Unity.SnapshotConfiguration%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/VocalTrance/VISABConnector/blob/f_unity/src/VISABConnector.Unity/ImageCreator.cs/#L94">View Source</a>
+    <a href="https://github.com/VocalTrance/VISABConnector/blob/master/src/VISABConnector.Unity/ImageCreator.cs/#L102">View Source</a>
   </span>
   <a id="VISABConnector_Unity_ImageCreator_TakeSnapshots_" data-uid="VISABConnector.Unity.ImageCreator.TakeSnapshots*"></a>
   <h4 id="VISABConnector_Unity_ImageCreator_TakeSnapshots_System_Collections_Generic_IEnumerable_VISABConnector_Unity_SnapshotConfiguration__" data-uid="VISABConnector.Unity.ImageCreator.TakeSnapshots(System.Collections.Generic.IEnumerable{VISABConnector.Unity.SnapshotConfiguration})">TakeSnapshots(IEnumerable&lt;SnapshotConfiguration&gt;)</h4>
-  <div class="markdown level1 summary"><p>TODO: You may also pass an existing camera.</p>
+  <div class="markdown level1 summary"><p>Conduct several snapshots at once</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -458,7 +312,8 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="VISABConnector.Unity.SnapshotConfiguration.html">SnapshotConfiguration</a>&gt;</td>
         <td><span class="parametername">configs</span></td>
-        <td></td>
+        <td><p>The config objects you will need for the snapshots</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -473,7 +328,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="VISABConnector.Unity.SnapshotConfiguration.html">SnapshotConfiguration</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]&gt;</td>
-        <td></td>
+        <td><p>A dictionary which contains the byte arrays with their respective configuration objects</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -485,10 +341,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/VocalTrance/VISABConnector/new/f_unity/apiSpec/new?filename=VISABConnector_Unity_ImageCreator.md&amp;value=---%0Auid%3A%20VISABConnector.Unity.ImageCreator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/VocalTrance/VISABConnector/new/master/apiSpec/new?filename=VISABConnector_Unity_ImageCreator.md&amp;value=---%0Auid%3A%20VISABConnector.Unity.ImageCreator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/VocalTrance/VISABConnector/blob/f_unity/src/VISABConnector.Unity/ImageCreator.cs/#L11" class="contribution-link">View Source</a>
+                    <a href="https://github.com/VocalTrance/VISABConnector/blob/master/src/VISABConnector.Unity/ImageCreator.cs/#L11" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

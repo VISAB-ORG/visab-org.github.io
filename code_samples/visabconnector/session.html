@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Session </title>
+    <title>Initiating a transmission session </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Session ">
+    <meta name="title" content="Initiating a transmission session ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -67,9 +67,69 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="session">Session</h1>
+<h1 id="initiating-a-transmission-session">Initiating a transmission session</h1>
 
-<p>This is just a sample page.</p>
+<p>To initiate a transmission session we create a <code>VISABApi</code> instance and then call <code>InitiateSessionAsync</code>.</p>
+<pre><code class="lang-csharp">private async IVISABSession InitiateSession() 
+{
+    var api = new VISABApi(&quot;http://localhost&quot;, 2673, 1);
+    ...
+}
+</code></pre>
+<p>The first parameter of the <code>VISABApi</code> constructor takes the base adress of the machine that VISAB is running on. If VISAB is running on the same machine as the game, this will be <code>&quot;http://localhost&quot;</code>. The second parameter is the port and the third parameter the request timeout (in seconds). If VISAB is running on the same machine, 1 second is more than enough here. If VISAB is running on a machine that isnt in your local network, you'll have to figure out a suitable request timeout.</p>
+<p>By creating the <code>VISABApi</code> instance, we have not made a call to VISAB yet. When opening a session, VISAB expects us to pass meta information for the session that will be opened.</p>
+<pre><code class="lang-csharp">public class TetrisMetaInformation : IMetaInformation
+{
+    public string Game =&gt; &quot;Tetris&quot;;
+
+    public IList&lt;string&gt; PlayerNames { get; set; }
+
+    public int PlayerCount =&gt; PlayerNames.Count;
+}
+
+private async IVISABSession InitiateSession() 
+{
+    ...
+    var metaInformation = new TetrisMetaInformation 
+    { 
+        PlayerNames = new List&lt;String&gt; { &quot;Horst&quot;, &quot;Dieter&quot; } 
+    };
+}
+</code></pre>
+<p>Lets now open a transmission session for our game by calling <code>InitiateSessionAsync</code>.
+VISABConnector returns <code>ApiResponse&lt;T&gt;</code> objects, where <code>T</code> is the type of the content, for every request.
+If the <code>IsSuccess</code> property is true, the response content can be used as expected.</p>
+<pre><code class="lang-csharp">private async IVISABSession InitiateSession() 
+{
+    ...
+    // If we aren't in an asynchronous (async) method, we have to use .Result here
+    ApiResponse&lt;IVISABSession&gt; sessionResponse = await api.InitiateSessionAsync(metaInformation);
+    if (sessionResponse.IsSuccess)
+        return sessionResponse.Content;
+    else
+        throw new Exception(sessionResponse.ErrorMessage);
+}
+</code></pre>
+<h2 id="roundbasedsession">RoundBasedSession</h2>
+<p>If we are using the session wrapper class <code>RoundBasedSession</code> we can instead use the following code to initiate a session.</p>
+<pre><code class="lang-csharp">// Subscribe to the MessageAddedEvent so that we can read the log
+RoundBasedSession.MessageAddedEvent += m =&gt; Debug.Log(m);
+
+// If we aren't in an asynchronous (async) method, we have to use .Result here
+bool success = await RoundBasedSession.StartSessionAsync(metaInformation, &quot;http://localhost&quot;, 2673, 1);
+if (!success)
+    throw new Exception();
+</code></pre>
+<h2 id="loopbasedsession">LoopBasedSession</h2>
+<p>The exact same method calls as for <code>RoundBasedSession</code>.</p>
+<pre><code class="lang-csharp">// Subscribe to the MessageAddedEvent so that we can read the log
+LoopBasedSession.MessageAddedEvent += m =&gt; Debug.Log(m);
+
+// If we aren't in an asynchronous (async) method, we have to use .Result here
+bool success = await LoopBasedSession.StartSessionAsync(metaInformation, &quot;http://localhost&quot;, 2673, 1);
+if (!success)
+    throw new Exception();
+</code></pre>
 </article>
           </div>
           
