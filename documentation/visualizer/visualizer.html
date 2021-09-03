@@ -8,7 +8,7 @@
     <title>Visualizer Views </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Visualizer Views ">
-    <meta name="generator" content="docfx 2.58.0.0">
+    <meta name="generator" content="docfx 2.58.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -71,36 +71,36 @@
 
 <p>The core competence of VISAB is to illustrate agent behaviour in games. Consequently VISAB needs to have fitting views implemented that
 provide useful information extracted from the game data and show them in a clear by allowing multiple different view points.</p>
-<p>This page describes the underlying visualizer concepts and gives hints about the current set of implemented visualizers in VISAB.<br>
+<p>This page describes the underlying visualizer concepts and gives hints about the current set of implemented visualizers in VISAB.
 If you want to have a deeper look on how to control the UI from user perspective, please have a look at the <a href="https://visab-org.github.io/getting_started/usage.html">GUI Usage Article</a>.</p>
-<p>VISAB is designed in a fashion, where any type of game may have their own set of visualizers (each visualizer adresses a different view point) <br>
-that may be useful to illustrate certain aspects of the game. However, VISAB in its current state, implements three different types of visualizers<br>
+<p>VISAB is designed in a fashion, where any type of game may have their own set of visualizers (each visualizer adresses a different view point)
+that may be useful to illustrate certain aspects of the game. However, VISAB in its current state, implements three different types of visualizers
 for both <strong>Settlers of Catan</strong> and the <strong>CBRShooter</strong> which can be seen as a recommended set that should fit for any game you might want to integrate.</p>
-<p>Due to the fact that each visualizing view is very custom regarding the respective game, there are no code samples provided. <br>
+<p>Due to the fact that each visualizing view is very custom regarding the respective game, there are no code samples provided.
 If you want to learn about the practical implementations, please have a direct look into the <a href="https://github.com/VISAB-ORG/VISAB">GitHub Repository</a>.</p>
-<p>Please note that when implementing Views, the MVVM pattern has to be followed, so that any game will<br>
+<p>Please note that when implementing Views, the MVVM pattern has to be followed, so that any game will
 have at least two classes that realize the respective view, e.g.:</p>
 <ul>
 <li>AnyGameReplay<strong>View</strong>: Is only responsible for how the UI elements are displayed in the UI</li>
 <li>AnyGameReplay<strong>ViewModel</strong>: Is responsible for data access across the underlying model and provides it for the view class</li>
 </ul>
-<p>Furthermore, the related .fxml has to have the exact same name as the as the view, e.g.: <code>AnyGameReplayView.fxml</code> and also must be <br>
+<p>Furthermore, the related .fxml has to have the exact same name as the as the view, e.g.: <code>AnyGameReplayView.fxml</code> and also must be
 located under the exact same package pathing within src/main/resources to be automatically locatable by the <code>FluentViewLoader</code> of JavaFX/mvvmfx.</p>
 <h2 id="meta-file-view">Meta (File) View</h2>
-<p>The meta view is used to provide static information of the VISAB file which are valid by the end of it.<br>
-For example it may contain general information about items in the game, the winner of the whole session, etc.<br></p>
+<p>The meta view is used to provide static information of the VISAB file which are valid by the end of it.
+For example it may contain general information about items in the game, the winner of the whole session, etc.</p>
 <p><em>This view is very basic and features no interactiveness and should be rather simple to implement.</em></p>
 <p><img src="SettlersMeta.PNG" alt="MetaView Example"></p>
 <h2 id="statistics-view">Statistics View</h2>
-<p>The statistics view aims at providing cumulated information for each player that is well comparable. <br>
+<p>The statistics view aims at providing cumulated information for each player that is well comparable.
 For example, it is highlighting the plan usage for each player very in separate charts.</p>
-<p><em>This view has some interactive options such as showing the comparison between some players for a specific measure.<br>
-Here you need to be careful about how to fill the respective graphs with data, because JavaFX sometimes shows strange behaviour<br>
+<p><em>This view has some interactive options such as showing the comparison between some players for a specific measure.
+Here you need to be careful about how to fill the respective graphs with data, because JavaFX sometimes shows strange behaviour
 if the refilling of graph data is not done smoothly.</em></p>
 <p><img src="SettlersStatistics.PNG" alt="StatisticsView Example"></p>
 <h2 id="replay-view">Replay View</h2>
-<p>The replay view fills another gap, the statistics view still leaves open.<br>
-It may be interesting to replay a match or any specific moment of it as often as you like to get a better insight <br>
+<p>The replay view fills another gap, the statistics view still leaves open.
+It may be interesting to replay a match or any specific moment of it as often as you like to get a better insight
 of what circumstances in the game may have lead to specific decisions of the AI bots competing against each other.</p>
 <p><em>The replay view is the most complex view at the current state of VISAB. Due to this fact, there are some things to watch out for while implementing:<p>
 <ul>
@@ -118,7 +118,7 @@ of what circumstances in the game may have lead to specific decisions of the AI 
 
 
 
-<p><img src="SettlersReplay.PNG" alt="ReplayView Example"></p>
+<p><img src="SettlersReplay.png" alt="ReplayView Example"></p>
 </article>
           </div>
           

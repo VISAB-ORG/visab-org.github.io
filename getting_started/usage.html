@@ -8,7 +8,7 @@
     <title>GUI Usage Guide </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="GUI Usage Guide ">
-    <meta name="generator" content="docfx 2.58.0.0">
+    <meta name="generator" content="docfx 2.58.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -72,37 +72,105 @@
 <p>Excited to use VISAB and get some insights about what it is capable of?<br>
 This guide will provide a walkthrough to VISABs UI and explain all relevant elements of it.</p>
 <h2 id="home">Home</h2>
-<p><img src="Home.png" alt="Home"></p>
+<h4 id="light-mode">light mode</h4>
+<p><img src="Home.png" alt="Home">
+The &quot;Home View&quot; has a navigation bar with  buttons to open the [API-Dashboard](#API Dashboard) <strong>(1)</strong>, the <a href="#Settings">Settings</a> <strong>(2)</strong> with an
+included option to switch between light and dark mode <strong>(11)</strong>, the <a href="#About">About</a> <strong>(3)</strong> and the <a href="#Help">Help</a> <strong>(4)</strong> window. It also shows a view
+of the file-system of the  local VISAB database. There are all files with filename, creation date and
+size displayed, that belong to the VISAB supported games. The refresh button <strong>(5)</strong> can be used to reload the
+database. With the &quot;Show in explorer&quot; button <strong>(6)</strong> the file system will be opened where the selected file or
+folder is stored on the system. With the &quot;Rename&quot; button <strong>(7)</strong> a file or folder can be renamed. The &quot;Upload&quot; button <strong>(8)</strong>
+opens the systems file explorer, where the user can upload an existing VISAB file to the workspace.
+This is also possible via drag and drop into the HomeView. With the &quot;Delete&quot; button <strong>(9)</strong> the selected file or
+folder can be deleted. The &quot;VISUALIZE&quot; button <strong>(10)</strong> will open the <a href="#Visualizer">Visualizer view</a> if a VISAB file is selected.</p>
+<h4 id="dark-mode">dark mode</h4>
+<p><img src="HomeDark.png" alt="HomeDark"></p>
+<h2 id="visualizer">Visualizer</h2>
+<p>When a user selects a file from a game in VISAB and presses the &quot;VISUALIZE&quot; button <strong>(10)</strong>, the Visualizer view is loaded.
+The view contains three tabs <strong>(1)</strong>: File Overview, Statistics and Replay.</p>
+<ul>
+<li>The <strong>meta view</strong> is used to provide static information of the VISAB file which are valid by the end of it.</li>
+<li>The <strong>statistics view</strong> aims at providing cumulated information for each player that is well comparable.</li>
+<li>The <strong>replay view</strong> as a counterpart to the statistics view serves the purpose of re-experiencing specific moments of the game over and over whilst highlighting information according to the users needs.</li>
+</ul>
+<p><em>Because the visualizers are designed similarly for both games, they will be described once with highlighted differences.</em></p>
+<h3 id="meta-view">Meta View</h3>
+<p>The &quot;Meta View&quot; provides information about the respective file itself, the underlying session information as well as static game information such as
+the players and how / by whom they are controlled. The &quot;CBR Shooter Meta View&quot; further contains weapon information.</p>
+<p><em>Any other static data could also be displayed here.</em></p>
+<h4 id="settlers-of-catan">Settlers Of Catan</h4>
+<p><img src="SettlersMeta.png" alt="SettlersMeta"></p>
+<h4 id="cbrshooter">CBRShooter</h4>
+<p><img src="ShooterMeta.png" alt="ShooterMeta"></p>
+<h3 id="statistics-view">Statistics View</h3>
+<p>The &quot;Statistics view&quot; consists of a comparison statistics table with a &quot;Show in chart&quot; button <strong>(1)</strong>, a comparison graph <strong>(2)</strong> and a section with
+pie charts <strong>(3)</strong> indicating the plan usage distribution for each participating player / bot. For Settlers of Catan, there is also a &quot;Show Resource Details&quot; button <strong>(4)</strong> available,
+that is capable of giving a more complex insight about only the resource-related rows of the comparison statistics table in a [Detail View](#Statistics Detail View).</p>
+<p>In the comparison statistics table, the statistics for each measure are compared between players and can be viewed in a line
+graph when a line is selected and the &quot;Show in Chart&quot; button <strong>(1)</strong> is pressed.</p>
+<h4 id="settlers-of-catan-1">Settlers Of Catan</h4>
+<p><img src="SettlersStatistics.png" alt="SettlersStatistics"></p>
+<h4 id="cbrshooter-1">CBRShooter</h4>
+<p><img src="ShooterStatistics.png" alt="ShooterStatistics"></p>
+<h5 id="statistics-detail-view">Statistics Detail View</h5>
+<p>The &quot;Detail View&quot; illustrates the resources for each player in each round are displayed in a stacked bar chart with different colors for every resource.
+The displayed rounds can be changed (<em>in intervals of 10 rounds</em>) by moving the slider <strong>(1)</strong> back and forth.</p>
+<p><em>Please note that JavaFX reassigns the colors for each resource when the slider is moved to another interval.</em></p>
+<p><img src="SettlersStatisticsDetail.png" alt="SettlersStatisticsDetail"></p>
+<h3 id="replay-view">Replay View</h3>
+<p>The &quot;Replay View&quot; displays the map of the underlying game data. Furthermore it has several capabilities of modifying the visible content to enhance the users focus on specific aspects.
+As the name already indicates, the view can be played and paused by pressing the designated button <strong>(1)</strong>. Additionally the velocity (speed in which the map data is updated) can be adjusted
+with a slider <strong>(2)</strong>. If you want to jump to a specific moment of the game data, you can also directly use the turn slider <strong>(3)</strong>. The visuals table <strong>(4)</strong> gives information about player-specific
+color-coded visuals and offers the possibility to hide certain objects or even the whole player by simply un-checking the respective check boxes. The color-coding is implemented to optimize the
+visual distinction between the different players and relies on colors provided by the game itself. If the color-coded items are hardly separatable from the underlying map, there is also an option
+to check &quot;Show in black and white&quot; <strong>(5)</strong> to grey-scale the map image. The CBRShooter also contains items that are not player-specific, which can also be hidden by un-checking their respective
+check boxes <strong>(6)</strong>. The &quot;light-blue bubbles&quot; indicate the changes applied to the view by utilizing the previously mentioned options.</p>
+<h4 id="settlers-of-catan-2">Settlers Of Catan</h4>
+<h5 id="colorized--all-items-visible">colorized / all items visible</h5>
+<p><img src="SettlersReplayAllVisual.png" alt="SettlersReplayAllVisible"></p>
+<h5 id="greyscaled--some-items-hidden">greyscaled / some items hidden</h5>
+<p><img src="SettlersReplaySomeHidden.png" alt="SettlersReplaySomeHidden"></p>
+<h4 id="cbrshooter-2">CBRShooter</h4>
+<h5 id="colorized--all-items-visible-1">colorized / all items visible</h5>
+<p><img src="ShooterReplayAllVisual.png" alt="ShooterReplayAllVisible"></p>
+<h5 id="greyscaled--some-items-hidden-1">greyscaled / some items hidden</h5>
+<p><img src="ShooterReplaySomeHidden.png" alt="ShooterReplaySomeHidden"></p>
 <h2 id="api-dashboard">API Dashboard</h2>
+<p>The &quot;API Dashboard&quot; exposes the most important informations of VISABs underlying HTTP API which is used as the communication interface with the respective games.
+To configure the connection in the game correctly, VISABs adress can be directly copied from a text field <strong>(1)</strong>. Below you will find an overview of all transmission
+sessions and their respective status and details. By clicking the &quot;Clear Inactive Sessions!&quot; button <strong>(2)</strong> all sessions that are either timeouted (grey) or canceled (red) will be removed from the overview.
+Any active (green) session can be canceled from VISAB side by clicking the &quot;X&quot; button <strong>(3)</strong>. VISAB also offers the option to show the <a href="#Visualizer">Visualizer view</a> for a session in a live mode* <strong>(4)</strong> while it is still running.
+After a session has ended, the &quot;Open Live View&quot; button <strong>(4)</strong> changes into a &quot;Visualize&quot; button <strong>(5)</strong> which also opens the <a href="#Visualizer">Visualizer view</a> just as you do from the <a href="#Home">Home view</a> file explorer.
+For each session several informations are shown like the name of the game, the ip-address, the opening time of the session, the time of the last request, the time when the session was closed and the total amount of
+request that were sent in the during the transimission session.</p>
+<p>*<em>The live mode also uses the same visualizers as the regular mode, but the data updates are performed incrementally on each request done by the game, which gives a nice look and feel for the charts being dynamically updated and the replay view more or less being on the same status of the real running game</em></p>
 <p><img src="APIDashboard.png" alt="APIDashboard"></p>
 <h2 id="settings">Settings</h2>
+<p>The &quot;Settings View&quot; offsers several options to configure VISAB. The Web Api Port can be directly changed in the text field**(1)**.
+The &quot;Session Timout&quot; <strong>(2)</strong> and the &quot;Allowed Games&quot; <strong>(3)</strong> offer Edit buttons to open the respective &quot;Edit View&quot;. Furthermore there is an option to restore the default settings on button press <strong>(4)</strong>.
+Lastly, for any change to be made persistent a &quot;Save&quot; button <strong>(5)</strong> needs to be pressed.
+Editing the session timeout can be done by choosing the game <strong>(6)</strong> from the select box and adjust the session timeout in the text field <strong>(7)</strong>.
+The edit view for The Allowed Games offers the possibility to add a new game <strong>(8)</strong> to VISAB or to remove a selected game <strong>(9)</strong> from VISAB.
+With the &quot;Return&quot; button the &quot;Edit View&quot; will be closed and the made changes need to be saved in the &quot;Settings View&quot;.</p>
 <p><img src="Settings.png" alt="Settings"></p>
-<p><img src="SettingsEditTimeout.png" alt="SettingsEditTimeout">
-<img src="SettingsEditAllowedGames.png" alt="SettingsEditAllowedGames"></p>
 <h2 id="help">Help</h2>
+<p>The &quot;Help View&quot; shall help anyone using VISAB by providing important information in utilizable formats. By clicking on the specific tab <strong>(1)</strong>
+one can either have a look into the [Video tutorial](#Video Tutorial) or into the [PDF documentation](#PDF Documentation)</p>
+<h4 id="video-tutorial">Video Tutorial</h4>
+<p>The &quot;Video Tutorial&quot; tab contains a <a href="https://www.youtube.com/watch?v=znG2ZtcAfqA">video</a> that is directly embedded from YouTube and can be either viewed in the application itself or
+in the web browser if you click on &quot;Ansehen auf YouTube / View on YouTube&quot; <strong>(2)</strong>. The video explains how VISAB works and what it is used for.</p>
 <p><img src="HelpVideo.png" alt="HelpVideo"></p>
+<h4 id="pdf-documentation">PDF Documentation</h4>
+<p>The &quot;Documentation&quot; tab contains a PDF viewer <strong>(1)</strong> with all basic features that you would expect. A user can simply scroll through the document and even search
+for specific key words with ctrl+f.</p>
+<p><img src="HelpPDF.png" alt="HelpPDF"></p>
 <h2 id="about">About</h2>
-<p><img src="About2.0.png" alt="About2.0">
-<img src="About1.0.png" alt="About1.0"></p>
-<h2 id="visualizer">Visualizer</h2>
-<h3 id="settlers-of-catan">Settlers of Catan</h3>
-<h5 id="metaview">MetaView</h5>
-<p><img src="SettlersMeta.png" alt="SettlersMeta"></p>
-<h5 id="statisticsview">StatisticsView</h5>
-<p><img src="SettlersStatistics.png" alt="SettlersStatistics"></p>
-<h5 id="statisticsdetailview">StatisticsDetailView</h5>
-<p><img src="SettlersStatisticsDetail.png" alt="SettlersStatisticsDetail"></p>
-<h5 id="replayview">ReplayView</h5>
-<p><img src="SettlersReplayAllVisual.png" alt="SettlersReplayAllVisible"></p>
-<p><img src="SettlersReplaySomeHidden.png" alt="SettlersReplaySomeHidden"></p>
-<h3 id="cbrshooter">CBRShooter</h3>
-<h5 id="metaview-1">MetaView</h5>
-<p><img src="ShooterMeta.png" alt="ShooterMeta"></p>
-<h5 id="statisticsview-1">StatisticsView</h5>
-<p><img src="ShooterStatistics.png" alt="ShooterStatistics"></p>
-<h5 id="replayview-1">ReplayView</h5>
-<p><img src="ShooterReplayAllVisual.png" alt="ShooterReplayAllVisible"></p>
-<p><img src="ShooterReplaySomeHidden.png" alt="ShooterReplaySomeHidden"></p>
+<p>The &quot;About View&quot; contains a tab <strong>(1)</strong> for every VISAB version. In the VISAB 1.0 tab all developers with names and mail addresses <strong>(2)</strong> are mentioned.
+In the VISAB 2.0 tab the developers are also mentioned with their names and mail addresses <strong>(2)</strong>. Furthermore a rough overview of all new features, compared to VISAB 1.0,
+are displayed in a list <strong>(3)</strong> in the VISAB 2.0 tab.</p>
+<p><em>The tab structure offers a comprehensive way of illustrating VISABs current and also future progress throughout the different versions.</em></p>
+<p><img src="About1.png" alt="About1.0">
+<img src="About2.png" alt="About2.0"></p>
 </article>
           </div>
           
