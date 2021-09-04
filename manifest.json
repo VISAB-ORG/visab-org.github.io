@@ -499,10 +499,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "documentation/visualizer/SettlersReplay.png",
+      "source_relative_path": "documentation/visualizer/SettlersReplay.PNG",
       "output": {
         "resource": {
-          "relative_path": "documentation/visualizer/SettlersReplay.png"
+          "relative_path": "documentation/visualizer/SettlersReplay.PNG"
         }
       },
       "is_incremental": false,
@@ -525,7 +525,7 @@
       "output": {
         ".html": {
           "relative_path": "documentation/visualizer/visualizer.html",
-          "hash": "MXC2UBGKxCNjbOZxysZbQPDAo7+u1bUkurGxNxekO5Y="
+          "hash": "h7ynWUw3kweDv0O5MraplX5lW3c/0pthUdQYaqI5xE8="
         }
       },
       "is_incremental": true,
@@ -784,7 +784,7 @@
       "output": {
         ".html": {
           "relative_path": "getting_started/usage.html",
-          "hash": "6j9KeSA+2PCzyo3I7zOjwtfBSqfWAa7qauMey2YqwLg="
+          "hash": "24qS7NxFG93pnZMyZiGlHQb0h93OZiGAEft8ylmoOZw="
         }
       },
       "is_incremental": false,
