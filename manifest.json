@@ -366,10 +366,10 @@
       "output": {
         ".html": {
           "relative_path": "code_samples/visab/pojos_pocos.html",
-          "hash": "RghxqkkWD3Exdg8W2I/vaHYmSu9MpcCA3rysldaPfts="
+          "hash": "H7lfs4HMAa8SHOB7MqOH/dXjAYWxK7183vAsP7HEi+w="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -724,10 +724,10 @@
       "output": {
         ".html": {
           "relative_path": "getting_started/extending.html",
-          "hash": "LTffXDNyySG0xYFGXzwOqy9+4IqheYS/EOUOE9jZssA="
+          "hash": "WPkBpFbmdXOTjQpIFcwYS6OFKhbTTQi7avN3+zsjhWU="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -787,7 +787,7 @@
           "hash": "24qS7NxFG93pnZMyZiGlHQb0h93OZiGAEft8ylmoOZw="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -861,7 +861,7 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 25,
-          "skipped_file_count": 24
+          "skipped_file_count": 23
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,

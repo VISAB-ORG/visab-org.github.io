@@ -75,7 +75,8 @@ we need POCOS that represent the information to be sent to VISAB.</p>
 <p>To correctly deserialize this information, VISAB needs <strong>equivalent</strong> POJOS within its own code.
 By <strong>equivalent</strong> it is meant, that these classes need to resemble the exact same attributes and names for them.
 Otherwise deserialization on the VISAB file will fail because of unknown attributes.</p>
-<p>It is also possible to nest further classes in the POCOS / POJOS, they only need their respective implementation.</p>
+<p>It is also possible to nest further classes in the POCOS / POJOS, they only need their respective implementations.</p>
+<p><em>For the special case of having an attribute or method within one of these data object classes that should be exluded from serialization, you can put a <code>@JsonIgnore</code> on the VISAB side.</em></p>
 <h3 id="code-samples-for-fictive-implementation-of-tetris-unity-game---pocos">Code Samples for Fictive Implementation of Tetris (Unity Game - POCOs)</h3>
 <h5 id="tetrismetainformation-poco">TetrisMetaInformation POCO</h5>
 <pre><code class="lang-csharp">using System.Collections.Generic;
@@ -113,23 +114,103 @@ namespace VISABConnector.Example.Tetris
         public string Name { get; set; }
 
         public int Score { get; set; }
-
-        public TetrisBoard Board { get; set; }
-    }
-}
-</code></pre>
-<h5 id="tetrisboard-poco">TetrisBoard POCO</h5>
-<pre><code class="lang-csharp">using UnityEngine;
-
-namespace VISABConnector.Example.Tetris
-{
-    public class TetrisBoard
-    {
-        public Color[,] Board { get; } = new Color[20, 10];
     }
 }
 </code></pre>
 <h3 id="code-samples-for-fictive-implementation-of-tetris-game-visab---pojos">Code Samples for Fictive Implementation of Tetris game (VISAB - POJOs)</h3>
+<h5 id="tetrismetainformation-pojo">TetrisMetaInformation POJO</h5>
+<pre><code class="lang-java">package org.visab.globalmodel.Tetris;
+
+public class TetrisMetaInformation implements IMetaInformation {
+
+    private String game;
+    private List&lt;String&gt; playerNames;
+    private int playerCount;
+
+    public String setGame() {
+        return game;
+    }
+
+    public List&lt;String&gt; getPlayerNames() {
+        return playerNames;
+    }
+
+    public void setPlayerNames(List&lt;String&gt; playerNames) {
+        this.playerNames = playerNames;
+    }
+
+    public Rectangle getMapRectangle() {
+        return mapRectangle;
+    }
+
+    public int getPlayerCount() {
+        return playerCount;
+    }
+
+    public void setPlayerCount(int playerCount) {
+        this.playerCount = playerCount;
+    }
+
+    @Override
+    public String getGame() {
+        return game;
+    }
+
+}
+</code></pre>
+<h5 id="tetrisstatistics-pojo">TetrisStatistics POJO</h5>
+<pre><code class="lang-java">package org.visab.globalmodel.Tetris;
+
+public class TetrisStatistics implements IStatistics {
+
+    private int turn;
+    private HashMap&lt;String, int&gt; playerPoints;
+
+    public int getTurn() {
+        return turn;
+    }
+
+    public void setTurn(int turn) {
+        this.turn = turn;
+    }
+
+    public HashMap&lt;String, int&gt; getPlayerPoints() {
+        return playerPoints;
+    }
+
+    public void setPlayerPoints(HashMap&lt;String, int&gt; playerPoints) {
+        this.playerPoints = playerPoints;
+    }
+}
+
+
+</code></pre>
+<h5 id="player-pojo">Player POJO</h5>
+<pre><code class="lang-java">package org.visab.globalmodel.Tetris;
+
+public class Player {
+
+    private String name;
+    private int score;
+
+    public int getScore() {
+        return score;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+}
+
+</code></pre>
 </article>
           </div>
           
