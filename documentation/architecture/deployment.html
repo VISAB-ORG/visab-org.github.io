@@ -70,7 +70,8 @@
 <h1 id="deployment-view">Deployment View</h1>
 
 <p><img src="deployment.png" alt="Deployment UML"></p>
-<p>For communication between game and VISAB, VISAB serves as the server and the games as the clients. Whilst it is possible, to run VISAB and the games on different machines, it is ofcourse not mandatory.</p>
+<p>For communication between game and VISAB, VISAB serves as the server and the games as the clients. Whilst it is possible, to run VISAB and the games on different machines, it is ofcourse not mandatory.
+VISAB expects the data contained in the HTTP requests body to be serialized as a JSON string. Instead of writing json string literals, you may use one of the many JSON serialization libraries availible for most languages.</p>
 <p>Games implemented in C# can use the <a href="https://github.com/VISAB-ORG/VISABConnector/">VISABConnector</a> library that provides a C# interface to VISABs WebApi. Additionally, if the game is implemented on top of the UnityEngine, VISABConnector.Unity may be used to perform Unity specific image extraction.</p>
 <p>Games implemented in Java can use the <a href="https://github.com/VISAB-ORG/VISAB-JConnector">VISAB-JConnector</a> library, that serves the same purpose as the VISABConnector just for java. This library is only a prototype currenlty, meaning that not all functionality is guaranteed to be working and the code base does not conform to Java standards.</p>
 <p>Language independant communication can be achieved through creating HTTP requests directly or optionally writing an interface in the language.</p>
