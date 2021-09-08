@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Connecting to VISAB from a different machine </title>
+    <title>Connecting to VISAB from a Different Machine </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Connecting to VISAB from a different machine ">
-    <meta name="generator" content="docfx 2.58.0.0">
+    <meta name="title" content="Connecting to VISAB from a Different Machine ">
+    <meta name="generator" content="docfx 2.58.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -67,8 +67,27 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="connecting-to-visab-from-a-different-machine">Connecting to VISAB from a different machine</h1>
+<h1 id="connecting-to-visab-from-a-different-machine">Connecting to VISAB from a Different Machine</h1>
 
+<p>VISABs WebAPI is accessible either <strong>directly on your own local machine</strong>, if you run both the game and VISAB or you can
+access a running instance of VISABs WebAPI <strong>on another machine</strong> and simply send only game data from your machine.</p>
+<p>In any case you need to make sure that the IP adress and port* is configured correctly in the game for communication:</p>
+<pre><code class="lang-csharp">public static string HostAdress { get; set; } = &quot;http://25.59.97.106&quot;;
+public static int Port { get; set; } = 2673;
+</code></pre>
+<p><em>Find out your local IP adress, e.g. by opening the command prompt and entering <code>ipconfig</code>.</em></p>
+<p>*<em>Make sure that the port field corresponds to the port set in VISAB. You can change the port in the settings section of VISAB</em>.</p>
+<p>If you want to send data to another machine that runs VISAB within the same local network you can simply ask for the
+above mentioned information and put them into your games configuration.</p>
+<h2 id="connecting-to-visab-from-another-network">Connecting to VISAB from Another Network</h2>
+<p>In case of communicating between two different networks, things are little more tricky.</p>
+<p>Say, we want to connect to VISAB from a different network, we need for example Hamachi to create a peer-to-peer network.
+First we need to join Hamachi's network by pressing the Power switch. A network needs to be created by pressing <strong>Network -&gt; Create Network</strong> on the first machine.</p>
+<p>Both machines have to be in the same hamachi network (here: <strong>visab_test</strong>) and the host machine's local address can be found in hamachi's user interface (here: <strong>25.59.97.106</strong>) .</p>
+<p><img src="HamachiCreate.png" alt="HamachiNetwork"></p>
+<p>In order to join that network from another machine the user has to press <strong>Network -&gt; Join Network</strong> and enter the network ID under <strong>Network ID</strong>.  A password only has to be entered if it was set priorly.
+This way we can connect to any machine even if it does not run on the same local network.</p>
+<p><img src="HamachiJoin.png" alt="HamachiJoin"></p>
 </article>
           </div>
           
