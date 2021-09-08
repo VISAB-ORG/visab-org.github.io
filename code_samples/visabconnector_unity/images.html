@@ -8,7 +8,7 @@
     <title>Extracting game images </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Extracting game images ">
-    <meta name="generator" content="docfx 2.58.2.0">
+    <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -107,7 +107,7 @@
 }
 </code></pre>
 <p>In this case we are going to snapshot three different brick shapes, which are stored in said dictionary together with their prefab paths (values).</p>
-<p>Finally we need to conduct the actual snapshotting by invoking the <code>TakeSnapshot</code> method from the <code>ImageCreator</code> class. As displaced in the code sample below, this will be done by iterating through the bricks dictionary and passing the values as parameters to the configuration function. The returned image bytes will be added to the image container that has predefined placeholders for each image type that needs to be snapshotted for the specific game. In this case the brick shapes will be stored in the OneOneOneOne byte array.</p>
+<p>Finally we need to conduct the actual snapshotting by invoking the <code>TakeSnapshot</code> method from the <code>ImageCreator</code> class. As displaced in the code sample below, this will be done by iterating through the bricks dictionary and passing the values as parameters to the configuration function. The returned image bytes will be added to the image container that has predefined placeholders for each image type that needs to be snapshotted for the specific game. In this case the brick shapes will be stored in a map of byte arrays.</p>
 <pre><code class="lang-csharp">private TetrisImages TakeSnapshots() 
 {
     ...
@@ -115,12 +115,11 @@
     foreach (var pair in bricks) 
     { 
         var config = defaultInstantiate(pair.Value); 
-        var bytes = ImageCreator.TakeSnapshot(config); 
-        images.OneOneOneOne = bytes;
+        var bytes = ImageCreator.TakeSnapshot(config);
+        images.StaticObjects[pair.Key] = bytes;
     }
 }
 </code></pre>
-<h1 id="todo-either-adapt-tetrisimages-class-or-adapt-the-example">TODO: Either adapt <code>TetrisImages</code> class or adapt the example.</h1>
 </article>
           </div>
           

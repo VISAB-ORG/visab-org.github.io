@@ -8,7 +8,7 @@
     <title>Naming Conventions </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Naming Conventions ">
-    <meta name="generator" content="docfx 2.58.2.0">
+    <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -70,13 +70,13 @@
 <h1 id="naming-conventions">Naming Conventions</h1>
 
 <ul>
-<li>Types starting with <code>I</code> are always interfaces (e.g. <a href="xref:org.visab.processing.ISessionListener">ISessionListener</a>).</li>
-<li>Types ending with <code>Base</code> are always abstract classes, as base implementations of an interface (e.g. <a href="xref:org.visab.processing.SessionListenerBase">SessionListenerBase</a>).
+<li>Types starting with <code>I</code> are always interfaces (e.g. <a class="xref" href="../api_visab/org.visab.processing.ISessionListener.html">ISessionListener</a>).</li>
+<li>Types ending with <code>Base</code> are always abstract classes, as base implementations of an interface (e.g. <a class="xref" href="../api_visab/org.visab.processing.SessionListenerBase.html">SessionListenerBase</a>).
 Instead of fully implementing an interface yourself, you can instead extend these classes as a baseline.</li>
-<li>Types starting with <code>Basic</code> are always instantiable classes that are either extending a <code>Base</code> class or implementing an interface (e.g. <a href="xref:org.visab.workspace.BasicRepository">BasicRepository</a>).
+<li>Types starting with <code>Basic</code> are always instantiable classes that are either extending a <code>Base</code> class or implementing an interface (e.g. <a class="xref" href="../api_visab/org.visab.workspace.BasicRepository.html">BasicRepository</a>).
 <code>Basic</code> classes, do not implement functionality beyond what is required by their interface or abstract parent class. If there is no Base class to inherit from, you can inherit from <code>Basic</code> types instead.</li>
 <li>Types starting with <code>Default</code> are implementations for games that dont have an implementation, but are allowed through settings.
-E.g. <a href="xref:org.visab.processing.starter.DefaultSessionListener">DefaultSessionListener</a> will be used when a game is allowed in the settings, but does not have a <a href="xref:org.visab.processing.ISessionListener">ISessionListener</a> implementation yet.
+E.g. <a href="xref:org.visab.processing.starter.DefaultSessionListener">DefaultSessionListener</a> will be used when a game is allowed in the settings, but does not have a <a class="xref" href="../api_visab/org.visab.processing.ISessionListener.html">ISessionListener</a> implementation yet.
 These types are usually found in a packages named <code>starter</code>.</li>
 </ul>
 <h1 id="terminology">Terminology</h1>

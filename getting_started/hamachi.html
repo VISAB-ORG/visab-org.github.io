@@ -8,7 +8,7 @@
     <title>Connecting to VISAB from a Different Machine </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Connecting to VISAB from a Different Machine ">
-    <meta name="generator" content="docfx 2.58.2.0">
+    <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -72,8 +72,11 @@
 <p>VISABs WebAPI is accessible either <strong>directly on your own local machine</strong>, if you run both the game and VISAB or you can
 access a running instance of VISABs WebAPI <strong>on another machine</strong> and simply send only game data from your machine.</p>
 <p>In any case you need to make sure that the IP adress and port* is configured correctly in the game for communication:</p>
-<pre><code class="lang-csharp">public static string HostAdress { get; set; } = &quot;http://25.59.97.106&quot;;
-public static int Port { get; set; } = 2673;
+<pre><code class="lang-csharp">string hostAdress = &quot;http://25.59.97.106&quot;;
+int port = 2673;
+int requestTimeout = 10; // You'll have to play around with the timeout.
+
+var api = new VISABApi(hostAdress, port, requestTimeout);
 </code></pre>
 <p><em>Find out your local IP adress, e.g. by opening the command prompt and entering <code>ipconfig</code>.</em></p>
 <p>*<em>Make sure that the port field corresponds to the port set in VISAB. You can change the port in the settings section of VISAB</em>.</p>

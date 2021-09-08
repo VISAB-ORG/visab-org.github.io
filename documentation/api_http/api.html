@@ -8,7 +8,7 @@
     <title>HTTP API Endpoints </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="HTTP API Endpoints ">
-    <meta name="generator" content="docfx 2.58.2.0">
+    <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -70,7 +70,7 @@
 <h1 id="http-api-endpoints">HTTP API Endpoints</h1>
 
 <p>VISAB has a HTTP based API for reciving data from games.
-The <a href="xref:org.visab.api.WebAPI">WebAPI</a> is implemented as a <code>RouterNanoHTTPD</code> of the <a href="https://github.com/NanoHttpd/nanohttpd">nanohttpd</a> library. Below you find documentation of the various endpoints exposed by the API.</p>
+The <a class="xref" href="../../api_visab/org.visab.api.WebAPI.html">WebAPI</a> is implemented as a <code>RouterNanoHTTPD</code> of the <a href="https://github.com/NanoHttpd/nanohttpd">nanohttpd</a> library. Below you find documentation of the various endpoints exposed by the API.</p>
 <h2 id="ping-endpoint">Ping Endpoint</h2>
 <p>A simple ping endpoint to check if VISAB is running.</p>
 <table>
@@ -109,7 +109,7 @@ The <a href="xref:org.visab.api.WebAPI">WebAPI</a> is implemented as a <code>Rou
 <tr>
 <td>POST</td>
 <td>/session/open</td>
-<td><strong>Body</strong> A json string representing the <a href="xref:org.visab.globalmodel.IMetaInformation">IMetaInformation</a> object.</td>
+<td><strong>Body</strong> A json string representing the <a class="xref" href="../../api_visab/org.visab.globalmodel.IMetaInformation.html">IMetaInformation</a> object.</td>
 <td>Opens a transmission session.</td>
 <td>A UUID string identifying the tranmission session.</td>
 </tr>
@@ -125,14 +125,14 @@ The <a href="xref:org.visab.api.WebAPI">WebAPI</a> is implemented as a <code>Rou
 <td>/session/status</td>
 <td><strong>Query string</strong> The key <code>sessionid</code> contains the UUID of the transmission session to get the status of.</td>
 <td>Gets the status of a transmission session.</td>
-<td>A json string representing of the <a href="xref:org.visab.globalmodel.SessionStatus">SessionStatus</a> of the transmission session.</td>
+<td>A json string representing of the <a class="xref" href="../../api_visab/org.visab.globalmodel.SessionStatus.html">SessionStatus</a> of the transmission session.</td>
 </tr>
 <tr>
 <td>GET</td>
 <td>/session/list</td>
 <td>-</td>
 <td>Gets the statuses of all active transmission session.</td>
-<td>A json string representing an array of the <a href="xref:org.visab.globalmodel.SessionStatus">SessionStatus</a> for all active tranmission sessions.</td>
+<td>A json string representing an array of the <a class="xref" href="../../api_visab/org.visab.globalmodel.SessionStatus.html">SessionStatus</a> for all active tranmission sessions.</td>
 </tr>
 </tbody>
 </table>
@@ -152,14 +152,14 @@ The <a href="xref:org.visab.api.WebAPI">WebAPI</a> is implemented as a <code>Rou
 <tr>
 <td>POST</td>
 <td>/send/statistics</td>
-<td><strong>Body</strong> A json string representing the <a href="xref:org.visab.globalmodel.IStatistics">IStatistics</a> object. <br> <strong>Header</strong> The key <code>sessionid</code> contains a string of the UUID of the transmission session from which data is sent. The key <code>game</code> contains a string of the name of the game of the transmission session.</td>
+<td><strong>Body</strong> A json string representing the <a class="xref" href="../../api_visab/org.visab.globalmodel.IStatistics.html">IStatistics</a> object. <br> <strong>Header</strong> The key <code>sessionid</code> contains a string of the UUID of the transmission session from which data is sent. The key <code>game</code> contains a string of the name of the game of the transmission session.</td>
 <td>Sends statistics for VISAB to process.</td>
 <td>If the session was active a simple response message is returnd, otherwise &quot;SESSION_ALREADY_CLOSED&quot;.</td>
 </tr>
 <tr>
 <td>POST</td>
 <td>/send/image</td>
-<td><strong>Body</strong> A json string representing the <a href="xref:org.visab.globalmodel.IImageContainer">IImageContainer</a> object. <br> <strong>Header</strong> The key <code>sessionid</code> contains a string of the UUID of the transmission session from which data is sent. The key <code>game</code> contains a string of the name of the game of the transmission session.</td>
+<td><strong>Body</strong> A json string representing the <a class="xref" href="../../api_visab/org.visab.globalmodel.IImageContainer.html">IImageContainer</a> object. <br> <strong>Header</strong> The key <code>sessionid</code> contains a string of the UUID of the transmission session from which data is sent. The key <code>game</code> contains a string of the name of the game of the transmission session.</td>
 <td>Sends images for VISAB to process.</td>
 <td>If the session was active a simple response message is returnd, otherwise &quot;SESSION_ALREADY_CLOSED&quot;.</td>
 </tr>
@@ -205,12 +205,12 @@ The <a href="xref:org.visab.api.WebAPI">WebAPI</a> is implemented as a <code>Rou
 <td>/file/get</td>
 <td><strong>Query string</strong> The key <code>sessionid</code> contains the UUID of the transmission session to get the created file of.</td>
 <td>Gets the json string of the VISAB file that was created for the tranmission session.</td>
-<td>A json string representing the <a href="xref:org.visab.globalmodel.IVISABFile">IVISABFile</a> object that was created for the tranmission session.</td>
+<td>A json string representing the <a class="xref" href="../../api_visab/org.visab.globalmodel.IVISABFile.html">IVISABFile</a> object that was created for the tranmission session.</td>
 </tr>
 <tr>
 <td>POST</td>
 <td>/file/send</td>
-<td><strong>Body</strong> A json string representing the <a href="xref:org.visab.globalmodel.IVISABFile">IVISABFile</a> to be saved in VISABs database.</td>
+<td><strong>Body</strong> A json string representing the <a class="xref" href="../../api_visab/org.visab.globalmodel.IVISABFile.html">IVISABFile</a> to be saved in VISABs database.</td>
 <td>Sends an existing VISAB file for VISAB to save in the database.</td>
 <td>A simple response message.</td>
 </tr>
